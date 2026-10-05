@@ -1,6 +1,8 @@
 # Datos grandes generados por StatsBomb
-data/processed/america_male/events_america.csv
-data/processed/america_male/events_america_clean.csv
+data/processed/america_male/events_america.csv 
+# se corre el 02_events_america.R
+data/processed/america_male/events_america_clean.csv  
+#se corre el 07_expand_lineups.R
 # Archivos de R
 .Rhistory
 .RData
