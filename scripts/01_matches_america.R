@@ -252,7 +252,7 @@ for (col in names(america_matches_csv)) {
 
 write.csv(
   america_matches_csv,
-  "data/processed/america_matches.csv",
+  "data/processed/america_male/america_matches.csv",
   row.names = FALSE,
   fileEncoding = "UTF-8"
 )

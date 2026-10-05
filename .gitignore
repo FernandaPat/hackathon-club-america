@@ -1,6 +1,6 @@
 # Datos grandes generados por StatsBomb
 data/processed/america_male/events_america.csv
-
+data/processed/america_male/events_america_clean.csv
 # Archivos de R
 .Rhistory
 .RData
