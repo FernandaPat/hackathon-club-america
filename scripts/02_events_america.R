@@ -6,8 +6,8 @@ library(jsonlite)
 # CREDENCIALES
 # ============================================
 
-username <- "itam_hackathon@hudl.com"
-password <- "NDeXcBUp"
+username <- Sys.getenv("STATSBOMB_USERNAME")
+password <- Sys.getenv("STATSBOMB_PASSWORD")
 
 # ============================================
 # LEER PARTIDOS DE AMÉRICA

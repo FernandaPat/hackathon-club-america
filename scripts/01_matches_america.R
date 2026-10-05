@@ -11,8 +11,8 @@ library(jsonlite)
 # 1. CREDENCIALES
 # ============================================================
 
-username <- "itam_hackathon@hudl.com"
-password <- "NDeXcBUp"
+username <- Sys.getenv("STATSBOMB_USERNAME")
+password <- Sys.getenv("STATSBOMB_PASSWORD")
 
 
 # ============================================================
