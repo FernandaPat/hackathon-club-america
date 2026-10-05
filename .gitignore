@@ -1,0 +1,7 @@
+# Datos grandes generados por StatsBomb
+data/processed/america_male/events_america.csv
+
+# Archivos de R
+.Rhistory
+.RData
+.Rproj.user/
