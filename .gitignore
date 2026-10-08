@@ -2,8 +2,15 @@
 data/processed/america_male/events_america.csv 
 # se corre el 02_events_america.R
 data/processed/america_male/events_america_clean.csv  
+
+data/processed/america_male/features_360_events.csv
+data/processed/america_male/features_360.csv
+data/processed/america_male/minute_features_360.csv
+data/processed/america_male/model_context_360_rolling.csv
+data/processed/america_male/model_context_360.csv
+data/processed/america_male/model_with_tactical_states.csv
 #se corre el 07_expand_lineups.R
 # Archivos de R
 .Rhistory
 .RData
-.Rproj.user/
+.Rproj.user/    
