@@ -1,0 +1,4 @@
+﻿dataset_split,observations,matches,first_date,last_date
+TRAIN,11190,127,2021-07-23,2024-05-27
+VALIDATION,4191,47,2024-07-06,2025-05-26
+TEST,4157,47,2025-07-12,2026-09-28

@@ -1,0 +1,7 @@
+﻿model,dataset,observations,accuracy,balanced_accuracy,macro_f1,log_loss
+Multinomial,TRAIN,11190,40.09,44.11,0.3885,1.3419
+Multinomial,VALIDATION,4191,36.72,41.47,0.3516,1.3683
+Multinomial,TEST,4157,36.42,42.93,0.3569,1.3913
+XGBoost,TRAIN,11190,50.99,53.78,0.5065,1.1968
+XGBoost,VALIDATION,4191,39.42,43.91,0.3633,1.3527
+XGBoost,TEST,4157,37.86,42.95,0.3514,1.3647

@@ -1,0 +1,4 @@
+﻿dataset_split,observations,persistence_accuracy,majority_accuracy,tactical_change_rate
+TRAIN,11190,31.81,23.89,68.19
+VALIDATION,4191,31.88,21.28,68.12
+TEST,4157,32.67,27.74,67.33

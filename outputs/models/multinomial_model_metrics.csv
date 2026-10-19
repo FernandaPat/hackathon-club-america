@@ -1,0 +1,4 @@
+﻿dataset,observations,accuracy,balanced_accuracy,macro_f1,log_loss
+TRAIN,11190,40.09,44.11,0.3885,1.3419
+VALIDATION,4191,36.72,41.47,0.3516,1.3683
+TEST,4157,36.42,42.93,0.3569,1.3913

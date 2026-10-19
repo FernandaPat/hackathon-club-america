@@ -1,0 +1,6 @@
+﻿metric,value
+Best silhouette K,2
+Silhouette K=5,0.1214
+Simple agreement (%),39.1
+Adjusted Rand Index,0.1015
+Cramer's V,0.313
