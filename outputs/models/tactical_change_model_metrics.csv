@@ -1,0 +1,10 @@
+﻿metric,value
+Test accuracy,0.658407505412557
+Test balanced accuracy,0.573275828049256
+Test precision - change,0.715132605304212
+Test recall - change,0.818863879957128
+Test F1 - change,0.763491005996003
+Test log-loss,0.613244147545172
+Test Brier,0.211598304344362
+Majority baseline accuracy,0.67332210728891
+Selected threshold,0.65

@@ -1,0 +1,5 @@
+﻿model,test_accuracy,test_balanced_accuracy,test_macro_f1,test_top2_accuracy,test_log_loss
+Persistence baseline,32.67,,,,
+Multinomial,36.42,42.93,0.3569,,1.3913
+XGBoost Events+360,39.91,44.88,0.3861,,1.343
+Blended ensemble,40.1,45.14,0.3872,64.45,1.3428
