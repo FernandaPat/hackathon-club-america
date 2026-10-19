@@ -1,7 +1,7 @@
 library(data.table)
 
 # ============================================================
-# 1. CARGAR DATASET
+# 1. CARGAR BASE ORIGINAL DE 5 MINUTOS
 # ============================================================
 
 dt <- fread(
@@ -9,60 +9,83 @@ dt <- fread(
   encoding = "UTF-8"
 )
 
-setorder(
-  dt,
-  match_id,
-  minute
-)
-
-cat("\n=====================================\n")
-cat("TACTICAL STATES - VERSION LIMPIA\n")
-cat("=====================================\n")
+setorder(dt, match_id, minute)
 
 cat("Filas:", nrow(dt), "\n")
-cat("Columnas:", ncol(dt), "\n")
 cat("Partidos:", uniqueN(dt$match_id), "\n")
 
 
 # ============================================================
-# 2. COLUMNAS QUE NECESITAMOS
+# 2. GAME STATE NUMÉRICO
+# ============================================================
+
+dt[, game_state_num := fifelse(
+  game_state == "Winning", 1,
+  fifelse(
+    game_state == "Losing", -1,
+    fifelse(
+      game_state == "Drawing", 0,
+      NA_real_
+    )
+  )
+)]
+
+
+# ============================================================
+# 3. FUNCIÓN Z-SCORE SEGURA
+# ============================================================
+
+zscore_safe <- function(x) {
+
+  x <- as.numeric(x)
+
+  m <- mean(x, na.rm = TRUE)
+  s <- sd(x, na.rm = TRUE)
+
+  if (
+    !is.finite(m) ||
+    !is.finite(s) ||
+    s == 0
+  ) {
+    return(rep(0, length(x)))
+  }
+
+  z <- (x - m) / s
+
+  z[!is.finite(z)] <- 0
+
+  z
+}
+
+
+# ============================================================
+# 4. VALIDAR VARIABLES
 # ============================================================
 
 required_cols <- c(
   "america_field_tilt_last5",
   "entries_final_third_diff_last5",
   "progressive_pass_diff_last5",
-
   "recovery_height_diff_last5",
   "pressure_diff_last5",
   "opponent_nearest_opponent_distance_last5",
-
   "america_progressive_carries_last5",
   "america_progressive_passes_last5",
-
-  "game_state",
-
   "america_local_superiority_10_last5",
   "america_support_share_10_last5",
   "america_pressure_share_5_last5",
-
   "america_entries_final_third_last5",
   "america_entries_box_last5"
 )
 
-validation <- data.table(
+validation_5min <- data.table(
   variable = required_cols,
   exists = required_cols %in% names(dt)
 )
 
-print(validation)
+View(validation_5min)
 
-
-# ============================================================
-# 3. DETENER SI FALTA ALGUNA VARIABLE
-# ============================================================
-
-missing_cols <- validation[
+missing_cols <- validation_5min[
   exists == FALSE,
   variable
 ]
@@ -72,345 +95,165 @@ if (length(missing_cols) > 0) {
   stop(
     paste(
       "Faltan columnas:",
-      paste(
-        missing_cols,
-        collapse = ", "
-      )
+      paste(missing_cols, collapse = ", ")
     )
   )
 }
 
 
 # ============================================================
-# 4. Z-SCORE SEGURO
+# 5. VARIABLES ESTANDARIZADAS
 # ============================================================
 
-zscore_safe <- function(x) {
+dt[, z_field_tilt :=
+     zscore_safe(america_field_tilt_last5)]
 
-  x <- as.numeric(x)
+dt[, z_entries_diff :=
+     zscore_safe(entries_final_third_diff_last5)]
 
-  media <- mean(
-    x,
-    na.rm = TRUE
-  )
+dt[, z_progressive_pass_diff :=
+     zscore_safe(progressive_pass_diff_last5)]
 
-  desv <- sd(
-    x,
-    na.rm = TRUE
-  )
+dt[, z_recovery_height :=
+     zscore_safe(recovery_height_diff_last5)]
 
-  if (
-    !is.finite(media) ||
-    !is.finite(desv) ||
-    desv == 0
-  ) {
+dt[, z_pressure_diff :=
+     zscore_safe(pressure_diff_last5)]
 
-    return(
-      rep(
-        0,
-        length(x)
-      )
-    )
-  }
+dt[, z_opponent_space :=
+     zscore_safe(
+       -opponent_nearest_opponent_distance_last5
+     )]
 
-  z <- (
-    x - media
-  ) / desv
+dt[, z_progressive_carries :=
+     zscore_safe(
+       america_progressive_carries_last5
+     )]
 
-  z[
-    !is.finite(z)
-  ] <- 0
+dt[, z_progressive_passes :=
+     zscore_safe(
+       america_progressive_passes_last5
+     )]
 
-  z
-}
+dt[, z_game_state :=
+     zscore_safe(game_state_num)]
 
+dt[, z_local_superiority :=
+     zscore_safe(
+       america_local_superiority_10_last5
+     )]
 
-# ============================================================
-# 5. CREAR VARIABLES ESTANDARIZADAS
-# ============================================================
+dt[, z_support :=
+     zscore_safe(
+       america_support_share_10_last5
+     )]
 
-dt[
-  ,
-  z_field_tilt :=
-    zscore_safe(
-      america_field_tilt_last5
-    )
-]
+dt[, z_pressure_received :=
+     zscore_safe(
+       america_pressure_share_5_last5
+     )]
 
-dt[
-  ,
-  z_entries_diff :=
-    zscore_safe(
-      entries_final_third_diff_last5
-    )
-]
+dt[, z_final_third_entries :=
+     zscore_safe(
+       america_entries_final_third_last5
+     )]
 
-dt[
-  ,
-  z_progressive_pass_diff :=
-    zscore_safe(
-      progressive_pass_diff_last5
-    )
-]
+dt[, z_box_entries :=
+     zscore_safe(
+       america_entries_box_last5
+     )]
 
-
-dt[
-  ,
-  z_recovery_height :=
-    zscore_safe(
-      recovery_height_diff_last5
-    )
-]
-
-dt[
-  ,
-  z_pressure_diff :=
-    zscore_safe(
-      pressure_diff_last5
-    )
-]
-
-dt[
-  ,
-  z_opponent_space :=
-    zscore_safe(
-      -opponent_nearest_opponent_distance_last5
-    )
-]
-
-
-dt[
-  ,
-  z_progressive_carries :=
-    zscore_safe(
-      america_progressive_carries_last5
-    )
-]
-
-dt[
-  ,
-  z_progressive_passes :=
-    zscore_safe(
-      america_progressive_passes_last5
-    )
-]
-
-
-dt[
-  ,
-  z_game_state :=
-    zscore_safe(
-      game_state
-    )
-]
-
-dt[
-  ,
-  z_local_superiority :=
-    zscore_safe(
-      america_local_superiority_10_last5
-    )
-]
-
-dt[
-  ,
-  z_support :=
-    zscore_safe(
-      america_support_share_10_last5
-    )
-]
-
-dt[
-  ,
-  z_pressure_received :=
-    zscore_safe(
-      america_pressure_share_5_last5
-    )
-]
-
-
-dt[
-  ,
-  z_final_third_entries :=
-    zscore_safe(
-      america_entries_final_third_last5
-    )
-]
-
-dt[
-  ,
-  z_box_entries :=
-    zscore_safe(
-      america_entries_box_last5
-    )
-]
-
-dt[
-  ,
-  z_minute :=
-    zscore_safe(
-      minute
-    )
-]
+dt[, z_minute :=
+     zscore_safe(minute)]
 
 
 # ============================================================
 # 6. CONTROL
-#
-# Dominio territorial + progresión.
-#
-# Usamos promedio y no suma para que todos los estados
-# tengan escalas comparables.
 # ============================================================
 
-dt[
-  ,
-  control_score :=
-    (
-      z_field_tilt +
-      z_entries_diff +
-      z_progressive_pass_diff
-    ) / 3
-]
+dt[, control_score :=
+     (
+       z_field_tilt +
+       z_entries_diff +
+       z_progressive_pass_diff
+     ) / 3]
 
 
 # ============================================================
 # 7. PRESSURE
-#
-# Presión activa + recuperación alta +
-# poco espacio para el rival.
 # ============================================================
 
-dt[
-  ,
-  pressure_score :=
-    (
-      z_recovery_height +
-      z_pressure_diff +
-      z_opponent_space
-    ) / 3
-]
+dt[, pressure_score :=
+     (
+       z_recovery_height +
+       z_pressure_diff +
+       z_opponent_space
+     ) / 3]
 
 
 # ============================================================
 # 8. TRANSITION
-#
-# Mucha progresión rápida con pases y conducciones.
 # ============================================================
 
-dt[
-  ,
-  transition_score :=
-    (
-      z_progressive_carries +
-      z_progressive_passes
-    ) / 2
-]
+dt[, transition_score :=
+     (
+       z_progressive_carries +
+       z_progressive_passes
+     ) / 2]
 
 
 # ============================================================
 # 9. PROTECTION
-#
-# América tiene ventaja y estructura de apoyo.
-#
-# Si América no está ganando,
-# penalizamos este estado.
 # ============================================================
 
-dt[
-  ,
-  protection_score :=
-    (
-      z_game_state +
-      z_local_superiority +
-      z_support -
-      z_pressure_received
-    ) / 4
-]
+dt[, protection_score :=
+     (
+       z_game_state +
+       z_local_superiority +
+       z_support -
+       z_pressure_received
+     ) / 4]
 
 dt[
-  game_state <= 0,
-  protection_score :=
-    protection_score - 1
+  game_state_num <= 0,
+  protection_score := protection_score - 1
 ]
 
 
 # ============================================================
 # 10. URGENCY
-#
-# América pierde / partido avanzado /
-# busca llegar al último tercio y área.
 # ============================================================
 
-dt[
-  ,
-  urgency_score :=
-    (
-      zscore_safe(-game_state) +
-      z_minute +
-      z_final_third_entries +
-      z_box_entries
-    ) / 4
-]
-
-# Si América va ganando, reducimos urgencia
+dt[, urgency_score :=
+     (
+       zscore_safe(-game_state_num) +
+       z_minute +
+       z_final_third_entries +
+       z_box_entries
+     ) / 4]
 
 dt[
-  game_state > 0,
-  urgency_score :=
-    urgency_score - 1
+  game_state_num > 0,
+  urgency_score := urgency_score - 1
 ]
 
 
 # ============================================================
-# 11. COMPROBAR SCORES
-# ============================================================
-
-cat("\n=====================================\n")
-cat("SCORES CREADOS\n")
-cat("=====================================\n")
-
-print(
-  c(
-    "control_score",
-    "pressure_score",
-    "transition_score",
-    "protection_score",
-    "urgency_score"
-  ) %in% names(dt)
-)
-
-
-# ============================================================
-# 12. MATRIZ DE SCORES
+# 11. MATRIZ DE LOS CINCO ESTADOS
 # ============================================================
 
 score_matrix <- as.matrix(
   dt[
     ,
     .(
-      CONTROL =
-        control_score,
-
-      PRESSURE =
-        pressure_score,
-
-      TRANSITION =
-        transition_score,
-
-      PROTECTION =
-        protection_score,
-
-      URGENCY =
-        urgency_score
+      CONTROL = control_score,
+      PRESSURE = pressure_score,
+      TRANSITION = transition_score,
+      PROTECTION = protection_score,
+      URGENCY = urgency_score
     )
   ]
 )
-
-
-# ============================================================
-# 13. LIMPIAR VALORES NO FINITOS
-# ============================================================
 
 score_matrix[
   !is.finite(score_matrix)
@@ -418,13 +261,8 @@ score_matrix[
 
 
 # ============================================================
-# 14. ESTADO GANADOR
+# 12. ASIGNAR ESTADO GANADOR
 # ============================================================
-
-winner <- max.col(
-  score_matrix,
-  ties.method = "first"
-)
 
 state_names <- c(
   "CONTROL",
@@ -434,178 +272,141 @@ state_names <- c(
   "URGENCY"
 )
 
-dt[
-  ,
-  tactical_state :=
-    state_names[
-      winner
-    ]
-]
+winner <- max.col(
+  score_matrix,
+  ties.method = "first"
+)
+
+dt[, tactical_state :=
+     state_names[winner]]
 
 
 # ============================================================
-# 15. PRIMEROS 4 MINUTOS
+# 13. PRIMEROS 4 MINUTOS SIN CLASIFICAR
 # ============================================================
 
 dt[
   minute < 4,
-  tactical_state :=
-    NA_character_
+  tactical_state := NA_character_
 ]
 
 
 # ============================================================
-# 16. CONFIANZA
-#
-# Diferencia entre el score más alto
-# y el segundo más alto.
+# 14. CONFIANZA
 # ============================================================
 
-dt[
-  ,
-  tactical_state_confidence :=
-    apply(
-      score_matrix,
-      1,
-      function(x) {
+dt[, tactical_state_confidence :=
+     apply(
+       score_matrix,
+       1,
+       function(x) {
 
-        ordered <- sort(
-          x,
-          decreasing = TRUE
-        )
+         x <- sort(
+           x,
+           decreasing = TRUE
+         )
 
-        ordered[1] -
-          ordered[2]
-      }
-    )
-]
+         x[1] - x[2]
+       }
+     )]
 
 dt[
   minute < 4,
-  tactical_state_confidence :=
-    NA_real_
+  tactical_state_confidence := NA_real_
 ]
 
 
 # ============================================================
-# 17. ESTADO ANTERIOR
+# 15. ESTADO ANTERIOR Y CAMBIO
 # ============================================================
 
-dt[
-  ,
-  previous_tactical_state :=
-    shift(
-      tactical_state,
-      1
-    ),
-  by = match_id
-]
+dt[, previous_tactical_state :=
+     shift(
+       tactical_state,
+       1
+     ),
+   by = match_id]
 
-
-# ============================================================
-# 18. CAMBIO DE ESTADO
-# ============================================================
-
-dt[
-  ,
-  tactical_state_changed :=
-    !is.na(tactical_state) &
-    !is.na(previous_tactical_state) &
-    tactical_state !=
-      previous_tactical_state
-]
+dt[, tactical_state_changed :=
+     !is.na(tactical_state) &
+     !is.na(previous_tactical_state) &
+     tactical_state != previous_tactical_state]
 
 
 # ============================================================
-# 19. DISTRIBUCIÓN
+# 16. DISTRIBUCIÓN
 # ============================================================
 
-state_distribution <- dt[
+distribution_5_final <- dt[
   !is.na(tactical_state),
   .N,
   by = tactical_state
 ]
 
-state_distribution[
+distribution_5_final[
   ,
   percentage :=
     round(
-      N /
-        sum(N) *
-        100,
+      N / sum(N) * 100,
       2
     )
 ]
 
 setorder(
-  state_distribution,
+  distribution_5_final,
   -N
 )
 
-
-# ============================================================
-# 20. MOSTRAR DISTRIBUCIÓN
-# ============================================================
-
-cat("\n=====================================\n")
-cat("DISTRIBUCIÓN TÁCTICA\n")
-cat("=====================================\n")
-
-print(
-  state_distribution
-)
+View(distribution_5_final)
 
 
 # ============================================================
-# 21. GUARDAR
+# 17. COBERTURA
+# ============================================================
+
+coverage_5_final <- dt[
+  ,
+  .(
+    observations = .N,
+
+    classified =
+      sum(!is.na(tactical_state)),
+
+    missing =
+      sum(is.na(tactical_state)),
+
+    coverage_pct =
+      round(
+        mean(
+          !is.na(tactical_state)
+        ) * 100,
+        2
+      )
+  )
+]
+
+View(coverage_5_final)
+
+
+# ============================================================
+# 18. GUARDAR
 # ============================================================
 
 fwrite(
   dt,
   "data/processed/america_male/model_with_tactical_states.csv",
-  bom = TRUE
+  bom = TRUE,
+  na = "NA"
 )
-
-
-# ============================================================
-# 22. RESUMEN
-# ============================================================
 
 cat("\n=====================================\n")
-cat("TACTICAL STATES TERMINADO\n")
+cat("5-MIN TACTICAL STATES RECONSTRUIDOS\n")
 cat("=====================================\n")
 
+cat("Filas:", nrow(dt), "\n")
+cat("Partidos:", uniqueN(dt$match_id), "\n")
 cat(
-  "Filas:",
-  nrow(dt),
-  "\n"
-)
-
-cat(
-  "Columnas:",
-  ncol(dt),
-  "\n"
-)
-
-cat(
-  "Partidos:",
-  uniqueN(dt$match_id),
-  "\n"
-)
-
-cat(
-  "Estados clasificados:",
-  sum(
-    !is.na(dt$tactical_state)
-  ),
-  "\n"
-)
-
-cat(
-  "Cambios de estado:",
-  sum(
-    dt$tactical_state_changed,
-    na.rm = TRUE
-  ),
+  "Clasificados:",
+  sum(!is.na(dt$tactical_state)),
   "\n"
 )

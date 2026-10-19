@@ -704,3 +704,16 @@ cat("=====================================\n")
 
 cat("Filas 3 min:", nrow(dt3), "\n")
 cat("Partidos:", uniqueN(dt3$match_id), "\n")
+
+
+dt3[
+  tactical_state_3min == "",
+  tactical_state_3min := NA_character_
+]
+
+fwrite(
+  dt3,
+  "data/processed/america_male/model_with_tactical_states_3min.csv",
+  bom = TRUE,
+  na = "NA"
+)
