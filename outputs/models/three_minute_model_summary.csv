@@ -1,0 +1,8 @@
+﻿metric,value
+Persistence baseline,30.2788844621514
+Majority baseline,27.4402390438247
+Top-1 accuracy,39.3177290836653
+Balanced accuracy,45.2970415218744
+Macro F1,0.384237728581664
+Top-2 accuracy,63.0229083665339
+Log-loss,1.33674196370493

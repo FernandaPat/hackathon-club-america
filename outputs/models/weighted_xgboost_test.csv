@@ -1,0 +1,2 @@
+﻿model,accuracy,balanced_accuracy,macro_f1,top2_accuracy,log_loss
+Weighted XGBoost - MILD,39.04,43.8,0.393,62.74,1.3455
