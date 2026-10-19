@@ -1,0 +1,2 @@
+﻿model,accuracy,balanced_accuracy,macro_f1,top2_accuracy,log_loss
+Hierarchical,39.72,44.54,0.3802,63.96,1.3489

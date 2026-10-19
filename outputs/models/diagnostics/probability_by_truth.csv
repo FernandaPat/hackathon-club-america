@@ -1,0 +1,6 @@
+﻿future_tactical_state_5min,observations,avg_prob_control,avg_prob_pressure,avg_prob_transition,avg_prob_protection,avg_prob_urgency
+TRANSITION,973,0.2327,0.2019,0.2948,0.1147,0.156
+CONTROL,1153,0.2676,0.2185,0.2289,0.1158,0.1692
+PRESSURE,876,0.2591,0.2237,0.2212,0.1384,0.1576
+PROTECTION,545,0.2059,0.1898,0.1826,0.3823,0.0394
+URGENCY,610,0.1968,0.185,0.1986,0.0267,0.3928
