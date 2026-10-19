@@ -1,0 +1,13 @@
+﻿metric,value
+Raw treated change rate,0.666165413533835
+Raw control change rate,0.683606270761699
+Raw difference,-0.0174408572278648
+Overlap-weighted treated rate,0.668789626290973
+Overlap-weighted control rate,0.666889871413235
+Overlap-weighted effect,0.00189975487773753
+Bootstrap 95% CI low,-0.0306722194398406
+Bootstrap 95% CI high,0.0340036005912615
+Treated observations,665
+Control observations,17159
+Effective treated sample,664.0085718932
+Effective control sample,8876.15440480296

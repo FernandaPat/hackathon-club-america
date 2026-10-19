@@ -1,0 +1,6 @@
+﻿metric,value
+Mean abs SMD before,
+Mean abs SMD after,
+Max abs SMD before,-Inf
+Max abs SMD after,-Inf
+Variables after matching with |SMD| < 0.10,

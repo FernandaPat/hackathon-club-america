@@ -1,0 +1,7 @@
+﻿component,description
+Treatment,Club América substitution at minute t
+Outcome,Change in tactical state within the following 5 minutes
+Adjustment,"Minute, score state, current tactical state, Events and StatsBomb 360 pre-treatment context"
+Estimator,Propensity-score overlap weighting
+Uncertainty,300 match-cluster bootstrap replications
+Interpretation limitation,Observational estimate. Balances measured confounders but cannot rule out unobserved coaching intent or other latent factors.

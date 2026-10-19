@@ -1,0 +1,6 @@
+﻿metric,value
+Mean abs SMD before,0.179710852231712
+Mean abs SMD after,5.23172055854173e-13
+Max abs SMD before,1.05010952336737
+Max abs SMD after,4.16999146970076e-12
+Variables with |SMD| < 0.10 after weighting,100

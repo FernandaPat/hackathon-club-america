@@ -1,0 +1,6 @@
+﻿item,description
+Design,Observational matched study
+Treatment,Club América substitution at minute t
+Outcome,Tactical-state change within the following 5 minutes
+Identification strategy,"1:1 nearest-neighbor propensity-score matching on pre-treatment match, event and 360 context"
+Important limitation,Substitutions are not randomized. Matching reduces observed confounding but does not prove causality against unobserved confounding.
