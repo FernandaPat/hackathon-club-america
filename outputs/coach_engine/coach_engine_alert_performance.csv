@@ -1,0 +1,4 @@
+﻿alert_level,observations,average_confidence,accuracy_pct,expected_changes,change_share_pct
+HIGH,284,0.6553,58.45,121,42.61
+MEDIUM,998,0.5089,50.9,498,49.9
+WATCH,2875,0.3607,34.54,1811,62.99
