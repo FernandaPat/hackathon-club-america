@@ -9,6 +9,11 @@ data/processed/america_male/minute_features_360.csv
 data/processed/america_male/model_context_360.csv
 data/processed/america_male/model_with_tactical_states.csv
 #se corre el 07_expand_lineups.R
+
+america_female_matches.csv
+america_female_matches_played.csv
+events_america_female.csv
+events_america_female_clean.csv
 # Archivos de R
 .Rhistory
 .RData
