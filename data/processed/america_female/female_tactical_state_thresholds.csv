@@ -1,0 +1,8 @@
+feature,q25,q50,q75
+america_field_tilt_last5,0.511111111111111,0.7,0.857713675213675
+america_possession_context_last5,0.545243517447465,0.649382607376029,0.743753588146971
+entries_final_third_diff_last5,0,2,4
+entries_box_diff_last5,0,2,5
+progressive_passes_diff_last5,0,3,6
+pressures_diff_last5,-7,-3,1
+recovery_height_diff_last5,-11.5833333333334,17.8875,44.19

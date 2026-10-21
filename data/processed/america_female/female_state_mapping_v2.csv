@@ -1,0 +1,6 @@
+cluster_id,tactical_state
+1,TRANSITION
+2,CONTROL
+3,PROTECTION
+4,URGENCY
+5,PRESSURE
