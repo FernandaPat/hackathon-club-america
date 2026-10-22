@@ -17,7 +17,7 @@ from config.charts import (
 
 
 # ============================================================
-# CONFIGURACIÓN STREAMLIT
+# STREAMLIT
 # ============================================================
 
 st.set_page_config(
@@ -41,7 +41,7 @@ CSS_PATH = DASHBOARD_DIR / "styles" / "america.css"
 
 
 # ============================================================
-# ARCHIVOS VARONIL
+# VARONIL
 # ============================================================
 
 MALE_SIMULATOR_PATH = (
@@ -78,7 +78,7 @@ MALE_SHAP_PATH = (
 
 
 # ============================================================
-# ARCHIVOS FEMENIL
+# FEMENIL
 # ============================================================
 
 FEMALE_SIMULATOR_PATH = (
@@ -122,7 +122,7 @@ FEMALE_MODEL_PATH = (
 
 
 # ============================================================
-# ARCHIVOS COMPLEMENTARIOS
+# COMPLEMENTARIO
 # ============================================================
 
 COMPLEMENTARY_SUBSTITUTIONS_PATH = (
@@ -175,20 +175,11 @@ STATE_LEVELS = [
 
 
 STATE_DISPLAY = {
-    "CONTROL":
-        "CONTROL",
-
-    "PRESSURE":
-        "PRESIÓN",
-
-    "TRANSITION":
-        "TRANSICIÓN",
-
-    "PROTECTION":
-        "PROTECCIÓN",
-
-    "URGENCY":
-        "URGENCIA",
+    "CONTROL": "CONTROL",
+    "PRESSURE": "PRESIÓN",
+    "TRANSITION": "TRANSICIÓN",
+    "PROTECTION": "PROTECCIÓN",
+    "URGENCY": "URGENCIA",
 }
 
 
@@ -201,15 +192,6 @@ STATE_REVERSE = {
 
 # ============================================================
 # PLAYBOOK
-# ============================================================
-#
-# IMPORTANTE:
-#
-# Este diccionario NO contiene predicciones.
-#
-# Solamente traduce el estado táctico identificado
-# a una recomendación comprensible para el usuario.
-#
 # ============================================================
 
 TACTICAL_PLAYBOOK = {
@@ -226,19 +208,17 @@ TACTICAL_PLAYBOOK = {
             ),
     },
 
-
     "PRESSURE": {
         "title":
             "Subir la presión",
 
         "text":
             (
-                "Cerrar líneas interiores y activar "
-                "la presión cuando el rival juegue "
-                "hacia atrás o tenga un control incómodo."
+                "Cerrar líneas interiores y activar la "
+                "presión cuando el rival juegue hacia atrás "
+                "o tenga un control incómodo."
             ),
     },
-
 
     "TRANSITION": {
         "title":
@@ -252,7 +232,6 @@ TACTICAL_PLAYBOOK = {
             ),
     },
 
-
     "PROTECTION": {
         "title":
             "Cerrar espacios",
@@ -264,7 +243,6 @@ TACTICAL_PLAYBOOK = {
                 "en zonas comprometidas."
             ),
     },
-
 
     "URGENCY": {
         "title":
@@ -380,6 +358,7 @@ def safe_percent(value):
         return f"{value:.1f}%"
 
     except Exception:
+
         return "N/D"
 
 
@@ -401,6 +380,7 @@ def percentage_points(value):
         )
 
     except Exception:
+
         return "N/D"
 
 
@@ -474,8 +454,7 @@ def build_match_metadata(
         match_history.empty
         or
         "match_id"
-        not in
-        match_history.columns
+        not in match_history.columns
     ):
 
         return pd.DataFrame(
@@ -506,18 +485,14 @@ def build_match_metadata(
         in data.columns
     ):
 
-        data["match_date"] = (
-            pd.to_datetime(
-                data["match_date"],
-                errors="coerce",
-            )
+        data["match_date"] = pd.to_datetime(
+            data["match_date"],
+            errors="coerce",
         )
 
     else:
 
-        data["match_date"] = (
-            pd.NaT
-        )
+        data["match_date"] = pd.NaT
 
 
     if (
@@ -575,28 +550,26 @@ def build_match_metadata(
             away_column is not None
         ):
 
-            data["opponent"] = (
-                np.where(
-                    data[
-                        home_column
-                    ]
-                    .astype(str)
-                    .map(
-                        normalize_text
-                    )
-                    ==
-                    normalize_text(
-                        team_name
-                    ),
-
-                    data[
-                        away_column
-                    ],
-
-                    data[
-                        home_column
-                    ],
+            data["opponent"] = np.where(
+                data[
+                    home_column
+                ]
+                .astype(str)
+                .map(
+                    normalize_text
                 )
+                ==
+                normalize_text(
+                    team_name
+                ),
+
+                data[
+                    away_column
+                ],
+
+                data[
+                    home_column
+                ],
             )
 
         else:
@@ -629,14 +602,16 @@ def attach_match_metadata(
         return data.copy()
 
 
-    result = data.copy()
+    result = (
+        data.copy()
+    )
 
 
     if (
         "match_id"
-        not in
-        result.columns
+        not in result.columns
     ):
+
         return result
 
 
@@ -655,20 +630,16 @@ def attach_match_metadata(
 
         if column in result.columns:
 
-            result = (
-                result.drop(
-                    columns=[
-                        column
-                    ]
-                )
+            result = result.drop(
+                columns=[
+                    column
+                ]
             )
 
 
     if metadata.empty:
 
-        result["match_date"] = (
-            pd.NaT
-        )
+        result["match_date"] = pd.NaT
 
         result["opponent"] = (
             "Rival no disponible"
@@ -702,11 +673,9 @@ def make_match_label(
     team_name,
 ):
 
-    parsed_date = (
-        pd.to_datetime(
-            match_date,
-            errors="coerce",
-        )
+    parsed_date = pd.to_datetime(
+        match_date,
+        errors="coerce",
     )
 
 
@@ -743,10 +712,13 @@ def played_matches_only(
 ):
 
     if data.empty:
+
         return data.copy()
 
 
-    result = data.copy()
+    result = (
+        data.copy()
+    )
 
 
     if {
@@ -767,11 +739,14 @@ def played_matches_only(
         )
 
 
-        result = result[
-            home_score.notna()
-            &
-            away_score.notna()
-        ].copy()
+        result = (
+            result[
+                home_score.notna()
+                &
+                away_score.notna()
+            ]
+            .copy()
+        )
 
 
     if (
@@ -779,13 +754,9 @@ def played_matches_only(
         in result.columns
     ):
 
-        result["match_date"] = (
-            pd.to_datetime(
-                result[
-                    "match_date"
-                ],
-                errors="coerce",
-            )
+        result["match_date"] = pd.to_datetime(
+            result["match_date"],
+            errors="coerce",
         )
 
 
@@ -796,19 +767,22 @@ def played_matches_only(
         )
 
 
-        result = result[
+        result = (
             result[
-                "match_date"
-            ].notna()
-            &
-            (
                 result[
                     "match_date"
-                ]
-                <=
-                today
-            )
-        ].copy()
+                ].notna()
+                &
+                (
+                    result[
+                        "match_date"
+                    ]
+                    <=
+                    today
+                )
+            ]
+            .copy()
+        )
 
 
     return result
@@ -889,7 +863,9 @@ def count_matches(
 
 
     return int(
-        len(result)
+        len(
+            result
+        )
     )
 
 
@@ -925,14 +901,11 @@ def get_played_match_ids(
 # MARCADOR + / -
 # ============================================================
 
-# ============================================================
-# MARCADOR + / -
-# ============================================================
-
 def increase_score(
     key,
     max_value=10,
 ):
+
     current_value = int(
         st.session_state.get(
             key,
@@ -940,7 +913,9 @@ def increase_score(
         )
     )
 
-    st.session_state[key] = min(
+    st.session_state[
+        key
+    ] = min(
         max_value,
         current_value + 1,
     )
@@ -950,6 +925,7 @@ def decrease_score(
     key,
     min_value=0,
 ):
+
     current_value = int(
         st.session_state.get(
             key,
@@ -957,7 +933,9 @@ def decrease_score(
         )
     )
 
-    st.session_state[key] = max(
+    st.session_state[
+        key
+    ] = max(
         min_value,
         current_value - 1,
     )
@@ -971,14 +949,19 @@ def score_stepper(
     max_value=10,
 ):
 
-    # Inicializar marcador una sola vez
-    if key not in st.session_state:
-        st.session_state[key] = int(
+    if (
+        key
+        not in
+        st.session_state
+    ):
+
+        st.session_state[
+            key
+        ] = int(
             default
         )
 
 
-    # Nombre del equipo
     st.html(
         f"""
         <div class="score-team-label">
@@ -988,7 +971,11 @@ def score_stepper(
     )
 
 
-    minus_col, score_col, plus_col = st.columns(
+    (
+        minus_col,
+        score_col,
+        plus_col,
+    ) = st.columns(
         [
             1,
             1.45,
@@ -998,27 +985,21 @@ def score_stepper(
     )
 
 
-    # --------------------------------------------------------
-    # RESTAR
-    # --------------------------------------------------------
-
     with minus_col:
 
         st.button(
             "−",
-            key=f"{key}_minus",
+            key=
+                f"{key}_minus",
             use_container_width=True,
-            on_click=decrease_score,
+            on_click=
+                decrease_score,
             args=(
                 key,
                 min_value,
             ),
         )
 
-
-    # --------------------------------------------------------
-    # VALOR ACTUAL
-    # --------------------------------------------------------
 
     with score_col:
 
@@ -1031,17 +1012,15 @@ def score_stepper(
         )
 
 
-    # --------------------------------------------------------
-    # SUMAR
-    # --------------------------------------------------------
-
     with plus_col:
 
         st.button(
             "+",
-            key=f"{key}_plus",
+            key=
+                f"{key}_plus",
             use_container_width=True,
-            on_click=increase_score,
+            on_click=
+                increase_score,
             args=(
                 key,
                 max_value,
@@ -1050,8 +1029,11 @@ def score_stepper(
 
 
     return int(
-        st.session_state[key]
+        st.session_state[
+            key
+        ]
     )
+
 
 # ============================================================
 # FEATURES AMIGABLES
@@ -1158,6 +1140,7 @@ def robust_scale(
 
 
     if numeric.empty:
+
         return 1.0
 
 
@@ -1221,7 +1204,9 @@ def build_context_from_history(
     medians=None,
 ):
 
-    pool = data.copy()
+    pool = (
+        data.copy()
+    )
 
 
     if pool.empty:
@@ -1263,7 +1248,8 @@ def build_context_from_history(
 
 
     components = pd.DataFrame(
-        index=pool.index
+        index=
+            pool.index
     )
 
 
@@ -1271,13 +1257,19 @@ def build_context_from_history(
         "minute"
     ] = (
         (
-            pool["minute"]
+            pool[
+                "minute"
+            ]
             -
-            float(minute)
+            float(
+                minute
+            )
         ).abs()
         /
         robust_scale(
-            pool["minute"]
+            pool[
+                "minute"
+            ]
         )
     )
 
@@ -1311,7 +1303,9 @@ def build_context_from_history(
         components[
             "venue"
         ] = (
-            pool["venue"]
+            pool[
+                "venue"
+            ]
             .astype(str)
             .str.upper()
             .ne(
@@ -1331,7 +1325,9 @@ def build_context_from_history(
         components[
             "opponent"
         ] = (
-            pool["opponent"]
+            pool[
+                "opponent"
+            ]
             .astype(str)
             .map(
                 normalize_text
@@ -1654,7 +1650,9 @@ def build_female_context_from_history(
     medians=None,
 ):
 
-    pool = data.copy()
+    pool = (
+        data.copy()
+    )
 
 
     if pool.empty:
@@ -1715,10 +1713,6 @@ def build_female_context_from_history(
     )
 
 
-    # ========================================================
-    # MISMO ESTADO
-    # ========================================================
-
     if (
         "current_tactical_state"
         in candidates.columns
@@ -1748,10 +1742,6 @@ def build_female_context_from_history(
             )
 
 
-    # ========================================================
-    # MISMA CONDICIÓN
-    # ========================================================
-
     if (
         "venue"
         in candidates.columns
@@ -1780,10 +1770,6 @@ def build_female_context_from_history(
                 filtered
             )
 
-
-    # ========================================================
-    # MISMO RIVAL SI EXISTE HISTORIAL
-    # ========================================================
 
     if (
         "opponent"
@@ -1815,10 +1801,6 @@ def build_female_context_from_history(
                 filtered
             )
 
-
-    # ========================================================
-    # DISTANCIA
-    # ========================================================
 
     components = pd.DataFrame(
         index=
@@ -1952,10 +1934,6 @@ def build_female_context_from_history(
         )
 
 
-    # ========================================================
-    # K DATA-DRIVEN
-    # ========================================================
-
     neighbor_count = int(
         np.ceil(
             np.sqrt(
@@ -1981,10 +1959,6 @@ def build_female_context_from_history(
         .copy()
     )
 
-
-    # ========================================================
-    # PESOS
-    # ========================================================
 
     distance_scale = (
         robust_scale(
@@ -2038,10 +2012,6 @@ def build_female_context_from_history(
         ].sum()
     )
 
-
-    # ========================================================
-    # FEATURES
-    # ========================================================
 
     feature_row = {}
 
@@ -2185,16 +2155,10 @@ def build_female_context_from_history(
         )
 
 
-    # ========================================================
-    # SIMILITUD
-    # ========================================================
-
-    mean_selected_distance = (
-        float(
-            selected[
-                "_distance"
-            ].mean()
-        )
+    mean_selected_distance = float(
+        selected[
+            "_distance"
+        ].mean()
     )
 
 
@@ -2245,17 +2209,10 @@ def calculate_historical_transition(
     ):
 
         return {
-            "state":
-                None,
-
-            "share":
-                np.nan,
-
-            "observations":
-                0,
-
-            "distribution":
-                pd.DataFrame(),
+            "state": None,
+            "share": np.nan,
+            "observations": 0,
+            "distribution": pd.DataFrame(),
         }
 
 
@@ -2301,17 +2258,10 @@ def calculate_historical_transition(
     if transition_data.empty:
 
         return {
-            "state":
-                None,
-
-            "share":
-                np.nan,
-
-            "observations":
-                0,
-
-            "distribution":
-                pd.DataFrame(),
+            "state": None,
+            "share": np.nan,
+            "observations": 0,
+            "distribution": pd.DataFrame(),
         }
 
 
@@ -2337,7 +2287,6 @@ def calculate_historical_transition(
                 "_weight",
                 "sum",
             ),
-
             observations=(
                 target,
                 "size",
@@ -2372,7 +2321,8 @@ def calculate_historical_transition(
 
 
     first = (
-        distribution.iloc[0]
+        distribution
+        .iloc[0]
     )
 
 
@@ -2438,20 +2388,11 @@ def calculate_male_metrics(
 ):
 
     output = {
-        "top1":
-            np.nan,
-
-        "top2":
-            np.nan,
-
-        "baseline":
-            np.nan,
-
-        "balanced":
-            np.nan,
-
-        "n":
-            0,
+        "top1": np.nan,
+        "top2": np.nan,
+        "baseline": np.nan,
+        "balanced": np.nan,
+        "n": 0,
     }
 
 
@@ -2697,7 +2638,7 @@ def get_xgb_importance(
 
 
 # ============================================================
-# SIMULACIÓN VARONIL
+# SIMULACIÓN
 # ============================================================
 
 def simulate_male_scenarios(
@@ -2707,20 +2648,16 @@ def simulate_male_scenarios(
     seed=42,
 ):
 
-    probabilities = (
-        np.asarray(
-            probabilities,
-            dtype=float,
-        )
+    probabilities = np.asarray(
+        probabilities,
+        dtype=float,
     )
 
 
-    probabilities = (
-        np.clip(
-            probabilities,
-            0,
-            None,
-        )
+    probabilities = np.clip(
+        probabilities,
+        0,
+        None,
     )
 
 
@@ -2731,10 +2668,8 @@ def simulate_male_scenarios(
     )
 
 
-    rng = (
-        np.random.default_rng(
-            seed
-        )
+    rng = np.random.default_rng(
+        seed
     )
 
 
@@ -2801,20 +2736,14 @@ def simulate_male_scenarios(
     return result
 
 
-# ============================================================
-# SIMULACIÓN FEMENIL
-# ============================================================
-
 def simulate_female_scenarios(
     probability_change,
     n_simulations=1000,
     seed=42,
 ):
 
-    rng = (
-        np.random.default_rng(
-            seed
-        )
+    rng = np.random.default_rng(
+        seed
     )
 
 
@@ -2880,7 +2809,456 @@ def simulate_female_scenarios(
 
 
 # ============================================================
-# HELPERS COMPLEMENTARIOS
+# IDENTIDAD DE JUEGO
+# ============================================================
+
+def first_existing_column(
+    data,
+    candidates,
+):
+
+    for column in candidates:
+
+        if column in data.columns:
+
+            return column
+
+    return None
+
+
+def safe_numeric_mean(
+    data,
+    column,
+):
+
+    if (
+        column is None
+        or
+        column
+        not in
+        data.columns
+        or
+        data.empty
+    ):
+
+        return np.nan
+
+
+    values = pd.to_numeric(
+        data[
+            column
+        ],
+        errors="coerce",
+    )
+
+
+    values = values[
+        np.isfinite(
+            values
+        )
+    ]
+
+
+    if values.empty:
+
+        return np.nan
+
+
+    return float(
+        values.mean()
+    )
+
+
+def build_play_identity_metrics(
+    data
+):
+
+    if data.empty:
+
+        return []
+
+
+    metric_definitions = [
+
+        {
+            "section":
+                "Fase ofensiva",
+
+            "name":
+                "Construcción",
+
+            "candidates": [
+                "pass_diff_last5",
+                "passes_diff_last5",
+                "america_pass_share_last5",
+                "america_possession_share_last5",
+            ],
+        },
+
+        {
+            "section":
+                "Fase ofensiva",
+
+            "name":
+                "Progresión",
+
+            "candidates": [
+                "progressive_pass_diff_last5",
+                "america_progressive_passes_last5",
+                "progressive_passes_last5",
+            ],
+        },
+
+        {
+            "section":
+                "Fase ofensiva",
+
+            "name":
+                "Generación de ocasiones",
+
+            "candidates": [
+                "entries_box_diff_last5",
+                "shots_diff_last5",
+                "america_shots_last5",
+                "america_entries_box_last5",
+            ],
+        },
+
+        {
+            "section":
+                "Fase defensiva",
+
+            "name":
+                "Presión",
+
+            "candidates": [
+                "pressure_diff_last5",
+                "america_pressure_share_5_last5",
+                "america_pressure_share_last5",
+            ],
+        },
+
+        {
+            "section":
+                "Fase defensiva",
+
+            "name":
+                "Recuperaciones",
+
+            "candidates": [
+                "recovery_height_diff_last5",
+                "recoveries_diff_last5",
+                "america_recoveries_last5",
+            ],
+        },
+
+        {
+            "section":
+                "Fase defensiva",
+
+            "name":
+                "Dominio territorial",
+
+            "candidates": [
+                "america_field_tilt_last5",
+                "field_tilt_diff_last5",
+                "field_tilt_last5",
+            ],
+        },
+    ]
+
+
+    output = []
+
+
+    for metric in metric_definitions:
+
+        column = first_existing_column(
+            data,
+            metric[
+                "candidates"
+            ],
+        )
+
+
+        if column is None:
+
+            continue
+
+
+        value = safe_numeric_mean(
+            data,
+            column,
+        )
+
+
+        if not np.isfinite(
+            value
+        ):
+
+            continue
+
+
+        output.append(
+            {
+                "section":
+                    metric[
+                        "section"
+                    ],
+
+                "name":
+                    metric[
+                        "name"
+                    ],
+
+                "column":
+                    column,
+
+                "value":
+                    value,
+            }
+        )
+
+
+    return output
+
+
+def relative_index(
+    selected_value,
+    global_value,
+):
+
+    if (
+        not np.isfinite(
+            selected_value
+        )
+        or
+        not np.isfinite(
+            global_value
+        )
+        or
+        global_value == 0
+    ):
+
+        return np.nan
+
+
+    return (
+        selected_value
+        /
+        global_value
+        *
+        100
+    )
+
+
+def identity_reading(
+    value
+):
+
+    if not np.isfinite(
+        value
+    ):
+
+        return (
+            "Sin datos"
+        )
+
+
+    if value >= 110:
+
+        return (
+            "Por encima de su referencia histórica"
+        )
+
+
+    if value <= 90:
+
+        return (
+            "Por debajo de su referencia histórica"
+        )
+
+
+    return (
+        "Cerca de su referencia histórica"
+    )
+
+
+# ============================================================
+# USO DE JUGADORES
+# ============================================================
+
+def build_player_usage_summary(
+    data
+):
+
+    if data.empty:
+
+        return {}
+
+
+    result = {}
+
+
+    if (
+        "player_out"
+        in data.columns
+    ):
+
+        series = (
+            data[
+                "player_out"
+            ]
+            .dropna()
+            .astype(str)
+        )
+
+
+        if not series.empty:
+
+            counts = (
+                series
+                .value_counts()
+            )
+
+            result[
+                "most_subbed_out"
+            ] = (
+                counts.index[0]
+            )
+
+            result[
+                "most_subbed_out_count"
+            ] = int(
+                counts.iloc[0]
+            )
+
+
+    if (
+        "player_in"
+        in data.columns
+    ):
+
+        series = (
+            data[
+                "player_in"
+            ]
+            .dropna()
+            .astype(str)
+        )
+
+
+        if not series.empty:
+
+            counts = (
+                series
+                .value_counts()
+            )
+
+            result[
+                "most_subbed_in"
+            ] = (
+                counts.index[0]
+            )
+
+            result[
+                "most_subbed_in_count"
+            ] = int(
+                counts.iloc[0]
+            )
+
+
+    if (
+        "minute"
+        in data.columns
+    ):
+
+        minutes = (
+            pd.to_numeric(
+                data[
+                    "minute"
+                ],
+                errors="coerce",
+            )
+            .dropna()
+        )
+
+
+        if not minutes.empty:
+
+            result[
+                "median_minute"
+            ] = int(
+                round(
+                    minutes.median()
+                )
+            )
+
+
+    if {
+        "player_out",
+        "player_in",
+    }.issubset(
+        data.columns
+    ):
+
+        pairs = (
+            data[
+                [
+                    "player_out",
+                    "player_in",
+                ]
+            ]
+            .dropna()
+            .astype(str)
+            .copy()
+        )
+
+
+        if not pairs.empty:
+
+            pairs[
+                "pair"
+            ] = (
+                pairs[
+                    "player_out"
+                ]
+                +
+                " → "
+                +
+                pairs[
+                    "player_in"
+                ]
+            )
+
+
+            pair_counts = (
+                pairs[
+                    "pair"
+                ]
+                .value_counts()
+            )
+
+
+            result[
+                "common_pair"
+            ] = (
+                pair_counts.index[0]
+            )
+
+
+            result[
+                "common_pair_count"
+            ] = int(
+                pair_counts.iloc[0]
+            )
+
+
+    return result
+
+
+# ============================================================
+# COMPLEMENTARIOS
 # ============================================================
 
 def render_before_after(
@@ -2930,7 +3308,9 @@ def render_before_after(
 
         changes[
             label
-        ] = difference
+        ] = (
+            difference
+        )
 
 
         if difference > 0:
@@ -3124,10 +3504,14 @@ def aggregate_set_pieces(
 
     if data.empty:
 
-        return pd.DataFrame()
+        return (
+            pd.DataFrame()
+        )
 
 
-    data = data.copy()
+    data = (
+        data.copy()
+    )
 
 
     for column in [
@@ -3166,7 +3550,9 @@ def aggregate_set_pieces(
         data.columns
     ):
 
-        return pd.DataFrame()
+        return (
+            pd.DataFrame()
+        )
 
 
     result = (
@@ -3219,7 +3605,7 @@ def aggregate_set_pieces(
 
 
 # ============================================================
-# CARGA DE DATOS
+# CARGA
 # ============================================================
 
 male_simulator = load_csv(
@@ -3403,9 +3789,7 @@ if (
 # UMBRAL FEMENIL
 # ============================================================
 
-female_threshold = (
-    np.nan
-)
+female_threshold = np.nan
 
 
 if (
@@ -3457,7 +3841,9 @@ if (
 
     st.session_state[
         "section"
-    ] = "Varonil"
+    ] = (
+        "Varonil"
+    )
 
 
 # ============================================================
@@ -3827,7 +4213,9 @@ if (
 
     st.session_state[
         "section"
-    ] = selected_section
+    ] = (
+        selected_section
+    )
 
     st.rerun()
 
@@ -4308,13 +4696,6 @@ if (
 
                     cliponaxis=
                         False,
-
-                    textfont=dict(
-                        color=
-                            COACH_NAVY,
-                        size=
-                            14,
-                    ),
                 )
 
 
@@ -4475,10 +4856,6 @@ elif (
         try:
 
 
-            # =================================================
-            # CONTEXTOS FEMENILES REALMENTE CERCANOS
-            # =================================================
-
             (
                 feature_row,
                 neighbors,
@@ -4568,10 +4945,6 @@ elif (
             )
 
 
-            # =================================================
-            # DESTINO HISTÓRICO
-            # =================================================
-
             if transition_state:
 
                 transition_title = (
@@ -4586,10 +4959,6 @@ elif (
                     "SIN PATRÓN"
                 )
 
-
-            # =================================================
-            # ACCIÓN
-            # =================================================
 
             if predicted_change:
 
@@ -4672,10 +5041,6 @@ elif (
                         "comparables."
                     )
 
-
-            # =================================================
-            # TARJETAS
-            # =================================================
 
             (
                 f1,
@@ -4800,7 +5165,7 @@ elif (
 
                         <div class="confidence-details">
 
-                            Probabilidad de cambio:
+                            Probabilidad:
 
                             <strong>
                                 {safe_percent(probability_change)}
@@ -4816,7 +5181,7 @@ elif (
 
                             <br>
 
-                            Distancia al umbral:
+                            Distancia:
 
                             <strong>
                                 {percentage_points(
@@ -4992,13 +5357,6 @@ elif (
                     textposition=
                         "outside",
 
-                    textfont=dict(
-                        color=
-                            COACH_NAVY,
-                        size=
-                            14,
-                    ),
-
                     cliponaxis=
                         False,
                 )
@@ -5055,11 +5413,6 @@ elif (
                             {safe_percent(dominant["share"])}
                         </div>
 
-                        <div class="simulation-summary-text">
-                            Resultado observado con mayor
-                            frecuencia en las repeticiones.
-                        </div>
-
                     </div>
                     """
                 )
@@ -5098,7 +5451,7 @@ elif (
         <div class="page-description">
             Explora predicciones realizadas sobre partidos
             reservados para evaluación y no utilizados durante
-            el entrenamiento del modelo.
+            el entrenamiento.
         </div>
         """
     )
@@ -5119,7 +5472,7 @@ elif (
 
 
     # ========================================================
-    # REVISIÓN VARONIL
+    # VARONIL TEST
     # ========================================================
 
     if (
@@ -5130,7 +5483,8 @@ elif (
 
 
         history = (
-            male_coach.copy()
+            male_coach
+            .copy()
         )
 
 
@@ -5204,15 +5558,14 @@ elif (
 
 
             st.warning(
-                "No existen partidos TEST disponibles "
-                "para Varonil."
+                "No existen partidos TEST disponibles."
             )
 
 
         else:
 
 
-            available_opponents = sorted(
+            rivals = sorted(
                 matches[
                     "opponent"
                 ]
@@ -5238,10 +5591,10 @@ elif (
             with rival_col:
 
 
-                selected_opponent = (
+                selected_rival = (
                     st.selectbox(
                         "Rival",
-                        available_opponents,
+                        rivals,
                         key=
                             "history_male_opponent",
                     )
@@ -5255,7 +5608,7 @@ elif (
                     ]
                     .astype(str)
                     ==
-                    selected_opponent
+                    selected_rival
                 ]
                 .copy()
             )
@@ -5295,7 +5648,7 @@ elif (
                 )
 
 
-            selected_match_id = (
+            match_id = (
                 filtered_matches.loc[
                     filtered_matches[
                         "label"
@@ -5314,7 +5667,7 @@ elif (
                         "_match_id"
                     ]
                     ==
-                    selected_match_id
+                    match_id
                 ]
                 .copy()
             )
@@ -5346,336 +5699,254 @@ elif (
             )
 
 
-            if match_data.empty:
-
-
-                st.warning(
-                    "No existen observaciones TEST "
-                    "para este partido."
+            selected_minute = (
+                st.slider(
+                    "Minuto",
+                    0,
+                    90,
+                    45,
+                    1,
+                    key=
+                        "history_male_minute",
                 )
+            )
 
 
-            else:
-
-
-                # =============================================
-                # SLIDER REAL 0 - 90
-                # =============================================
-
-                selected_minute = (
-                    st.slider(
-                        "Minuto",
-                        min_value=
-                            0,
-                        max_value=
-                            90,
-                        value=
-                            45,
-                        step=
-                            1,
-                        key=
-                            "history_male_minute",
-                    )
-                )
-
-
-                # =============================================
-                # BUSCAR OBSERVACIÓN TEST MÁS CERCANA
-                # =============================================
-
-                minute_distance = (
+            nearest_index = (
+                (
                     match_data[
                         "minute"
                     ]
                     -
                     selected_minute
-                ).abs()
-
-
-                nearest_index = (
-                    minute_distance
-                    .idxmin()
                 )
+                .abs()
+                .idxmin()
+            )
 
 
-                row = (
-                    match_data
-                    .loc[
-                        nearest_index
-                    ]
-                )
-
-
-                actual_test_minute = int(
-                    row[
-                        "minute"
-                    ]
-                )
-
-
-                # =============================================
-                # ESTADOS
-                # =============================================
-
-                current = (
-                    str(
-                        row[
-                            "current_state"
-                        ]
-                    )
-                    .upper()
-                )
-
-
-                predicted = (
-                    str(
-                        row[
-                            "predicted_state"
-                        ]
-                    )
-                    .upper()
-                )
-
-
-                second = (
-                    str(
-                        row[
-                            "second_state"
-                        ]
-                    )
-                    .upper()
-                )
-
-
-                actual = (
-                    str(
-                        row[
-                            "actual_future_state"
-                        ]
-                    )
-                    .upper()
-                )
-
-
-                # =============================================
-                # RESULTADO
-                # =============================================
-
-                if (
-                    actual
-                    ==
-                    predicted
-                ):
-
-                    result = (
-                        "ACIERTO EXACTO"
-                    )
-
-
-                elif (
-                    actual
-                    ==
-                    second
-                ):
-
-                    result = (
-                        "ACIERTO TOP-2"
-                    )
-
-
-                else:
-
-                    result = (
-                        "NO ACIERTO"
-                    )
-
-
-                # =============================================
-                # AVISO SI NO EXISTE EL MINUTO EXACTO
-                # =============================================
-
-                if (
-                    actual_test_minute
-                    !=
-                    selected_minute
-                ):
-
-                    st.caption(
-                        f"No existe una observación TEST "
-                        f"exactamente en el minuto "
-                        f"{selected_minute}. "
-                        f"Se muestra la observación disponible "
-                        f"más cercana: minuto "
-                        f"{actual_test_minute}."
-                    )
-
-
-                # =============================================
-                # TARJETAS
-                # =============================================
-
-                columns = (
-                    st.columns(
-                        4,
-                        gap="medium",
-                    )
-                )
-
-
-                cards = [
-                    (
-                        "Estado actual",
-                        state_display(
-                            current
-                        ),
-                    ),
-
-                    (
-                        "Primera predicción",
-                        state_display(
-                            predicted
-                        ),
-                    ),
-
-                    (
-                        "Estado real +5 min",
-                        state_display(
-                            actual
-                        ),
-                    ),
-
-                    (
-                        "Resultado",
-                        result,
-                    ),
+            row = (
+                match_data.loc[
+                    nearest_index
                 ]
+            )
 
 
-                for (
-                    column,
-                    (
-                        label,
-                        value,
+            real_minute = int(
+                row[
+                    "minute"
+                ]
+            )
+
+
+            if (
+                real_minute
+                !=
+                selected_minute
+            ):
+
+                st.caption(
+                    f"No existe observación TEST exactamente "
+                    f"en el minuto {selected_minute}; "
+                    f"se muestra la más cercana: "
+                    f"minuto {real_minute}."
+                )
+
+
+            current = str(
+                row[
+                    "current_state"
+                ]
+            ).upper()
+
+
+            predicted = str(
+                row[
+                    "predicted_state"
+                ]
+            ).upper()
+
+
+            second = str(
+                row[
+                    "second_state"
+                ]
+            ).upper()
+
+
+            actual = str(
+                row[
+                    "actual_future_state"
+                ]
+            ).upper()
+
+
+            if actual == predicted:
+
+                result = (
+                    "ACIERTO EXACTO"
+                )
+
+            elif actual == second:
+
+                result = (
+                    "ACIERTO TOP-2"
+                )
+
+            else:
+
+                result = (
+                    "NO ACIERTO"
+                )
+
+
+            columns = (
+                st.columns(
+                    4,
+                    gap="medium",
+                )
+            )
+
+
+            cards = [
+
+                (
+                    "Estado actual",
+                    state_display(
+                        current
                     ),
-                ) in zip(
-                    columns,
-                    cards,
-                ):
+                ),
+
+                (
+                    "Primera predicción",
+                    state_display(
+                        predicted
+                    ),
+                ),
+
+                (
+                    "Estado real +5 min",
+                    state_display(
+                        actual
+                    ),
+                ),
+
+                (
+                    "Resultado",
+                    result,
+                ),
+            ]
 
 
-                    with column:
+            for (
+                column,
+                (
+                    label,
+                    value,
+                ),
+            ) in zip(
+                columns,
+                cards,
+            ):
 
 
-                        st.html(
-                            f"""
-                            <div class="metric-card history-metric-card">
+                with column:
 
-                                <div class="metric-label">
-                                    {label}
-                                </div>
 
-                                <div class="history-state-value">
-                                    {value}
-                                </div>
+                    st.html(
+                        f"""
+                        <div class="metric-card history-metric-card">
 
+                            <div class="metric-label">
+                                {label}
                             </div>
-                            """
-                        )
 
+                            <div class="history-state-value">
+                                {value}
+                            </div>
 
-                # =============================================
-                # EXPLICACIÓN
-                # =============================================
-
-                st.html(
-                    f"""
-                    <div class="history-explanation">
-
-                        <div class="history-explanation-title">
-                            ¿Cómo interpretar el resultado?
                         </div>
+                        """
+                    )
 
 
-                        <div class="history-explanation-grid">
+            st.html(
+                f"""
+                <div class="history-explanation">
 
+                    <div class="history-explanation-title">
+                        ¿Cómo interpretar el resultado?
+                    </div>
 
-                            <div class="history-explanation-item">
+                    <div class="history-explanation-grid">
 
-                                <div class="history-explanation-badge exact">
-                                    ACIERTO EXACTO · TOP-1
-                                </div>
+                        <div class="history-explanation-item">
 
-                                <div class="history-explanation-text">
-                                    El estado observado cinco minutos
-                                    después coincide con la primera
-                                    opción del modelo.
-                                </div>
-
+                            <div class="history-explanation-badge exact">
+                                ACIERTO EXACTO · TOP-1
                             </div>
 
-
-                            <div class="history-explanation-item">
-
-                                <div class="history-explanation-badge top2">
-                                    ACIERTO TOP-2
-                                </div>
-
-                                <div class="history-explanation-text">
-                                    El estado real no fue la primera
-                                    opción, pero sí apareció como
-                                    segunda alternativa.
-                                </div>
-
+                            <div class="history-explanation-text">
+                                El estado observado coincide con
+                                la primera predicción.
                             </div>
-
-
-                            <div class="history-explanation-item">
-
-                                <div class="history-explanation-badge miss">
-                                    NO ACIERTO
-                                </div>
-
-                                <div class="history-explanation-text">
-                                    El estado observado no apareció
-                                    entre las dos principales
-                                    alternativas estimadas.
-                                </div>
-
-                            </div>
-
 
                         </div>
 
 
-                        <div class="history-test-summary">
+                        <div class="history-explanation-item">
 
-                            Rendimiento general TEST ·
+                            <div class="history-explanation-badge top2">
+                                ACIERTO TOP-2
+                            </div>
 
-                            Top-1:
+                            <div class="history-explanation-text">
+                                El estado real aparece como
+                                segunda alternativa.
+                            </div>
 
-                            <strong>
-                                {safe_percent(
-                                    male_evidence["top1"]
-                                )}
-                            </strong>
+                        </div>
 
-                            · Top-2:
 
-                            <strong>
-                                {safe_percent(
-                                    male_evidence["top2"]
-                                )}
-                            </strong>
+                        <div class="history-explanation-item">
+
+                            <div class="history-explanation-badge miss">
+                                NO ACIERTO
+                            </div>
+
+                            <div class="history-explanation-text">
+                                El estado real no apareció
+                                entre las dos primeras opciones.
+                            </div>
 
                         </div>
 
                     </div>
-                    """
-                )
+
+
+                    <div class="history-test-summary">
+
+                        TEST · Top-1:
+
+                        <strong>
+                            {safe_percent(male_evidence["top1"])}
+                        </strong>
+
+                        · Top-2:
+
+                        <strong>
+                            {safe_percent(male_evidence["top2"])}
+                        </strong>
+
+                    </div>
+
+                </div>
+                """
+            )
 
 
     # ========================================================
-    # REVISIÓN FEMENIL
+    # FEMENIL TEST
     # ========================================================
 
     else:
@@ -5698,7 +5969,7 @@ elif (
 
 
         history[
-            "match_id_normalized"
+            "_match_id"
         ] = (
             history[
                 "match_id"
@@ -5712,8 +5983,7 @@ elif (
         matches = (
             history[
                 [
-                    "match_id",
-                    "match_id_normalized",
+                    "_match_id",
                     "match_date",
                     "opponent",
                 ]
@@ -5736,15 +6006,14 @@ elif (
 
 
             st.warning(
-                "No existen partidos TEST disponibles "
-                "para Femenil."
+                "No existen partidos TEST disponibles."
             )
 
 
         else:
 
 
-            available_opponents = sorted(
+            rivals = sorted(
                 matches[
                     "opponent"
                 ]
@@ -5770,10 +6039,10 @@ elif (
             with rival_col:
 
 
-                selected_opponent = (
+                selected_rival = (
                     st.selectbox(
                         "Rival",
-                        available_opponents,
+                        rivals,
                         key=
                             "history_female_opponent",
                     )
@@ -5787,7 +6056,7 @@ elif (
                     ]
                     .astype(str)
                     ==
-                    selected_opponent
+                    selected_rival
                 ]
                 .copy()
             )
@@ -5827,14 +6096,14 @@ elif (
                 )
 
 
-            selected_match_id = (
+            match_id = (
                 filtered_matches.loc[
                     filtered_matches[
                         "label"
                     ]
                     ==
                     selected_match,
-                    "match_id_normalized",
+                    "_match_id",
                 ]
                 .iloc[0]
             )
@@ -5843,10 +6112,10 @@ elif (
             match_data = (
                 history[
                     history[
-                        "match_id_normalized"
+                        "_match_id"
                     ]
                     ==
-                    selected_match_id
+                    match_id
                 ]
                 .copy()
             )
@@ -5878,300 +6147,249 @@ elif (
             )
 
 
-            if match_data.empty:
-
-
-                st.warning(
-                    "No existen observaciones TEST "
-                    "para este partido."
+            selected_minute = (
+                st.slider(
+                    "Minuto",
+                    0,
+                    90,
+                    45,
+                    1,
+                    key=
+                        "history_female_minute",
                 )
+            )
 
 
-            else:
-
-
-                # =============================================
-                # SLIDER REAL 0 - 90
-                # =============================================
-
-                selected_minute = (
-                    st.slider(
-                        "Minuto",
-                        min_value=
-                            0,
-                        max_value=
-                            90,
-                        value=
-                            45,
-                        step=
-                            1,
-                        key=
-                            "history_female_minute",
-                    )
-                )
-
-
-                # =============================================
-                # OBSERVACIÓN MÁS CERCANA
-                # =============================================
-
-                minute_distance = (
+            nearest_index = (
+                (
                     match_data[
                         "minute"
                     ]
                     -
                     selected_minute
-                ).abs()
-
-
-                nearest_index = (
-                    minute_distance
-                    .idxmin()
                 )
+                .abs()
+                .idxmin()
+            )
 
 
-                row = (
-                    match_data
-                    .loc[
-                        nearest_index
-                    ]
-                )
-
-
-                actual_test_minute = int(
-                    row[
-                        "minute"
-                    ]
-                )
-
-
-                # =============================================
-                # DATOS
-                # =============================================
-
-                current = (
-                    str(
-                        row[
-                            "current_state"
-                        ]
-                    )
-                    .upper()
-                )
-
-
-                probability = float(
-                    row[
-                        "probability_change"
-                    ]
-                )
-
-
-                predicted_change = (
-                    interpret_change_value(
-                        row[
-                            "predicted_change"
-                        ]
-                    )
-                )
-
-
-                actual_change = (
-                    interpret_change_value(
-                        row[
-                            "actual_change"
-                        ]
-                    )
-                )
-
-
-                result = (
-                    "ACIERTO"
-                    if
-                    predicted_change
-                    ==
-                    actual_change
-                    else
-                    "NO ACIERTO"
-                )
-
-
-                if (
-                    actual_test_minute
-                    !=
-                    selected_minute
-                ):
-
-                    st.caption(
-                        f"No existe una observación TEST "
-                        f"exactamente en el minuto "
-                        f"{selected_minute}. "
-                        f"Se muestra la observación disponible "
-                        f"más cercana: minuto "
-                        f"{actual_test_minute}."
-                    )
-
-
-                # =============================================
-                # TARJETAS
-                # =============================================
-
-                columns = (
-                    st.columns(
-                        4,
-                        gap="medium",
-                    )
-                )
-
-
-                cards = [
-                    (
-                        "Estado actual",
-                        state_display(
-                            current
-                        ),
-                    ),
-
-                    (
-                        "Probabilidad de cambio",
-                        safe_percent(
-                            probability
-                        ),
-                    ),
-
-                    (
-                        "Cambio real +5 min",
-                        actual_change,
-                    ),
-
-                    (
-                        "Resultado",
-                        result,
-                    ),
+            row = (
+                match_data.loc[
+                    nearest_index
                 ]
+            )
 
 
-                for (
-                    column,
-                    (
-                        label,
-                        value,
+            real_minute = int(
+                row[
+                    "minute"
+                ]
+            )
+
+
+            if (
+                real_minute
+                !=
+                selected_minute
+            ):
+
+                st.caption(
+                    f"No existe observación TEST exactamente "
+                    f"en el minuto {selected_minute}; "
+                    f"se muestra la más cercana: "
+                    f"minuto {real_minute}."
+                )
+
+
+            current = str(
+                row[
+                    "current_state"
+                ]
+            ).upper()
+
+
+            probability = float(
+                row[
+                    "probability_change"
+                ]
+            )
+
+
+            predicted_change = (
+                interpret_change_value(
+                    row[
+                        "predicted_change"
+                    ]
+                )
+            )
+
+
+            actual_change = (
+                interpret_change_value(
+                    row[
+                        "actual_change"
+                    ]
+                )
+            )
+
+
+            result = (
+                "ACIERTO"
+                if
+                predicted_change
+                ==
+                actual_change
+                else
+                "NO ACIERTO"
+            )
+
+
+            columns = (
+                st.columns(
+                    4,
+                    gap="medium",
+                )
+            )
+
+
+            cards = [
+
+                (
+                    "Estado actual",
+                    state_display(
+                        current
                     ),
-                ) in zip(
-                    columns,
-                    cards,
-                ):
+                ),
+
+                (
+                    "Probabilidad de cambio",
+                    safe_percent(
+                        probability
+                    ),
+                ),
+
+                (
+                    "Cambio real +5 min",
+                    actual_change,
+                ),
+
+                (
+                    "Resultado",
+                    result,
+                ),
+            ]
 
 
-                    with column:
+            for (
+                column,
+                (
+                    label,
+                    value,
+                ),
+            ) in zip(
+                columns,
+                cards,
+            ):
 
 
-                        st.html(
-                            f"""
-                            <div class="metric-card history-metric-card">
+                with column:
 
-                                <div class="metric-label">
-                                    {label}
-                                </div>
 
-                                <div class="history-state-value">
-                                    {value}
-                                </div>
+                    st.html(
+                        f"""
+                        <div class="metric-card history-metric-card">
 
+                            <div class="metric-label">
+                                {label}
                             </div>
-                            """
-                        )
 
+                            <div class="history-state-value">
+                                {value}
+                            </div>
 
-                # =============================================
-                # EXPLICACIÓN
-                # =============================================
-
-                st.html(
-                    f"""
-                    <div class="history-explanation">
-
-                        <div class="history-explanation-title">
-                            ¿Cómo interpretar el resultado?
                         </div>
+                        """
+                    )
 
 
-                        <div class="history-explanation-grid">
+            st.html(
+                f"""
+                <div class="history-explanation">
 
+                    <div class="history-explanation-title">
+                        ¿Cómo interpretar el resultado?
+                    </div>
 
-                            <div class="history-explanation-item">
+                    <div class="history-explanation-grid">
 
-                                <div class="history-explanation-badge exact">
-                                    ACIERTO
-                                </div>
+                        <div class="history-explanation-item">
 
-                                <div class="history-explanation-text">
-                                    La clasificación del modelo
-                                    coincide con lo observado:
-                                    cambio o estabilidad.
-                                </div>
-
+                            <div class="history-explanation-badge exact">
+                                ACIERTO
                             </div>
 
-
-                            <div class="history-explanation-item">
-
-                                <div class="history-explanation-badge miss">
-                                    NO ACIERTO
-                                </div>
-
-                                <div class="history-explanation-text">
-                                    La clasificación estimada
-                                    no coincide con lo observado
-                                    cinco minutos después.
-                                </div>
-
+                            <div class="history-explanation-text">
+                                La clasificación coincide con
+                                el resultado observado.
                             </div>
-
-
-                            <div class="history-explanation-item">
-
-                                <div class="history-explanation-badge top2">
-                                    PROBABILIDAD
-                                </div>
-
-                                <div class="history-explanation-text">
-
-                                    El modelo estimó una
-                                    probabilidad de cambio de
-
-                                    <strong>
-                                        {safe_percent(
-                                            probability
-                                        )}
-                                    </strong>.
-
-                                </div>
-
-                            </div>
-
 
                         </div>
 
 
-                        <div class="history-test-summary">
+                        <div class="history-explanation-item">
 
-                            Predicción:
+                            <div class="history-explanation-badge miss">
+                                NO ACIERTO
+                            </div>
 
-                            <strong>
-                                {predicted_change}
-                            </strong>
+                            <div class="history-explanation-text">
+                                La clasificación no coincide
+                                con lo observado.
+                            </div>
 
-                            · Resultado real:
+                        </div>
 
-                            <strong>
-                                {actual_change}
-                            </strong>
+
+                        <div class="history-explanation-item">
+
+                            <div class="history-explanation-badge top2">
+                                PROBABILIDAD
+                            </div>
+
+                            <div class="history-explanation-text">
+
+                                Probabilidad estimada:
+
+                                <strong>
+                                    {safe_percent(probability)}
+                                </strong>
+
+                            </div>
 
                         </div>
 
                     </div>
-                    """
-                )
+
+
+                    <div class="history-test-summary">
+
+                        Predicción:
+
+                        <strong>
+                            {predicted_change}
+                        </strong>
+
+                        · Resultado real:
+
+                        <strong>
+                            {actual_change}
+                        </strong>
+
+                    </div>
+
+                </div>
+                """
+            )
 
 
 # ============================================================
@@ -6194,12 +6412,12 @@ elif (
         </div>
 
         <div class="page-title">
-            Jugadores y balón parado
+            Identidad, jugadores y balón parado
         </div>
 
         <div class="page-description">
-            Explora sustituciones y jugadas a balón parado
-            desde una lectura global o a nivel de partido.
+            Explora identidad de juego, uso de jugadores,
+            sustituciones y situaciones a balón parado.
         </div>
         """
     )
@@ -6250,6 +6468,7 @@ elif (
         st.radio(
             "Análisis",
             [
+                "Identidad de juego",
                 "Jugadores y sustituciones",
                 "Balón parado ofensivo",
                 "Balón parado defensivo",
@@ -6287,10 +6506,607 @@ elif (
 
 
     # ========================================================
-    # SUSTITUCIONES
+    # IDENTIDAD DE JUEGO
     # ========================================================
 
     if (
+        complementary_section
+        ==
+        "Identidad de juego"
+    ):
+
+
+        st.markdown(
+            "### Identidad de juego"
+        )
+
+
+        st.caption(
+            "Resume construcción, progresión, generación "
+            "de ocasiones y comportamiento defensivo."
+        )
+
+
+        if (
+            complementary_team
+            ==
+            "Varonil"
+        ):
+
+            identity_data = (
+                male_simulator
+                .copy()
+            )
+
+        else:
+
+            identity_data = (
+                female_simulator
+                .copy()
+            )
+
+
+        if (
+            "match_id"
+            in identity_data.columns
+        ):
+
+            identity_data = (
+                attach_match_metadata(
+                    identity_data,
+                    metadata,
+                )
+            )
+
+
+        filtered_identity = (
+            identity_data
+            .copy()
+        )
+
+
+        if (
+            complementary_view
+            ==
+            "Por partido"
+        ):
+
+
+            if (
+                "opponent"
+                in filtered_identity.columns
+            ):
+
+
+                rivals = sorted(
+                    filtered_identity[
+                        "opponent"
+                    ]
+                    .dropna()
+                    .astype(str)
+                    .unique()
+                    .tolist()
+                )
+
+
+                (
+                    rival_col,
+                    match_col,
+                ) = st.columns(
+                    [
+                        0.9,
+                        2.1,
+                    ],
+                    gap="medium",
+                )
+
+
+                with rival_col:
+
+
+                    identity_rival = (
+                        st.selectbox(
+                            "Rival",
+                            rivals,
+                            key=
+                                "identity_rival",
+                        )
+                    )
+
+
+                filtered_identity = (
+                    filtered_identity[
+                        filtered_identity[
+                            "opponent"
+                        ]
+                        .astype(str)
+                        ==
+                        identity_rival
+                    ]
+                    .copy()
+                )
+
+
+                if (
+                    "_match_id"
+                    in
+                    filtered_identity.columns
+                ):
+
+
+                    matches = (
+                        filtered_identity[
+                            [
+                                "_match_id",
+                                "match_date",
+                                "opponent",
+                            ]
+                        ]
+                        .drop_duplicates()
+                        .copy()
+                    )
+
+
+                    matches[
+                        "label"
+                    ] = (
+                        matches.apply(
+                            lambda row:
+                                make_match_label(
+                                    row[
+                                        "match_date"
+                                    ],
+                                    row[
+                                        "opponent"
+                                    ],
+                                    team_name,
+                                ),
+                            axis=1,
+                        )
+                    )
+
+
+                    with match_col:
+
+
+                        identity_match = (
+                            st.selectbox(
+                                "Partido",
+                                matches[
+                                    "label"
+                                ].tolist(),
+                                key=
+                                    "identity_match",
+                            )
+                        )
+
+
+                    identity_match_id = (
+                        matches.loc[
+                            matches[
+                                "label"
+                            ]
+                            ==
+                            identity_match,
+                            "_match_id",
+                        ]
+                        .iloc[0]
+                    )
+
+
+                    filtered_identity = (
+                        filtered_identity[
+                            filtered_identity[
+                                "_match_id"
+                            ]
+                            ==
+                            identity_match_id
+                        ]
+                        .copy()
+                    )
+
+
+        selected_metrics = (
+            build_play_identity_metrics(
+                filtered_identity
+            )
+        )
+
+
+        global_metrics = (
+            build_play_identity_metrics(
+                identity_data
+            )
+        )
+
+
+        global_lookup = {
+            metric[
+                "name"
+            ]:
+                metric[
+                    "value"
+                ]
+
+            for metric
+            in global_metrics
+        }
+
+
+        st.html(
+            """
+            <div class="chart-help-box">
+
+                <div class="chart-help-title">
+                    ¿Cómo leer la identidad de juego?
+                </div>
+
+                <div class="chart-help-text">
+                    Los indicadores muestran el comportamiento
+                    del equipo frente a su propia referencia
+                    histórica.
+                </div>
+
+                <div class="chart-help-note">
+                    100% representa la referencia histórica
+                    del equipo. No es una probabilidad ni
+                    una calificación.
+                </div>
+
+            </div>
+            """
+        )
+
+
+        if not selected_metrics:
+
+
+            st.warning(
+                "No existen suficientes variables disponibles "
+                "para construir la identidad de juego."
+            )
+
+
+        else:
+
+
+            offensive = [
+                metric
+                for metric
+                in selected_metrics
+                if
+                metric[
+                    "section"
+                ]
+                ==
+                "Fase ofensiva"
+            ]
+
+
+            defensive = [
+                metric
+                for metric
+                in selected_metrics
+                if
+                metric[
+                    "section"
+                ]
+                ==
+                "Fase defensiva"
+            ]
+
+
+            st.markdown(
+                "#### Fase ofensiva"
+            )
+
+
+            if offensive:
+
+
+                columns = st.columns(
+                    len(
+                        offensive
+                    ),
+                    gap="medium",
+                )
+
+
+                for (
+                    column,
+                    metric,
+                ) in zip(
+                    columns,
+                    offensive,
+                ):
+
+
+                    baseline = (
+                        global_lookup.get(
+                            metric[
+                                "name"
+                            ],
+                            np.nan,
+                        )
+                    )
+
+
+                    index_value = (
+                        relative_index(
+                            metric[
+                                "value"
+                            ],
+                            baseline,
+                        )
+                    )
+
+
+                    with column:
+
+
+                        st.html(
+                            f"""
+                            <div class="metric-card complementary-metric-card">
+
+                                <div class="metric-label">
+                                    {metric["name"]}
+                                </div>
+
+                                <div class="metric-value">
+                                    {
+                                        f"{index_value:.0f}%"
+                                        if np.isfinite(index_value)
+                                        else "N/D"
+                                    }
+                                </div>
+
+                            </div>
+                            """
+                        )
+
+
+                        st.caption(
+                            identity_reading(
+                                index_value
+                            )
+                        )
+
+
+            st.markdown(
+                "#### Fase defensiva"
+            )
+
+
+            if defensive:
+
+
+                columns = st.columns(
+                    len(
+                        defensive
+                    ),
+                    gap="medium",
+                )
+
+
+                for (
+                    column,
+                    metric,
+                ) in zip(
+                    columns,
+                    defensive,
+                ):
+
+
+                    baseline = (
+                        global_lookup.get(
+                            metric[
+                                "name"
+                            ],
+                            np.nan,
+                        )
+                    )
+
+
+                    index_value = (
+                        relative_index(
+                            metric[
+                                "value"
+                            ],
+                            baseline,
+                        )
+                    )
+
+
+                    with column:
+
+
+                        st.html(
+                            f"""
+                            <div class="metric-card complementary-metric-card">
+
+                                <div class="metric-label">
+                                    {metric["name"]}
+                                </div>
+
+                                <div class="metric-value">
+                                    {
+                                        f"{index_value:.0f}%"
+                                        if np.isfinite(index_value)
+                                        else "N/D"
+                                    }
+                                </div>
+
+                            </div>
+                            """
+                        )
+
+
+                        st.caption(
+                            identity_reading(
+                                index_value
+                            )
+                        )
+
+
+            chart_rows = []
+
+
+            for metric in selected_metrics:
+
+
+                baseline = (
+                    global_lookup.get(
+                        metric[
+                            "name"
+                        ],
+                        np.nan,
+                    )
+                )
+
+
+                index_value = (
+                    relative_index(
+                        metric[
+                            "value"
+                        ],
+                        baseline,
+                    )
+                )
+
+
+                if np.isfinite(
+                    index_value
+                ):
+
+                    chart_rows.append(
+                        {
+                            "Indicador":
+                                metric[
+                                    "name"
+                                ],
+
+                            "Índice":
+                                index_value,
+                        }
+                    )
+
+
+            chart_data = pd.DataFrame(
+                chart_rows
+            )
+
+
+            if not chart_data.empty:
+
+
+                chart_data = (
+                    chart_data
+                    .sort_values(
+                        "Índice",
+                        ascending=True,
+                    )
+                )
+
+
+                figure = px.bar(
+                    chart_data,
+                    x=
+                        "Índice",
+                    y=
+                        "Indicador",
+                    orientation=
+                        "h",
+                    text=
+                        "Índice",
+                )
+
+
+                figure.update_traces(
+                    marker_color=
+                        COACH_YELLOW,
+
+                    texttemplate=
+                        "%{text:.0f}%",
+
+                    textposition=
+                        "outside",
+
+                    cliponaxis=
+                        False,
+                )
+
+
+                maximum = float(
+                    chart_data[
+                        "Índice"
+                    ].max()
+                )
+
+
+                figure = (
+                    apply_coachlens_chart_style(
+                        figure,
+                        height=
+                            max(
+                                300,
+                                110
+                                +
+                                (
+                                    len(
+                                        chart_data
+                                    )
+                                    *
+                                    45
+                                ),
+                            ),
+                        x_title=
+                            "Índice relativo · 100% = referencia histórica",
+                        y_title=
+                            "",
+                    )
+                )
+
+
+                figure.update_xaxes(
+                    ticksuffix=
+                        "%",
+                    range=[
+                        0,
+                        max(
+                            130,
+                            maximum
+                            +
+                            12,
+                        ),
+                    ],
+                )
+
+
+                figure.add_vline(
+                    x=
+                        100,
+                    line_dash=
+                        "dash",
+                    line_width=
+                        1,
+                )
+
+
+                st.plotly_chart(
+                    figure,
+                    use_container_width=True,
+                    config={
+                        "displayModeBar":
+                            False
+                    },
+                )
+
+
+    # ========================================================
+    # JUGADORES Y SUSTITUCIONES
+    # ========================================================
+
+    elif (
         complementary_section
         ==
         "Jugadores y sustituciones"
@@ -6372,15 +7188,15 @@ elif (
         ):
 
 
-            st.caption(
-                "Resume el comportamiento promedio de las "
-                "ventanas de diez minutos anteriores y "
-                "posteriores a las sustituciones disponibles."
+            total_substitutions = int(
+                len(
+                    substitutions
+                )
             )
 
 
-            total_substitutions = int(
-                len(
+            usage = (
+                build_player_usage_summary(
                     substitutions
                 )
             )
@@ -6408,59 +7224,120 @@ elif (
             )
 
 
-            global_values = [
-
-                (
-                    "Tiros",
-
-                    substitutions[
-                        "shots_before"
-                    ].mean(),
-
-                    substitutions[
-                        "shots_after"
-                    ].mean(),
-                ),
+            usage_cards = []
 
 
-                (
-                    "Presiones",
+            if (
+                "most_subbed_in"
+                in usage
+            ):
 
-                    substitutions[
-                        "pressures_before"
-                    ].mean(),
-
-                    substitutions[
-                        "pressures_after"
-                    ].mean(),
-                ),
-
-
-                (
-                    "Recuperaciones",
-
-                    substitutions[
-                        "recoveries_before"
-                    ].mean(),
-
-                    substitutions[
-                        "recoveries_after"
-                    ].mean(),
-                ),
+                usage_cards.append(
+                    (
+                        "Jugador que más entra",
+                        usage[
+                            "most_subbed_in"
+                        ],
+                    )
+                )
 
 
-                (
-                    "Pases",
+            if (
+                "most_subbed_out"
+                in usage
+            ):
 
-                    substitutions[
-                        "passes_before"
-                    ].mean(),
+                usage_cards.append(
+                    (
+                        "Jugador que más sale",
+                        usage[
+                            "most_subbed_out"
+                        ],
+                    )
+                )
 
-                    substitutions[
-                        "passes_after"
-                    ].mean(),
-                ),
-            ]
+
+            if (
+                "median_minute"
+                in usage
+            ):
+
+                usage_cards.append(
+                    (
+                        "Minuto típico del cambio",
+                        str(
+                            usage[
+                                "median_minute"
+                            ]
+                        ),
+                    )
+                )
+
+
+            if usage_cards:
+
+
+                columns = st.columns(
+                    len(
+                        usage_cards
+                    ),
+                    gap="medium",
+                )
+
+
+                for (
+                    column,
+                    (
+                        label,
+                        value,
+                    ),
+                ) in zip(
+                    columns,
+                    usage_cards,
+                ):
+
+
+                    with column:
+
+
+                        st.html(
+                            f"""
+                            <div class="metric-card complementary-metric-card">
+
+                                <div class="metric-label">
+                                    {label}
+                                </div>
+
+                                <div class="history-state-value">
+                                    {value}
+                                </div>
+
+                            </div>
+                            """
+                        )
+
+
+            if (
+                "common_pair"
+                in usage
+            ):
+
+
+                st.html(
+                    f"""
+                    <div class="complementary-reading">
+
+                        <div class="complementary-reading-title">
+                            Combinación de cambio más frecuente
+                        </div>
+
+                        <div class="complementary-reading-text">
+                            {usage["common_pair"]}
+                        </div>
+
+                    </div>
+                    """
+                )
 
 
             st.html(
@@ -6472,19 +7349,62 @@ elif (
                     </div>
 
                     <div class="chart-help-text">
-                        Cada valor representa el promedio por
-                        sustitución durante una ventana de
-                        diez minutos antes y diez minutos después.
+                        Compara los diez minutos anteriores
+                        y posteriores a las sustituciones.
                     </div>
 
                     <div class="chart-help-note">
-                        Describe asociación temporal.
-                        No demuestra efecto causal.
+                        Es una comparación descriptiva.
+                        No demuestra causalidad.
                     </div>
 
                 </div>
                 """
             )
+
+
+            global_values = [
+
+                (
+                    "Tiros",
+                    substitutions[
+                        "shots_before"
+                    ].mean(),
+                    substitutions[
+                        "shots_after"
+                    ].mean(),
+                ),
+
+                (
+                    "Presiones",
+                    substitutions[
+                        "pressures_before"
+                    ].mean(),
+                    substitutions[
+                        "pressures_after"
+                    ].mean(),
+                ),
+
+                (
+                    "Recuperaciones",
+                    substitutions[
+                        "recoveries_before"
+                    ].mean(),
+                    substitutions[
+                        "recoveries_after"
+                    ].mean(),
+                ),
+
+                (
+                    "Pases",
+                    substitutions[
+                        "passes_before"
+                    ].mean(),
+                    substitutions[
+                        "passes_after"
+                    ].mean(),
+                ),
+            ]
 
 
             changes = (
@@ -6544,7 +7464,8 @@ elif (
 
 
             long_data = (
-                plot_data.melt(
+                plot_data
+                .melt(
                     id_vars=
                         "Métrica",
                     var_name=
@@ -6623,7 +7544,8 @@ elif (
 
 
             st.caption(
-                "Selecciona rival, partido y sustitución."
+                "Selecciona rival, partido y después una "
+                "sustitución para revisar el detalle."
             )
 
 
@@ -6641,12 +7563,10 @@ elif (
             (
                 rival_col,
                 match_col,
-                sub_col,
             ) = st.columns(
                 [
-                    0.85,
-                    1.25,
-                    1.55,
+                    0.9,
+                    2.1,
                 ],
                 gap="medium",
             )
@@ -6712,7 +7632,7 @@ elif (
             with match_col:
 
 
-                selected_match_label = (
+                selected_match = (
                     st.selectbox(
                         "Partido",
                         match_options[
@@ -6724,13 +7644,13 @@ elif (
                 )
 
 
-            selected_match_id = (
+            match_id = (
                 match_options.loc[
                     match_options[
                         "label"
                     ]
                     ==
-                    selected_match_label,
+                    selected_match,
                     "_match_id",
                 ]
                 .iloc[0]
@@ -6743,9 +7663,196 @@ elif (
                         "_match_id"
                     ]
                     ==
-                    selected_match_id
+                    match_id
                 ]
                 .copy()
+            )
+
+
+            # =================================================
+            # RESUMEN DEL PARTIDO
+            # =================================================
+
+            match_usage = (
+                build_player_usage_summary(
+                    match_substitutions
+                )
+            )
+
+
+            total_match_substitutions = int(
+                len(
+                    match_substitutions
+                )
+            )
+
+
+            st.markdown(
+                "#### Resumen de sustituciones del partido"
+            )
+
+
+            summary_cards = [
+                (
+                    "Sustituciones",
+                    str(
+                        total_match_substitutions
+                    ),
+                ),
+            ]
+
+
+            if (
+                "most_subbed_in"
+                in match_usage
+            ):
+
+                summary_cards.append(
+                    (
+                        "Jugador que entra",
+                        match_usage[
+                            "most_subbed_in"
+                        ],
+                    )
+                )
+
+
+            if (
+                "most_subbed_out"
+                in match_usage
+            ):
+
+                summary_cards.append(
+                    (
+                        "Jugador que sale",
+                        match_usage[
+                            "most_subbed_out"
+                        ],
+                    )
+                )
+
+
+            if (
+                "median_minute"
+                in match_usage
+            ):
+
+                summary_cards.append(
+                    (
+                        "Minuto típico",
+                        str(
+                            match_usage[
+                                "median_minute"
+                            ]
+                        ),
+                    )
+                )
+
+
+            summary_columns = (
+                st.columns(
+                    len(
+                        summary_cards
+                    ),
+                    gap="medium",
+                )
+            )
+
+
+            for (
+                column,
+                (
+                    label,
+                    value,
+                ),
+            ) in zip(
+                summary_columns,
+                summary_cards,
+            ):
+
+
+                with column:
+
+
+                    st.html(
+                        f"""
+                        <div class="metric-card complementary-metric-card">
+
+                            <div class="metric-label">
+                                {label}
+                            </div>
+
+                            <div class="history-state-value">
+                                {value}
+                            </div>
+
+                        </div>
+                        """
+                    )
+
+
+            if (
+                "common_pair"
+                in match_usage
+            ):
+
+
+                pair_count = (
+                    match_usage.get(
+                        "common_pair_count",
+                        1,
+                    )
+                )
+
+
+                if (
+                    pair_count
+                    >
+                    1
+                ):
+
+                    pair_description = (
+                        f"Esta combinación apareció "
+                        f"{pair_count} veces en el partido."
+                    )
+
+                else:
+
+                    pair_description = (
+                        "En este partido no se repitió "
+                        "ninguna combinación de cambio; "
+                        "se muestra una de las sustituciones "
+                        "registradas."
+                    )
+
+
+                st.html(
+                    f"""
+                    <div class="complementary-reading">
+
+                        <div class="complementary-reading-title">
+                            Combinación de cambio más frecuente
+                        </div>
+
+                        <div class="complementary-reading-text">
+                            {match_usage["common_pair"]}
+                        </div>
+
+                        <div class="complementary-reading-note">
+                            {pair_description}
+                        </div>
+
+                    </div>
+                    """
+                )
+
+
+            # =================================================
+            # SELECTOR DE SUSTITUCIÓN
+            # =================================================
+
+            st.markdown(
+                "#### Detalle de una sustitución"
             )
 
 
@@ -6783,19 +7890,16 @@ elif (
             )
 
 
-            with sub_col:
-
-
-                selected_substitution = (
-                    st.selectbox(
-                        "Sustitución",
-                        match_substitutions[
-                            "selector"
-                        ].tolist(),
-                        key=
-                            "substitution_selection",
-                    )
+            selected_substitution = (
+                st.selectbox(
+                    "Sustitución",
+                    match_substitutions[
+                        "selector"
+                    ].tolist(),
+                    key=
+                        "substitution_selection",
                 )
+            )
 
 
             row = (
@@ -6867,7 +7971,6 @@ elif (
                     ],
                 ),
 
-
                 (
                     "Presiones",
                     row[
@@ -6878,7 +7981,6 @@ elif (
                     ],
                 ),
 
-
                 (
                     "Recuperaciones",
                     row[
@@ -6888,7 +7990,6 @@ elif (
                         "recoveries_after"
                     ],
                 ),
-
 
                 (
                     "Pases",
@@ -6923,7 +8024,7 @@ elif (
                 <div class="complementary-reading">
 
                     <div class="complementary-reading-title">
-                        Lectura del partido
+                        Lectura de la sustitución
                     </div>
 
                     <div class="complementary-reading-text">
@@ -6931,7 +8032,8 @@ elif (
                     </div>
 
                     <div class="complementary-reading-note">
-                        Comparación descriptiva.
+                        Comparación descriptiva de los diez
+                        minutos anteriores y posteriores.
                         No representa causalidad.
                     </div>
 
@@ -6964,7 +8066,8 @@ elif (
 
 
             long_data = (
-                plot_data.melt(
+                plot_data
+                .melt(
                     id_vars=
                         "Métrica",
                     var_name=
@@ -7001,6 +8104,7 @@ elif (
             figure.update_traces(
                 textposition=
                     "outside",
+
                 cliponaxis=
                     False,
             )
@@ -7055,25 +8159,20 @@ elif (
             "OFENSIVO"
         ):
 
-
             st.markdown(
                 "### Balón parado ofensivo"
             )
-
 
             st.caption(
                 "Analiza los córners y tiros libres "
                 "ejecutados por América."
             )
 
-
         else:
-
 
             st.markdown(
                 "### Balón parado defensivo"
             )
-
 
             st.caption(
                 "Analiza los córners y tiros libres "
@@ -7110,10 +8209,6 @@ elif (
             )
         )
 
-
-        # ====================================================
-        # FILTROS POR PARTIDO
-        # ====================================================
 
         if (
             complementary_view
@@ -7207,7 +8302,7 @@ elif (
             with match_col:
 
 
-                selected_match_label = (
+                selected_match = (
                     st.selectbox(
                         "Partido",
                         match_options[
@@ -7219,13 +8314,13 @@ elif (
                 )
 
 
-            selected_match_id = (
+            match_id = (
                 match_options.loc[
                     match_options[
                         "label"
                     ]
                     ==
-                    selected_match_label,
+                    selected_match,
                     "_match_id",
                 ]
                 .iloc[0]
@@ -7238,7 +8333,7 @@ elif (
                         "_match_id"
                     ]
                     ==
-                    selected_match_id
+                    match_id
                 ]
                 .copy()
             )
@@ -7256,7 +8351,7 @@ elif (
 
 
             type_options = [
-                "Todos",
+                "Todos"
             ]
 
 
@@ -7299,7 +8394,6 @@ elif (
                 "Córner"
             ):
 
-
                 set_piece_data = (
                     set_piece_data[
                         set_piece_data[
@@ -7317,7 +8411,6 @@ elif (
                 "Tiro libre"
             ):
 
-
                 set_piece_data = (
                     set_piece_data[
                         set_piece_data[
@@ -7328,10 +8421,6 @@ elif (
                     ]
                 )
 
-
-        # ====================================================
-        # RESUMEN
-        # ====================================================
 
         summary = (
             aggregate_set_pieces(
@@ -7400,7 +8489,6 @@ elif (
                 "OFENSIVO"
             ):
 
-
                 explanation = (
                     "Mide qué tan frecuentemente las "
                     "acciones de balón parado de América "
@@ -7418,8 +8506,17 @@ elif (
                 )
 
 
-            else:
+                shot_label = (
+                    "Tiros generados"
+                )
 
+
+                goal_label = (
+                    "Goles generados"
+                )
+
+
+            else:
 
                 explanation = (
                     "Mide qué tan frecuentemente las "
@@ -7436,6 +8533,16 @@ elif (
                     f"Equivale aproximadamente a "
                     f"{equivalent_per_100} de cada 100 "
                     f"ejecuciones."
+                )
+
+
+                shot_label = (
+                    "Tiros concedidos"
+                )
+
+
+                goal_label = (
+                    "Goles concedidos"
                 )
 
 
@@ -7468,28 +8575,6 @@ elif (
             ) = st.columns(
                 4,
                 gap="medium",
-            )
-
-
-            shot_label = (
-                "Tiros generados"
-                if
-                selected_phase
-                ==
-                "OFENSIVO"
-                else
-                "Tiros concedidos"
-            )
-
-
-            goal_label = (
-                "Goles generados"
-                if
-                selected_phase
-                ==
-                "OFENSIVO"
-                else
-                "Goles concedidos"
             )
 
 
@@ -7550,11 +8635,6 @@ elif (
                     )
 
 
-            st.markdown(
-                "#### Desglose por tipo de jugada"
-            )
-
-
             summary[
                 "Tipo"
             ] = (
@@ -7570,6 +8650,11 @@ elif (
                             "Tiro libre",
                     }
                 )
+            )
+
+
+            st.markdown(
+                "#### Desglose por tipo de jugada"
             )
 
 
@@ -7659,10 +8744,6 @@ elif (
                         """
                     )
 
-
-            # =================================================
-            # GRÁFICA
-            # =================================================
 
             plot_data = (
                 summary[
@@ -7779,10 +8860,6 @@ elif (
             )
 
 
-            # =================================================
-            # CONCLUSIÓN
-            # =================================================
-
             main_row = (
                 summary
                 .sort_values(
@@ -7793,26 +8870,11 @@ elif (
             )
 
 
-            main_type = (
-                main_row[
-                    "Tipo"
-                ]
-            )
-
-
-            main_rate = float(
-                main_row[
-                    "shot_rate"
-                ]
-            )
-
-
             if (
                 selected_phase
                 ==
                 "OFENSIVO"
             ):
-
 
                 reading_title = (
                     "Mayor generación de tiro"
@@ -7820,14 +8882,13 @@ elif (
 
 
                 conclusion = (
-                    f"{main_type} presenta la mayor tasa "
-                    f"de generación de tiro en la selección "
-                    f"actual: {safe_percent(main_rate)}."
+                    f"{main_row['Tipo']} presenta la mayor "
+                    f"tasa de generación de tiro: "
+                    f"{safe_percent(main_row['shot_rate'])}."
                 )
 
 
             else:
-
 
                 reading_title = (
                     "Mayor vulnerabilidad relativa"
@@ -7835,9 +8896,9 @@ elif (
 
 
                 conclusion = (
-                    f"{main_type} presenta la mayor tasa "
-                    f"de tiro rival en la selección actual: "
-                    f"{safe_percent(main_rate)}."
+                    f"{main_row['Tipo']} presenta la mayor "
+                    f"tasa de tiro rival: "
+                    f"{safe_percent(main_row['shot_rate'])}."
                 )
 
 
@@ -7882,9 +8943,8 @@ elif (
         </div>
 
         <div class="page-description">
-            Presenta el desempeño global, las variables que
-            influyen en las estimaciones y el framework
-            bajo el cual se construye CoachLens.
+            Presenta desempeño, variables relevantes,
+            supuestos y límites del sistema CoachLens.
         </div>
         """
     )
@@ -7905,7 +8965,7 @@ elif (
 
 
     # ========================================================
-    # MODELO VARONIL
+    # VARONIL
     # ========================================================
 
     if (
@@ -8006,26 +9066,24 @@ elif (
 
                     <div>
                         <strong>Top-1</strong><br>
-                        El estado real coincide con
-                        la primera predicción.
+                        Coincide la primera predicción con
+                        el estado observado.
                     </div>
 
                     <div>
                         <strong>Top-2</strong><br>
-                        El estado real aparece entre
-                        las dos principales opciones.
+                        El estado real aparece entre las
+                        dos principales alternativas.
                     </div>
 
                     <div>
                         <strong>Baseline</strong><br>
-                        Compara contra mantener
-                        el estado actual.
+                        Compara contra mantener el estado actual.
                     </div>
 
                     <div>
                         <strong>Balanceada</strong><br>
-                        Promedia el desempeño entre
-                        las clases tácticas.
+                        Promedia el rendimiento entre estados.
                     </div>
 
                 </div>
@@ -8035,12 +9093,12 @@ elif (
         )
 
 
-        st.markdown(
-            "### Influencia global · Modelo Varonil"
-        )
-
-
         if not male_shap.empty:
+
+
+            st.markdown(
+                "### Influencia global · Modelo Varonil"
+            )
 
 
             importance = (
@@ -8115,7 +9173,7 @@ elif (
 
 
     # ========================================================
-    # MODELO FEMENIL
+    # FEMENIL
     # ========================================================
 
     else:
@@ -8211,30 +9269,24 @@ elif (
 
                     <div>
                         <strong>Balanceada</strong><br>
-                        Evalúa por igual cambio y estabilidad.
+                        Evalúa cambio y estabilidad por igual.
                     </div>
 
                     <div>
                         <strong>AUC</strong><br>
-                        Capacidad de separar contextos
-                        de cambio y estabilidad.
+                        Capacidad de separar escenarios de
+                        cambio y estabilidad.
                     </div>
 
                     <div>
                         <strong>F1</strong><br>
-                        Combina precisión y sensibilidad
-                        para la clase cambio.
+                        Balance entre precisión y sensibilidad.
                     </div>
 
                 </div>
 
             </div>
             """
-        )
-
-
-        st.markdown(
-            "### Influencia global · Modelo Femenil"
         )
 
 
@@ -8247,6 +9299,11 @@ elif (
 
 
         if not importance.empty:
+
+
+            st.markdown(
+                "### Influencia global · Modelo Femenil"
+            )
 
 
             figure = px.bar(
@@ -8316,8 +9373,7 @@ elif (
 
                     <div class="framework-text">
                         Representación del comportamiento
-                        colectivo observado en un momento
-                        del partido.
+                        colectivo del equipo en un momento.
                     </div>
 
                 </div>
@@ -8330,8 +9386,8 @@ elif (
                     </div>
 
                     <div class="framework-text">
-                        Cambio entre un estado táctico
-                        actual y uno posterior.
+                        Cambio entre un estado actual
+                        y un estado posterior.
                     </div>
 
                 </div>
@@ -8345,8 +9401,7 @@ elif (
 
                     <div class="framework-text">
                         Combinación de minuto, marcador,
-                        condición, rival, estado táctico
-                        y variables de juego.
+                        condición y comportamiento de juego.
                     </div>
 
                 </div>
@@ -8359,8 +9414,8 @@ elif (
                     </div>
 
                     <div class="framework-text">
-                        Observación histórica comparable
-                        con el escenario analizado.
+                        Situación histórica comparable
+                        con el escenario actual.
                     </div>
 
                 </div>
@@ -8374,7 +9429,7 @@ elif (
 
                     <div class="framework-text">
                         Modificación del estado colectivo
-                        dentro del horizonte analizado.
+                        dentro del horizonte de análisis.
                     </div>
 
                 </div>
@@ -8388,7 +9443,7 @@ elif (
 
                     <div class="framework-text">
                         Repetición probabilística del mismo
-                        contexto para representar incertidumbre.
+                        contexto para mostrar incertidumbre.
                     </div>
 
                 </div>
@@ -8417,8 +9472,8 @@ elif (
                     </div>
 
                     <div class="framework-text">
-                        El análisis principal utiliza un
-                        horizonte futuro de cinco minutos.
+                        CoachLens utiliza un horizonte
+                        futuro de cinco minutos.
                     </div>
 
                 </div>
@@ -8427,13 +9482,12 @@ elif (
                 <div class="framework-card">
 
                     <div class="framework-title">
-                        Contexto histórico
+                        Historial
                     </div>
 
                     <div class="framework-text">
-                        Los escenarios históricos se utilizan
-                        como referencia contextual y no como
-                        equivalencias exactas.
+                        Los escenarios históricos sirven
+                        como referencia contextual.
                     </div>
 
                 </div>
@@ -8446,8 +9500,8 @@ elif (
                     </div>
 
                     <div class="framework-text">
-                        La comparación antes/después es
-                        descriptiva y no demuestra causalidad.
+                        El análisis antes/después es
+                        descriptivo y no causal.
                     </div>
 
                 </div>
@@ -8460,8 +9514,7 @@ elif (
                     </div>
 
                     <div class="framework-text">
-                        Estima el estado táctico probable
-                        en el horizonte futuro.
+                        Estima un estado táctico futuro.
                     </div>
 
                 </div>
@@ -8474,8 +9527,7 @@ elif (
                     </div>
 
                     <div class="framework-text">
-                        Estima probabilidad de cambio o
-                        estabilidad, no un estado futuro exacto.
+                        Estima riesgo de cambio o estabilidad.
                     </div>
 
                 </div>
@@ -8488,8 +9540,8 @@ elif (
                     </div>
 
                     <div class="framework-text">
-                        Representa incertidumbre táctica.
-                        No predice el marcador final.
+                        Representa incertidumbre; no predice
+                        el marcador final.
                     </div>
 
                 </div>
@@ -8546,7 +9598,7 @@ elif (
                     </div>
 
                     <div class="framework-text">
-                        Contrasta las estimaciones con
+                        Contrasta estimaciones con
                         observaciones reservadas.
                     </div>
 
@@ -8556,12 +9608,12 @@ elif (
                 <div class="framework-card">
 
                     <div class="framework-title">
-                        Simulación
+                        Identidad
                     </div>
 
                     <div class="framework-text">
-                        Parte directamente de las
-                        probabilidades estimadas.
+                        Resume construcción, progresión,
+                        ocasiones y comportamiento defensivo.
                     </div>
 
                 </div>
@@ -8574,8 +9626,8 @@ elif (
                     </div>
 
                     <div class="framework-text">
-                        Complementan el análisis mediante
-                        comparación descriptiva.
+                        Complementan el modelo mediante
+                        evidencia descriptiva observada.
                     </div>
 
                 </div>
@@ -8589,7 +9641,7 @@ elif (
 
                     <div class="framework-text">
                         Evalúa producción y vulnerabilidad
-                        mediante eventos observados.
+                        mediante eventos registrados.
                     </div>
 
                 </div>
@@ -8618,10 +9670,13 @@ elif (
                     </div>
 
                     <ul>
-                        <li>Estados tácticos a cinco minutos.</li>
+                        <li>Estados tácticos.</li>
                         <li>Riesgo de cambio táctico.</li>
-                        <li>Contexto de partido.</li>
-                        <li>Comparación histórica.</li>
+                        <li>Identidad de juego.</li>
+                        <li>Construcción y progresión.</li>
+                        <li>Generación de ocasiones.</li>
+                        <li>Presión y recuperaciones.</li>
+                        <li>Uso de jugadores.</li>
                         <li>Sustituciones.</li>
                         <li>Balón parado ofensivo.</li>
                         <li>Balón parado defensivo.</li>
@@ -8644,7 +9699,7 @@ elif (
                         <li>Apuestas.</li>
                         <li>Inferencia causal individual.</li>
                         <li>Efecto causal de sustituciones.</li>
-                        <li>Modelado avanzado de marcajes individuales.</li>
+                        <li>Modelado completo de marcajes.</li>
                         <li>Simulación completa de 90 minutos.</li>
                     </ul>
 

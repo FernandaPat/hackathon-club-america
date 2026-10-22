@@ -1981,3 +1981,51 @@ div[data-testid="stSlider"]
 
     line-height: 1.5;
 }
+
+/* =========================================================
+   RESUMEN DE SUSTITUCIONES POR PARTIDO
+   ========================================================= */
+
+.complementary-metric-card {
+    min-height: 185px;
+    height: 185px;
+
+    padding: 28px 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    overflow: hidden;
+}
+
+
+/* Label de la tarjeta */
+
+.complementary-metric-card .metric-label {
+    font-size: 13px;
+    font-weight: 850;
+
+    margin-bottom: 18px;
+
+    line-height: 1.25;
+}
+
+
+.complementary-metric-card .history-state-value {
+    font-size: clamp(17px, 1.45vw, 24px);
+
+    line-height: 1.15;
+
+    font-weight: 900;
+
+    overflow-wrap: anywhere;
+
+    word-break: normal;
+
+    hyphens: auto;
+
+    max-width: 100%;
+
+    margin-top: 4px;
+}
