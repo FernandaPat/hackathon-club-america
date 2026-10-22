@@ -1104,3 +1104,162 @@ hr {
         white-space: normal;
     }
 }
+
+/* =========================================================
+   AJUSTE FINAL - TARJETAS HISTÓRICAS COMPACTAS
+   ========================================================= */
+
+.metric-card {
+    background: #002744 !important;
+
+    border-radius: 22px !important;
+
+    padding: 24px 26px !important;
+
+    min-height: 155px !important;
+    height: 155px !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+
+    overflow: hidden !important;
+
+    box-shadow:
+        0 14px 28px
+        rgba(0, 31, 58, 0.10) !important;
+}
+
+
+.metric-label {
+    color: rgba(
+        255,
+        255,
+        255,
+        0.82
+    ) !important;
+
+    font-size: 15px !important;
+    font-weight: 700 !important;
+
+    line-height: 1.25 !important;
+
+    margin-bottom: 16px !important;
+}
+
+
+.metric-value,
+.history-state-value {
+    color: #ffda38 !important;
+
+    font-family:
+        "Archivo Black",
+        Arial,
+        sans-serif !important;
+
+    font-size:
+        clamp(
+            23px,
+            2vw,
+            30px
+        ) !important;
+
+    font-weight: 900 !important;
+
+    line-height: 1.08 !important;
+
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+
+    max-width: 100% !important;
+}
+
+
+/* =========================================================
+   CAJA DE INTERPRETACIÓN
+   ========================================================= */
+
+.history-explanation {
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            0.42
+        ) !important;
+
+    border:
+        1px solid
+        #d8d7cd !important;
+
+    border-radius:
+        22px !important;
+
+    padding:
+        26px 28px !important;
+
+    margin-top:
+        18px !important;
+
+    box-shadow:
+        0 12px 28px
+        rgba(
+            0,
+            31,
+            58,
+            0.06
+        ) !important;
+}
+
+
+.history-explanation-title {
+    margin-bottom:
+        20px !important;
+}
+
+
+/* =========================================================
+   TARJETAS INTERNAS DE INTERPRETACIÓN
+   ========================================================= */
+
+.history-explanation-grid {
+    display:
+        grid !important;
+
+    grid-template-columns:
+        repeat(
+            3,
+            minmax(
+                0,
+                1fr
+            )
+        ) !important;
+
+    gap:
+        18px !important;
+}
+
+
+.history-explanation-item {
+    min-height:
+        130px !important;
+
+    padding:
+        20px !important;
+
+    border-radius:
+        16px !important;
+}
+
+
+/* =========================================================
+   GRÁFICOS PLOTLY
+   ========================================================= */
+
+[data-testid="stPlotlyChart"] {
+    margin-top:
+        0 !important;
+
+    margin-bottom:
+        8px !important;
+}

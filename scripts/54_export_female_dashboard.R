@@ -2,15 +2,7 @@
 # 54_export_female_dashboard.R
 # CLUB AMÉRICA FEMENIL
 #
-# EXPORTA SOLO LOS ARCHIVOS MÍNIMOS NECESARIOS
-# PARA EL DASHBOARD STREAMLIT.
-#
-# Salidas:
-# - dashboard/data/female_simulator_context.csv
-# - dashboard/data/female_match_history.csv
-# - dashboard/data/female_change_metrics.csv
-# - dashboard/data/female_change_model_features.csv
-# - dashboard/data/female_change_selection.csv
+# EXPORTA LOS ARCHIVOS MÍNIMOS PARA STREAMLIT
 # ============================================================
 
 library(data.table)
@@ -26,14 +18,12 @@ project_root <- normalizePath(
   mustWork = TRUE
 )
 
-
 processed_dir <- file.path(
   project_root,
   "data",
   "processed",
   "america_female"
 )
-
 
 model_dir <- file.path(
   project_root,
@@ -43,16 +33,13 @@ model_dir <- file.path(
   "change_model"
 )
 
-
 dashboard_dir <- file.path(
   project_root,
   "dashboard",
   "data"
 )
 
-
 if (!dir.exists(dashboard_dir)) {
-
   dir.create(
     dashboard_dir,
     recursive = TRUE
@@ -65,28 +52,29 @@ model_ready_file <- file.path(
   "model_ready_female_v2.csv"
 )
 
-
 matches_file <- file.path(
   processed_dir,
   "america_female_matches.csv"
 )
-
 
 metrics_file <- file.path(
   model_dir,
   "female_change_test_metrics.csv"
 )
 
-
 features_file <- file.path(
   model_dir,
   "female_change_features.csv"
 )
 
-
 selection_file <- file.path(
   model_dir,
   "female_change_selection.csv"
+)
+
+predictions_file <- file.path(
+  model_dir,
+  "female_change_test_predictions.csv"
 )
 
 
@@ -99,16 +87,13 @@ required_files <- c(
   matches_file,
   metrics_file,
   features_file,
-  selection_file
+  selection_file,
+  predictions_file
 )
 
-
 missing_files <- required_files[
-  !file.exists(
-    required_files
-  )
+  !file.exists(required_files)
 ]
-
 
 if (length(missing_files) > 0) {
 
@@ -132,24 +117,24 @@ model_dt <- fread(
   model_ready_file
 )
 
-
 matches <- fread(
   matches_file
 )
-
 
 metrics <- fread(
   metrics_file
 )
 
-
 model_features <- fread(
   features_file
 )
 
-
 selection <- fread(
   selection_file
+)
+
+predictions <- fread(
+  predictions_file
 )
 
 
@@ -159,22 +144,45 @@ cat("EXPORT FEMALE DASHBOARD\n")
 cat("============================================\n\n")
 
 
-cat(
-  "Observaciones model_ready:",
-  nrow(model_dt),
-  "\n"
-)
+# ============================================================
+# 4. FECHAS
+# ============================================================
+
+if ("match_date" %in% names(model_dt)) {
+
+  model_dt[
+    ,
+    match_date := as.IDate(
+      match_date
+    )
+  ]
+}
 
 
-cat(
-  "Partidos model_ready:",
-  uniqueN(model_dt$match_id),
-  "\n\n"
-)
+if ("match_date" %in% names(matches)) {
+
+  matches[
+    ,
+    match_date := as.IDate(
+      match_date
+    )
+  ]
+}
+
+
+if ("match_date" %in% names(predictions)) {
+
+  predictions[
+    ,
+    match_date := as.IDate(
+      match_date
+    )
+  ]
+}
 
 
 # ============================================================
-# 4. VALIDAR COLUMNAS DEL MODELO
+# 5. VALIDAR MODEL READY
 # ============================================================
 
 required_model_columns <- c(
@@ -189,12 +197,10 @@ required_model_columns <- c(
   "game_state_num"
 )
 
-
 missing_model_columns <- setdiff(
   required_model_columns,
   names(model_dt)
 )
-
 
 if (length(missing_model_columns) > 0) {
 
@@ -211,33 +217,9 @@ if (length(missing_model_columns) > 0) {
 
 
 # ============================================================
-# 5. FECHAS
-# ============================================================
-
-model_dt[
-  ,
-  match_date :=
-    as.IDate(
-      match_date
-    )
-]
-
-
-matches[
-  ,
-  match_date :=
-    as.IDate(
-      match_date
-    )
-]
-
-
-# ============================================================
-# 6. CONTEXTO DEL SIMULADOR
+# 6. SIMULADOR
 #
-# IMPORTANTE:
 # SOLO TRAIN + VALIDATION
-# TEST NO SE UTILIZA PARA CONSTRUIR ESCENARIOS.
 # ============================================================
 
 simulator_dt <- model_dt[
@@ -247,30 +229,22 @@ simulator_dt <- model_dt[
   )
 ]
 
-
 if (nrow(simulator_dt) == 0) {
 
   stop(
-    "No existen filas TRAIN/VALIDATION para simulador."
+    "No existen filas TRAIN/VALIDATION."
   )
 }
 
 
 # ============================================================
-# 7. FEATURES REALES DEL MODELO
-#
-# El archivo female_change_features.csv contiene
-# las variables utilizadas por el modelo y sus medianas.
+# 7. FEATURES DEL MODELO
 # ============================================================
 
-if (
-  !"feature"
-  %in%
-  names(model_features)
-) {
+if (!"feature" %in% names(model_features)) {
 
   stop(
-    "female_change_features.csv no contiene columna feature."
+    "female_change_features.csv no contiene feature."
   )
 }
 
@@ -280,30 +254,13 @@ change_features <- unique(
 )
 
 
-# ============================================================
-# 8. FEATURES QUE YA EXISTEN EN DATASET
-#
-# Las current_state_* se reconstruyen en Python,
-# así que aquí exportamos las variables base disponibles.
-# ============================================================
-
-available_change_features <- change_features[
-  change_features
-  %in%
-  names(simulator_dt)
-]
-
-
-state_feature_names <- change_features[
-  grepl(
-    "^current_state_",
-    change_features
-  )
+available_model_features <- change_features[
+  change_features %in% names(simulator_dt)
 ]
 
 
 # ============================================================
-# 9. FEATURES DE CONTEXTO ADICIONALES PARA SIMILITUD
+# 8. FEATURES ADICIONALES DE CONTEXTO
 # ============================================================
 
 context_candidates <- c(
@@ -350,14 +307,12 @@ context_candidates <- c(
 
 
 context_features <- context_candidates[
-  context_candidates
-  %in%
-  names(simulator_dt)
+  context_candidates %in% names(simulator_dt)
 ]
 
 
 # ============================================================
-# 10. COLUMNAS BASE
+# 9. COLUMNAS BASE
 # ============================================================
 
 base_columns <- c(
@@ -373,23 +328,17 @@ base_columns <- c(
 )
 
 
-# ============================================================
-# 11. ARMAR EXPORT DE SIMULADOR
-# ============================================================
-
 simulator_columns <- unique(
   c(
     base_columns,
-    available_change_features,
+    available_model_features,
     context_features
   )
 )
 
 
 simulator_columns <- simulator_columns[
-  simulator_columns
-  %in%
-  names(simulator_dt)
+  simulator_columns %in% names(simulator_dt)
 ]
 
 
@@ -408,37 +357,33 @@ setorder(
 
 
 # ============================================================
-# 12. VALIDAR QUE TEST NO ESTÉ PRESENTE
+# 10. GARANTIZAR QUE TEST NO ESTÉ EN SIMULADOR
 # ============================================================
 
 if (
-  "split"
-  %in%
-  names(
-    female_simulator_context
-  )
+  "split" %in%
+  names(female_simulator_context)
 ) {
 
-  test_rows <- female_simulator_context[
-    split == "TEST",
-    .N
-  ]
-
-
-  if (test_rows > 0) {
+  if (
+    female_simulator_context[
+      split == "TEST",
+      .N
+    ] > 0
+  ) {
 
     stop(
-      "Se detectaron filas TEST dentro del simulador."
+      "TEST apareció dentro del simulador."
     )
   }
 }
 
 
 # ============================================================
-# 13. HISTORIAL FEMENIL
+# 11. HISTORIAL DE PARTIDOS
 # ============================================================
 
-required_match_columns <- c(
+history_candidates <- c(
   "match_id",
   "match_date",
   "home_team",
@@ -452,10 +397,8 @@ required_match_columns <- c(
 )
 
 
-history_columns <- required_match_columns[
-  required_match_columns
-  %in%
-  names(matches)
+history_columns <- history_candidates[
+  history_candidates %in% names(matches)
 ]
 
 
@@ -465,18 +408,14 @@ female_match_history <- matches[
 ]
 
 
-# ============================================================
-# 14. PARTIDOS JUGADOS VS FUTUROS
-# ============================================================
-
 if (
-  "home_score"
-  %in%
-  names(female_match_history)
-  &&
-  "away_score"
-  %in%
-  names(female_match_history)
+  all(
+    c(
+      "home_score",
+      "away_score"
+    ) %in%
+    names(female_match_history)
+  )
 ) {
 
   female_match_history[
@@ -506,7 +445,61 @@ setorder(
 
 
 # ============================================================
-# 15. MÉTRICAS
+# 12. HISTORIAL DEL MODELO FEMENIL
+#
+# SOLO PREDICCIONES TEST YA GENERADAS
+# ============================================================
+
+female_change_history <- copy(
+  predictions
+)
+
+
+required_prediction_columns <- c(
+  "match_id",
+  "match_date",
+  "minute",
+  "opponent",
+  "venue",
+  "current_state",
+  "future_state",
+  "actual_change",
+  "predicted_change",
+  "probability_change",
+  "threshold"
+)
+
+
+missing_prediction_columns <- setdiff(
+  required_prediction_columns,
+  names(female_change_history)
+)
+
+
+if (length(missing_prediction_columns) > 0) {
+
+  stop(
+    paste(
+      "Faltan columnas en predictions:",
+      paste(
+        missing_prediction_columns,
+        collapse = ", "
+      )
+    )
+  )
+}
+
+
+setorder(
+  female_change_history,
+  match_date,
+  match_id,
+  minute
+)
+
+
+# ============================================================
+# 13. MÉTRICAS
 # ============================================================
 
 if (
@@ -514,8 +507,7 @@ if (
     c(
       "metric",
       "value"
-    )
-    %in%
+    ) %in%
     names(metrics)
   )
 ) {
@@ -531,51 +523,10 @@ female_change_metrics <- copy(
 )
 
 
-# ============================================================
-# 16. VALIDAR MÉTRICAS IMPORTANTES
-# ============================================================
-
-important_metrics <- c(
-  "accuracy",
-  "balanced_accuracy",
-  "auc",
-  "sensitivity_change",
-  "specificity_no_change",
-  "precision_change",
-  "f1_change",
-  "logloss",
-  "brier_score",
-  "majority_baseline_accuracy",
-  "majority_baseline_balanced",
-  "selected_threshold",
-  "test_observations",
-  "test_matches"
+female_change_features <- copy(
+  model_features
 )
 
-
-missing_metrics <- setdiff(
-  important_metrics,
-  female_change_metrics$metric
-)
-
-
-if (length(missing_metrics) > 0) {
-
-  warning(
-    paste(
-      "Faltan algunas métricas:",
-      paste(
-        missing_metrics,
-        collapse = ", "
-      )
-    )
-  )
-}
-
-
-# ============================================================
-# 17. SELECCIÓN DEL MODELO
-# ============================================================
 
 female_change_selection <- copy(
   selection
@@ -583,16 +534,7 @@ female_change_selection <- copy(
 
 
 # ============================================================
-# 18. FEATURES + MEDIANAS
-# ============================================================
-
-female_change_features <- copy(
-  model_features
-)
-
-
-# ============================================================
-# 19. RUTAS DE SALIDA
+# 14. SALIDAS
 # ============================================================
 
 simulator_output <- file.path(
@@ -600,24 +542,25 @@ simulator_output <- file.path(
   "female_simulator_context.csv"
 )
 
-
 history_output <- file.path(
   dashboard_dir,
   "female_match_history.csv"
 )
 
+change_history_output <- file.path(
+  dashboard_dir,
+  "female_change_history.csv"
+)
 
 metrics_output <- file.path(
   dashboard_dir,
   "female_change_metrics.csv"
 )
 
-
 features_output <- file.path(
   dashboard_dir,
   "female_change_model_features.csv"
 )
-
 
 selection_output <- file.path(
   dashboard_dir,
@@ -626,7 +569,7 @@ selection_output <- file.path(
 
 
 # ============================================================
-# 20. EXPORTAR
+# 15. EXPORTAR
 # ============================================================
 
 fwrite(
@@ -634,24 +577,25 @@ fwrite(
   simulator_output
 )
 
-
 fwrite(
   female_match_history,
   history_output
 )
 
+fwrite(
+  female_change_history,
+  change_history_output
+)
 
 fwrite(
   female_change_metrics,
   metrics_output
 )
 
-
 fwrite(
   female_change_features,
   features_output
 )
-
 
 fwrite(
   female_change_selection,
@@ -660,7 +604,7 @@ fwrite(
 
 
 # ============================================================
-# 21. VALIDACIÓN FINAL
+# 16. VALIDACIÓN FINAL
 # ============================================================
 
 cat("\n")
@@ -670,21 +614,17 @@ cat("============================================\n\n")
 
 
 cat(
-  "Simulador:\n"
+  "SIMULADOR\n"
 )
 
-
 cat(
-  "  Filas:",
-  nrow(
-    female_simulator_context
-  ),
+  "Filas:",
+  nrow(female_simulator_context),
   "\n"
 )
 
-
 cat(
-  "  Partidos:",
+  "Partidos:",
   uniqueN(
     female_simulator_context$match_id
   ),
@@ -692,27 +632,14 @@ cat(
 )
 
 
-cat(
-  "  Columnas:",
-  ncol(
-    female_simulator_context
-  ),
-  "\n\n"
-)
-
-
-cat(
-  "Splits incluidos:\n"
-)
-
-
 if (
-  "split"
-  %in%
-  names(
-    female_simulator_context
-  )
+  "split" %in%
+  names(female_simulator_context)
 ) {
+
+  cat(
+    "Splits:\n"
+  )
 
   print(
     table(
@@ -723,97 +650,57 @@ if (
 
 
 cat(
-  "\nHistorial:\n"
+  "\nHISTORIAL PARTIDOS\n"
 )
 
-
 cat(
-  "  Partidos totales:",
-  nrow(
-    female_match_history
-  ),
+  "Total:",
+  nrow(female_match_history),
   "\n"
 )
 
-
-if (
-  "played"
-  %in%
-  names(
-    female_match_history
-  )
-) {
-
-  cat(
-    "  Partidos jugados:",
-    sum(
-      female_match_history$played,
-      na.rm = TRUE
-    ),
-    "\n"
-  )
-
-
-  cat(
-    "  Partidos futuros/no terminados:",
-    sum(
-      !female_match_history$played,
-      na.rm = TRUE
-    ),
-    "\n"
-  )
-}
-
-
 cat(
-  "\nMétricas exportadas:",
-  nrow(
-    female_change_metrics
+  "Jugados:",
+  sum(
+    female_match_history$played,
+    na.rm = TRUE
   ),
   "\n"
 )
 
 
 cat(
-  "Features del modelo:",
-  nrow(
-    female_change_features
+  "\nHISTORIAL MODELO TEST\n"
+)
+
+cat(
+  "Filas:",
+  nrow(female_change_history),
+  "\n"
+)
+
+cat(
+  "Partidos:",
+  uniqueN(
+    female_change_history$match_id
   ),
-  "\n\n"
+  "\n"
 )
 
-
-# ============================================================
-# 22. MOSTRAR MÉTRICAS
-# ============================================================
 
 cat(
-  "Métricas del modelo Femenil:\n\n"
+  "\nMÉTRICAS:",
+  nrow(female_change_metrics),
+  "\n"
 )
 
-
-print(
-  female_change_metrics
-)
-
-
-# ============================================================
-# 23. MOSTRAR SELECCIÓN
-# ============================================================
 
 cat(
-  "\nModelo seleccionado en VALIDATION:\n\n"
+  "FEATURES:",
+  nrow(female_change_features),
+  "\n"
 )
 
-
-print(
-  female_change_selection
-)
-
-
-# ============================================================
-# 24. ARCHIVOS
-# ============================================================
 
 cat("\n")
 cat("============================================\n")
@@ -825,30 +712,30 @@ cat(
   "Archivos creados:\n\n"
 )
 
-
 cat(
   simulator_output,
   "\n"
 )
-
 
 cat(
   history_output,
   "\n"
 )
 
+cat(
+  change_history_output,
+  "\n"
+)
 
 cat(
   metrics_output,
   "\n"
 )
 
-
 cat(
   features_output,
   "\n"
 )
-
 
 cat(
   selection_output,
