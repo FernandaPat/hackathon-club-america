@@ -1,0 +1,2 @@
+selected_candidate,selected_horizon_minutes,validation_top1,validation_top2,validation_balanced,validation_logloss
+H5_C6_U,5,0.222977146386658,0.420012353304509,0.219609137244483,1.64253998671272

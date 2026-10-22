@@ -1,0 +1,6 @@
+class_id,tactical_state
+0,CONTROL
+1,PRESSURE
+2,PROTECTION
+3,TRANSITION
+4,URGENCY

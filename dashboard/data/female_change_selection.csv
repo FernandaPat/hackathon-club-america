@@ -1,0 +1,2 @@
+selected_candidate,selected_threshold,validation_accuracy,validation_balanced,validation_auc,validation_f1,validation_logloss
+C5_U,0.72,0.584711922418711,0.557028753455701,0.569524838958424,0.686206896551724,0.57067602755239

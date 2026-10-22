@@ -1,0 +1,15 @@
+metric,value
+accuracy,0.558941920644048
+balanced_accuracy,0.536054034801372
+auc,0.55902729749917
+sensitivity_change,0.583268783888459
+specificity_no_change,0.488839285714286
+precision_change,0.766802443991853
+f1_change,0.662560492740871
+logloss,0.567882901490382
+brier_score,0.190239465617442
+majority_baseline_accuracy,0.742380678550891
+majority_baseline_balanced,0.5
+selected_threshold,0.72
+test_observations,1739
+test_matches,20

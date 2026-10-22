@@ -1,0 +1,106 @@
+match_id,match_date,home_team,away_team,opponent,venue,home_score,away_score,america_score,opponent_score,played
+3942569,2024-07-07,Cruz Azul W,América W,Cruz Azul W,AWAY,2,1,1,2,TRUE
+3942587,2024-07-30,América W,Toluca W,Toluca W,HOME,2,2,2,2,TRUE
+3942596,2024-08-07,Querétaro W,América W,Querétaro W,AWAY,0,4,4,0,TRUE
+3942603,2024-08-12,América W,Necaxa W,Necaxa W,HOME,4,0,4,0,TRUE
+3942612,2024-08-17,Puebla W,América W,Puebla W,AWAY,0,0,0,0,TRUE
+3942626,2024-08-27,León W,América W,León W,AWAY,0,1,1,0,TRUE
+3942629,2024-08-30,América W,Juárez W,Juárez W,HOME,0,0,0,0,TRUE
+3942633,2024-09-01,América W,Pumas UNAM W,Pumas UNAM W,HOME,2,2,2,2,TRUE
+3942648,2024-09-09,Mazatlán W,América W,Mazatlán W,AWAY,1,8,8,1,TRUE
+3942652,2024-09-15,América W,Guadalajara W,Guadalajara W,HOME,7,0,7,0,TRUE
+3942665,2024-09-24,Monterrey W,América W,Monterrey W,AWAY,2,4,4,2,TRUE
+3942672,2024-09-26,América W,Santos Laguna W,Santos Laguna W,HOME,2,0,2,0,TRUE
+3942677,2024-09-30,Tijuana W,América W,Tijuana W,AWAY,1,4,4,1,TRUE
+3942689,2024-10-07,Tigres UANL W,América W,Tigres UANL W,AWAY,0,1,1,0,TRUE
+3942697,2024-10-12,América W,Pachuca W,Pachuca W,HOME,5,0,5,0,TRUE
+3942705,2024-10-20,Atlético San Luis W,América W,Atlético San Luis W,AWAY,0,6,6,0,TRUE
+3942713,2024-11-03,América W,Atlas W,Atlas W,HOME,4,1,4,1,TRUE
+3967976,2024-11-08,Guadalajara W,América W,Guadalajara W,AWAY,1,4,4,1,TRUE
+3967980,2024-11-11,América W,Guadalajara W,Guadalajara W,HOME,3,2,3,2,TRUE
+3968442,2024-11-15,América W,Tigres UANL W,Tigres UANL W,HOME,1,1,1,1,TRUE
+3968445,2024-11-18,Tigres UANL W,América W,Tigres UANL W,AWAY,2,2,2,2,TRUE
+3972911,2025-01-07,América W,Cruz Azul W,Cruz Azul W,HOME,2,1,2,1,TRUE
+3972917,2025-01-10,América W,Querétaro W,Querétaro W,HOME,7,0,7,0,TRUE
+3972930,2025-01-16,Necaxa W,América W,Necaxa W,AWAY,0,5,5,0,TRUE
+3972939,2025-01-22,Atlas W,América W,Atlas W,AWAY,0,3,3,0,TRUE
+3972949,2025-01-25,América W,León W,León W,HOME,5,0,5,0,TRUE
+3972956,2025-02-04,Pachuca W,América W,Pachuca W,AWAY,2,1,1,2,TRUE
+3972961,2025-02-07,América W,Mazatlán W,Mazatlán W,HOME,6,0,6,0,TRUE
+3972974,2025-02-11,América W,Monterrey W,Monterrey W,HOME,3,2,3,2,TRUE
+3972980,2025-02-15,Pumas UNAM W,América W,Pumas UNAM W,AWAY,1,3,3,1,TRUE
+3972986,2025-03-01,América W,Atlético San Luis W,Atlético San Luis W,HOME,4,0,4,0,TRUE
+3972998,2025-03-08,Guadalajara W,América W,Guadalajara W,AWAY,1,1,1,1,TRUE
+3973004,2025-03-12,América W,Puebla W,Puebla W,HOME,7,0,7,0,TRUE
+3973014,2025-03-17,Juárez W,América W,Juárez W,AWAY,1,1,1,1,TRUE
+3973025,2025-03-23,América W,Tigres UANL W,Tigres UANL W,HOME,2,1,2,1,TRUE
+3973033,2025-03-29,Santos Laguna W,América W,Santos Laguna W,AWAY,0,3,3,0,TRUE
+3973046,2025-04-13,América W,Tijuana W,Tijuana W,HOME,4,1,4,1,TRUE
+3973057,2025-04-18,Toluca W,América W,Toluca W,AWAY,4,3,3,4,TRUE
+3992669,2025-04-24,Juárez W,América W,Juárez W,AWAY,2,2,2,2,TRUE
+3992667,2025-04-27,América W,Juárez W,Juárez W,HOME,5,0,5,0,TRUE
+3993554,2025-05-02,Guadalajara W,América W,Guadalajara W,AWAY,2,2,2,2,TRUE
+3993556,2025-05-04,América W,Guadalajara W,Guadalajara W,HOME,2,0,2,0,TRUE
+3993952,2025-05-10,Pachuca W,América W,Pachuca W,AWAY,3,0,0,3,TRUE
+3993953,2025-05-13,América W,Pachuca W,Pachuca W,HOME,2,0,2,0,TRUE
+4004888,2025-07-13,América W,Cruz Azul W,Cruz Azul W,HOME,2,1,2,1,TRUE
+4004895,2025-07-20,América W,Tijuana W,Tijuana W,HOME,2,0,2,0,TRUE
+4004901,2025-07-27,León W,América W,León W,AWAY,0,3,3,0,TRUE
+4004911,2025-08-03,América W,Querétaro W,Querétaro W,HOME,11,0,11,0,TRUE
+4004922,2025-08-09,Necaxa W,América W,Necaxa W,AWAY,0,4,4,0,TRUE
+4004931,2025-08-14,América W,Puebla W,Puebla W,HOME,3,0,3,0,TRUE
+4004935,2025-08-17,Pumas UNAM W,América W,Pumas UNAM W,AWAY,2,3,3,2,TRUE
+4004950,2025-08-29,América W,Santos Laguna W,Santos Laguna W,HOME,6,3,6,3,TRUE
+4004956,2025-09-01,Pachuca W,América W,Pachuca W,AWAY,3,2,2,3,TRUE
+4004966,2025-09-07,América W,Atlético San Luis W,Atlético San Luis W,HOME,2,2,2,2,TRUE
+4004974,2025-09-14,América W,Guadalajara W,Guadalajara W,HOME,0,2,0,2,TRUE
+4004987,2025-09-23,Toluca W,América W,Toluca W,AWAY,3,3,3,3,TRUE
+4004990,2025-09-27,América W,Juárez W,Juárez W,HOME,4,0,4,0,TRUE
+4005004,2025-10-07,Monterrey W,América W,Monterrey W,AWAY,1,2,2,1,TRUE
+4005007,2025-10-11,América W,Tigres UANL W,Tigres UANL W,HOME,1,2,1,2,TRUE
+4005015,2025-10-16,Atlas W,América W,Atlas W,AWAY,2,3,3,2,TRUE
+4005032,2025-11-02,Mazatlán W,América W,Mazatlán W,AWAY,1,5,5,1,TRUE
+4034707,2025-11-07,Monterrey W,América W,Monterrey W,AWAY,1,1,1,1,TRUE
+4034711,2025-11-10,América W,Monterrey W,Monterrey W,HOME,5,0,5,0,TRUE
+4035208,2025-11-14,Guadalajara W,América W,Guadalajara W,AWAY,0,2,2,0,TRUE
+4035210,2025-11-17,América W,Guadalajara W,Guadalajara W,HOME,2,0,2,0,TRUE
+4035843,2025-11-21,América W,Tigres UANL W,Tigres UANL W,HOME,3,3,3,3,TRUE
+4035844,2025-11-23,Tigres UANL W,América W,Tigres UANL W,AWAY,1,0,0,1,TRUE
+4038958,2026-01-06,Santos Laguna W,América W,Santos Laguna W,AWAY,1,2,2,1,TRUE
+4038965,2026-01-11,Tijuana W,América W,Tijuana W,AWAY,0,0,0,0,TRUE
+4038979,2026-01-17,América W,Necaxa W,Necaxa W,HOME,6,0,6,0,TRUE
+4038981,2026-01-21,Atlético San Luis W,América W,Atlético San Luis W,AWAY,0,2,2,0,TRUE
+4038995,2026-01-25,América W,Mazatlán W,Mazatlán W,HOME,4,0,4,0,TRUE
+4039005,2026-02-01,América W,Pumas UNAM W,Pumas UNAM W,HOME,5,1,5,1,TRUE
+4039012,2026-02-06,Juárez W,América W,Juárez W,AWAY,1,1,1,1,TRUE
+4039017,2026-02-09,Cruz Azul W,América W,Cruz Azul W,AWAY,1,2,2,1,TRUE
+4039029,2026-02-16,América W,Monterrey W,Monterrey W,HOME,1,1,1,1,TRUE
+4039041,2026-03-11,Guadalajara W,América W,Guadalajara W,AWAY,3,2,2,3,TRUE
+4039050,2026-03-14,América W,León W,León W,HOME,4,2,4,2,TRUE
+4039057,2026-03-17,América W,Toluca W,Toluca W,HOME,2,0,2,0,TRUE
+4039067,2026-03-22,Puebla W,América W,Puebla W,AWAY,0,3,3,0,TRUE
+4039070,2026-03-26,Tigres UANL W,América W,Tigres UANL W,AWAY,,,,,FALSE
+4039082,2026-04-02,América W,Atlas W,Atlas W,HOME,2,0,2,0,TRUE
+4039089,2026-04-05,Querétaro W,América W,Querétaro W,AWAY,1,4,4,1,TRUE
+4039102,2026-04-25,América W,Pachuca W,Pachuca W,HOME,3,2,3,2,TRUE
+4057831,2026-04-30,Juárez W,América W,Juárez W,AWAY,1,1,1,1,TRUE
+4057829,2026-05-02,América W,Juárez W,Juárez W,HOME,3,2,3,2,TRUE
+4058472,2026-05-08,Toluca W,América W,Toluca W,AWAY,1,7,7,1,TRUE
+4058473,2026-05-10,América W,Toluca W,Toluca W,HOME,4,3,4,3,TRUE
+4058778,2026-05-15,Monterrey W,América W,Monterrey W,AWAY,1,0,0,1,TRUE
+4058779,2026-05-17,América W,Monterrey W,Monterrey W,HOME,3,0,3,0,TRUE
+4074006,2026-07-27,América W,Tigres UANL W,Tigres UANL W,HOME,1,1,1,1,TRUE
+4088575,2026-08-04,Santos Laguna W,América W,Santos Laguna W,AWAY,0,3,3,0,TRUE
+4088516,2026-08-08,América W,Cruz Azul W,Cruz Azul W,HOME,10,0,10,0,TRUE
+4088579,2026-08-15,América W,Puebla W,Puebla W,HOME,5,1,5,1,TRUE
+4088529,2026-08-24,Necaxa W,América W,Necaxa W,AWAY,0,7,7,0,TRUE
+4088587,2026-08-30,América W,Tijuana W,Tijuana W,HOME,3,1,3,1,TRUE
+4088590,2026-09-05,Pumas UNAM W,América W,Pumas UNAM W,AWAY,,,,,FALSE
+4088543,2026-09-13,América W,Tigres UANL W,Tigres UANL W,HOME,5,2,5,2,TRUE
+4088545,2026-09-20,América W,Atlas W,Atlas W,HOME,2,2,2,2,TRUE
+4088609,2026-09-28,León W,América W,León W,AWAY,0,5,5,0,TRUE
+4088610,2026-10-03,Monterrey W,América W,Monterrey W,AWAY,4,3,3,4,TRUE
+4088564,2026-10-19,América W,Pachuca W,Pachuca W,HOME,2,1,2,1,TRUE
+4088619,2026-10-24,Atlético San Luis W,América W,Atlético San Luis W,AWAY,,,,,FALSE
+4088572,2026-11-01,América W,Atlante W,Atlante W,HOME,,,,,FALSE
+4088634,2026-11-07,Guadalajara W,América W,Guadalajara W,AWAY,,,,,FALSE

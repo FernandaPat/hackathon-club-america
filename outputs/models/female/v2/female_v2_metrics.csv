@@ -1,0 +1,10 @@
+metric,value
+top1_accuracy,0.215641173087982
+top2_accuracy,0.403105232892467
+majority_baseline,0.30017251293847
+persistence_baseline,0.257619321449109
+transition_baseline,0.28637147786084
+balanced_accuracy,0.218971904038791
+logloss,1.65300184122372
+test_observations,1739
+test_matches,20

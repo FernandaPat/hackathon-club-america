@@ -1,0 +1,11 @@
+metric,value
+selected_horizon_minutes,5
+top1_accuracy,0.19477286869944
+top2_accuracy,0.401991288114499
+majority_baseline,0.299937772246422
+persistence_baseline,0.261356565028003
+transition_baseline,0.289981331673927
+balanced_accuracy,0.193619897831428
+logloss,1.64217001365039
+test_observations,1607
+test_matches,20
