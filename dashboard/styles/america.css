@@ -2188,3 +2188,142 @@ div[data-baseweb="popover"] li:hover {
     }
 
 }
+
+
+/* =========================================================
+   FIX FINAL SELECTBOX SIDEBAR
+   COMPATIBILIDAD ENTRE NAVEGADORES
+   ========================================================= */
+
+/* Caja completa del select */
+section[data-testid="stSidebar"]
+div[data-baseweb="select"] > div {
+    background-color: #10131b !important;
+    background: #10131b !important;
+
+    border: 1px solid rgba(255, 255, 255, 0.16) !important;
+
+    color: #ffffff !important;
+
+    -webkit-text-fill-color: #ffffff !important;
+
+    opacity: 1 !important;
+}
+
+
+/* Texto seleccionado */
+section[data-testid="stSidebar"]
+div[data-baseweb="select"] span,
+
+section[data-testid="stSidebar"]
+div[data-baseweb="select"] div {
+    color: #ffffff !important;
+
+    -webkit-text-fill-color: #ffffff !important;
+}
+
+
+/* Input interno */
+section[data-testid="stSidebar"]
+div[data-baseweb="select"] input {
+    color: #ffffff !important;
+
+    -webkit-text-fill-color: #ffffff !important;
+
+    background: transparent !important;
+
+    opacity: 1 !important;
+}
+
+
+/* Placeholder */
+section[data-testid="stSidebar"]
+div[data-baseweb="select"] input::placeholder {
+    color: rgba(255, 255, 255, 0.75) !important;
+
+    -webkit-text-fill-color: rgba(255, 255, 255, 0.75) !important;
+
+    opacity: 1 !important;
+}
+
+
+/* Flecha */
+section[data-testid="stSidebar"]
+div[data-baseweb="select"] svg {
+    color: #ffffff !important;
+
+    fill: #ffffff !important;
+}
+
+
+/* Labels */
+section[data-testid="stSidebar"]
+div[data-testid="stSelectbox"] label,
+
+section[data-testid="stSidebar"]
+div[data-testid="stSelectbox"] label p {
+    color: #ffffff !important;
+
+    -webkit-text-fill-color: #ffffff !important;
+
+    opacity: 1 !important;
+}
+
+
+/* =========================================================
+   OPCIONES DEL MENÚ DESPLEGABLE
+   ========================================================= */
+
+div[data-baseweb="popover"] {
+    z-index: 9999999 !important;
+}
+
+
+div[data-baseweb="popover"] ul {
+    background: #ffffff !important;
+}
+
+
+div[data-baseweb="popover"] li {
+    background: #ffffff !important;
+
+    color: #061e39 !important;
+
+    -webkit-text-fill-color: #061e39 !important;
+}
+
+
+div[data-baseweb="popover"] li span,
+
+div[data-baseweb="popover"] li div {
+    color: #061e39 !important;
+
+    -webkit-text-fill-color: #061e39 !important;
+}
+
+
+div[data-baseweb="popover"] li:hover {
+    background: #fff3b5 !important;
+}
+
+
+/* =========================================================
+   AUTOFILL / CHROME / EDGE
+   ========================================================= */
+
+section[data-testid="stSidebar"]
+input:-webkit-autofill,
+
+section[data-testid="stSidebar"]
+input:-webkit-autofill:hover,
+
+section[data-testid="stSidebar"]
+input:-webkit-autofill:focus {
+    -webkit-text-fill-color: #ffffff !important;
+
+    -webkit-box-shadow:
+        0 0 0 1000px #10131b inset !important;
+
+    box-shadow:
+        0 0 0 1000px #10131b inset !important;
+}
