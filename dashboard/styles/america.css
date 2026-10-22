@@ -17,7 +17,7 @@
 
 
 /* =========================================================
-   RESET / ANCHO
+   RESET / GENERAL
    ========================================================= */
 
 html,
@@ -43,7 +43,7 @@ body,
     margin-left: auto !important;
     margin-right: auto !important;
 
-    padding-top: 1rem !important;
+    padding-top: 0.35rem !important;
     padding-left: 2rem !important;
     padding-right: 2rem !important;
     padding-bottom: 2rem !important;
@@ -51,6 +51,44 @@ body,
     overflow-x: hidden !important;
 }
 
+
+/* =========================================================
+   BARRA SUPERIOR DE STREAMLIT
+   ========================================================= */
+
+
+/* =========================================================
+   OCULTAR BARRA SUPERIOR DE STREAMLIT
+   ========================================================= */
+
+header[data-testid="stHeader"] {
+    display: none !important;
+}
+
+[data-testid="stToolbar"] {
+    display: none !important;
+}
+
+[data-testid="stDecoration"] {
+    display: none !important;
+}
+
+[data-testid="stStatusWidget"] {
+    display: none !important;
+}
+
+
+/* El contenido comienza desde arriba */
+[data-testid="stAppViewBlockContainer"],
+.block-container {
+    padding-top: 0 !important;
+}
+
+
+/* Sidebar también comienza arriba */
+[data-testid="stSidebar"] > div:first-child {
+    padding-top: 1rem !important;
+}
 
 /* =========================================================
    SIDEBAR
@@ -70,10 +108,17 @@ body,
 }
 
 
+.sidebar-brand {
+    padding:
+        6px
+        0
+        4px;
+}
+
+
 .sidebar-logo-row {
     display: flex;
     align-items: center;
-
     gap: 12px;
 }
 
@@ -98,12 +143,17 @@ body,
         !important;
 
     font-weight: 950;
+    font-size: 15px;
 }
 
 
 .sidebar-brand-name {
+    color: white !important;
+
     font-size: 21px;
     font-weight: 950;
+
+    line-height: 1.1;
 }
 
 
@@ -116,6 +166,8 @@ body,
     font-weight: 900;
 
     letter-spacing: 0.1em;
+
+    margin-top: 4px;
 }
 
 
@@ -128,6 +180,8 @@ body,
     font-weight: 950;
 
     letter-spacing: 0.1em;
+
+    margin-bottom: 8px;
 }
 
 
@@ -206,11 +260,14 @@ body,
     color:
         var(--navy)
         !important;
+
+    border-color:
+        var(--yellow);
 }
 
 
 /* =========================================================
-   HERO - CORREGIDO
+   HERO / HEADER
    ========================================================= */
 
 .coachlens-hero {
@@ -221,24 +278,28 @@ body,
 
     overflow: hidden !important;
 
-    background: var(--navy);
+    background: #002744;
 
-    border-radius: 0 0 28px 28px;
+    border-radius:
+        0
+        0
+        24px
+        24px;
 
     padding:
-        30px
-        50px
-        36px
-        50px;
+        24px
+        42px
+        28px;
 
     margin:
         0
         0
-        26px
+        18px
         0 !important;
 
     box-shadow:
-        var(--shadow);
+        0 12px 28px
+        rgba(0, 31, 58, 0.08);
 }
 
 
@@ -249,12 +310,12 @@ body,
     color:
         var(--yellow);
 
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 900;
 
     letter-spacing: 0.13em;
 
-    margin-bottom: 13px;
+    margin-bottom: 8px;
 }
 
 
@@ -266,9 +327,9 @@ body,
 
     font-size:
         clamp(
-            46px,
-            5vw,
-            68px
+            42px,
+            4.6vw,
+            60px
         );
 
     font-weight: 950;
@@ -291,19 +352,19 @@ body,
             0.90
         );
 
-    font-size: 17px;
+    font-size: 15px;
 
-    margin-top: 18px;
+    margin-top: 13px;
 }
 
 
 .coachlens-hero-accent {
     position: absolute;
 
-    top: -35px;
-    right: 160px;
+    top: -30px;
+    right: 150px;
 
-    width: 39px;
+    width: 34px;
     height: 145%;
 
     background:
@@ -317,8 +378,30 @@ body,
 
 
 /* =========================================================
-   RADIO / NAV
+   RADIO / NAVEGACIÓN
    ========================================================= */
+
+div[data-testid="stRadio"] {
+    margin-top: 0 !important;
+    margin-bottom: 12px !important;
+}
+
+
+div[data-testid="stRadio"] > div {
+    gap: 14px;
+}
+
+
+div[data-testid="stRadio"] label {
+    padding:
+        7px
+        13px;
+
+    border-radius: 12px;
+
+    font-weight: 800;
+}
+
 
 [data-testid="stMainBlockContainer"]
 div[data-testid="stRadio"] label,
@@ -334,22 +417,8 @@ div[data-testid="stRadio"] label p {
 }
 
 
-div[data-testid="stRadio"] > div {
-    gap: 16px;
-}
-
-
-div[data-testid="stRadio"] label {
-    padding:
-        8px
-        14px;
-
-    border-radius: 12px;
-}
-
-
 /* =========================================================
-   TITLES
+   TÍTULOS
    ========================================================= */
 
 .page-kicker {
@@ -361,7 +430,7 @@ div[data-testid="stRadio"] label {
 
     letter-spacing: 0.13em;
 
-    margin-top: 20px;
+    margin-top: 10px !important;
 }
 
 
@@ -380,7 +449,7 @@ div[data-testid="stRadio"] label {
 
     line-height: 1.1;
 
-    margin-top: 12px;
+    margin-top: 8px !important;
 }
 
 
@@ -394,15 +463,13 @@ div[data-testid="stRadio"] label {
 
     line-height: 1.55;
 
-    margin:
-        14px
-        0
-        30px;
+    margin-top: 10px !important;
+    margin-bottom: 22px !important;
 }
 
 
 /* =========================================================
-   CARDS
+   CARDS PRINCIPALES
    ========================================================= */
 
 .result-card,
@@ -466,7 +533,11 @@ div[data-testid="stRadio"] label {
 
     font-weight: 950;
 
+    line-height: 1.08;
+
     margin-top: 17px;
+
+    overflow-wrap: break-word;
 }
 
 
@@ -489,6 +560,8 @@ div[data-testid="stRadio"] label {
     line-height: 1.2;
 
     margin-top: 16px;
+
+    overflow-wrap: break-word;
 }
 
 
@@ -498,11 +571,13 @@ div[data-testid="stRadio"] label {
     line-height: 1.55;
 
     margin-top: 10px;
+
+    overflow-wrap: break-word;
 }
 
 
 /* =========================================================
-   CONFIDENCE
+   CONFIANZA
    ========================================================= */
 
 .confidence-card {
@@ -522,6 +597,8 @@ div[data-testid="stRadio"] label {
 
     font-weight: 950;
 
+    line-height: 1;
+
     margin-top: 15px;
 }
 
@@ -536,6 +613,8 @@ div[data-testid="stRadio"] label {
             3vw,
             37px
         );
+
+    line-height: 1.1;
 }
 
 
@@ -549,7 +628,7 @@ div[data-testid="stRadio"] label {
 
 
 /* =========================================================
-   SIMILARITY
+   SIMILITUD
    ========================================================= */
 
 .similarity-card {
@@ -569,6 +648,8 @@ div[data-testid="stRadio"] label {
 
     box-shadow:
         var(--shadow);
+
+    overflow: hidden;
 }
 
 
@@ -590,6 +671,8 @@ div[data-testid="stRadio"] label {
     font-size: 48px;
 
     font-weight: 950;
+
+    line-height: 1;
 
     margin-top: 14px;
 }
@@ -642,7 +725,7 @@ div[data-testid="stRadio"] label {
 
 
 /* =========================================================
-   SIMULATION
+   SIMULACIÓN
    ========================================================= */
 
 .simulation-intro-box {
@@ -706,9 +789,12 @@ div[data-testid="stRadio"] label {
 
 
 .simulation-intro-note {
-    color: #6c7885;
+    color:
+        #6c7885;
 
     font-size: 13px;
+
+    line-height: 1.5;
 
     margin-top: 9px;
 }
@@ -731,7 +817,11 @@ div[data-testid="stRadio"] label {
     font-size: 40px;
     font-weight: 950;
 
+    line-height: 1.05;
+
     margin-top: 18px;
+
+    overflow-wrap: break-word;
 }
 
 
@@ -753,7 +843,7 @@ div[data-testid="stRadio"] label {
 
 
 /* =========================================================
-   METRIC
+   MÉTRICAS
    ========================================================= */
 
 .metric-card {
@@ -795,6 +885,8 @@ div[data-testid="stRadio"] label {
     font-size: 13px;
 
     font-weight: 800;
+
+    line-height: 1.3;
 }
 
 
@@ -807,12 +899,16 @@ div[data-testid="stRadio"] label {
 
     font-weight: 950;
 
+    line-height: 1.08;
+
     margin-top: 14px;
+
+    overflow-wrap: break-word;
 }
 
 
 /* =========================================================
-   HISTORY
+   HISTÓRICO
    ========================================================= */
 
 .history-explanation,
@@ -893,20 +989,29 @@ div[data-testid="stRadio"] label {
 
 
 .history-explanation-badge.exact {
-    background: #d9f2e5;
-    color: #08763f;
+    background:
+        #d9f2e5;
+
+    color:
+        #08763f;
 }
 
 
 .history-explanation-badge.top2 {
-    background: #fff0a8;
-    color: var(--navy);
+    background:
+        #fff0a8;
+
+    color:
+        var(--navy);
 }
 
 
 .history-explanation-badge.miss {
-    background: #fbdede;
-    color: #a31515;
+    background:
+        #fbdede;
+
+    color:
+        #a31515;
 }
 
 
@@ -924,7 +1029,7 @@ div[data-testid="stRadio"] label {
 
 
 /* =========================================================
-   INTERPRETATION
+   INTERPRETACIÓN
    ========================================================= */
 
 .interpretation-columns {
@@ -960,7 +1065,7 @@ div[data-testid="stRadio"] label {
 
 
 /* =========================================================
-   FRAMEWORK
+   FRAMEWORK - OBJETOS
    ========================================================= */
 
 .object-grid,
@@ -1016,6 +1121,10 @@ div[data-testid="stRadio"] label {
 }
 
 
+/* =========================================================
+   FRAMEWORK - SUPUESTOS
+   ========================================================= */
+
 .assumption-list {
     display: grid;
 
@@ -1067,6 +1176,10 @@ div[data-testid="stRadio"] label {
 }
 
 
+/* =========================================================
+   FRAMEWORK - COMPONENTES
+   ========================================================= */
+
 .framework-card {
     min-height: 135px;
 
@@ -1106,6 +1219,10 @@ div[data-testid="stRadio"] label {
     margin-top: 10px;
 }
 
+
+/* =========================================================
+   FRAMEWORK - COHERENCIA
+   ========================================================= */
 
 .coherence-flow {
     display: flex;
@@ -1165,6 +1282,10 @@ div[data-testid="stRadio"] label {
 }
 
 
+/* =========================================================
+   FRAMEWORK - ALCANCE
+   ========================================================= */
+
 .scope-box {
     display: grid;
 
@@ -1202,10 +1323,20 @@ div[data-testid="stRadio"] label {
 
 
 /* =========================================================
+   PLOTLY
+   ========================================================= */
+
+[data-testid="stPlotlyChart"] {
+    margin-top: 0 !important;
+    margin-bottom: 7px !important;
+}
+
+
+/* =========================================================
    RESPONSIVE
    ========================================================= */
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
 
     [data-testid="stAppViewBlockContainer"],
     .block-container {
@@ -1221,14 +1352,14 @@ div[data-testid="stRadio"] label {
 
     .coachlens-hero {
         padding:
+            20px
             28px
-            30px
-            32px;
+            24px;
     }
 
 
     .coachlens-hero-accent {
-        right: 80px;
+        right: 90px;
     }
 
 
@@ -1249,19 +1380,26 @@ div[data-testid="stRadio"] label {
 
     .coachlens-hero {
         padding:
-            24px;
+            20px
+            22px
+            22px;
     }
 
 
     .coachlens-hero-title {
-        font-size: 45px;
+        font-size: 42px;
+    }
+
+
+    .coachlens-hero-subtitle {
+        font-size: 13px;
     }
 
 
     .coachlens-hero-accent {
         right: 45px;
 
-        width: 25px;
+        width: 24px;
     }
 
 
@@ -1283,6 +1421,22 @@ div[data-testid="stRadio"] label {
 
     .coherence-arrow {
         display: none;
+    }
+
+
+    .history-metric-card,
+    .model-metric-card {
+        height: auto;
+
+        min-height: 115px;
+    }
+
+
+    .result-card,
+    .confidence-card,
+    .similarity-card,
+    .simulation-summary-card {
+        min-height: auto;
     }
 
 }
