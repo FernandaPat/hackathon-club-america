@@ -1,0 +1,1409 @@
+squad,match_id,minute,player_out,player_in,shots_before,shots_after,shots_change,pressures_before,pressures_after,pressures_change,recoveries_before,recoveries_after,recoveries_change,passes_before,passes_after,passes_change
+Varonil,3799357,59,Luis Fernando Fuentes Vargas,Salvador Reyes Chávez,3,1,-2,14,17,3,8,3,-5,47,57,10
+Varonil,3799357,70,Nicolás Benedetti Roa,Jorge Eduardo Sánchez Ramos,1,2,1,17,18,1,4,4,0,63,12,-51
+Varonil,3799357,70,Federico Sebastián Viñas Barboza,Roger Beyker Martínez Tobinson,1,2,1,17,18,1,4,4,0,63,12,-51
+Varonil,3799357,82,Pedro Jesús Aquino Sánchez,Mario Humberto Osuna Pereznuñez,1,1,0,21,10,-11,4,6,2,23,69,46
+Varonil,3799357,82,Fernando Madrigal González,Antonio De Jesús López Amenábar,1,1,0,21,10,-11,4,6,2,23,69,46
+Varonil,3799390,64,Leonardo Gabriel Suárez,Luis Fernando Fuentes Vargas,4,3,-1,17,9,-8,8,7,-1,52,47,-5
+Varonil,3799390,67,Pedro Jesús Aquino Sánchez,Santiago Naveda Lara,4,4,0,12,8,-4,6,7,1,55,49,-6
+Varonil,3799390,78,Álvaro Fidalgo Fernández,Fernando Madrigal González,4,1,-3,11,9,-2,7,2,-5,49,50,1
+Varonil,3799390,79,Salvador Reyes Chávez,Karel Christopher Campos Suárez,4,1,-3,11,10,-1,7,3,-4,49,52,3
+Varonil,3799402,63,Miguel Arturo Layún Prado,Jorge Eduardo Sánchez Ramos,0,1,1,11,7,-4,6,7,1,28,53,25
+Varonil,3799402,63,Federico Sebastián Viñas Barboza,Mauro Alberto Laínez Leyva,0,1,1,11,7,-4,6,7,1,28,53,25
+Varonil,3799402,72,Pedro Jesús Aquino Sánchez,Mario Humberto Osuna Pereznuñez,1,0,-1,8,7,-1,7,6,-1,52,42,-10
+Varonil,3799402,72,Roger Beyker Martínez Tobinson,Henry Josué Martín Mex,1,0,-1,8,7,-1,7,6,-1,52,42,-10
+Varonil,3799402,85,Francisco Sebastián Córdova Reyes,Jordan Jesús Silva Díaz,0,2,2,5,5,0,4,7,3,24,31,7
+Varonil,3799411,45,Nicolás Benedetti Roa,Francisco Sebastián Córdova Reyes,2,2,0,6,7,1,4,4,0,53,67,14
+Varonil,3799411,66,Álvaro Fidalgo Fernández,Roger Beyker Martínez Tobinson,2,0,-2,6,11,5,3,5,2,19,33,14
+Varonil,3799411,77,Mauro Alberto Laínez Leyva,Salvador Reyes Chávez,0,0,0,11,10,-1,6,8,2,33,32,-1
+Varonil,3799416,53,Álvaro Fidalgo Fernández,Francisco Sebastián Córdova Reyes,2,1,-1,12,9,-3,4,4,0,39,27,-12
+Varonil,3799416,53,Luis Fernando Fuentes Vargas,Mauro Alberto Laínez Leyva,2,1,-1,12,9,-3,4,4,0,39,27,-12
+Varonil,3799416,57,Pedro Jesús Aquino Sánchez,Fernando Madrigal González,2,2,0,6,18,12,3,2,-1,19,22,3
+Varonil,3799416,58,Roger Beyker Martínez Tobinson,Henry Josué Martín Mex,2,2,0,6,23,17,3,3,0,19,23,4
+Varonil,3799417,66,Mauro Alberto Laínez Leyva,Álvaro Fidalgo Fernández,1,0,-1,13,8,-5,2,5,3,48,64,16
+Varonil,3799417,73,Henry Josué Martín Mex,Alex Renato Ibarra Mina,1,3,2,8,8,0,5,3,-2,62,57,-5
+Varonil,3799417,86,Roger Beyker Martínez Tobinson,Federico Sebastián Viñas Barboza,3,2,-1,7,6,-1,3,3,0,54,24,-30
+Varonil,3799429,53,Antonio De Jesús López Amenábar,Álvaro Fidalgo Fernández,1,0,-1,18,9,-9,7,3,-4,58,54,-4
+Varonil,3799429,66,Francisco Sebastián Córdova Reyes,Bruno Amílcar Valdez Rojas,0,1,1,14,3,-11,6,5,-1,43,41,-2
+Varonil,3799429,79,Federico Sebastián Viñas Barboza,Henry Josué Martín Mex,1,0,-1,5,15,10,3,0,-3,28,30,2
+Varonil,3799429,79,Nicolás Benedetti Roa,Luis Fernando Fuentes Vargas,1,0,-1,5,15,10,3,0,-3,28,30,2
+Varonil,3799444,59,Bruno Amílcar Valdez Rojas,Jordan Jesús Silva Díaz,2,2,0,23,10,-13,7,2,-5,35,23,-12
+Varonil,3799444,82,Richard Rafael Sánchez Guerrero,Federico Sebastián Viñas Barboza,0,1,1,10,18,8,5,4,-1,41,22,-19
+Varonil,3799444,88,Álvaro Fidalgo Fernández,Mario Humberto Osuna Pereznuñez,1,1,0,16,18,2,6,2,-4,46,13,-33
+Varonil,3799444,88,Francisco Sebastián Córdova Reyes,Nicolás Benedetti Roa,1,1,0,16,18,2,6,2,-4,46,13,-33
+Varonil,3799448,57,Fernando Madrigal González,Richard Rafael Sánchez Guerrero,1,3,2,10,12,2,2,7,5,42,46,4
+Varonil,3799448,57,Miguel Arturo Layún Prado,Mauro Alberto Laínez Leyva,1,3,2,10,12,2,2,7,5,42,46,4
+Varonil,3799448,65,Francisco Sebastián Córdova Reyes,Roger Beyker Martínez Tobinson,2,2,0,9,8,-1,8,7,-1,52,70,18
+Varonil,3799448,66,Henry Josué Martín Mex,Federico Sebastián Viñas Barboza,3,1,-2,7,8,1,7,7,0,47,71,24
+Varonil,3799448,79,Álvaro Fidalgo Fernández,Nicolás Benedetti Roa,2,0,-2,7,15,8,12,9,-3,74,47,-27
+Varonil,3799449,56,Henry Josué Martín Mex,Roger Beyker Martínez Tobinson,1,0,-1,26,20,-6,3,2,-1,44,24,-20
+Varonil,3799449,56,Álvaro Fidalgo Fernández,Jorge Eduardo Sánchez Ramos,1,0,-1,26,20,-6,3,2,-1,44,24,-20
+Varonil,3799449,72,Luis Fernando Fuentes Vargas,Mauro Alberto Laínez Leyva,0,0,0,20,9,-11,3,2,-1,19,8,-11
+Varonil,3799449,73,Francisco Sebastián Córdova Reyes,Fernando Madrigal González,0,0,0,19,11,-8,3,3,0,19,8,-11
+Varonil,3799449,79,Miguel Arturo Layún Prado,Jordan Jesús Silva Díaz,0,1,1,14,9,-5,2,7,5,16,18,2
+Varonil,3799452,45,Sebastián Enzo Cáceres Ramos,Bruno Amílcar Valdez Rojas,0,2,2,16,39,23,3,12,9,22,71,49
+Varonil,3799452,53,Mauro Alberto Laínez Leyva,Salvador Reyes Chávez,2,2,0,41,11,-30,12,2,-10,68,24,-44
+Varonil,3799452,53,Álvaro Fidalgo Fernández,Richard Rafael Sánchez Guerrero,2,2,0,41,11,-30,12,2,-10,68,24,-44
+Varonil,3799452,53,Henry Josué Martín Mex,Roger Beyker Martínez Tobinson,2,2,0,41,11,-30,12,2,-10,68,24,-44
+Varonil,3799452,59,Fernando Madrigal González,Jordan Jesús Silva Díaz,2,2,0,17,15,-2,8,4,-4,40,28,-12
+Varonil,3799455,58,Roger Beyker Martínez Tobinson,Francisco Sebastián Córdova Reyes,0,2,2,10,11,1,6,9,3,70,60,-10
+Varonil,3799455,73,Henry Josué Martín Mex,Federico Sebastián Viñas Barboza,2,1,-1,12,8,-4,6,5,-1,44,68,24
+Varonil,3799455,86,Mauro Alberto Laínez Leyva,Nicolás Benedetti Roa,3,1,-2,8,13,5,5,5,0,63,33,-30
+Varonil,3799462,59,Luis Fernando Fuentes Vargas,Salvador Reyes Chávez,0,4,4,18,6,-12,6,5,-1,65,28,-37
+Varonil,3799462,76,Leonardo Gabriel Suárez,Fernando Madrigal González,4,0,-4,11,5,-6,6,3,-3,37,70,33
+Varonil,3799462,84,Álvaro Fidalgo Fernández,Karel Christopher Campos Suárez,0,0,0,4,8,4,3,3,0,64,77,13
+Varonil,3799481,15,Santiago Naveda Lara,Pedro Jesús Aquino Sánchez,0,0,0,11,16,5,1,4,3,42,57,15
+Varonil,3799481,71,Richard Rafael Sánchez Guerrero,Fernando Madrigal González,1,1,0,13,22,9,7,2,-5,34,13,-21
+Varonil,3799481,71,Mauro Alberto Laínez Leyva,Leonardo Gabriel Suárez,1,1,0,13,22,9,7,2,-5,34,13,-21
+Varonil,3799481,82,Álvaro Fidalgo Fernández,Karel Christopher Campos Suárez,1,0,-1,24,20,-4,2,6,4,13,20,7
+Varonil,3799481,82,Luis Fernando Fuentes Vargas,Bruno Amílcar Valdez Rojas,1,0,-1,24,20,-4,2,6,4,13,20,7
+Varonil,3799489,57,Francisco Sebastián Córdova Reyes,Roger Beyker Martínez Tobinson,0,1,1,13,14,1,1,5,4,26,84,58
+Varonil,3799489,57,Federico Sebastián Viñas Barboza,Henry Josué Martín Mex,0,1,1,13,14,1,1,5,4,26,84,58
+Varonil,3799489,90,Luis Fernando Fuentes Vargas,Nicolás Benedetti Roa,6,2,-4,11,3,-8,6,0,-6,68,52,-16
+Varonil,3799493,56,Bruno Amílcar Valdez Rojas,Víctor Emanuel Aguilera,0,2,2,18,4,-14,3,4,1,54,40,-14
+Varonil,3799493,56,Luis Fernando Fuentes Vargas,Mauro Alberto Laínez Leyva,0,2,2,18,4,-14,3,4,1,54,40,-14
+Varonil,3799493,68,Miguel Arturo Layún Prado,Francisco Sebastián Córdova Reyes,4,1,-3,4,10,6,7,2,-5,51,57,6
+Varonil,3799493,68,Federico Sebastián Viñas Barboza,Roger Beyker Martínez Tobinson,4,1,-3,4,10,6,7,2,-5,51,57,6
+Varonil,3799493,68,Pedro Jesús Aquino Sánchez,Fernando Madrigal González,4,1,-3,4,10,6,7,2,-5,51,57,6
+Varonil,3799494,36,Pedro Jesús Aquino Sánchez,Mario Humberto Osuna Pereznuñez,1,0,-1,16,31,15,5,11,6,39,53,14
+Varonil,3799494,58,Álvaro Fidalgo Fernández,Nicolás Benedetti Roa,2,0,-2,5,22,17,3,3,0,44,18,-26
+Varonil,3799494,58,Henry Josué Martín Mex,Federico Sebastián Viñas Barboza,2,0,-2,5,22,17,3,3,0,44,18,-26
+Varonil,3799494,70,Francisco Sebastián Córdova Reyes,Jorge Eduardo Sánchez Ramos,0,1,1,24,20,-4,2,5,3,16,43,27
+Varonil,3799494,70,Salvador Reyes Chávez,Fernando Madrigal González,0,1,1,24,20,-4,2,5,3,16,43,27
+Varonil,3815231,49,Richard Rafael Sánchez Guerrero,Francisco Sebastián Córdova Reyes,2,4,2,11,9,-2,8,6,-2,74,58,-16
+Varonil,3815231,72,Jorge Eduardo Sánchez Ramos,Miguel Arturo Layún Prado,1,1,0,12,14,2,7,4,-3,67,57,-10
+Varonil,3815231,72,Mauro Alberto Laínez Leyva,Federico Sebastián Viñas Barboza,1,1,0,12,14,2,7,4,-3,67,57,-10
+Varonil,3815231,88,Álvaro Fidalgo Fernández,Nicolás Benedetti Roa,0,3,3,8,9,1,5,5,0,43,34,-9
+Varonil,3815234,60,Federico Sebastián Viñas Barboza,Henry Josué Martín Mex,0,0,0,4,5,1,3,4,1,59,51,-8
+Varonil,3815234,86,Richard Rafael Sánchez Guerrero,Roger Beyker Martínez Tobinson,1,0,-1,15,9,-6,5,1,-4,29,23,-6
+Varonil,3815234,90,Mauro Alberto Laínez Leyva,Francisco Sebastián Córdova Reyes,0,0,0,15,5,-10,5,0,-5,22,14,-8
+Varonil,3816664,33,Jordan Jesús Silva Díaz,Jorge Eduardo Sánchez Ramos,0,0,0,15,15,0,3,2,-1,32,45,13
+Varonil,3816664,45,Santiago Naveda Lara,Juan Ferney Otero Tovar,0,1,1,15,12,-3,3,4,1,53,65,12
+Varonil,3816664,67,Mauro Alberto Laínez Leyva,Federico Sebastián Viñas Barboza,3,1,-2,15,12,-3,5,2,-3,60,39,-21
+Varonil,3816664,67,Diego Alfonso Valdés Contreras,Roger Beyker Martínez Tobinson,3,1,-2,15,12,-3,5,2,-3,60,39,-21
+Varonil,3816664,67,Richard Rafael Sánchez Guerrero,Jonathan dos Santos Ramírez,3,1,-2,15,12,-3,5,2,-3,60,39,-21
+Varonil,3816668,64,Henry Josué Martín Mex,Federico Sebastián Viñas Barboza,1,2,1,14,16,2,8,5,-3,51,58,7
+Varonil,3816668,81,Richard Rafael Sánchez Guerrero,Miguel Arturo Layún Prado,0,1,1,10,11,1,5,3,-2,48,41,-7
+Varonil,3816668,86,Pedro Jesús Aquino Sánchez,Jonathan dos Santos Ramírez,0,1,1,5,9,4,2,4,2,38,39,1
+Varonil,3816668,86,Luis Fernando Fuentes Vargas,Karel Christopher Campos Suárez,0,1,1,5,9,4,2,4,2,38,39,1
+Varonil,3816673,67,Alejandro Zendejas Saavedra,Henry Josué Martín Mex,4,1,-3,6,19,13,3,3,0,79,49,-30
+Varonil,3816673,67,Richard Rafael Sánchez Guerrero,Pedro Jesús Aquino Sánchez,4,1,-3,6,19,13,3,3,0,79,49,-30
+Varonil,3816673,67,Roger Beyker Martínez Tobinson,Salvador Reyes Chávez,4,1,-3,6,19,13,3,3,0,79,49,-30
+Varonil,3816673,74,Álvaro Fidalgo Fernández,Jonathan dos Santos Ramírez,4,3,-1,17,8,-9,2,8,6,40,66,26
+Varonil,3816673,74,Jorge Eduardo Sánchez Ramos,Miguel Arturo Layún Prado,4,3,-1,17,8,-9,2,8,6,40,66,26
+Varonil,3816681,47,Bruno Amílcar Valdez Rojas,Jorge Meré Pérez,1,0,-1,7,29,22,4,2,-2,29,59,30
+Varonil,3816681,66,Henry Josué Martín Mex,Federico Sebastián Viñas Barboza,1,2,1,14,12,-2,3,4,1,40,21,-19
+Varonil,3816681,80,Alejandro Zendejas Saavedra,Mauro Alberto Laínez Leyva,4,2,-2,8,16,8,8,7,-1,24,39,15
+Varonil,3816717,80,Álvaro Fidalgo Fernández,Alejandro Zendejas Saavedra,1,1,0,15,18,3,6,4,-2,26,12,-14
+Varonil,3816717,90,Diego Alfonso Valdés Contreras,Federico Sebastián Viñas Barboza,1,0,-1,18,3,-15,4,4,0,12,15,3
+Varonil,3816717,90,Bruno Amílcar Valdez Rojas,Luis Fernando Fuentes Vargas,1,0,-1,18,3,-15,4,4,0,12,15,3
+Varonil,3816730,70,Álvaro Fidalgo Fernández,Salvador Reyes Chávez,2,2,0,9,5,-4,4,4,0,36,36,0
+Varonil,3816730,70,Alejandro Zendejas Saavedra,Juan Ferney Otero Tovar,2,2,0,9,5,-4,4,4,0,36,36,0
+Varonil,3816730,74,Federico Sebastián Viñas Barboza,Henry Josué Martín Mex,3,0,-3,4,6,2,2,4,2,41,18,-23
+Varonil,3816730,75,Pedro Jesús Aquino Sánchez,Jonathan dos Santos Ramírez,3,0,-3,4,7,3,1,4,3,40,23,-17
+Varonil,3816730,86,Diego Alfonso Valdés Contreras,Miguel Arturo Layún Prado,0,4,4,8,7,-1,4,2,-2,34,27,-7
+Varonil,3816737,71,Álvaro Fidalgo Fernández,Jonathan dos Santos Ramírez,2,1,-1,15,18,3,4,5,1,68,65,-3
+Varonil,3816737,71,Roger Beyker Martínez Tobinson,Mauro Alberto Laínez Leyva,2,1,-1,15,18,3,4,5,1,68,65,-3
+Varonil,3816737,80,Federico Sebastián Viñas Barboza,Henry Josué Martín Mex,2,2,0,15,25,10,5,9,4,65,87,22
+Varonil,3816737,90,Alejandro Zendejas Saavedra,Karel Christopher Campos Suárez,2,1,-1,25,0,-25,9,1,-8,87,10,-77
+Varonil,3816737,90,Richard Rafael Sánchez Guerrero,Pedro Jesús Aquino Sánchez,2,1,-1,25,0,-25,9,1,-8,87,10,-77
+Varonil,3816746,83,Juan Ferney Otero Tovar,Roger Beyker Martínez Tobinson,1,1,0,13,2,-11,7,8,1,39,57,18
+Varonil,3816746,90,Santiago Naveda Lara,Alejandro Zendejas Saavedra,0,2,2,4,2,-2,6,4,-2,50,26,-24
+Varonil,3816749,45,Luis Fernando Fuentes Vargas,Juan Ferney Otero Tovar,0,2,2,22,23,1,3,5,2,27,66,39
+Varonil,3816749,66,Miguel Arturo Layún Prado,Álvaro Fidalgo Fernández,4,0,-4,13,29,16,2,4,2,24,29,5
+Varonil,3816749,66,Diego Alfonso Valdés Contreras,Mauro Alberto Laínez Leyva,4,0,-4,13,29,16,2,4,2,24,29,5
+Varonil,3816749,76,Salvador Reyes Chávez,Alejandro Zendejas Saavedra,0,3,3,29,10,-19,4,4,0,29,38,9
+Varonil,3816749,76,Roger Beyker Martínez Tobinson,Federico Sebastián Viñas Barboza,0,3,3,29,10,-19,4,4,0,29,38,9
+Varonil,3816752,72,Federico Sebastián Viñas Barboza,Roger Beyker Martínez Tobinson,1,0,-1,11,16,5,1,0,-1,42,26,-16
+Varonil,3816752,80,Álvaro Fidalgo Fernández,Miguel Arturo Layún Prado,0,0,0,15,17,2,0,4,4,22,27,5
+Varonil,3816752,80,Santiago Naveda Lara,Jonathan dos Santos Ramírez,0,0,0,15,17,2,0,4,4,22,27,5
+Varonil,3816752,96,Jorge Eduardo Sánchez Ramos,Richard Rafael Sánchez Guerrero,0,0,0,11,0,-11,1,0,-1,3,9,6
+Varonil,3816752,96,Luis Fernando Fuentes Vargas,Henry Josué Martín Mex,0,0,0,11,0,-11,1,0,-1,3,9,6
+Varonil,3816758,50,Antonio De Jesús López Amenábar,Mauro Alberto Laínez Leyva,0,0,0,12,8,-4,7,4,-3,30,41,11
+Varonil,3816758,89,Henry Josué Martín Mex,Emilio Lara Contreras,1,0,-1,5,2,-3,4,2,-2,28,10,-18
+Varonil,3816758,93,Pedro Jesús Aquino Sánchez,Santiago Naveda Lara,1,0,-1,6,0,-6,6,0,-6,17,2,-15
+Varonil,3816758,93,Salvador Reyes Chávez,Richard Rafael Sánchez Guerrero,1,0,-1,6,0,-6,6,0,-6,17,2,-15
+Varonil,3816768,64,Federico Sebastián Viñas Barboza,Henry Josué Martín Mex,0,0,0,32,21,-11,8,4,-4,22,22,0
+Varonil,3816768,64,Álvaro Fidalgo Fernández,Santiago Naveda Lara,0,0,0,32,21,-11,8,4,-4,22,22,0
+Varonil,3816768,70,Alejandro Zendejas Saavedra,Diego Alfonso Valdés Contreras,0,1,1,18,21,3,6,3,-3,24,15,-9
+Varonil,3816768,70,Roger Beyker Martínez Tobinson,Jordan Jesús Silva Díaz,0,1,1,18,21,3,6,3,-3,24,15,-9
+Varonil,3816768,93,Miguel Arturo Layún Prado,Jorge Eduardo Sánchez Ramos,3,0,-3,9,5,-4,5,0,-5,24,1,-23
+Varonil,3816769,64,Sebastián Enzo Cáceres Ramos,Jorge Meré Pérez,3,0,-3,31,10,-21,13,1,-12,68,17,-51
+Varonil,3816769,65,Roger Beyker Martínez Tobinson,Mauro Alberto Laínez Leyva,3,0,-3,30,10,-20,13,2,-11,68,20,-48
+Varonil,3816769,77,Alejandro Zendejas Saavedra,Juan Ferney Otero Tovar,2,2,0,7,10,3,2,8,6,23,64,41
+Varonil,3816769,77,Henry Josué Martín Mex,Federico Sebastián Viñas Barboza,2,2,0,7,10,3,2,8,6,23,64,41
+Varonil,3816769,88,Diego Alfonso Valdés Contreras,Karel Christopher Campos Suárez,2,0,-2,10,19,9,8,3,-5,65,23,-42
+Varonil,3816798,65,Salvador Reyes Chávez,Roger Beyker Martínez Tobinson,2,0,-2,11,9,-2,12,0,-12,58,54,-4
+Varonil,3816798,65,Santiago Naveda Lara,Richard Rafael Sánchez Guerrero,2,0,-2,11,9,-2,12,0,-12,58,54,-4
+Varonil,3816798,78,Álvaro Fidalgo Fernández,Juan Ferney Otero Tovar,1,1,0,6,11,5,1,4,3,40,59,19
+Varonil,3816798,85,Federico Sebastián Viñas Barboza,Mauro Alberto Laínez Leyva,2,2,0,7,12,5,4,4,0,50,47,-3
+Varonil,3816805,30,Sebastián Enzo Cáceres Ramos,Jorge Meré Pérez,1,4,3,6,7,1,6,8,2,19,64,45
+Varonil,3816805,45,Alejandro Zendejas Saavedra,Diego Alfonso Valdés Contreras,3,1,-2,9,24,15,7,8,1,57,81,24
+Varonil,3816805,45,Luis Fernando Fuentes Vargas,Mauro Alberto Laínez Leyva,3,1,-2,9,24,15,7,8,1,57,81,24
+Varonil,3816805,61,Jonathan dos Santos Ramírez,Richard Rafael Sánchez Guerrero,1,1,0,9,5,-4,4,2,-2,46,53,7
+Varonil,3816805,61,Juan Ferney Otero Tovar,Henry Josué Martín Mex,1,1,0,9,5,-4,4,2,-2,46,53,7
+Varonil,3816809,45,Bruno Amílcar Valdez Rojas,Jorge Meré Pérez,3,1,-2,10,7,-3,6,6,0,45,35,-10
+Varonil,3816809,85,Alejandro Zendejas Saavedra,Miguel Arturo Layún Prado,2,3,1,3,16,13,2,10,8,10,40,30
+Varonil,3816809,85,Roger Beyker Martínez Tobinson,Salvador Reyes Chávez,2,3,1,3,16,13,2,10,8,10,40,30
+Varonil,3816809,89,Federico Sebastián Viñas Barboza,Henry Josué Martín Mex,3,2,-1,8,9,1,4,6,2,9,34,25
+Varonil,3816809,89,Diego Alfonso Valdés Contreras,Íker Moreno Díez de Bonilla,3,2,-1,8,9,1,4,6,2,9,34,25
+Varonil,3816810,68,Álvaro Fidalgo Fernández,Pedro Jesús Aquino Sánchez,2,2,0,16,18,2,5,1,-4,25,13,-12
+Varonil,3816810,68,Roger Beyker Martínez Tobinson,Salvador Reyes Chávez,2,2,0,16,18,2,5,1,-4,25,13,-12
+Varonil,3816810,75,Federico Sebastián Viñas Barboza,Henry Josué Martín Mex,2,2,0,17,22,5,2,2,0,13,31,18
+Varonil,3816810,84,Diego Alfonso Valdés Contreras,Juan Ferney Otero Tovar,2,2,0,25,10,-15,2,2,0,31,16,-15
+Varonil,3816810,84,Richard Rafael Sánchez Guerrero,Jonathan dos Santos Ramírez,2,2,0,25,10,-15,2,2,0,31,16,-15
+Varonil,3831920,19,Federico Sebastián Viñas Barboza,Henry Josué Martín Mex,1,0,-1,15,14,-1,3,4,1,34,33,-1
+Varonil,3831920,40,Richard Rafael Sánchez Guerrero,Pedro Jesús Aquino Sánchez,0,1,1,9,12,3,3,5,2,24,60,36
+Varonil,3831920,91,Alejandro Zendejas Saavedra,Juan Ferney Otero Tovar,1,1,0,25,6,-19,3,2,-1,26,8,-18
+Varonil,3831924,74,Alejandro Zendejas Saavedra,Miguel Arturo Layún Prado,2,1,-1,15,28,13,3,6,3,25,33,8
+Varonil,3831924,80,Álvaro Fidalgo Fernández,Jonathan dos Santos Ramírez,1,2,1,25,29,4,4,3,-1,23,33,10
+Varonil,3831924,80,Henry Josué Martín Mex,Román Martínez,1,2,1,25,29,4,4,3,-1,23,33,10
+Varonil,3831924,80,Roger Beyker Martínez Tobinson,Salvador Reyes Chávez,1,2,1,25,29,4,4,3,-1,23,33,10
+Varonil,3831924,90,Diego Alfonso Valdés Contreras,Juan Ferney Otero Tovar,2,2,0,29,11,-18,3,2,-1,33,11,-22
+Varonil,3832382,82,Federico Sebastián Viñas Barboza,Henry Josué Martín Mex,0,0,0,7,8,1,1,4,3,7,36,29
+Varonil,3832382,94,Alejandro Zendejas Saavedra,Juan Ferney Otero Tovar,0,0,0,12,2,-10,6,2,-4,38,24,-14
+Varonil,3832382,95,Pedro Jesús Aquino Sánchez,Richard Rafael Sánchez Guerrero,0,0,0,12,2,-10,5,2,-3,31,24,-7
+Varonil,3832384,45,Sebastián Enzo Cáceres Ramos,Jorge Meré Pérez,0,7,7,13,25,12,2,13,11,27,108,81
+Varonil,3832384,59,Federico Sebastián Viñas Barboza,Henry Josué Martín Mex,6,1,-5,8,17,9,10,6,-4,93,42,-51
+Varonil,3832384,59,Alejandro Zendejas Saavedra,Salvador Reyes Chávez,6,1,-5,8,17,9,10,6,-4,93,42,-51
+Varonil,3832384,71,Richard Rafael Sánchez Guerrero,Jonathan dos Santos Ramírez,1,0,-1,17,14,-3,6,8,2,47,52,5
+Varonil,3832384,71,Luis Fernando Fuentes Vargas,Mauro Alberto Laínez Leyva,1,0,-1,17,14,-3,6,8,2,47,52,5
+Varonil,3835114,56,Néstor Alejandro Araújo Razo,Emilio Lara Contreras,1,0,-1,13,8,-5,5,8,3,30,43,13
+Varonil,3835114,76,Jonathan dos Santos Ramírez,Richard Rafael Sánchez Guerrero,0,2,2,14,14,0,6,7,1,28,43,15
+Varonil,3835114,76,Federico Sebastián Viñas Barboza,Henry Josué Martín Mex,0,2,2,14,14,0,6,7,1,28,43,15
+Varonil,3835114,76,Pedro Jesús Aquino Sánchez,Álvaro Fidalgo Fernández,0,2,2,14,14,0,6,7,1,28,43,15
+Varonil,3835114,84,Alejandro Zendejas Saavedra,Jürgen Damm Rascón,2,4,2,14,5,-9,8,6,-2,32,36,4
+Varonil,3835119,63,Jonathan Javier Rodríguez Portillo,Jürgen Damm Rascón,4,2,-2,15,12,-3,4,5,1,40,60,20
+Varonil,3835119,64,Henry Josué Martín Mex,Román Martínez,3,2,-1,14,12,-2,4,6,2,36,71,35
+Varonil,3835119,77,Néstor Alejandro Araújo Razo,Bruno Amílcar Valdez Rojas,1,3,2,7,9,2,5,6,1,71,66,-5
+Varonil,3835119,77,Alejandro Zendejas Saavedra,Francisco Manuel García Flores,1,3,2,7,9,2,5,6,1,71,66,-5
+Varonil,3835133,58,Alejandro Zendejas Saavedra,Jürgen Damm Rascón,1,0,-1,14,9,-5,6,2,-4,96,33,-63
+Varonil,3835133,58,Jonathan dos Santos Ramírez,Henry Josué Martín Mex,1,0,-1,14,9,-5,6,2,-4,96,33,-63
+Varonil,3835133,77,Diego Alfonso Valdés Contreras,Miguel Arturo Layún Prado,0,0,0,19,12,-7,5,3,-2,41,64,23
+Varonil,3835133,77,Jonathan Javier Rodríguez Portillo,Federico Sebastián Viñas Barboza,0,0,0,19,12,-7,5,3,-2,41,64,23
+Varonil,3835152,45,Pedro Jesús Aquino Sánchez,Richard Rafael Sánchez Guerrero,0,3,3,13,8,-5,3,7,4,51,71,20
+Varonil,3835152,45,Emilio Lara Contreras,Sebastián Enzo Cáceres Ramos,0,3,3,13,8,-5,3,7,4,51,71,20
+Varonil,3835152,72,Diego Alfonso Valdés Contreras,Federico Sebastián Viñas Barboza,1,3,2,7,2,-5,2,3,1,20,28,8
+Varonil,3835152,93,Alejandro Zendejas Saavedra,Jürgen Damm Rascón,0,0,0,7,8,1,4,4,0,48,30,-18
+Varonil,3835162,45,Diego Alfonso Valdés Contreras,Miguel Arturo Layún Prado,1,3,2,17,12,-5,4,3,-1,50,71,21
+Varonil,3835162,74,Richard Rafael Sánchez Guerrero,Pedro Jesús Aquino Sánchez,0,1,1,13,18,5,1,4,3,39,20,-19
+Varonil,3835162,74,Alejandro Zendejas Saavedra,Salvador Reyes Chávez,0,1,1,13,18,5,1,4,3,39,20,-19
+Varonil,3835162,74,Jonathan Javier Rodríguez Portillo,Federico Sebastián Viñas Barboza,0,1,1,13,18,5,1,4,3,39,20,-19
+Varonil,3835162,86,Álvaro Fidalgo Fernández,Jonathan dos Santos Ramírez,1,0,-1,19,17,-2,5,7,2,18,34,16
+Varonil,3835169,48,Sebastián Enzo Cáceres Ramos,Bruno Amílcar Valdez Rojas,3,2,-1,13,14,1,6,5,-1,59,34,-25
+Varonil,3835169,73,Henry Josué Martín Mex,Federico Sebastián Viñas Barboza,0,1,1,19,15,-4,4,3,-1,63,21,-42
+Varonil,3835169,73,Álvaro Fidalgo Fernández,Pedro Jesús Aquino Sánchez,0,1,1,19,15,-4,4,3,-1,63,21,-42
+Varonil,3835169,83,Richard Rafael Sánchez Guerrero,Jonathan dos Santos Ramírez,1,1,0,15,9,-6,3,4,1,21,36,15
+Varonil,3835169,84,Jonathan Javier Rodríguez Portillo,Miguel Arturo Layún Prado,1,1,0,16,8,-8,4,3,-1,25,32,7
+Varonil,3835177,69,Jonathan Javier Rodríguez Portillo,Miguel Arturo Layún Prado,1,1,0,23,28,5,7,4,-3,54,37,-17
+Varonil,3835177,69,Diego Alfonso Valdés Contreras,Pedro Jesús Aquino Sánchez,1,1,0,23,28,5,7,4,-3,54,37,-17
+Varonil,3835177,77,Alejandro Zendejas Saavedra,Salvador Reyes Chávez,2,1,-1,22,27,5,3,2,-1,43,27,-16
+Varonil,3835177,77,Henry Josué Martín Mex,Federico Sebastián Viñas Barboza,2,1,-1,22,27,5,3,2,-1,43,27,-16
+Varonil,3835177,82,Richard Rafael Sánchez Guerrero,Jonathan dos Santos Ramírez,1,3,2,24,21,-3,2,3,1,32,30,-2
+Varonil,3835187,58,Alejandro Zendejas Saavedra,Salvador Reyes Chávez,3,3,0,18,15,-3,1,4,3,56,65,9
+Varonil,3835187,58,Richard Rafael Sánchez Guerrero,Jonathan dos Santos Ramírez,3,3,0,18,15,-3,1,4,3,56,65,9
+Varonil,3835187,66,Jonathan Javier Rodríguez Portillo,Miguel Arturo Layún Prado,2,4,2,22,7,-15,4,3,-1,60,52,-8
+Varonil,3835187,66,Henry Josué Martín Mex,Federico Sebastián Viñas Barboza,2,4,2,22,7,-15,4,3,-1,60,52,-8
+Varonil,3835187,75,Diego Alfonso Valdés Contreras,Sergio De los Ríos Peztña,6,1,-5,5,18,13,5,3,-2,65,48,-17
+Varonil,3835191,66,Emilio Lara Contreras,Miguel Arturo Layún Prado,1,1,0,22,17,-5,5,6,1,51,47,-4
+Varonil,3835191,66,Jonathan dos Santos Ramírez,Richard Rafael Sánchez Guerrero,1,1,0,22,17,-5,5,6,1,51,47,-4
+Varonil,3835191,67,Pedro Jesús Aquino Sánchez,Álvaro Fidalgo Fernández,0,1,1,22,19,-3,5,6,1,43,55,12
+Varonil,3835191,77,Alejandro Zendejas Saavedra,Luis Fernando Fuentes Vargas,1,1,0,19,17,-2,6,3,-3,55,33,-22
+Varonil,3835191,90,Henry Josué Martín Mex,Federico Sebastián Viñas Barboza,0,1,1,17,7,-10,2,2,0,29,10,-19
+Varonil,3835198,71,Alejandro Zendejas Saavedra,Salvador Reyes Chávez,0,2,2,30,21,-9,3,10,7,47,41,-6
+Varonil,3835198,71,Henry Josué Martín Mex,Federico Sebastián Viñas Barboza,0,2,2,30,21,-9,3,10,7,47,41,-6
+Varonil,3835198,76,Richard Rafael Sánchez Guerrero,Pedro Jesús Aquino Sánchez,2,0,-2,23,16,-7,5,6,1,48,63,15
+Varonil,3835198,77,Diego Alfonso Valdés Contreras,Román Martínez,2,0,-2,22,15,-7,5,7,2,46,69,23
+Varonil,3835198,82,Jonathan Javier Rodríguez Portillo,Jonathan dos Santos Ramírez,2,0,-2,21,8,-13,10,2,-8,53,82,29
+Varonil,3835213,40,Bruno Amílcar Valdez Rojas,Néstor Alejandro Araújo Razo,0,1,1,9,17,8,2,6,4,18,78,60
+Varonil,3835213,70,Federico Sebastián Viñas Barboza,Henry Josué Martín Mex,2,3,1,10,15,5,2,6,4,62,35,-27
+Varonil,3835213,70,Richard Rafael Sánchez Guerrero,Pedro Jesús Aquino Sánchez,2,3,1,10,15,5,2,6,4,62,35,-27
+Varonil,3835213,89,Alejandro Zendejas Saavedra,Salvador Reyes Chávez,0,1,1,13,5,-8,4,5,1,67,32,-35
+Varonil,3835213,89,Jonathan Javier Rodríguez Portillo,Miguel Arturo Layún Prado,0,1,1,13,5,-8,4,5,1,67,32,-35
+Varonil,3835218,67,Alejandro Zendejas Saavedra,Paul Brian Rodríguez Bravo,4,1,-3,20,12,-8,5,3,-2,58,65,7
+Varonil,3835218,67,Diego Alfonso Valdés Contreras,Federico Sebastián Viñas Barboza,4,1,-3,20,12,-8,5,3,-2,58,65,7
+Varonil,3835218,67,Pedro Jesús Aquino Sánchez,Jonathan dos Santos Ramírez,4,1,-3,20,12,-8,5,3,-2,58,65,7
+Varonil,3835218,78,Luis Fernando Fuentes Vargas,Salvador Reyes Chávez,1,1,0,13,15,2,5,5,0,76,21,-55
+Varonil,3835218,86,Álvaro Fidalgo Fernández,Sebastián Martínez Cruz,1,1,0,13,6,-7,7,1,-6,43,29,-14
+Varonil,3835225,45,Federico Sebastián Viñas Barboza,Álvaro Fidalgo Fernández,1,1,0,2,13,11,5,6,1,71,91,20
+Varonil,3835225,58,Salvador Reyes Chávez,Luis Fernando Fuentes Vargas,2,1,-1,6,10,4,6,3,-3,85,64,-21
+Varonil,3835225,58,Jonathan dos Santos Ramírez,Roger Beyker Martínez Tobinson,2,1,-1,6,10,4,6,3,-3,85,64,-21
+Varonil,3835225,76,Paul Brian Rodríguez Bravo,Jürgen Damm Rascón,4,3,-1,3,8,5,2,4,2,47,57,10
+Varonil,3835234,52,Luis Fernando Fuentes Vargas,Salvador Reyes Chávez,3,2,-1,14,7,-7,10,7,-3,74,75,1
+Varonil,3835234,65,Jonathan Javier Rodríguez Portillo,Paul Brian Rodríguez Bravo,3,0,-3,7,6,-1,7,6,-1,50,70,20
+Varonil,3835234,65,Diego Alfonso Valdés Contreras,Roger Beyker Martínez Tobinson,3,0,-3,7,6,-1,7,6,-1,50,70,20
+Varonil,3835234,80,Richard Rafael Sánchez Guerrero,Pedro Jesús Aquino Sánchez,2,4,2,12,7,-5,7,3,-4,62,68,6
+Varonil,3835234,80,Alejandro Zendejas Saavedra,Federico Sebastián Viñas Barboza,2,4,2,12,7,-5,7,3,-4,62,68,6
+Varonil,3835237,72,Alejandro Zendejas Saavedra,Paul Brian Rodríguez Bravo,0,1,1,11,13,2,1,4,3,15,81,66
+Varonil,3835237,72,Henry Josué Martín Mex,Federico Sebastián Viñas Barboza,0,1,1,11,13,2,1,4,3,15,81,66
+Varonil,3835237,72,Richard Rafael Sánchez Guerrero,Pedro Jesús Aquino Sánchez,0,1,1,11,13,2,1,4,3,15,81,66
+Varonil,3835237,88,Diego Alfonso Valdés Contreras,Roger Beyker Martínez Tobinson,1,1,0,7,7,0,4,3,-1,47,30,-17
+Varonil,3835237,94,Álvaro Fidalgo Fernández,Jonathan dos Santos Ramírez,1,0,-1,10,1,-9,4,2,-2,27,6,-21
+Varonil,3835245,59,Roger Beyker Martínez Tobinson,Diego Alfonso Valdés Contreras,2,0,-2,17,24,7,6,5,-1,71,47,-24
+Varonil,3835245,71,Richard Rafael Sánchez Guerrero,Jonathan dos Santos Ramírez,0,2,2,23,9,-14,5,3,-2,45,26,-19
+Varonil,3835245,71,Jonathan Javier Rodríguez Portillo,Paul Brian Rodríguez Bravo,0,2,2,23,9,-14,5,3,-2,45,26,-19
+Varonil,3835245,86,Alejandro Zendejas Saavedra,Pedro Jesús Aquino Sánchez,1,2,1,10,9,-1,4,5,1,25,40,15
+Varonil,3864712,45,Néstor Alejandro Araújo Razo,Jürgen Damm Rascón,0,6,6,10,7,-3,4,7,3,56,81,25
+Varonil,3864712,45,Henry Josué Martín Mex,Federico Sebastián Viñas Barboza,0,6,6,10,7,-3,4,7,3,56,81,25
+Varonil,3864712,45,Jonathan dos Santos Ramírez,Álvaro Fidalgo Fernández,0,6,6,10,7,-3,4,7,3,56,81,25
+Varonil,3864712,72,Emilio Lara Contreras,Miguel Ángel Vázquez García,1,0,-1,9,5,-4,0,4,4,59,84,25
+Varonil,3864712,72,Roger Beyker Martínez Tobinson,Diego Alfonso Valdés Contreras,1,0,-1,9,5,-4,0,4,4,59,84,25
+Varonil,3864713,66,Richard Rafael Sánchez Guerrero,Pedro Jesús Aquino Sánchez,3,2,-1,13,8,-5,6,2,-4,37,53,16
+Varonil,3864713,76,Luis Fernando Fuentes Vargas,Salvador Reyes Chávez,2,2,0,8,9,1,2,4,2,53,54,1
+Varonil,3864713,76,Henry Josué Martín Mex,Federico Sebastián Viñas Barboza,2,2,0,8,9,1,2,4,2,53,54,1
+Varonil,3864713,76,Alejandro Zendejas Saavedra,Paul Brian Rodríguez Bravo,2,2,0,8,9,1,2,4,2,53,54,1
+Varonil,3864713,80,Diego Alfonso Valdés Contreras,Roger Beyker Martínez Tobinson,3,2,-1,10,13,3,4,3,-1,50,71,21
+Varonil,3865780,55,Diego Alfonso Valdés Contreras,Roger Beyker Martínez Tobinson,2,3,1,24,13,-11,13,8,-5,117,56,-61
+Varonil,3865780,55,Richard Rafael Sánchez Guerrero,Pedro Jesús Aquino Sánchez,2,3,1,24,13,-11,13,8,-5,117,56,-61
+Varonil,3865780,65,Paul Brian Rodríguez Bravo,Jonathan Javier Rodríguez Portillo,3,3,0,13,18,5,8,7,-1,56,39,-17
+Varonil,3865780,76,Alejandro Zendejas Saavedra,Federico Sebastián Viñas Barboza,3,0,-3,18,9,-9,7,3,-4,39,65,26
+Varonil,3865781,56,Richard Rafael Sánchez Guerrero,Pedro Jesús Aquino Sánchez,4,1,-3,20,7,-13,4,4,0,68,67,-1
+Varonil,3865781,66,Jonathan Javier Rodríguez Portillo,Paul Brian Rodríguez Bravo,1,0,-1,7,23,16,4,9,5,67,74,7
+Varonil,3865781,66,Diego Alfonso Valdés Contreras,Roger Beyker Martínez Tobinson,1,0,-1,7,23,16,4,9,5,67,74,7
+Varonil,3865781,88,Henry Josué Martín Mex,Federico Sebastián Viñas Barboza,3,2,-1,10,14,4,5,4,-1,60,49,-11
+Varonil,3870379,56,Jonathan Javier Rodríguez Portillo,Federico Sebastián Viñas Barboza,5,3,-2,14,14,0,9,0,-9,71,52,-19
+Varonil,3870379,68,Diego Alfonso Valdés Contreras,Henry Josué Martín Mex,2,4,2,15,13,-2,1,3,2,60,49,-11
+Varonil,3870379,68,Pedro Jesús Aquino Sánchez,Richard Rafael Sánchez Guerrero,2,4,2,15,13,-2,1,3,2,60,49,-11
+Varonil,3870379,79,Luis Fernando Fuentes Vargas,Salvador Reyes Chávez,4,5,1,13,11,-2,3,9,6,47,61,14
+Varonil,3870379,79,Alejandro Zendejas Saavedra,Leonardo Gabriel Suárez,4,5,1,13,11,-2,3,9,6,47,61,14
+Varonil,3870389,56,Pedro Jesús Aquino Sánchez,Richard Rafael Sánchez Guerrero,1,1,0,17,24,7,7,7,0,46,41,-5
+Varonil,3870389,56,Alejandro Zendejas Saavedra,Jonathan Javier Rodríguez Portillo,1,1,0,17,24,7,7,7,0,46,41,-5
+Varonil,3870389,72,Diego Alfonso Valdés Contreras,Roger Beyker Martínez Tobinson,1,2,1,15,9,-6,8,3,-5,48,38,-10
+Varonil,3870389,88,Henry Josué Martín Mex,Federico Sebastián Viñas Barboza,3,3,0,15,12,-3,2,6,4,60,41,-19
+Varonil,3870389,88,Álvaro Fidalgo Fernández,Jonathan dos Santos Ramírez,3,3,0,15,12,-3,2,6,4,60,41,-19
+Varonil,3870395,67,Paul Brian Rodríguez Bravo,Jonathan Javier Rodríguez Portillo,1,2,1,9,14,5,3,3,0,32,30,-2
+Varonil,3870395,76,Diego Alfonso Valdés Contreras,Roger Beyker Martínez Tobinson,3,2,-1,14,9,-5,3,4,1,34,45,11
+Varonil,3870395,77,Richard Rafael Sánchez Guerrero,Jonathan dos Santos Ramírez,2,2,0,14,11,-3,3,4,1,30,47,17
+Varonil,3870395,84,Alejandro Zendejas Saavedra,Leonardo Gabriel Suárez,1,4,3,9,11,2,4,3,-1,43,42,-1
+Varonil,3870409,61,Salvador Reyes Chávez,Luis Fernando Fuentes Vargas,1,1,0,6,7,1,4,2,-2,62,56,-6
+Varonil,3870409,61,Alejandro Zendejas Saavedra,Leonardo Gabriel Suárez,1,1,0,6,7,1,4,2,-2,62,56,-6
+Varonil,3870409,62,Álvaro Fidalgo Fernández,Jonathan dos Santos Ramírez,1,1,0,4,8,4,4,2,-2,43,72,29
+Varonil,3870409,69,Jonathan Javier Rodríguez Portillo,Paul Brian Rodríguez Bravo,1,0,-1,3,14,11,2,5,3,62,62,0
+Varonil,3870409,82,Jonathan dos Santos Ramírez,Pedro Jesús Aquino Sánchez,0,1,1,11,15,4,4,3,-1,52,64,12
+Varonil,3870416,18,Alejandro Zendejas Saavedra,Paul Brian Rodríguez Bravo,1,3,2,9,10,1,3,5,2,39,30,-9
+Varonil,3870416,63,Jonathan Javier Rodríguez Portillo,Roger Beyker Martínez Tobinson,5,2,-3,16,17,1,8,10,2,41,69,28
+Varonil,3870416,63,Salvador Reyes Chávez,Luis Fernando Fuentes Vargas,5,2,-3,16,17,1,8,10,2,41,69,28
+Varonil,3870416,76,Richard Rafael Sánchez Guerrero,Pedro Jesús Aquino Sánchez,2,1,-1,8,10,2,6,4,-2,52,42,-10
+Varonil,3870416,76,Diego Alfonso Valdés Contreras,Esteban Lozano Solana,2,1,-1,8,10,2,6,4,-2,52,42,-10
+Varonil,3870426,64,Richard Rafael Sánchez Guerrero,Pedro Jesús Aquino Sánchez,2,0,-2,14,15,1,5,3,-2,47,46,-1
+Varonil,3870426,64,Roger Beyker Martínez Tobinson,Leonardo Gabriel Suárez,2,0,-2,14,15,1,5,3,-2,47,46,-1
+Varonil,3870426,71,Jonathan Javier Rodríguez Portillo,Paul Brian Rodríguez Bravo,0,2,2,12,19,7,3,3,0,52,16,-36
+Varonil,3870426,71,Álvaro Fidalgo Fernández,Jonathan dos Santos Ramírez,0,2,2,12,19,7,3,3,0,52,16,-36
+Varonil,3870426,84,Diego Alfonso Valdés Contreras,Sebastián Enzo Cáceres Ramos,2,4,2,16,21,5,3,5,2,17,25,8
+Varonil,3870431,72,Álvaro Fidalgo Fernández,Pedro Jesús Aquino Sánchez,1,2,1,13,12,-1,4,7,3,61,45,-16
+Varonil,3870431,72,Jonathan Javier Rodríguez Portillo,Paul Brian Rodríguez Bravo,1,2,1,13,12,-1,4,7,3,61,45,-16
+Varonil,3870431,81,Henry Josué Martín Mex,Federico Sebastián Viñas Barboza,2,3,1,12,13,1,8,3,-5,61,39,-22
+Varonil,3870431,81,Diego Alfonso Valdés Contreras,Roger Beyker Martínez Tobinson,2,3,1,12,13,1,8,3,-5,61,39,-22
+Varonil,3870431,87,Leonardo Gabriel Suárez,Emilio Lara Contreras,3,3,0,10,17,7,4,7,3,39,52,13
+Varonil,3870443,73,Salvador Reyes Chávez,Luis Fernando Fuentes Vargas,0,1,1,13,12,-1,3,3,0,37,58,21
+Varonil,3870443,73,Jonathan Javier Rodríguez Portillo,Paul Brian Rodríguez Bravo,0,1,1,13,12,-1,3,3,0,37,58,21
+Varonil,3870443,79,Leonardo Gabriel Suárez,Roger Beyker Martínez Tobinson,1,2,1,18,4,-14,4,4,0,52,60,8
+Varonil,3870443,79,Richard Rafael Sánchez Guerrero,Jonathan dos Santos Ramírez,1,2,1,18,4,-14,4,4,0,52,60,8
+Varonil,3870443,89,Álvaro Fidalgo Fernández,Pedro Jesús Aquino Sánchez,2,1,-1,4,5,1,4,7,3,60,28,-32
+Varonil,3870451,72,Diego Alfonso Valdés Contreras,Federico Sebastián Viñas Barboza,1,1,0,36,8,-28,4,5,1,54,45,-9
+Varonil,3870451,76,Álvaro Fidalgo Fernández,Pedro Jesús Aquino Sánchez,0,4,4,32,13,-19,2,8,6,59,46,-13
+Varonil,3870451,76,Leonardo Gabriel Suárez,Emilio Lara Contreras,0,4,4,32,13,-19,2,8,6,59,46,-13
+Varonil,3870451,91,Jonathan Javier Rodríguez Portillo,Luis Fernando Fuentes Vargas,4,0,-4,30,22,-8,9,3,-6,54,25,-29
+Varonil,3870462,58,Diego Alfonso Valdés Contreras,Roger Beyker Martínez Tobinson,6,1,-5,21,12,-9,9,5,-4,86,47,-39
+Varonil,3870462,59,Richard Rafael Sánchez Guerrero,Pedro Jesús Aquino Sánchez,5,1,-4,16,13,-3,8,5,-3,75,53,-22
+Varonil,3870462,67,Jonathan Javier Rodríguez Portillo,Federico Sebastián Viñas Barboza,1,0,-1,12,9,-3,4,8,4,47,77,30
+Varonil,3870462,82,Leonardo Gabriel Suárez,Jürgen Damm Rascón,0,4,4,7,17,10,5,7,2,52,82,30
+Varonil,3870470,76,Álvaro Fidalgo Fernández,Pedro Jesús Aquino Sánchez,1,2,1,11,16,5,6,8,2,37,43,6
+Varonil,3870470,76,Jonathan Javier Rodríguez Portillo,Roger Beyker Martínez Tobinson,1,2,1,11,16,5,6,8,2,37,43,6
+Varonil,3870470,82,Leonardo Gabriel Suárez,Alejandro Zendejas Saavedra,1,1,0,13,23,10,7,8,1,33,27,-6
+Varonil,3870470,82,Diego Alfonso Valdés Contreras,Federico Sebastián Viñas Barboza,1,1,0,13,23,10,7,8,1,33,27,-6
+Varonil,3870470,87,Richard Rafael Sánchez Guerrero,Jonathan dos Santos Ramírez,2,0,-2,15,20,5,6,6,0,39,44,5
+Varonil,3870479,62,Leonardo Gabriel Suárez,Alejandro Zendejas Saavedra,2,0,-2,16,18,2,4,5,1,77,44,-33
+Varonil,3870479,63,Jonathan dos Santos Ramírez,Pedro Jesús Aquino Sánchez,1,0,-1,16,18,2,4,5,1,69,44,-25
+Varonil,3870479,79,Jonathan Javier Rodríguez Portillo,Luis Fernando Fuentes Vargas,0,3,3,19,18,-1,3,3,0,30,57,27
+Varonil,3870479,88,Henry Josué Martín Mex,Federico Sebastián Viñas Barboza,2,2,0,18,12,-6,3,6,3,61,35,-26
+Varonil,3870489,52,Jonathan Javier Rodríguez Portillo,Paul Brian Rodríguez Bravo,1,0,-1,23,19,-4,8,2,-6,126,57,-69
+Varonil,3870489,52,Leonardo Gabriel Suárez,Alejandro Zendejas Saavedra,1,0,-1,23,19,-4,8,2,-6,126,57,-69
+Varonil,3870489,53,Jonathan dos Santos Ramírez,Richard Rafael Sánchez Guerrero,1,1,0,26,16,-10,10,0,-10,126,60,-66
+Varonil,3870489,81,Álvaro Fidalgo Fernández,Pedro Jesús Aquino Sánchez,2,2,0,13,8,-5,6,8,2,24,43,19
+Varonil,3870489,89,Diego Alfonso Valdés Contreras,Néstor Alejandro Araújo Razo,3,2,-1,8,15,7,10,2,-8,57,28,-29
+Varonil,3870495,71,Alejandro Zendejas Saavedra,Leonardo Gabriel Suárez,0,1,1,8,15,7,5,3,-2,44,42,-2
+Varonil,3870495,71,Jonathan Javier Rodríguez Portillo,Paul Brian Rodríguez Bravo,0,1,1,8,15,7,5,3,-2,44,42,-2
+Varonil,3870495,76,Henry Josué Martín Mex,Federico Sebastián Viñas Barboza,0,2,2,14,18,4,5,3,-2,47,41,-6
+Varonil,3870495,92,Diego Alfonso Valdés Contreras,Néstor Alejandro Araújo Razo,1,1,0,16,13,-3,2,4,2,23,6,-17
+Varonil,3870504,71,Henry Josué Martín Mex,Federico Sebastián Viñas Barboza,2,0,-2,16,14,-2,3,4,1,54,83,29
+Varonil,3870504,71,Jonathan Javier Rodríguez Portillo,Paul Brian Rodríguez Bravo,2,0,-2,16,14,-2,3,4,1,54,83,29
+Varonil,3870504,78,Alejandro Zendejas Saavedra,Leonardo Gabriel Suárez,0,1,1,13,14,1,3,3,0,86,95,9
+Varonil,3870504,78,Luis Fernando Fuentes Vargas,Salvador Reyes Chávez,0,1,1,13,14,1,3,3,0,86,95,9
+Varonil,3870504,83,Richard Rafael Sánchez Guerrero,Jonathan dos Santos Ramírez,0,2,2,21,10,-11,4,11,7,74,98,24
+Varonil,3870516,62,Jonathan Javier Rodríguez Portillo,Roger Beyker Martínez Tobinson,2,3,1,9,5,-4,8,2,-6,101,11,-90
+Varonil,3870516,77,Richard Rafael Sánchez Guerrero,Pedro Jesús Aquino Sánchez,3,0,-3,10,9,-1,1,12,11,32,56,24
+Varonil,3870516,78,Alejandro Zendejas Saavedra,Leonardo Gabriel Suárez,3,1,-2,10,10,0,1,12,11,32,62,30
+Varonil,3870516,81,Diego Alfonso Valdés Contreras,Federico Sebastián Viñas Barboza,1,3,2,16,5,-11,5,7,2,58,55,-3
+Varonil,3870520,40,Alejandro Zendejas Saavedra,Leonardo Gabriel Suárez,2,1,-1,16,51,35,6,10,4,39,55,16
+Varonil,3870520,71,Pedro Jesús Aquino Sánchez,Roger Beyker Martínez Tobinson,0,5,5,18,22,4,7,7,0,50,40,-10
+Varonil,3870520,85,Paul Brian Rodríguez Bravo,Salvador Reyes Chávez,3,1,-2,24,25,1,5,7,2,62,19,-43
+Varonil,3870520,85,Álvaro Fidalgo Fernández,Jonathan dos Santos Ramírez,3,1,-2,24,25,1,5,7,2,62,19,-43
+Varonil,3886180,55,Leonardo Gabriel Suárez,Alejandro Zendejas Saavedra,4,2,-2,22,28,6,7,5,-2,63,53,-10
+Varonil,3886180,66,Jonathan Javier Rodríguez Portillo,Paul Brian Rodríguez Bravo,2,2,0,29,16,-13,5,4,-1,48,41,-7
+Varonil,3886180,82,Federico Sebastián Viñas Barboza,Henry Josué Martín Mex,2,2,0,21,17,-4,4,5,1,44,37,-7
+Varonil,3886180,82,Richard Rafael Sánchez Guerrero,Pedro Jesús Aquino Sánchez,2,2,0,21,17,-4,4,5,1,44,37,-7
+Varonil,3886185,72,Henry Josué Martín Mex,Federico Sebastián Viñas Barboza,1,2,1,17,11,-6,7,3,-4,62,38,-24
+Varonil,3886185,76,Richard Rafael Sánchez Guerrero,Pedro Jesús Aquino Sánchez,3,0,-3,9,17,8,8,1,-7,80,8,-72
+Varonil,3886185,76,Jonathan Javier Rodríguez Portillo,Salvador Reyes Chávez,3,0,-3,9,17,8,8,1,-7,80,8,-72
+Varonil,3886185,84,Diego Alfonso Valdés Contreras,Néstor Alejandro Araújo Razo,2,1,-1,11,22,11,1,5,4,21,17,-4
+Varonil,3886545,45,Leonardo Gabriel Suárez,Alejandro Zendejas Saavedra,5,0,-5,7,32,25,7,6,-1,54,103,49
+Varonil,3886545,78,Pedro Jesús Aquino Sánchez,Jonathan dos Santos Ramírez,2,1,-1,23,19,-4,2,7,5,34,42,8
+Varonil,3886545,79,Henry Josué Martín Mex,Federico Sebastián Viñas Barboza,2,1,-1,23,21,-2,2,8,6,33,43,10
+Varonil,3886545,89,Jonathan Javier Rodríguez Portillo,Salvador Reyes Chávez,1,0,-1,21,8,-13,8,4,-4,43,16,-27
+Varonil,3886545,89,Diego Alfonso Valdés Contreras,Roger Beyker Martínez Tobinson,1,0,-1,21,8,-13,8,4,-4,43,16,-27
+Varonil,3886547,65,Jonathan Javier Rodríguez Portillo,Jonathan dos Santos Ramírez,1,0,-1,18,11,-7,4,2,-2,28,6,-22
+Varonil,3886547,65,Richard Rafael Sánchez Guerrero,Pedro Jesús Aquino Sánchez,1,0,-1,18,11,-7,4,2,-2,28,6,-22
+Varonil,3886547,77,Alejandro Zendejas Saavedra,Salvador Reyes Chávez,0,0,0,13,10,-3,3,3,0,10,14,4
+Varonil,3886547,78,Diego Alfonso Valdés Contreras,Emilio Lara Contreras,0,0,0,8,11,3,2,3,1,9,15,6
+Varonil,3886547,86,Henry Josué Martín Mex,Roger Beyker Martínez Tobinson,0,1,1,13,20,7,5,8,3,16,25,9
+Varonil,3889637,66,Paul Brian Rodríguez Bravo,Mauro Alberto Laínez Leyva,0,2,2,22,11,-11,6,2,-4,66,42,-24
+Varonil,3889637,66,Román Martínez,Juan Félix Cantú Ortiz,0,2,2,22,11,-11,6,2,-4,66,42,-24
+Varonil,3889637,76,Leonardo Gabriel Suárez,Sergio De los Ríos Peztña,2,1,-1,11,11,0,2,8,6,42,56,14
+Varonil,3889637,76,Richard Rafael Sánchez Guerrero,Sebastián Martínez Cruz,2,1,-1,11,11,0,2,8,6,42,56,14
+Varonil,3889637,87,Miguel Arturo Layún Prado,Salvador Reyes Chávez,0,0,0,11,28,17,8,3,-5,68,58,-10
+Varonil,3889653,66,Diego Alfonso Valdés Contreras,Henry Josué Martín Mex,2,1,-1,15,4,-11,2,1,-1,55,49,-6
+Varonil,3889653,66,Jonathan Javier Rodríguez Portillo,Paul Brian Rodríguez Bravo,2,1,-1,15,4,-11,2,1,-1,55,49,-6
+Varonil,3889653,66,Alejandro Zendejas Saavedra,Leonardo Gabriel Suárez,2,1,-1,15,4,-11,2,1,-1,55,49,-6
+Varonil,3889653,89,Álvaro Fidalgo Fernández,Jonathan dos Santos Ramírez,1,1,0,4,10,6,5,5,0,41,25,-16
+Varonil,3889653,89,Julián Andrés Quiñones Quiñones,Salvador Reyes Chávez,1,1,0,4,10,6,5,5,0,41,25,-16
+Varonil,3889660,83,Miguel Arturo Layún Prado,Paul Brian Rodríguez Bravo,1,2,1,11,20,9,3,3,0,144,32,-112
+Varonil,3889660,83,Jonathan dos Santos Ramírez,Richard Rafael Sánchez Guerrero,1,2,1,11,20,9,3,3,0,144,32,-112
+Varonil,3889660,90,Leonardo Gabriel Suárez,Emilio Lara Contreras,2,1,-1,20,13,-7,5,0,-5,77,15,-62
+Varonil,3889660,90,Kevin Nahin Álvarez Campos,Bruce El-mesmari Sangochian,2,1,-1,20,13,-7,5,0,-5,77,15,-62
+Varonil,3889660,92,Julián Andrés Quiñones Quiñones,Patricio Salas,2,1,-1,19,8,-11,3,0,-3,56,14,-42
+Varonil,3889669,60,Leonardo Gabriel Suárez,Alejandro Zendejas Saavedra,0,2,2,21,11,-10,3,4,1,54,40,-14
+Varonil,3889669,83,Kevin Nahin Álvarez Campos,Miguel Arturo Layún Prado,2,1,-1,5,17,12,4,9,5,43,23,-20
+Varonil,3889669,83,Salvador Reyes Chávez,Luis Fernando Fuentes Vargas,2,1,-1,5,17,12,4,9,5,43,23,-20
+Varonil,3889681,71,Emilio Lara Contreras,Luis Fernando Fuentes Vargas,1,0,-1,10,11,1,7,5,-2,51,76,25
+Varonil,3889681,86,Paul Brian Rodríguez Bravo,Jonathan dos Santos Ramírez,1,2,1,14,10,-4,3,5,2,72,45,-27
+Varonil,3889681,86,Alejandro Zendejas Saavedra,Leonardo Gabriel Suárez,1,2,1,14,10,-4,3,5,2,72,45,-27
+Varonil,3889681,90,Richard Rafael Sánchez Guerrero,Miguel Arturo Layún Prado,1,2,1,14,8,-6,2,5,3,65,14,-51
+Varonil,3889685,71,Alejandro Zendejas Saavedra,Richard Rafael Sánchez Guerrero,1,1,0,4,16,12,1,6,5,36,47,11
+Varonil,3889685,82,Paul Brian Rodríguez Bravo,Patricio Salas,2,1,-1,16,14,-2,7,2,-5,39,51,12
+Varonil,3889685,82,Diego Alfonso Valdés Contreras,Leonardo Gabriel Suárez,2,1,-1,16,14,-2,7,2,-5,39,51,12
+Varonil,3889699,47,Israel Reyes Romero,Ramón Juárez Del Castillo,2,2,0,10,21,11,4,3,-1,35,134,99
+Varonil,3889699,58,Richard Rafael Sánchez Guerrero,Alejandro Zendejas Saavedra,2,0,-2,26,21,-5,3,7,4,120,59,-61
+Varonil,3889699,68,Paul Brian Rodríguez Bravo,Jonathan Javier Rodríguez Portillo,0,0,0,21,11,-10,7,2,-5,59,59,0
+Varonil,3889702,74,Leonardo Gabriel Suárez,Alejandro Zendejas Saavedra,2,2,0,6,7,1,3,1,-2,30,43,13
+Varonil,3889702,74,Diego Alfonso Valdés Contreras,Salvador Reyes Chávez,2,2,0,6,7,1,3,1,-2,30,43,13
+Varonil,3889702,83,Ramón Juárez Del Castillo,Emilio Lara Contreras,3,0,-3,7,12,5,2,5,3,47,27,-20
+Varonil,3889702,83,Julián Andrés Quiñones Quiñones,Jonathan Javier Rodríguez Portillo,3,0,-3,7,12,5,2,5,3,47,27,-20
+Varonil,3889702,84,Jonathan dos Santos Ramírez,Richard Rafael Sánchez Guerrero,2,0,-2,7,12,5,1,5,4,43,27,-16
+Varonil,3889715,45,Luis Ángel Malagón Velázquez,Óscar Francisco Jiménez Fabela,1,5,4,6,19,13,4,7,3,67,103,36
+Varonil,3889715,60,Diego Alfonso Valdés Contreras,Richard Rafael Sánchez Guerrero,2,0,-2,14,19,5,6,10,4,83,62,-21
+Varonil,3889715,76,Julián Andrés Quiñones Quiñones,Henry Josué Martín Mex,1,0,-1,14,14,0,6,3,-3,81,37,-44
+Varonil,3889715,76,Leonardo Gabriel Suárez,Alejandro Zendejas Saavedra,1,0,-1,14,14,0,6,3,-3,81,37,-44
+Varonil,3889725,64,Leonardo Gabriel Suárez,Alejandro Zendejas Saavedra,1,1,0,19,11,-8,4,3,-1,23,26,3
+Varonil,3889725,64,Henry Josué Martín Mex,Jonathan Javier Rodríguez Portillo,1,1,0,19,11,-8,4,3,-1,23,26,3
+Varonil,3889725,80,Paul Brian Rodríguez Bravo,Salvador Reyes Chávez,2,2,0,3,10,7,4,3,-1,18,22,4
+Varonil,3889725,89,Julián Andrés Quiñones Quiñones,Santiago Naveda Lara,2,0,-2,7,9,2,3,3,0,22,26,4
+Varonil,3889728,59,Leonardo Gabriel Suárez,Paul Brian Rodríguez Bravo,1,1,0,26,13,-13,6,4,-2,45,72,27
+Varonil,3889728,59,Ramón Juárez Del Castillo,Igor Lichnovsky Osorio,1,1,0,26,13,-13,6,4,-2,45,72,27
+Varonil,3889728,77,Henry Josué Martín Mex,Julián Andrés Quiñones Quiñones,1,3,2,18,16,-2,5,6,1,47,45,-2
+Varonil,3889728,82,Alejandro Zendejas Saavedra,Luis Fernando Fuentes Vargas,1,3,2,14,16,2,5,6,1,66,34,-32
+Varonil,3889728,83,Jonathan dos Santos Ramírez,Santiago Naveda Lara,1,3,2,10,17,7,4,7,3,63,43,-20
+Varonil,3889732,59,Diego Alfonso Valdés Contreras,Henry Josué Martín Mex,2,1,-1,20,13,-7,7,4,-3,95,64,-31
+Varonil,3889732,60,Santiago Naveda Lara,Jonathan dos Santos Ramírez,2,1,-1,18,15,-3,2,4,2,73,64,-9
+Varonil,3889732,60,Emilio Lara Contreras,Kevin Nahin Álvarez Campos,2,1,-1,18,15,-3,2,4,2,73,64,-9
+Varonil,3889732,67,Julián Andrés Quiñones Quiñones,Jonathan Javier Rodríguez Portillo,1,3,2,12,7,-5,3,5,2,85,39,-46
+Varonil,3889732,85,Alejandro Zendejas Saavedra,Leonardo Gabriel Suárez,1,2,1,3,9,6,3,5,2,92,79,-13
+Varonil,3889744,61,Jonathan Javier Rodríguez Portillo,Paul Brian Rodríguez Bravo,4,2,-2,4,11,7,2,3,1,60,40,-20
+Varonil,3889744,61,Leonardo Gabriel Suárez,Alejandro Zendejas Saavedra,4,2,-2,4,11,7,2,3,1,60,40,-20
+Varonil,3889744,71,Álvaro Fidalgo Fernández,Richard Rafael Sánchez Guerrero,2,2,0,11,9,-2,3,3,0,40,50,10
+Varonil,3889744,84,Luis Fernando Fuentes Vargas,Salvador Reyes Chávez,2,1,-1,6,11,5,3,2,-1,30,47,17
+Varonil,3889744,84,Kevin Nahin Álvarez Campos,Sebastián Enzo Cáceres Ramos,2,1,-1,6,11,5,3,2,-1,30,47,17
+Varonil,3889758,45,Igor Lichnovsky Osorio,Israel Reyes Romero,0,1,1,13,7,-6,4,8,4,80,122,42
+Varonil,3889758,45,Alejandro Zendejas Saavedra,Leonardo Gabriel Suárez,0,1,1,13,7,-6,4,8,4,80,122,42
+Varonil,3889758,45,Jonathan dos Santos Ramírez,Richard Rafael Sánchez Guerrero,0,1,1,13,7,-6,4,8,4,80,122,42
+Varonil,3889758,63,Paul Brian Rodríguez Bravo,Salvador Reyes Chávez,2,1,-1,10,14,4,6,3,-3,66,65,-1
+Varonil,3889758,70,Henry Josué Martín Mex,Bruce El-mesmari Sangochian,2,0,-2,11,15,4,3,4,1,57,53,-4
+Varonil,3889769,77,Sebastián Enzo Cáceres Ramos,Ramón Juárez Del Castillo,0,1,1,27,22,-5,2,3,1,73,41,-32
+Varonil,3889769,83,Jonathan Javier Rodríguez Portillo,Miguel Arturo Layún Prado,0,1,1,29,19,-10,3,1,-2,32,26,-6
+Varonil,3889769,90,Álvaro Fidalgo Fernández,Luis Fernando Fuentes Vargas,1,1,0,22,9,-13,2,1,-1,30,7,-23
+Varonil,3889775,45,Julián Andrés Quiñones Quiñones,Jonathan Javier Rodríguez Portillo,0,2,2,19,26,7,3,9,6,43,76,33
+Varonil,3889775,67,Luis Fernando Fuentes Vargas,Salvador Reyes Chávez,1,5,4,14,14,0,5,6,1,23,43,20
+Varonil,3889775,68,Santiago Naveda Lara,Álvaro Fidalgo Fernández,1,6,5,15,11,-4,5,6,1,21,54,33
+Varonil,3889775,68,Miguel Arturo Layún Prado,Patricio Salas,1,6,5,15,11,-4,5,6,1,21,54,33
+Varonil,3889775,79,Henry Josué Martín Mex,Jonathan dos Santos Ramírez,6,1,-5,11,9,-2,6,2,-4,47,51,4
+Varonil,3889786,64,Julián Andrés Quiñones Quiñones,Richard Rafael Sánchez Guerrero,3,1,-2,11,8,-3,4,2,-2,38,55,17
+Varonil,3889786,89,Jonathan Javier Rodríguez Portillo,Israel Reyes Romero,0,1,1,22,12,-10,7,5,-2,23,29,6
+Varonil,3889786,89,Jonathan dos Santos Ramírez,Santiago Naveda Lara,0,1,1,22,12,-10,7,5,-2,23,29,6
+Varonil,3917452,61,Diego Alfonso Valdés Contreras,Jonathan Javier Rodríguez Portillo,1,0,-1,7,18,11,4,3,-1,78,64,-14
+Varonil,3917452,73,Jonathan dos Santos Ramírez,Richard Rafael Sánchez Guerrero,1,1,0,14,7,-7,4,4,0,65,97,32
+Varonil,3917452,74,Henry Josué Martín Mex,Leonardo Gabriel Suárez,1,1,0,15,5,-10,4,4,0,66,90,24
+Varonil,3917452,83,Julián Andrés Quiñones Quiñones,Kevin Nahin Álvarez Campos,1,2,1,7,13,6,4,3,-1,97,56,-41
+Varonil,3917453,77,Alejandro Zendejas Saavedra,Salvador Reyes Chávez,5,0,-5,12,9,-3,13,2,-11,66,22,-44
+Varonil,3917453,78,Diego Alfonso Valdés Contreras,Richard Rafael Sánchez Guerrero,1,0,-1,11,10,-1,10,2,-8,62,29,-33
+Varonil,3917453,81,Julián Andrés Quiñones Quiñones,Jonathan Javier Rodríguez Portillo,0,1,1,9,12,3,6,2,-4,41,29,-12
+Varonil,3917453,85,Kevin Nahin Álvarez Campos,Miguel Arturo Layún Prado,0,1,1,9,13,4,4,3,-1,38,26,-12
+Varonil,3917856,73,Jonathan dos Santos Ramírez,Richard Rafael Sánchez Guerrero,2,2,0,17,14,-3,5,5,0,62,54,-8
+Varonil,3917856,73,Alejandro Zendejas Saavedra,Leonardo Gabriel Suárez,2,2,0,17,14,-3,5,5,0,62,54,-8
+Varonil,3917856,73,Henry Josué Martín Mex,Jonathan Javier Rodríguez Portillo,2,2,0,17,14,-3,5,5,0,62,54,-8
+Varonil,3917856,74,Igor Lichnovsky Osorio,Israel Reyes Romero,1,4,3,17,14,-3,5,6,1,56,58,2
+Varonil,3917856,86,Diego Alfonso Valdés Contreras,Santiago Naveda Lara,4,3,-1,10,17,7,5,4,-1,57,22,-35
+Varonil,3917858,45,Sebastián Enzo Cáceres Ramos,Igor Lichnovsky Osorio,3,0,-3,10,25,15,4,3,-1,85,28,-57
+Varonil,3917858,66,Leonardo Gabriel Suárez,Alejandro Zendejas Saavedra,1,0,-1,14,16,2,5,5,0,77,76,-1
+Varonil,3917858,66,Diego Alfonso Valdés Contreras,Álvaro Fidalgo Fernández,1,0,-1,14,16,2,5,5,0,77,76,-1
+Varonil,3917858,66,Henry Josué Martín Mex,Julián Andrés Quiñones Quiñones,1,0,-1,14,16,2,5,5,0,77,76,-1
+Varonil,3917858,78,Jonathan dos Santos Ramírez,Santiago Naveda Lara,0,0,0,13,9,-4,5,3,-2,100,39,-61
+Varonil,3918374,83,Jonathan dos Santos Ramírez,Richard Rafael Sánchez Guerrero,1,1,0,4,16,12,10,7,-3,70,60,-10
+Varonil,3918374,83,Diego Alfonso Valdés Contreras,Jonathan Javier Rodríguez Portillo,1,1,0,4,16,12,10,7,-3,70,60,-10
+Varonil,3918374,90,Julián Andrés Quiñones Quiñones,Kevin Nahin Álvarez Campos,1,0,-1,10,14,4,12,1,-11,79,21,-58
+Varonil,3918374,90,Alejandro Zendejas Saavedra,Salvador Reyes Chávez,1,0,-1,10,14,4,12,1,-11,79,21,-58
+Varonil,3918375,75,Miguel Arturo Layún Prado,Kevin Nahin Álvarez Campos,1,0,-1,9,11,2,5,2,-3,44,28,-16
+Varonil,3918375,75,Alejandro Zendejas Saavedra,Jonathan Javier Rodríguez Portillo,1,0,-1,9,11,2,5,2,-3,44,28,-16
+Varonil,3918375,98,Jonathan dos Santos Ramírez,Richard Rafael Sánchez Guerrero,4,3,-1,14,6,-8,5,2,-3,70,62,-8
+Varonil,3918375,98,Luis Fernando Fuentes Vargas,Salvador Reyes Chávez,4,3,-1,14,6,-8,5,2,-3,70,62,-8
+Varonil,3918375,107,Igor Lichnovsky Osorio,Ramón Juárez Del Castillo,3,0,-3,7,7,0,2,0,-2,62,96,34
+Varonil,3918375,107,Julián Andrés Quiñones Quiñones,Leonardo Gabriel Suárez,3,0,-3,7,7,0,2,0,-2,62,96,34
+Varonil,3918957,45,Sebastián Martínez Cruz,Richard Rafael Sánchez Guerrero,0,1,1,16,35,19,2,5,3,39,31,-8
+Varonil,3918957,67,Román Martínez,Alejandro Zendejas Saavedra,0,0,0,32,25,-7,6,7,1,15,60,45
+Varonil,3918957,82,Kevin Nahin Álvarez Campos,Patricio Salas,0,1,1,18,18,0,5,5,0,45,15,-30
+Varonil,3918957,83,Illian Gerardo Hernandez Vargas,Luis Fernando Fuentes Vargas,0,1,1,14,21,7,4,5,1,37,21,-16
+Varonil,3918969,45,Israel Reyes Romero,Kevin Nahin Álvarez Campos,0,1,1,14,16,2,3,11,8,70,59,-11
+Varonil,3918969,66,Salvador Reyes Chávez,Alejandro Zendejas Saavedra,0,0,0,21,10,-11,6,1,-5,33,52,19
+Varonil,3918969,66,Julián Andrés Quiñones Quiñones,Henry Josué Martín Mex,0,0,0,21,10,-11,6,1,-5,33,52,19
+Varonil,3918969,66,Illian Gerardo Hernandez Vargas,Jonathan dos Santos Ramírez,0,0,0,21,10,-11,6,1,-5,33,52,19
+Varonil,3918969,88,Richard Rafael Sánchez Guerrero,Santiago Naveda Lara,1,1,0,18,14,-4,4,5,1,91,24,-67
+Varonil,3918974,45,Henry Josué Martín Mex,Diego Alfonso Valdés Contreras,0,2,2,15,23,8,4,10,6,70,144,74
+Varonil,3918974,45,Jonathan Javier Rodríguez Portillo,Julián Andrés Quiñones Quiñones,0,2,2,15,23,8,4,10,6,70,144,74
+Varonil,3918974,63,Alejandro Zendejas Saavedra,Paul Brian Rodríguez Bravo,0,0,0,9,9,0,6,4,-2,111,94,-17
+Varonil,3918974,73,Kevin Nahin Álvarez Campos,Emilio Lara Contreras,0,2,2,9,10,1,4,6,2,94,66,-28
+Varonil,3918974,74,Salvador Reyes Chávez,Cristian Yonathan Calderón Del Real,0,2,2,10,10,0,4,6,2,81,66,-15
+Varonil,3918991,57,Illian Gerardo Hernandez Vargas,Paul Brian Rodríguez Bravo,1,2,1,18,10,-8,3,8,5,76,59,-17
+Varonil,3918991,76,Igor Lichnovsky Osorio,Ramón Juárez Del Castillo,1,0,-1,9,18,9,5,5,0,63,38,-25
+Varonil,3918991,77,Alejandro Zendejas Saavedra,Salvador Reyes Chávez,1,0,-1,9,18,9,4,5,1,56,41,-15
+Varonil,3918991,77,Emilio Lara Contreras,Israel Reyes Romero,1,0,-1,9,18,9,4,5,1,56,41,-15
+Varonil,3918991,85,Diego Alfonso Valdés Contreras,Santiago Naveda Lara,0,0,0,18,7,-11,5,4,-1,34,33,-1
+Varonil,3919001,52,Sebastián Enzo Cáceres Ramos,Ramón Juárez Del Castillo,2,1,-1,10,6,-4,9,2,-7,91,34,-57
+Varonil,3919001,62,Paul Brian Rodríguez Bravo,Javairô Joreno Faustino Dilrosun,1,6,5,6,3,-3,2,5,3,34,37,3
+Varonil,3919001,62,Alejandro Zendejas Saavedra,Jonathan Javier Rodríguez Portillo,1,6,5,6,3,-3,2,5,3,34,37,3
+Varonil,3919001,89,Julián Andrés Quiñones Quiñones,Illian Gerardo Hernandez Vargas,3,2,-1,9,7,-2,5,3,-2,33,33,0
+Varonil,3919008,64,Javairô Joreno Faustino Dilrosun,Paul Brian Rodríguez Bravo,1,2,1,11,9,-2,6,6,0,55,67,12
+Varonil,3919008,81,Julián Andrés Quiñones Quiñones,Henry Josué Martín Mex,1,0,-1,12,8,-4,4,5,1,59,58,-1
+Varonil,3919008,81,Cristian Yonathan Calderón Del Real,Salvador Reyes Chávez,1,0,-1,12,8,-4,4,5,1,59,58,-1
+Varonil,3919008,90,Kevin Nahin Álvarez Campos,Illian Gerardo Hernandez Vargas,0,3,3,11,8,-3,4,7,3,61,40,-21
+Varonil,3919016,45,Alejandro Zendejas Saavedra,Javairô Joreno Faustino Dilrosun,1,3,2,19,19,0,8,6,-2,84,111,27
+Varonil,3919016,45,Cristian Yonathan Calderón Del Real,Salvador Reyes Chávez,1,3,2,19,19,0,8,6,-2,84,111,27
+Varonil,3919016,62,Paul Brian Rodríguez Bravo,Jonathan Javier Rodríguez Portillo,0,5,5,6,5,-1,2,8,6,60,39,-21
+Varonil,3919016,62,Julián Andrés Quiñones Quiñones,Diego Alfonso Valdés Contreras,0,5,5,6,5,-1,2,8,6,60,39,-21
+Varonil,3919016,86,Henry Josué Martín Mex,Illian Gerardo Hernandez Vargas,1,0,-1,11,35,24,4,2,-2,40,34,-6
+Varonil,3919022,68,Julián Andrés Quiñones Quiñones,Jonathan Javier Rodríguez Portillo,1,1,0,29,11,-18,4,0,-4,20,17,-3
+Varonil,3919022,76,Henry Josué Martín Mex,Kevin Nahin Álvarez Campos,1,0,-1,9,16,7,0,2,2,16,17,1
+Varonil,3919022,76,Alejandro Zendejas Saavedra,Santiago Naveda Lara,1,0,-1,9,16,7,0,2,2,16,17,1
+Varonil,3919022,83,Diego Alfonso Valdés Contreras,Paul Brian Rodríguez Bravo,1,0,-1,13,10,-3,2,3,1,18,12,-6
+Varonil,3919022,83,Sebastián Enzo Cáceres Ramos,Ramón Juárez Del Castillo,1,0,-1,13,10,-3,2,3,1,18,12,-6
+Varonil,3919036,70,Javairô Joreno Faustino Dilrosun,Alejandro Zendejas Saavedra,1,3,2,15,12,-3,5,3,-2,80,74,-6
+Varonil,3919036,71,Julián Andrés Quiñones Quiñones,Paul Brian Rodríguez Bravo,2,3,1,11,13,2,6,4,-2,86,70,-16
+Varonil,3919036,83,Diego Alfonso Valdés Contreras,Richard Rafael Sánchez Guerrero,4,4,0,10,16,6,4,4,0,56,42,-14
+Varonil,3919036,83,Israel Reyes Romero,Kevin Nahin Álvarez Campos,4,4,0,10,16,6,4,4,0,56,42,-14
+Varonil,3919036,83,Cristian Yonathan Calderón Del Real,Luis Fernando Fuentes Vargas,4,4,0,10,16,6,4,4,0,56,42,-14
+Varonil,3919045,62,Santiago Naveda Lara,Álvaro Fidalgo Fernández,0,1,1,10,11,1,4,2,-2,51,13,-38
+Varonil,3919045,62,Paul Brian Rodríguez Bravo,Julián Andrés Quiñones Quiñones,0,1,1,10,11,1,4,2,-2,51,13,-38
+Varonil,3919045,62,Illian Gerardo Hernandez Vargas,Henry Josué Martín Mex,0,1,1,10,11,1,4,2,-2,51,13,-38
+Varonil,3919045,71,Javairô Joreno Faustino Dilrosun,Igor Lichnovsky Osorio,1,2,1,10,8,-2,2,6,4,16,30,14
+Varonil,3919045,82,Alejandro Zendejas Saavedra,Diego Alfonso Valdés Contreras,2,0,-2,8,8,0,7,1,-6,34,44,10
+Varonil,3919055,44,Diego Alfonso Valdés Contreras,Richard Rafael Sánchez Guerrero,3,1,-2,12,21,9,6,6,0,57,132,75
+Varonil,3919055,71,Alejandro Zendejas Saavedra,Javairô Joreno Faustino Dilrosun,3,1,-2,11,27,16,3,4,1,88,29,-59
+Varonil,3919055,71,Cristian Yonathan Calderón Del Real,Salvador Reyes Chávez,3,1,-2,11,27,16,3,4,1,88,29,-59
+Varonil,3919055,88,Henry Josué Martín Mex,Luis Fernando Fuentes Vargas,0,1,1,30,5,-25,3,2,-1,30,43,13
+Varonil,3919062,36,Illian Gerardo Hernandez Vargas,Diego Alfonso Valdés Contreras,0,1,1,7,18,11,8,1,-7,40,28,-12
+Varonil,3919062,67,Kevin Nahin Álvarez Campos,Sebastián Enzo Cáceres Ramos,2,0,-2,9,16,7,5,6,1,57,53,-4
+Varonil,3919062,67,Salvador Reyes Chávez,Paul Brian Rodríguez Bravo,2,0,-2,9,16,7,5,6,1,57,53,-4
+Varonil,3919062,84,Néstor Alejandro Araújo Razo,Ramón Juárez Del Castillo,1,2,1,14,14,0,6,5,-1,58,57,-1
+Varonil,3919062,84,Javairô Joreno Faustino Dilrosun,Santiago Naveda Lara,1,2,1,14,14,0,6,5,-1,58,57,-1
+Varonil,3919069,67,Paul Brian Rodríguez Bravo,Julián Andrés Quiñones Quiñones,3,1,-2,10,18,8,5,5,0,42,35,-7
+Varonil,3919069,67,Diego Alfonso Valdés Contreras,Álvaro Fidalgo Fernández,3,1,-2,10,18,8,5,5,0,42,35,-7
+Varonil,3919069,67,Javairô Joreno Faustino Dilrosun,Alejandro Zendejas Saavedra,3,1,-2,10,18,8,5,5,0,42,35,-7
+Varonil,3919069,67,Luis Fernando Fuentes Vargas,Salvador Reyes Chávez,3,1,-2,10,18,8,5,5,0,42,35,-7
+Varonil,3919069,83,Néstor Alejandro Araújo Razo,Kevin Nahin Álvarez Campos,7,3,-4,20,10,-10,8,5,-3,49,73,24
+Varonil,3919081,64,Javairô Joreno Faustino Dilrosun,Julián Andrés Quiñones Quiñones,3,3,0,5,10,5,2,3,1,35,26,-9
+Varonil,3919081,65,Igor Lichnovsky Osorio,Ramón Juárez Del Castillo,3,3,0,1,12,11,2,3,1,35,26,-9
+Varonil,3919081,76,Diego Alfonso Valdés Contreras,Richard Rafael Sánchez Guerrero,3,1,-2,11,13,2,4,6,2,29,31,2
+Varonil,3919081,76,Henry Josué Martín Mex,Paul Brian Rodríguez Bravo,3,1,-2,11,13,2,4,6,2,29,31,2
+Varonil,3919081,83,Jonathan dos Santos Ramírez,Santiago Naveda Lara,1,2,1,9,13,4,5,4,-1,26,39,13
+Varonil,3919088,45,Israel Reyes Romero,Kevin Nahin Álvarez Campos,0,4,4,18,20,2,3,11,8,56,128,72
+Varonil,3919088,65,Julián Andrés Quiñones Quiñones,Richard Rafael Sánchez Guerrero,1,1,0,13,23,10,4,4,0,64,36,-28
+Varonil,3919088,65,Diego Alfonso Valdés Contreras,Paul Brian Rodríguez Bravo,1,1,0,13,23,10,4,4,0,64,36,-28
+Varonil,3919088,80,Alejandro Zendejas Saavedra,Javairô Joreno Faustino Dilrosun,2,0,-2,13,8,-5,8,3,-5,54,77,23
+Varonil,3919088,80,Cristian Yonathan Calderón Del Real,Salvador Reyes Chávez,2,0,-2,13,8,-5,8,3,-5,54,77,23
+Varonil,3919094,45,Julián Andrés Quiñones Quiñones,Henry Josué Martín Mex,2,1,-1,10,21,11,5,6,1,57,59,2
+Varonil,3919094,45,Álvaro Fidalgo Fernández,Diego Alfonso Valdés Contreras,2,1,-1,10,21,11,5,6,1,57,59,2
+Varonil,3919094,76,Kevin Nahin Álvarez Campos,Israel Reyes Romero,2,1,-1,5,9,4,5,5,0,37,20,-17
+Varonil,3919094,87,Santiago Naveda Lara,Sebastián Enzo Cáceres Ramos,0,1,1,9,9,0,4,1,-3,19,32,13
+Varonil,3919094,87,Javairô Joreno Faustino Dilrosun,Cristian Yonathan Calderón Del Real,0,1,1,9,9,0,4,1,-3,19,32,13
+Varonil,3919103,45,Luis Fernando Fuentes Vargas,Cristian Yonathan Calderón Del Real,4,3,-1,5,8,3,4,4,0,62,76,14
+Varonil,3919103,45,Sebastián Enzo Cáceres Ramos,Richard Rafael Sánchez Guerrero,4,3,-1,5,8,3,4,4,0,62,76,14
+Varonil,3919103,79,Diego Alfonso Valdés Contreras,Ramón Juárez Del Castillo,1,1,0,18,5,-13,5,4,-1,75,81,6
+Varonil,3919103,79,Kevin Nahin Álvarez Campos,Israel Reyes Romero,1,1,0,18,5,-13,5,4,-1,75,81,6
+Varonil,3919103,88,Alejandro Zendejas Saavedra,Paul Brian Rodríguez Bravo,1,0,-1,5,0,-5,5,3,-2,76,48,-28
+Varonil,3936617,45,Jonathan dos Santos Ramírez,Richard Rafael Sánchez Guerrero,1,2,1,5,13,8,6,6,0,68,60,-8
+Varonil,3936617,73,Javairô Joreno Faustino Dilrosun,Paul Brian Rodríguez Bravo,1,1,0,4,24,20,2,6,4,21,45,24
+Varonil,3936617,74,Salvador Reyes Chávez,Cristian Yonathan Calderón Del Real,1,1,0,4,25,21,2,7,5,15,48,33
+Varonil,3936617,74,Henry Josué Martín Mex,Julián Andrés Quiñones Quiñones,1,1,0,4,25,21,2,7,5,15,48,33
+Varonil,3936617,84,Diego Alfonso Valdés Contreras,Illian Gerardo Hernandez Vargas,1,1,0,25,16,-9,7,3,-4,48,54,6
+Varonil,3936618,56,Jonathan dos Santos Ramírez,Richard Rafael Sánchez Guerrero,2,1,-1,19,12,-7,11,5,-6,106,70,-36
+Varonil,3936618,56,Javairô Joreno Faustino Dilrosun,Julián Andrés Quiñones Quiñones,2,1,-1,19,12,-7,11,5,-6,106,70,-36
+Varonil,3936618,73,Alejandro Zendejas Saavedra,Paul Brian Rodríguez Bravo,1,3,2,8,9,1,5,8,3,50,79,29
+Varonil,3936618,74,Ramón Juárez Del Castillo,Salvador Reyes Chávez,1,3,2,9,11,2,6,8,2,40,77,37
+Varonil,3936618,83,Cristian Yonathan Calderón Del Real,Illian Gerardo Hernandez Vargas,3,6,3,9,18,9,8,7,-1,79,66,-13
+Varonil,3937184,45,Javairô Joreno Faustino Dilrosun,Julián Andrés Quiñones Quiñones,0,0,0,13,14,1,6,11,5,42,104,62
+Varonil,3937184,74,Jonathan dos Santos Ramírez,Richard Rafael Sánchez Guerrero,2,0,-2,9,15,6,10,6,-4,86,35,-51
+Varonil,3937184,74,Diego Alfonso Valdés Contreras,Paul Brian Rodríguez Bravo,2,0,-2,9,15,6,10,6,-4,86,35,-51
+Varonil,3937184,82,Henry Josué Martín Mex,Salvador Reyes Chávez,1,2,1,16,13,-3,7,2,-5,45,40,-5
+Varonil,3937186,74,Henry Josué Martín Mex,Salvador Reyes Chávez,1,1,0,14,17,3,3,3,0,42,26,-16
+Varonil,3937186,74,Diego Alfonso Valdés Contreras,Richard Rafael Sánchez Guerrero,1,1,0,14,17,3,3,3,0,42,26,-16
+Varonil,3937186,88,Cristian Yonathan Calderón Del Real,Luis Fernando Fuentes Vargas,3,0,-3,10,13,3,2,4,2,26,14,-12
+Varonil,3937186,88,Jonathan dos Santos Ramírez,Santiago Naveda Lara,3,0,-3,10,13,3,2,4,2,26,14,-12
+Varonil,3937186,92,Julián Andrés Quiñones Quiñones,Paul Brian Rodríguez Bravo,2,0,-2,8,7,-1,2,3,1,19,10,-9
+Varonil,3937694,77,Henry Josué Martín Mex,Paul Brian Rodríguez Bravo,1,0,-1,8,7,-1,6,4,-2,51,24,-27
+Varonil,3937694,85,Julián Andrés Quiñones Quiñones,Javairô Joreno Faustino Dilrosun,0,0,0,5,23,18,4,4,0,22,41,19
+Varonil,3937694,85,Diego Alfonso Valdés Contreras,Richard Rafael Sánchez Guerrero,0,0,0,5,23,18,4,4,0,22,41,19
+Varonil,3937694,95,Álvaro Fidalgo Fernández,Salvador Reyes Chávez,0,0,0,23,3,-20,4,1,-3,41,9,-32
+Varonil,3937695,86,Diego Alfonso Valdés Contreras,Richard Rafael Sánchez Guerrero,3,1,-2,10,5,-5,3,3,0,24,23,-1
+Varonil,3937695,92,Henry Josué Martín Mex,Salvador Reyes Chávez,2,2,0,11,5,-6,4,2,-2,35,19,-16
+Varonil,3939819,59,Javairô Joreno Faustino Dilrosun,Esteban Lozano Solana,1,2,1,13,4,-9,5,2,-3,58,60,2
+Varonil,3939819,59,Emilio Lara Contreras,Dagoberto Espinoza Acosta,1,2,1,13,4,-9,5,2,-3,58,60,2
+Varonil,3939819,59,Richard Rafael Sánchez Guerrero,Erick Daniel Sánchez Ocegueda,1,2,1,13,4,-9,5,2,-3,58,60,2
+Varonil,3939819,84,Ramón Juárez Del Castillo,Franco Rossano Erchuk,3,0,-3,5,6,1,2,2,0,72,45,-27
+Varonil,3939819,89,Jonathan dos Santos Ramírez,Diego Reyes Costilla,1,0,-1,6,8,2,3,4,1,58,42,-16
+Varonil,3939825,68,Alejandro Zendejas Saavedra,Miguel Ramírez Pérez,0,0,0,9,14,5,3,1,-2,52,44,-8
+Varonil,3939825,68,Richard Rafael Sánchez Guerrero,Jonathan dos Santos Ramírez,0,0,0,9,14,5,3,1,-2,52,44,-8
+Varonil,3939825,80,Javairô Joreno Faustino Dilrosun,Antonio Álvarez Villar,0,0,0,16,13,-3,1,6,5,48,45,-3
+Varonil,3939825,81,Henry Josué Martín Mex,Illian Gerardo Hernandez Vargas,0,0,0,16,12,-4,1,6,5,46,45,-1
+Varonil,3939825,88,Erick Daniel Sánchez Ocegueda,Diego Reyes Costilla,0,1,1,14,7,-7,5,2,-3,54,25,-29
+Varonil,3939841,67,Richard Rafael Sánchez Guerrero,Alan Jhosué Cervantes Martín del Campo,1,0,-1,15,12,-3,4,3,-1,33,54,21
+Varonil,3939841,77,Jonathan dos Santos Ramírez,Dagoberto Espinoza Acosta,0,0,0,12,15,3,3,3,0,54,20,-34
+Varonil,3939841,91,Ramón Juárez Del Castillo,Illian Gerardo Hernandez Vargas,0,1,1,15,11,-4,1,5,4,18,9,-9
+Varonil,3939841,91,Javairô Joreno Faustino Dilrosun,Antonio Álvarez Villar,0,1,1,15,11,-4,1,5,4,18,9,-9
+Varonil,3939848,80,Javairô Joreno Faustino Dilrosun,Rodrigo Sebastián Aguirre Soto,3,3,0,16,15,-1,6,6,0,51,54,3
+Varonil,3939848,81,Néstor Alejandro Araújo Razo,Israel Reyes Romero,3,4,1,9,15,6,5,6,1,50,61,11
+Varonil,3939848,86,Henry Josué Martín Mex,Illian Gerardo Hernandez Vargas,3,5,2,18,6,-12,5,5,0,46,38,-8
+Varonil,3939848,86,Jonathan dos Santos Ramírez,Alan Jhosué Cervantes Martín del Campo,3,5,2,18,6,-12,5,5,0,46,38,-8
+Varonil,3939848,93,Dagoberto Espinoza Acosta,Ramón Juárez Del Castillo,5,1,-4,11,3,-8,6,1,-5,47,7,-40
+Varonil,3939859,45,Jonathan dos Santos Ramírez,Álvaro Fidalgo Fernández,2,2,0,16,14,-2,1,5,4,44,87,43
+Varonil,3939859,45,Sebastián Enzo Cáceres Ramos,Ramón Juárez Del Castillo,2,2,0,16,14,-2,1,5,4,44,87,43
+Varonil,3939859,66,Cristian Alexis Borja González,Cristian Yonathan Calderón Del Real,1,2,1,11,12,1,2,3,1,64,79,15
+Varonil,3939859,66,Erick Daniel Sánchez Ocegueda,Illian Gerardo Hernandez Vargas,1,2,1,11,12,1,2,3,1,64,79,15
+Varonil,3939867,40,Diego Alfonso Valdés Contreras,Erick Daniel Sánchez Ocegueda,0,1,1,25,29,4,3,6,3,20,59,39
+Varonil,3939867,62,Richard Rafael Sánchez Guerrero,Rodrigo Sebastián Aguirre Soto,1,1,0,17,18,1,4,3,-1,61,47,-14
+Varonil,3939867,63,Cristian Alexis Borja González,Javairô Joreno Faustino Dilrosun,1,1,0,16,18,2,4,3,-1,58,47,-11
+Varonil,3939867,63,Jonathan dos Santos Ramírez,Alan Jhosué Cervantes Martín del Campo,1,1,0,16,18,2,4,3,-1,58,47,-11
+Varonil,3939867,72,Sebastián Enzo Cáceres Ramos,Cristian Yonathan Calderón Del Real,1,0,-1,18,21,3,3,3,0,47,41,-6
+Varonil,3939876,58,Javairô Joreno Faustino Dilrosun,Dagoberto Espinoza Acosta,1,1,0,19,15,-4,5,4,-1,24,39,15
+Varonil,3939876,69,Cristian Alexis Borja González,Cristian Yonathan Calderón Del Real,1,0,-1,14,24,10,4,6,2,39,18,-21
+Varonil,3939876,69,Henry Josué Martín Mex,Paul Brian Rodríguez Bravo,1,0,-1,14,24,10,4,6,2,39,18,-21
+Varonil,3939876,85,Rodrigo Sebastián Aguirre Soto,Richard Rafael Sánchez Guerrero,0,1,1,22,8,-14,6,5,-1,28,22,-6
+Varonil,3939876,85,Jonathan dos Santos Ramírez,Alan Jhosué Cervantes Martín del Campo,0,1,1,22,8,-14,6,5,-1,28,22,-6
+Varonil,3939883,45,Álvaro Fidalgo Fernández,Víctor Alejandro Dávila Zavala,0,2,2,23,23,0,4,7,3,60,86,26
+Varonil,3939883,45,Rodrigo Sebastián Aguirre Soto,Henry Josué Martín Mex,0,2,2,23,23,0,4,7,3,60,86,26
+Varonil,3939883,64,Javairô Joreno Faustino Dilrosun,Alejandro Zendejas Saavedra,3,1,-2,14,16,2,5,2,-3,49,27,-22
+Varonil,3939883,65,Néstor Alejandro Araújo Razo,Miguel Ángel Vázquez García,2,1,-1,14,16,2,5,2,-3,46,36,-10
+Varonil,3939883,69,Israel Reyes Romero,Kevin Nahin Álvarez Campos,2,1,-1,6,16,10,5,1,-4,30,48,18
+Varonil,3939892,45,Diego Alfonso Valdés Contreras,Rodrigo Sebastián Aguirre Soto,0,4,4,16,11,-5,6,11,5,44,110,66
+Varonil,3939892,45,Jonathan dos Santos Ramírez,Álvaro Fidalgo Fernández,0,4,4,16,11,-5,6,11,5,44,110,66
+Varonil,3939892,67,Alejandro Zendejas Saavedra,Erick Daniel Sánchez Ocegueda,3,1,-2,9,7,-2,5,9,4,29,76,47
+Varonil,3939892,68,Richard Rafael Sánchez Guerrero,Víctor Alejandro Dávila Zavala,3,1,-2,8,6,-2,5,8,3,31,70,39
+Varonil,3939892,78,Néstor Alejandro Araújo Razo,Cristian Alexis Borja González,1,5,4,6,6,0,8,9,1,70,49,-21
+Varonil,3939905,45,Cristian Yonathan Calderón Del Real,Paul Brian Rodríguez Bravo,1,2,1,16,23,7,3,2,-1,80,93,13
+Varonil,3939905,65,Dagoberto Espinoza Acosta,Kevin Nahin Álvarez Campos,2,0,-2,8,17,9,6,10,4,92,54,-38
+Varonil,3939905,65,Víctor Alejandro Dávila Zavala,Alejandro Zendejas Saavedra,2,0,-2,8,17,9,6,10,4,92,54,-38
+Varonil,3939905,71,Rodrigo Sebastián Aguirre Soto,Henry Josué Martín Mex,0,3,3,17,3,-14,11,7,-4,51,60,9
+Varonil,3939905,72,Néstor Alejandro Araújo Razo,Richard Rafael Sánchez Guerrero,0,3,3,17,4,-13,8,7,-1,44,59,15
+Varonil,3939911,45,Jonathan dos Santos Ramírez,Alan Jhosué Cervantes Martín del Campo,1,2,1,12,21,9,3,4,1,60,95,35
+Varonil,3939911,45,Cristian Yonathan Calderón Del Real,Cristian Alexis Borja González,1,2,1,12,21,9,3,4,1,60,95,35
+Varonil,3939911,58,Diego Alfonso Valdés Contreras,Javairô Joreno Faustino Dilrosun,2,1,-1,15,16,1,6,7,1,89,27,-62
+Varonil,3939911,58,Víctor Alejandro Dávila Zavala,Rodrigo Sebastián Aguirre Soto,2,1,-1,15,16,1,6,7,1,89,27,-62
+Varonil,3939911,89,Kevin Nahin Álvarez Campos,Israel Reyes Romero,2,2,0,9,12,3,4,5,1,34,28,-6
+Varonil,3939915,65,Paul Brian Rodríguez Bravo,Diego Alfonso Valdés Contreras,0,0,0,13,18,5,3,1,-2,28,31,3
+Varonil,3939915,65,Álvaro Fidalgo Fernández,Erick Daniel Sánchez Ocegueda,0,0,0,13,18,5,3,1,-2,28,31,3
+Varonil,3939915,73,Rodrigo Sebastián Aguirre Soto,Cristian Yonathan Calderón Del Real,0,2,2,19,5,-14,2,5,3,24,76,52
+Varonil,3939915,73,Cristian Alexis Borja González,Javairô Joreno Faustino Dilrosun,0,2,2,19,5,-14,2,5,3,24,76,52
+Varonil,3939923,63,Jonathan dos Santos Ramírez,Henry Josué Martín Mex,3,8,5,13,6,-7,3,9,6,30,47,17
+Varonil,3939923,72,Alejandro Zendejas Saavedra,Erick Daniel Sánchez Ocegueda,8,4,-4,6,5,-1,7,4,-3,56,70,14
+Varonil,3939923,73,Javairô Joreno Faustino Dilrosun,Víctor Alejandro Dávila Zavala,8,5,-3,6,6,0,9,3,-6,47,75,28
+Varonil,3939923,86,Illian Gerardo Hernandez Vargas,Patricio Salas,3,3,0,7,12,5,3,2,-1,72,43,-29
+Varonil,3939923,86,Cristian Yonathan Calderón Del Real,Franco Rossano Erchuk,3,3,0,7,12,5,3,2,-1,72,43,-29
+Varonil,3939933,41,Víctor Alejandro Dávila Zavala,Rodrigo Sebastián Aguirre Soto,1,1,0,14,44,30,5,8,3,45,33,-12
+Varonil,3939933,59,Jonathan dos Santos Ramírez,Paul Brian Rodríguez Bravo,2,1,-1,49,23,-26,5,3,-2,46,40,-6
+Varonil,3939933,59,Dagoberto Espinoza Acosta,Kevin Nahin Álvarez Campos,2,1,-1,49,23,-26,5,3,-2,46,40,-6
+Varonil,3939933,78,Erick Daniel Sánchez Ocegueda,Diego Alfonso Valdés Contreras,3,4,1,21,22,1,3,6,3,23,31,8
+Varonil,3939933,79,Henry Josué Martín Mex,Cristian Alexis Borja González,2,5,3,21,23,2,3,7,4,17,34,17
+Varonil,3939941,66,Diego Alfonso Valdés Contreras,Álvaro Fidalgo Fernández,1,0,-1,22,19,-3,6,5,-1,39,62,23
+Varonil,3939941,67,Erick Daniel Sánchez Ocegueda,Cristian Alexis Borja González,1,0,-1,22,22,0,5,6,1,29,68,39
+Varonil,3939941,74,Cristian Yonathan Calderón Del Real,Néstor Alejandro Araújo Razo,1,1,0,19,24,5,6,4,-2,61,35,-26
+Varonil,3939941,91,Paul Brian Rodríguez Bravo,Jonathan dos Santos Ramírez,2,1,-1,12,13,1,2,0,-2,26,10,-16
+Varonil,3939943,25,Sebastián Enzo Cáceres Ramos,Israel Reyes Romero,1,5,4,22,10,-12,3,6,3,52,56,4
+Varonil,3939943,58,Alejandro Zendejas Saavedra,Javairô Joreno Faustino Dilrosun,2,1,-1,17,22,5,8,2,-6,57,41,-16
+Varonil,3939943,58,Henry Josué Martín Mex,Diego Alfonso Valdés Contreras,2,1,-1,17,22,5,8,2,-6,57,41,-16
+Varonil,3939943,58,Jonathan dos Santos Ramírez,Dagoberto Espinoza Acosta,2,1,-1,17,22,5,8,2,-6,57,41,-16
+Varonil,3939943,73,Kevin Nahin Álvarez Campos,Alan Jhosué Cervantes Martín del Campo,0,3,3,24,16,-8,3,4,1,35,61,26
+Varonil,3939959,66,Rodrigo Sebastián Aguirre Soto,Diego Alfonso Valdés Contreras,0,1,1,21,21,0,3,2,-1,31,48,17
+Varonil,3939959,78,Alejandro Zendejas Saavedra,Jonathan dos Santos Ramírez,1,2,1,23,19,-4,3,7,4,47,34,-13
+Varonil,3939959,78,Álvaro Fidalgo Fernández,Erick Daniel Sánchez Ocegueda,1,2,1,23,19,-4,3,7,4,47,34,-13
+Varonil,3939959,91,Paul Brian Rodríguez Bravo,Miguel Ángel Vázquez García,1,0,-1,22,13,-9,6,1,-5,29,7,-22
+Varonil,3939959,91,Henry Josué Martín Mex,Illian Gerardo Hernandez Vargas,1,0,-1,22,13,-9,6,1,-5,29,7,-22
+Varonil,3968407,45,Kevin Nahin Álvarez Campos,Rodrigo Sebastián Aguirre Soto,0,1,1,10,15,5,5,6,1,55,58,3
+Varonil,3968407,45,Jonathan dos Santos Ramírez,Paul Brian Rodríguez Bravo,0,1,1,10,15,5,5,6,1,55,58,3
+Varonil,3968407,75,Henry Josué Martín Mex,Erick Daniel Sánchez Ocegueda,0,3,3,7,3,-4,3,9,6,21,66,45
+Varonil,3968407,75,Cristian Yonathan Calderón Del Real,Cristian Alexis Borja González,0,3,3,7,3,-4,3,9,6,21,66,45
+Varonil,3968407,79,Ramón Juárez Del Castillo,Illian Gerardo Hernandez Vargas,3,0,-3,1,10,9,6,6,0,34,69,35
+Varonil,3969391,87,Alejandro Zendejas Saavedra,Erick Daniel Sánchez Ocegueda,4,0,-4,8,17,9,2,5,3,44,19,-25
+Varonil,3969391,90,Paul Brian Rodríguez Bravo,Jonathan dos Santos Ramírez,2,0,-2,10,14,4,1,5,4,26,15,-11
+Varonil,3969391,91,Rodrigo Sebastián Aguirre Soto,Illian Gerardo Hernandez Vargas,1,0,-1,10,13,3,2,4,2,25,13,-12
+Varonil,3969395,58,Rodrigo Sebastián Aguirre Soto,Henry Josué Martín Mex,2,0,-2,16,12,-4,7,2,-5,27,22,-5
+Varonil,3969395,62,Sebastián Enzo Cáceres Ramos,Néstor Alejandro Araújo Razo,2,2,0,12,13,1,3,4,1,25,16,-9
+Varonil,3969395,63,Paul Brian Rodríguez Bravo,Jonathan dos Santos Ramírez,2,2,0,10,13,3,3,4,1,25,16,-9
+Varonil,3969395,80,Cristian Yonathan Calderón Del Real,Cristian Alexis Borja González,2,0,-2,21,16,-5,2,4,2,36,39,3
+Varonil,3969395,80,Alejandro Zendejas Saavedra,Javairô Joreno Faustino Dilrosun,2,0,-2,21,16,-5,2,4,2,36,39,3
+Varonil,3970307,66,Rodrigo Sebastián Aguirre Soto,Henry Josué Martín Mex,3,0,-3,12,6,-6,3,3,0,19,37,18
+Varonil,3970307,82,Paul Brian Rodríguez Bravo,Víctor Alejandro Dávila Zavala,0,1,1,14,8,-6,5,3,-2,37,34,-3
+Varonil,3970307,82,Cristian Yonathan Calderón Del Real,Cristian Alexis Borja González,0,1,1,14,8,-6,5,3,-2,37,34,-3
+Varonil,3970307,91,Álvaro Fidalgo Fernández,Jonathan dos Santos Ramírez,1,1,0,8,4,-4,3,1,-2,43,9,-34
+Varonil,3970308,66,Henry Josué Martín Mex,Rodrigo Sebastián Aguirre Soto,0,1,1,20,11,-9,4,1,-3,20,15,-5
+Varonil,3970308,66,Richard Rafael Sánchez Guerrero,Alan Jhosué Cervantes Martín del Campo,0,1,1,20,11,-9,4,1,-3,20,15,-5
+Varonil,3970308,75,Cristian Alexis Borja González,Cristian Yonathan Calderón Del Real,1,0,-1,8,13,5,2,2,0,20,18,-2
+Varonil,3970308,83,Jonathan dos Santos Ramírez,Erick Daniel Sánchez Ocegueda,0,0,0,16,5,-11,3,0,-3,18,5,-13
+Varonil,3970308,84,Sebastián Enzo Cáceres Ramos,Néstor Alejandro Araújo Razo,0,1,1,13,5,-8,2,0,-2,16,5,-11
+Varonil,3971432,62,Víctor Alejandro Dávila Zavala,Diego Alfonso Valdés Contreras,4,1,-3,15,13,-2,4,2,-2,40,48,8
+Varonil,3971432,62,Jonathan dos Santos Ramírez,Alan Jhosué Cervantes Martín del Campo,4,1,-3,15,13,-2,4,2,-2,40,48,8
+Varonil,3971432,77,Cristian Alexis Borja González,Cristian Yonathan Calderón Del Real,2,0,-2,8,16,8,4,2,-2,73,44,-29
+Varonil,3971432,77,Henry Josué Martín Mex,Paul Brian Rodríguez Bravo,2,0,-2,8,16,8,4,2,-2,73,44,-29
+Varonil,3971432,84,Sebastián Enzo Cáceres Ramos,Néstor Alejandro Araújo Razo,0,2,2,9,26,17,3,5,2,60,35,-25
+Varonil,3971433,41,Henry Josué Martín Mex,Rodrigo Sebastián Aguirre Soto,0,0,0,25,39,14,3,5,2,43,40,-3
+Varonil,3971433,71,Richard Rafael Sánchez Guerrero,Jonathan dos Santos Ramírez,0,1,1,10,29,19,3,7,4,18,43,25
+Varonil,3971433,89,Cristian Yonathan Calderón Del Real,Cristian Alexis Borja González,0,0,0,21,18,-3,8,5,-3,14,18,4
+Varonil,3972016,62,Diego Osvaldo Arriaga García,Esteban Lozano Solana,5,3,-2,12,16,4,5,4,-1,58,50,-8
+Varonil,3972016,69,Patricio Salas,Francisco Manuel García Flores,2,5,3,15,12,-3,2,7,5,50,70,20
+Varonil,3972016,84,Miguel Ramírez Pérez,Christo Alejandro Vela Alatorre,3,0,-3,11,15,4,5,3,-2,50,38,-12
+Varonil,3972016,85,Dagoberto Espinoza Acosta,Patrick Villa Urban,3,0,-3,11,16,5,4,3,-1,35,44,9
+Varonil,3972016,85,Antonio Álvarez Villar,Walter Portales,3,0,-3,11,16,5,4,3,-1,35,44,9
+Varonil,3972023,17,Antonio Álvarez Villar,Christo Alejandro Vela Alatorre,1,1,0,29,20,-9,3,2,-1,28,29,1
+Varonil,3972023,59,Diego Osvaldo Arriaga García,Esteban Lozano Solana,1,2,1,30,15,-15,5,3,-2,28,17,-11
+Varonil,3972023,90,Walter Portales,Patrick Villa Urban,4,3,-1,4,7,3,3,2,-1,32,9,-23
+Varonil,3972023,90,Aarón Arredondo Ángel,Daniel Israel Alvarado Pelayo,4,3,-1,4,7,3,3,2,-1,32,9,-23
+Varonil,3972039,59,Jonathan dos Santos Ramírez,Ramón Juárez Del Castillo,0,4,4,29,12,-17,2,4,2,17,51,34
+Varonil,3972039,60,Javairô Joreno Faustino Dilrosun,Alan Jhosué Cervantes Martín del Campo,0,4,4,30,11,-19,2,4,2,17,51,34
+Varonil,3972039,72,Álvaro Fidalgo Fernández,Miguel Ramírez Pérez,3,3,0,16,21,5,3,6,3,42,37,-5
+Varonil,3972039,72,Alejandro Zendejas Saavedra,Esteban Lozano Solana,3,3,0,16,21,5,3,6,3,42,37,-5
+Varonil,3972039,76,Cristian Yonathan Calderón Del Real,Franco Rossano Erchuk,3,5,2,21,10,-11,3,9,6,39,57,18
+Varonil,3972043,63,Jonathan dos Santos Ramírez,Richard Rafael Sánchez Guerrero,0,1,1,19,28,9,6,4,-2,50,50,0
+Varonil,3972043,63,Alejandro Zendejas Saavedra,Javairô Joreno Faustino Dilrosun,0,1,1,19,28,9,6,4,-2,50,50,0
+Varonil,3972043,63,Paul Brian Rodríguez Bravo,Miguel Ramírez Pérez,0,1,1,19,28,9,6,4,-2,50,50,0
+Varonil,3972043,78,Sebastián Enzo Cáceres Ramos,Ramón Juárez Del Castillo,2,1,-1,18,25,7,2,3,1,55,46,-9
+Varonil,3972043,80,Kevin Nahin Álvarez Campos,Dagoberto Espinoza Acosta,2,2,0,22,29,7,2,5,3,53,55,2
+Varonil,3972053,56,Víctor Alejandro Dávila Zavala,Henry Josué Martín Mex,1,1,0,27,20,-7,6,6,0,76,43,-33
+Varonil,3972053,56,Álvaro Fidalgo Fernández,Sebastián Enzo Cáceres Ramos,1,1,0,27,20,-7,6,6,0,76,43,-33
+Varonil,3972053,75,Alejandro Zendejas Saavedra,Javairô Joreno Faustino Dilrosun,1,4,3,19,10,-9,5,5,0,47,47,0
+Varonil,3972053,75,Erick Daniel Sánchez Ocegueda,Richard Rafael Sánchez Guerrero,1,4,3,19,10,-9,5,5,0,47,47,0
+Varonil,3972053,81,Paul Brian Rodríguez Bravo,Miguel Ramírez Pérez,4,0,-4,12,14,2,4,4,0,61,73,12
+Varonil,3972062,45,Dagoberto Espinoza Acosta,Israel Reyes Romero,3,1,-2,10,27,17,2,11,9,26,116,90
+Varonil,3972062,64,Víctor Alejandro Dávila Zavala,Diego Alfonso Valdés Contreras,2,4,2,16,4,-12,5,2,-3,76,56,-20
+Varonil,3972062,65,Cristian Yonathan Calderón Del Real,Javairô Joreno Faustino Dilrosun,3,3,0,14,5,-9,5,3,-2,77,68,-9
+Varonil,3972062,76,Henry Josué Martín Mex,Rodrigo Sebastián Aguirre Soto,3,1,-2,5,16,11,3,2,-1,69,65,-4
+Varonil,3972062,76,Paul Brian Rodríguez Bravo,Cristian Alexis Borja González,3,1,-2,5,16,11,3,2,-1,69,65,-4
+Varonil,3972074,45,Dagoberto Espinoza Acosta,Kevin Nahin Álvarez Campos,0,2,2,0,17,17,3,3,0,4,58,54
+Varonil,3972074,45,Paul Brian Rodríguez Bravo,Diego Alfonso Valdés Contreras,0,2,2,0,17,17,3,3,0,4,58,54
+Varonil,3972074,45,Erick Daniel Sánchez Ocegueda,Henry Josué Martín Mex,0,2,2,0,17,17,3,3,0,4,58,54
+Varonil,3972074,71,Víctor Alejandro Dávila Zavala,Rodrigo Sebastián Aguirre Soto,2,3,1,29,27,-2,18,13,-5,135,90,-45
+Varonil,3972074,85,Alejandro Zendejas Saavedra,Ramón Juárez Del Castillo,2,3,1,14,13,-1,6,5,-1,59,61,2
+Varonil,3972080,45,Richard Rafael Sánchez Guerrero,Erick Daniel Sánchez Ocegueda,1,2,1,21,15,-6,4,6,2,65,93,28
+Varonil,3972080,45,Sebastián Enzo Cáceres Ramos,Israel Reyes Romero,1,2,1,21,15,-6,4,6,2,65,93,28
+Varonil,3972080,62,Víctor Alejandro Dávila Zavala,Diego Alfonso Valdés Contreras,2,1,-1,8,7,-1,4,2,-2,57,33,-24
+Varonil,3972080,63,Paul Brian Rodríguez Bravo,Javairô Joreno Faustino Dilrosun,1,1,0,8,7,-1,3,2,-1,57,34,-23
+Varonil,3972080,83,Alejandro Zendejas Saavedra,Alan Jhosué Cervantes Martín del Campo,4,2,-2,10,8,-2,5,6,1,52,38,-14
+Varonil,3972087,57,Álvaro Fidalgo Fernández,Diego Alfonso Valdés Contreras,3,4,1,25,9,-16,4,4,0,102,81,-21
+Varonil,3972087,67,Alejandro Zendejas Saavedra,Víctor Alejandro Dávila Zavala,4,2,-2,9,12,3,4,7,3,81,42,-39
+Varonil,3972087,67,Henry Josué Martín Mex,Rodrigo Sebastián Aguirre Soto,4,2,-2,9,12,3,4,7,3,81,42,-39
+Varonil,3972087,81,Erick Daniel Sánchez Ocegueda,Richard Rafael Sánchez Guerrero,2,2,0,12,11,-1,7,5,-2,64,82,18
+Varonil,3972087,81,Kevin Nahin Álvarez Campos,Dagoberto Espinoza Acosta,2,2,0,12,11,-1,7,5,-2,64,82,18
+Varonil,3972100,69,Paul Brian Rodríguez Bravo,Cristian Yonathan Calderón Del Real,0,1,1,25,28,3,1,4,3,20,30,10
+Varonil,3972100,78,Henry Josué Martín Mex,Rodrigo Sebastián Aguirre Soto,0,3,3,34,24,-10,3,2,-1,33,18,-15
+Varonil,3972100,78,Erick Daniel Sánchez Ocegueda,Richard Rafael Sánchez Guerrero,0,3,3,34,24,-10,3,2,-1,33,18,-15
+Varonil,3972100,88,Álvaro Fidalgo Fernández,Diego Alfonso Valdés Contreras,3,2,-1,24,20,-4,2,5,3,18,36,18
+Varonil,3972100,88,Alejandro Zendejas Saavedra,Víctor Alejandro Dávila Zavala,3,2,-1,24,20,-4,2,5,3,18,36,18
+Varonil,3972111,62,Erick Daniel Sánchez Ocegueda,Álvaro Fidalgo Fernández,1,0,-1,17,16,-1,6,1,-5,58,30,-28
+Varonil,3972111,62,Javairô Joreno Faustino Dilrosun,Alejandro Zendejas Saavedra,1,0,-1,17,16,-1,6,1,-5,58,30,-28
+Varonil,3972111,62,Víctor Alejandro Dávila Zavala,Paul Brian Rodríguez Bravo,1,0,-1,17,16,-1,6,1,-5,58,30,-28
+Varonil,3972111,78,Néstor Alejandro Araújo Razo,Henry Josué Martín Mex,1,1,0,9,11,2,4,7,3,40,67,27
+Varonil,3972111,79,Alan Jhosué Cervantes Martín del Campo,Kevin Nahin Álvarez Campos,1,2,1,8,10,2,4,8,4,36,80,44
+Varonil,3972118,65,Paul Brian Rodríguez Bravo,Cristian Alexis Borja González,0,2,2,26,8,-18,3,7,4,22,50,28
+Varonil,3972118,77,Alejandro Zendejas Saavedra,Víctor Alejandro Dávila Zavala,2,3,1,11,17,6,7,4,-3,49,29,-20
+Varonil,3972118,77,Álvaro Fidalgo Fernández,Diego Alfonso Valdés Contreras,2,3,1,11,17,6,7,4,-3,49,29,-20
+Varonil,3972118,78,Ramón Juárez Del Castillo,Néstor Alejandro Araújo Razo,2,3,1,11,17,6,6,4,-2,35,29,-6
+Varonil,3972118,87,Rodrigo Sebastián Aguirre Soto,Javairô Joreno Faustino Dilrosun,3,0,-3,17,12,-5,4,4,0,29,14,-15
+Varonil,3972127,45,Alan Jhosué Cervantes Martín del Campo,Sebastián Enzo Cáceres Ramos,1,4,3,16,18,2,3,4,1,46,50,4
+Varonil,3972127,64,Víctor Alejandro Dávila Zavala,Diego Alfonso Valdés Contreras,1,1,0,9,14,5,4,4,0,34,24,-10
+Varonil,3972127,74,Alejandro Zendejas Saavedra,Jonathan dos Santos Ramírez,1,0,-1,14,12,-2,4,3,-1,24,12,-12
+Varonil,3972127,74,Cristian Yonathan Calderón Del Real,Cristian Alexis Borja González,1,0,-1,14,12,-2,4,3,-1,24,12,-12
+Varonil,3972127,74,Paul Brian Rodríguez Bravo,Rodrigo Sebastián Aguirre Soto,1,0,-1,14,12,-2,4,3,-1,24,12,-12
+Varonil,3972136,21,Alan Jhosué Cervantes Martín del Campo,Erick Daniel Sánchez Ocegueda,1,1,0,13,16,3,2,3,1,34,68,34
+Varonil,3972136,45,Israel Reyes Romero,Kevin Nahin Álvarez Campos,0,2,2,12,12,0,6,11,5,50,63,13
+Varonil,3972136,45,Alejandro Zendejas Saavedra,Paul Brian Rodríguez Bravo,0,2,2,12,12,0,6,11,5,50,63,13
+Varonil,3972136,68,Jonathan dos Santos Ramírez,Álvaro Fidalgo Fernández,1,2,1,5,16,11,7,6,-1,64,62,-2
+Varonil,3972136,68,Miguel Ramírez Pérez,Diego Alfonso Valdés Contreras,1,2,1,5,16,11,7,6,-1,64,62,-2
+Varonil,3972145,59,Víctor Alejandro Dávila Zavala,Diego Alfonso Valdés Contreras,1,3,2,8,22,14,3,5,2,100,56,-44
+Varonil,3972145,81,Jonathan dos Santos Ramírez,Kevin Nahin Álvarez Campos,3,3,0,15,14,-1,7,11,4,41,76,35
+Varonil,3972145,82,Sebastián Enzo Cáceres Ramos,Cristian Yonathan Calderón Del Real,2,3,1,15,16,1,7,12,5,50,64,14
+Varonil,3972155,5,Paul Brian Rodríguez Bravo,Víctor Alejandro Dávila Zavala,0,0,0,13,19,6,1,3,2,12,42,30
+Varonil,3972155,50,Diego Alfonso Valdés Contreras,Javairô Joreno Faustino Dilrosun,1,0,-1,28,21,-7,6,5,-1,63,43,-20
+Varonil,3972155,82,Sebastián Enzo Cáceres Ramos,Ramón Juárez Del Castillo,2,0,-2,16,18,2,3,4,1,31,61,30
+Varonil,3972155,82,Jonathan dos Santos Ramírez,Diego Osvaldo Arriaga García,2,0,-2,16,18,2,3,4,1,31,61,30
+Varonil,3972155,82,Cristian Yonathan Calderón Del Real,Cristian Alexis Borja González,2,0,-2,16,18,2,3,4,1,31,61,30
+Varonil,3972162,45,Sebastián Enzo Cáceres Ramos,Miguel Ángel Vázquez García,2,2,0,16,13,-3,6,8,2,70,54,-16
+Varonil,3972162,45,Luis Ángel Malagón Velázquez,Rodolfo Damian Cota Robles,2,2,0,16,13,-3,6,8,2,70,54,-16
+Varonil,3972162,61,Kevin Nahin Álvarez Campos,Dagoberto Espinoza Acosta,2,3,1,13,6,-7,6,6,0,30,52,22
+Varonil,3972162,61,Israel Reyes Romero,Rodrigo Sebastián Aguirre Soto,2,3,1,13,6,-7,6,6,0,30,52,22
+Varonil,3972162,73,Víctor Alejandro Dávila Zavala,Diego Osvaldo Arriaga García,2,1,-1,4,9,5,5,5,0,66,72,6
+Varonil,3993382,66,Víctor Alejandro Dávila Zavala,Rodrigo Sebastián Aguirre Soto,2,4,2,16,12,-4,13,8,-5,53,62,9
+Varonil,3993382,73,Henry Josué Martín Mex,Alan Jhosué Cervantes Martín del Campo,4,1,-3,13,18,5,13,8,-5,64,74,10
+Varonil,3993382,73,Kevin Nahin Álvarez Campos,Javairô Joreno Faustino Dilrosun,4,1,-3,13,18,5,13,8,-5,64,74,10
+Varonil,3993383,68,Kevin Nahin Álvarez Campos,Alan Jhosué Cervantes Martín del Campo,1,3,2,24,8,-16,4,2,-2,89,28,-61
+Varonil,3993383,68,Henry Josué Martín Mex,Rodrigo Sebastián Aguirre Soto,1,3,2,24,8,-16,4,2,-2,89,28,-61
+Varonil,3993383,68,Cristian Alexis Borja González,Cristian Yonathan Calderón Del Real,1,3,2,24,8,-16,4,2,-2,89,28,-61
+Varonil,3993383,85,Víctor Alejandro Dávila Zavala,Dagoberto Espinoza Acosta,2,1,-1,11,6,-5,4,5,1,25,53,28
+Varonil,3993383,87,Alejandro Zendejas Saavedra,Diego Alfonso Valdés Contreras,2,1,-1,10,5,-5,5,3,-2,39,33,-6
+Varonil,3994837,67,Jonathan dos Santos Ramírez,Alejandro Zendejas Saavedra,0,1,1,8,6,-2,2,2,0,31,95,64
+Varonil,3994837,67,Cristian Alexis Borja González,Cristian Yonathan Calderón Del Real,0,1,1,8,6,-2,2,2,0,31,95,64
+Varonil,3994837,77,Víctor Alejandro Dávila Zavala,Rodrigo Sebastián Aguirre Soto,1,1,0,6,15,9,2,4,2,95,61,-34
+Varonil,3994837,77,Ramón Juárez Del Castillo,Diego Alfonso Valdés Contreras,1,1,0,6,15,9,2,4,2,95,61,-34
+Varonil,3994837,88,Erick Daniel Sánchez Ocegueda,Javairô Joreno Faustino Dilrosun,0,2,2,16,4,-12,4,5,1,64,44,-20
+Varonil,3994839,58,Jonathan dos Santos Ramírez,Diego Alfonso Valdés Contreras,0,1,1,11,0,-11,5,2,-3,57,22,-35
+Varonil,3994839,58,Víctor Alejandro Dávila Zavala,Rodrigo Sebastián Aguirre Soto,0,1,1,11,0,-11,5,2,-3,57,22,-35
+Varonil,3994839,72,Sebastián Enzo Cáceres Ramos,Ramón Juárez Del Castillo,2,5,3,7,5,-2,7,6,-1,47,28,-19
+Varonil,3994839,88,Henry Josué Martín Mex,Alan Jhosué Cervantes Martín del Campo,2,0,-2,11,5,-6,6,11,5,19,26,7
+Varonil,3995373,60,Víctor Alejandro Dávila Zavala,Diego Alfonso Valdés Contreras,1,0,-1,10,33,23,2,2,0,59,35,-24
+Varonil,3995373,71,Jonathan dos Santos Ramírez,Alan Jhosué Cervantes Martín del Campo,0,0,0,28,19,-9,2,4,2,57,51,-6
+Varonil,3995373,71,Henry Josué Martín Mex,Rodrigo Sebastián Aguirre Soto,0,0,0,28,19,-9,2,4,2,57,51,-6
+Varonil,3995373,81,Kevin Nahin Álvarez Campos,Ramón Juárez Del Castillo,0,1,1,19,15,-4,4,3,-1,51,54,3
+Varonil,3995373,82,Erick Daniel Sánchez Ocegueda,Javairô Joreno Faustino Dilrosun,1,0,-1,19,16,-3,4,3,-1,54,53,-1
+Varonil,3995374,48,Henry Josué Martín Mex,Rodrigo Sebastián Aguirre Soto,0,1,1,25,9,-16,2,6,4,56,49,-7
+Varonil,3995374,70,Ramón Juárez Del Castillo,Diego Alfonso Valdés Contreras,0,1,1,12,9,-3,4,4,0,48,49,1
+Varonil,3995374,70,Jonathan dos Santos Ramírez,Víctor Alejandro Dávila Zavala,0,1,1,12,9,-3,4,4,0,48,49,1
+Varonil,3995374,82,Cristian Alexis Borja González,Javairô Joreno Faustino Dilrosun,1,0,-1,9,15,6,3,7,4,44,63,19
+Varonil,3995374,82,Kevin Nahin Álvarez Campos,Paul Brian Rodríguez Bravo,1,0,-1,9,15,6,3,7,4,44,63,19
+Varonil,4004042,73,Paul Brian Rodríguez Bravo,Álvaro Fidalgo Fernández,0,0,0,10,5,-5,0,1,1,5,36,31
+Varonil,4004042,74,Rodrigo Sebastián Aguirre Soto,Víctor Alejandro Dávila Zavala,0,0,0,8,5,-3,0,1,1,4,36,32
+Varonil,4004042,83,Ralph Orquin,Isaías Violante Romero,0,0,0,5,12,7,1,6,5,36,46,10
+Varonil,4004042,83,Dagoberto Espinoza Acosta,Kevin Nahin Álvarez Campos,0,0,0,5,12,7,1,6,5,36,46,10
+Varonil,4004042,83,Álvaro Fidalgo Fernández,Alexis Hazael Gutiérrez Torres,0,0,0,5,12,7,1,6,5,36,46,10
+Varonil,4004049,63,Sebastián Enzo Cáceres Ramos,José Raúl Zúñiga Murillo,1,2,1,11,12,1,3,7,4,93,80,-13
+Varonil,4004049,63,Kevin Nahin Álvarez Campos,Israel Reyes Romero,1,2,1,11,12,1,3,7,4,93,80,-13
+Varonil,4004049,63,Jonathan dos Santos Ramírez,Isaías Violante Romero,1,2,1,11,12,1,3,7,4,93,80,-13
+Varonil,4004049,75,Rodrigo Sebastián Aguirre Soto,Alan Jhosué Cervantes Martín del Campo,1,3,2,13,8,-5,6,4,-2,67,61,-6
+Varonil,4004049,84,Alejandro Zendejas Saavedra,Ramón Juárez Del Castillo,3,2,-1,8,5,-3,4,7,3,61,47,-14
+Varonil,4004065,64,Kevin Nahin Álvarez Campos,Alejandro Zendejas Saavedra,3,1,-2,9,8,-1,2,5,3,58,49,-9
+Varonil,4004065,64,Víctor Alejandro Dávila Zavala,Rodrigo Sebastián Aguirre Soto,3,1,-2,9,8,-1,2,5,3,58,49,-9
+Varonil,4004065,75,José Raúl Zúñiga Murillo,Henry Josué Martín Mex,1,2,1,8,18,10,5,6,1,56,63,7
+Varonil,4004065,75,Alexis Hazael Gutiérrez Torres,Paul Brian Rodríguez Bravo,1,2,1,8,18,10,5,6,1,56,63,7
+Varonil,4004065,92,Álvaro Fidalgo Fernández,Jonathan dos Santos Ramírez,2,1,-1,11,7,-4,4,0,-4,59,15,-44
+Varonil,4004068,75,Henry Josué Martín Mex,Víctor Alejandro Dávila Zavala,3,0,-3,13,15,2,5,1,-4,71,68,-3
+Varonil,4004068,80,Paul Brian Rodríguez Bravo,Isaías Violante Romero,2,1,-1,16,9,-7,3,2,-1,56,68,12
+Varonil,4004068,89,José Raúl Zúñiga Murillo,Alexis Hazael Gutiérrez Torres,1,1,0,10,21,11,2,2,0,68,56,-12
+Varonil,4004068,89,Álvaro Fidalgo Fernández,Jonathan dos Santos Ramírez,1,1,0,10,21,11,2,2,0,68,56,-12
+Varonil,4004068,89,Erick Daniel Sánchez Ocegueda,Alan Jhosué Cervantes Martín del Campo,1,1,0,10,21,11,2,2,0,68,56,-12
+Varonil,4004081,60,Álvaro Fidalgo Fernández,Alan Jhosué Cervantes Martín del Campo,1,0,-1,28,21,-7,4,3,-1,29,28,-1
+Varonil,4004081,60,Paul Brian Rodríguez Bravo,Rodrigo Sebastián Aguirre Soto,1,0,-1,28,21,-7,4,3,-1,29,28,-1
+Varonil,4004081,75,José Raúl Zúñiga Murillo,Isaías Violante Romero,1,0,-1,10,22,12,1,1,0,40,41,1
+Varonil,4004081,75,Sebastián Enzo Cáceres Ramos,Igor Lichnovsky Osorio,1,0,-1,10,22,12,1,1,0,40,41,1
+Varonil,4004081,80,Dagoberto Espinoza Acosta,Kevin Nahin Álvarez Campos,1,0,-1,14,25,11,1,1,0,54,19,-35
+Varonil,4004093,61,Dagoberto Espinoza Acosta,Kevin Nahin Álvarez Campos,1,2,1,20,16,-4,3,2,-1,26,43,17
+Varonil,4004093,62,Paul Brian Rodríguez Bravo,Allan Irénée Saint-Maximin,0,2,2,19,21,2,2,2,0,15,46,31
+Varonil,4004093,62,Rodrigo Sebastián Aguirre Soto,José Raúl Zúñiga Murillo,0,2,2,19,21,2,2,2,0,15,46,31
+Varonil,4004093,80,Alejandro Zendejas Saavedra,Isaías Violante Romero,1,2,1,12,5,-7,1,6,5,48,45,-3
+Varonil,4004093,86,Ramón Juárez Del Castillo,Víctor Alejandro Dávila Zavala,0,2,2,5,7,2,4,2,-2,63,37,-26
+Varonil,4004100,59,Paul Brian Rodríguez Bravo,Allan Irénée Saint-Maximin,2,2,0,20,23,3,4,4,0,47,31,-16
+Varonil,4004100,60,Rodrigo Sebastián Aguirre Soto,José Raúl Zúñiga Murillo,2,2,0,18,27,9,4,6,2,37,31,-6
+Varonil,4004100,78,Erick Daniel Sánchez Ocegueda,Jonathan dos Santos Ramírez,2,0,-2,17,10,-7,5,0,-5,35,50,15
+Varonil,4004100,88,Alejandro Zendejas Saavedra,Isaías Violante Romero,0,0,0,10,6,-4,0,0,0,50,18,-32
+Varonil,4004100,88,Álvaro Fidalgo Fernández,Alan Jhosué Cervantes Martín del Campo,0,0,0,10,6,-4,0,0,0,50,18,-32
+Varonil,4004103,45,Álvaro Fidalgo Fernández,Paul Brian Rodríguez Bravo,0,1,1,14,19,5,8,5,-3,57,101,44
+Varonil,4004103,69,Allan Irénée Saint-Maximin,José Raúl Zúñiga Murillo,0,1,1,14,8,-6,0,5,5,25,51,26
+Varonil,4004103,69,Sebastián Enzo Cáceres Ramos,Jonathan dos Santos Ramírez,0,1,1,14,8,-6,0,5,5,25,51,26
+Varonil,4004103,69,Rodrigo Sebastián Aguirre Soto,Henry Josué Martín Mex,0,1,1,14,8,-6,0,5,5,25,51,26
+Varonil,4004103,78,Dagoberto Espinoza Acosta,Isaías Violante Romero,1,3,2,7,16,9,4,4,0,49,44,-5
+Varonil,4004119,25,Dagoberto Espinoza Acosta,Kevin Nahin Álvarez Campos,1,1,0,24,24,0,2,3,1,25,36,11
+Varonil,4004119,45,Alan Jhosué Cervantes Martín del Campo,Álvaro Fidalgo Fernández,1,5,4,25,32,7,5,9,4,49,103,54
+Varonil,4004119,66,Alexis Hazael Gutiérrez Torres,Rodrigo Sebastián Aguirre Soto,1,4,3,10,13,3,6,6,0,51,85,34
+Varonil,4004119,66,José Raúl Zúñiga Murillo,Erick Daniel Sánchez Ocegueda,1,4,3,10,13,3,6,6,0,51,85,34
+Varonil,4004119,77,Israel Reyes Romero,Paul Brian Rodríguez Bravo,3,2,-1,14,6,-8,9,5,-4,91,35,-56
+Varonil,4004130,43,Rodrigo Sebastián Aguirre Soto,Alejandro Zendejas Saavedra,0,5,5,12,35,23,1,7,6,29,69,40
+Varonil,4004130,62,Paul Brian Rodríguez Bravo,Allan Irénée Saint-Maximin,0,1,1,38,18,-20,1,4,3,36,59,23
+Varonil,4004130,62,Víctor Alejandro Dávila Zavala,José Raúl Zúñiga Murillo,0,1,1,38,18,-20,1,4,3,36,59,23
+Varonil,4004130,63,Erick Daniel Sánchez Ocegueda,Álvaro Fidalgo Fernández,0,1,1,35,15,-20,1,5,4,34,63,29
+Varonil,4004130,94,Alexis Hazael Gutiérrez Torres,Alan Jhosué Cervantes Martín del Campo,1,0,-1,18,5,-13,8,3,-5,23,2,-21
+Varonil,4004135,78,Allan Irénée Saint-Maximin,Erick Daniel Sánchez Ocegueda,1,1,0,13,6,-7,5,4,-1,32,17,-15
+Varonil,4004135,78,Alexis Hazael Gutiérrez Torres,Paul Brian Rodríguez Bravo,1,1,0,13,6,-7,5,4,-1,32,17,-15
+Varonil,4004135,79,Álvaro Fidalgo Fernández,Isaías Violante Romero,1,2,1,15,4,-11,5,4,-1,33,17,-16
+Varonil,4004135,86,Alejandro Zendejas Saavedra,Rodrigo Sebastián Aguirre Soto,1,1,0,8,16,8,4,2,-2,23,37,14
+Varonil,4004135,86,José Raúl Zúñiga Murillo,Víctor Alejandro Dávila Zavala,1,1,0,8,16,8,4,2,-2,23,37,14
+Varonil,4004146,29,Allan Irénée Saint-Maximin,Paul Brian Rodríguez Bravo,3,4,1,8,14,6,3,4,1,47,47,0
+Varonil,4004146,33,José Raúl Zúñiga Murillo,Rodrigo Sebastián Aguirre Soto,3,3,0,5,16,11,5,5,0,32,68,36
+Varonil,4004146,74,Alexis Hazael Gutiérrez Torres,Miguel Ángel Vázquez García,4,3,-1,16,29,13,7,5,-2,60,30,-30
+Varonil,4004146,74,Alejandro Zendejas Saavedra,Víctor Alejandro Dávila Zavala,4,3,-1,16,29,13,7,5,-2,60,30,-30
+Varonil,4004146,74,Cristian Alexis Borja González,Isaías Violante Romero,4,3,-1,16,29,13,7,5,-2,60,30,-30
+Varonil,4004153,27,Víctor Alejandro Dávila Zavala,Alejandro Zendejas Saavedra,0,1,1,13,19,6,5,4,-1,43,21,-22
+Varonil,4004153,45,Alejandro Zendejas Saavedra,Álvaro Fidalgo Fernández,0,0,0,18,33,15,1,8,7,35,55,20
+Varonil,4004153,62,Paul Brian Rodríguez Bravo,Allan Irénée Saint-Maximin,1,0,-1,33,24,-9,7,2,-5,37,38,1
+Varonil,4004153,78,Erick Daniel Sánchez Ocegueda,Patricio Salas,1,0,-1,8,17,9,5,6,1,71,56,-15
+Varonil,4004153,78,Ramón Juárez Del Castillo,Alan Jhosué Cervantes Martín del Campo,1,0,-1,8,17,9,5,6,1,71,56,-15
+Varonil,4004158,45,Alexis Hazael Gutiérrez Torres,Patricio Salas,2,2,0,7,9,2,3,6,3,64,76,12
+Varonil,4004158,83,Rodrigo Sebastián Aguirre Soto,Víctor Alejandro Dávila Zavala,3,2,-1,26,4,-22,9,6,-3,38,15,-23
+Varonil,4004158,93,Alan Jhosué Cervantes Martín del Campo,Ramón Juárez Del Castillo,2,1,-1,4,9,5,6,3,-3,15,32,17
+Varonil,4004168,45,Alan Jhosué Cervantes Martín del Campo,Israel Reyes Romero,3,4,1,4,14,10,2,10,8,64,103,39
+Varonil,4004168,45,Miguel Ángel Vázquez García,Cristian Alexis Borja González,3,4,1,4,14,10,2,10,8,64,103,39
+Varonil,4004168,45,Alexis Hazael Gutiérrez Torres,Rodrigo Sebastián Aguirre Soto,3,4,1,4,14,10,2,10,8,64,103,39
+Varonil,4004168,66,Víctor Alejandro Dávila Zavala,Allan Irénée Saint-Maximin,6,3,-3,9,11,2,7,6,-1,73,55,-18
+Varonil,4004168,70,Álvaro Fidalgo Fernández,Jonathan dos Santos Ramírez,5,2,-3,11,11,0,5,7,2,51,58,7
+Varonil,4004181,79,Erick Daniel Sánchez Ocegueda,Patricio Salas,1,1,0,33,24,-9,9,4,-5,22,28,6
+Varonil,4004181,79,Allan Irénée Saint-Maximin,Jonathan dos Santos Ramírez,1,1,0,33,24,-9,9,4,-5,22,28,6
+Varonil,4004181,87,Álvaro Fidalgo Fernández,Alan Jhosué Cervantes Martín del Campo,1,1,0,24,20,-4,5,3,-2,27,47,20
+Varonil,4004181,87,Rodrigo Sebastián Aguirre Soto,Víctor Alejandro Dávila Zavala,1,1,0,24,20,-4,5,3,-2,27,47,20
+Varonil,4004181,91,Sebastián Enzo Cáceres Ramos,Ramón Juárez Del Castillo,1,1,0,25,7,-18,4,2,-2,31,32,1
+Varonil,4004190,45,Paul Brian Rodríguez Bravo,Rodrigo Sebastián Aguirre Soto,1,1,0,7,20,13,4,3,-1,38,39,1
+Varonil,4004190,45,Alexis Hazael Gutiérrez Torres,Alejandro Zendejas Saavedra,1,1,0,7,20,13,4,3,-1,38,39,1
+Varonil,4004190,80,Israel Reyes Romero,Igor Lichnovsky Osorio,2,2,0,10,11,1,8,4,-4,59,56,-3
+Varonil,4004190,86,Sebastián Enzo Cáceres Ramos,Jonathan dos Santos Ramírez,2,0,-2,8,13,5,5,5,0,52,72,20
+Varonil,4004190,86,Álvaro Fidalgo Fernández,Patricio Salas,2,0,-2,8,13,5,5,5,0,52,72,20
+Varonil,4035933,70,Rodrigo Sebastián Aguirre Soto,José Raúl Zúñiga Murillo,0,0,0,17,14,-3,2,3,1,42,43,1
+Varonil,4035933,70,Paul Brian Rodríguez Bravo,Víctor Alejandro Dávila Zavala,0,0,0,17,14,-3,2,3,1,42,43,1
+Varonil,4035933,84,Álvaro Fidalgo Fernández,Erick Daniel Sánchez Ocegueda,0,3,3,18,12,-6,3,7,4,32,56,24
+Varonil,4035933,93,Kevin Nahin Álvarez Campos,Isaías Violante Romero,3,0,-3,12,3,-9,7,2,-5,57,17,-40
+Varonil,4035934,74,Rodrigo Sebastián Aguirre Soto,Ramón Juárez Del Castillo,1,1,0,16,17,1,3,8,5,18,25,7
+Varonil,4035934,84,José Raúl Zúñiga Murillo,Henry Josué Martín Mex,1,0,-1,17,3,-14,8,5,-3,25,18,-7
+Varonil,4035934,84,Álvaro Fidalgo Fernández,Allan Irénée Saint-Maximin,1,0,-1,17,3,-14,8,5,-3,25,18,-7
+Varonil,4035934,93,Jonathan dos Santos Ramírez,Víctor Alejandro Dávila Zavala,0,3,3,4,15,11,6,4,-2,16,19,3
+Varonil,4035934,93,Sebastián Enzo Cáceres Ramos,Paul Brian Rodríguez Bravo,0,3,3,4,15,11,6,4,-2,16,19,3
+Varonil,4038803,66,José Raúl Zúñiga Murillo,Patricio Salas,1,0,-1,30,28,-2,9,3,-6,54,25,-29
+Varonil,4038803,66,Allan Irénée Saint-Maximin,Paul Brian Rodríguez Bravo,1,0,-1,30,28,-2,9,3,-6,54,25,-29
+Varonil,4038803,82,Rodrigo Sebastián Aguirre Soto,Víctor Alejandro Dávila Zavala,0,0,0,24,11,-13,4,3,-1,58,34,-24
+Varonil,4038818,24,Patricio Salas,Sebastián Enzo Cáceres Ramos,0,2,2,16,10,-6,2,3,1,33,29,-4
+Varonil,4038818,45,Alexis Hazael Gutiérrez Torres,Isaías Violante Romero,0,1,1,14,23,9,4,1,-3,20,42,22
+Varonil,4038818,45,Rodrigo Sebastián Aguirre Soto,José Raúl Zúñiga Murillo,0,1,1,14,23,9,4,1,-3,20,42,22
+Varonil,4038818,67,Allan Irénée Saint-Maximin,Paul Brian Rodríguez Bravo,0,3,3,20,6,-14,4,4,0,42,59,17
+Varonil,4038818,67,Cristian Alexis Borja González,Víctor Alejandro Dávila Zavala,0,3,3,20,6,-14,4,4,0,42,59,17
+Varonil,4038827,65,Sebastián Enzo Cáceres Ramos,Ramón Juárez Del Castillo,1,3,2,9,11,2,5,3,-2,78,41,-37
+Varonil,4038827,74,Víctor Alejandro Dávila Zavala,Patricio Salas,3,1,-2,10,14,4,3,2,-1,31,39,8
+Varonil,4038827,74,Jonathan dos Santos Ramírez,José Raúl Zúñiga Murillo,3,1,-2,10,14,4,3,2,-1,31,39,8
+Varonil,4038827,86,Alexis Hazael Gutiérrez Torres,Isaías Violante Romero,2,0,-2,12,13,1,3,2,-1,42,25,-17
+Varonil,4038827,86,Paul Brian Rodríguez Bravo,Allan Irénée Saint-Maximin,2,0,-2,12,13,1,3,2,-1,42,25,-17
+Varonil,4038834,57,Víctor Alejandro Dávila Zavala,Henry Josué Martín Mex,2,3,1,6,11,5,5,1,-4,51,81,30
+Varonil,4038834,58,Jonathan dos Santos Ramírez,Alexis Hazael Gutiérrez Torres,2,3,1,6,13,7,4,1,-3,34,79,45
+Varonil,4038834,71,Erick Daniel Sánchez Ocegueda,Patricio Salas,5,2,-3,7,4,-3,5,5,0,78,70,-8
+Varonil,4038834,71,José Raúl Zúñiga Murillo,Alan Jhosué Cervantes Martín del Campo,5,2,-3,7,4,-3,5,5,0,78,70,-8
+Varonil,4038834,77,Paul Brian Rodríguez Bravo,Isaías Violante Romero,3,4,1,4,7,3,6,7,1,68,91,23
+Varonil,4038841,66,Erick Daniel Sánchez Ocegueda,Raphael Cavalcante Veiga,4,3,-1,14,13,-1,2,4,2,43,41,-2
+Varonil,4038841,66,Henry Josué Martín Mex,Víctor Alejandro Dávila Zavala,4,3,-1,14,13,-1,2,4,2,43,41,-2
+Varonil,4038841,76,Alejandro Zendejas Saavedra,Alexis Hazael Gutiérrez Torres,3,1,-2,13,15,2,4,2,-2,41,65,24
+Varonil,4038841,93,Paul Brian Rodríguez Bravo,Ramón Juárez Del Castillo,1,0,-1,17,4,-13,2,0,-2,38,2,-36
+Varonil,4038852,45,Víctor Alejandro Dávila Zavala,Raphael Cavalcante Veiga,1,0,-1,29,26,-3,1,7,6,36,96,60
+Varonil,4038852,45,Rodrigo Dourado Cunha,Erick Daniel Sánchez Ocegueda,1,0,-1,29,26,-3,1,7,6,36,96,60
+Varonil,4038852,71,Henry Josué Martín Mex,José Raúl Zúñiga Murillo,2,1,-1,8,5,-3,6,5,-1,64,73,9
+Varonil,4038852,71,Isaías Violante Romero,Alexis Hazael Gutiérrez Torres,2,1,-1,8,5,-3,6,5,-1,64,73,9
+Varonil,4038852,79,Jonathan dos Santos Ramírez,Vinícius Moreira de Lima,0,2,2,4,6,2,6,3,-3,57,60,3
+Varonil,4038856,73,Erick Daniel Sánchez Ocegueda,Víctor Alejandro Dávila Zavala,0,3,3,7,2,-5,5,5,0,37,46,9
+Varonil,4038856,73,Henry Josué Martín Mex,Vinícius Moreira de Lima,0,3,3,7,2,-5,5,5,0,37,46,9
+Varonil,4038856,74,Raphael Cavalcante Veiga,Jonathan dos Santos Ramírez,0,3,3,7,3,-4,6,4,-2,37,47,10
+Varonil,4038856,82,Paul Brian Rodríguez Bravo,José Raúl Zúñiga Murillo,3,2,-1,4,5,1,7,6,-1,47,75,28
+Varonil,4038856,82,Isaías Violante Romero,Patricio Salas,3,2,-1,4,5,1,7,6,-1,47,75,28
+Varonil,4038871,45,Aaron Mejía Montoya,Erick Daniel Sánchez Ocegueda,2,2,0,3,20,17,4,5,1,95,85,-10
+Varonil,4038871,45,Jonathan dos Santos Ramírez,José Raúl Zúñiga Murillo,2,2,0,3,20,17,4,5,1,95,85,-10
+Varonil,4038871,85,Rodrigo Dourado Cunha,Vinícius Moreira de Lima,2,0,-2,11,6,-5,1,4,3,30,44,14
+Varonil,4038871,85,Raphael Cavalcante Veiga,Patricio Salas,2,0,-2,11,6,-5,1,4,3,30,44,14
+Varonil,4038871,90,Víctor Alejandro Dávila Zavala,Alan Jhosué Cervantes Martín del Campo,1,1,0,2,15,13,1,5,4,12,58,46
+Varonil,4038878,38,Víctor Alejandro Dávila Zavala,Patricio Salas,1,5,4,2,20,18,1,8,7,76,47,-29
+Varonil,4038878,45,Ramón Juárez Del Castillo,Alejandro Zendejas Saavedra,5,1,-4,10,19,9,5,9,4,27,73,46
+Varonil,4038878,66,Thiago Nahuel Espinosa Dovat,Alexis Hazael Gutiérrez Torres,1,3,2,20,11,-9,6,4,-2,73,29,-44
+Varonil,4038878,66,Erick Daniel Sánchez Ocegueda,Cristian Alexis Borja González,1,3,2,20,11,-9,6,4,-2,73,29,-44
+Varonil,4038878,82,José Raúl Zúñiga Murillo,Paul Brian Rodríguez Bravo,2,0,-2,15,14,-1,5,5,0,61,46,-15
+Varonil,4038888,58,Alejandro Zendejas Saavedra,Raphael Cavalcante Veiga,2,3,1,11,4,-7,7,4,-3,60,55,-5
+Varonil,4038888,70,Vinícius Moreira de Lima,Rodrigo Dourado Cunha,3,1,-2,7,11,4,6,5,-1,46,68,22
+Varonil,4038888,70,Jonathan dos Santos Ramírez,Alexis Hazael Gutiérrez Torres,3,1,-2,7,11,4,6,5,-1,46,68,22
+Varonil,4038888,82,Paul Brian Rodríguez Bravo,José Raúl Zúñiga Murillo,1,0,-1,13,12,-1,5,2,-3,72,50,-22
+Varonil,4038888,83,Patricio Salas,Ramón Juárez Del Castillo,1,0,-1,13,17,4,3,2,-1,73,43,-30
+Varonil,4038898,76,Paul Brian Rodríguez Bravo,Thiago Nahuel Espinosa Dovat,1,2,1,16,7,-9,6,1,-5,75,62,-13
+Varonil,4038898,76,Alejandro Zendejas Saavedra,Vinícius Moreira de Lima,1,2,1,16,7,-9,6,1,-5,75,62,-13
+Varonil,4038898,76,Patricio Salas,José Raúl Zúñiga Murillo,1,2,1,16,7,-9,6,1,-5,75,62,-13
+Varonil,4038898,84,Raphael Cavalcante Veiga,Alan Jhosué Cervantes Martín del Campo,2,2,0,6,20,14,1,5,4,52,99,47
+Varonil,4038898,84,Erick Daniel Sánchez Ocegueda,Alexis Hazael Gutiérrez Torres,2,2,0,6,20,14,1,5,4,52,99,47
+Varonil,4038904,64,Raphael Cavalcante Veiga,Vinícius Moreira de Lima,2,1,-1,9,10,1,8,5,-3,66,79,13
+Varonil,4038904,75,Erick Daniel Sánchez Ocegueda,Jonathan dos Santos Ramírez,1,0,-1,6,14,8,6,7,1,81,38,-43
+Varonil,4038904,75,Paul Brian Rodríguez Bravo,José Raúl Zúñiga Murillo,1,0,-1,6,14,8,6,7,1,81,38,-43
+Varonil,4038904,89,Alejandro Zendejas Saavedra,Thiago Nahuel Espinosa Dovat,0,2,2,23,4,-19,7,3,-4,32,34,2
+Varonil,4038904,89,Patricio Salas,Alexis Hazael Gutiérrez Torres,0,2,2,23,4,-19,7,3,-4,32,34,2
+Varonil,4038915,15,Erick Daniel Sánchez Ocegueda,Vinícius Moreira de Lima,0,2,2,15,6,-9,9,5,-4,39,57,18
+Varonil,4038915,66,José Raúl Zúñiga Murillo,Patricio Salas,2,1,-1,12,1,-11,3,5,2,45,53,8
+Varonil,4038915,78,Rodrigo Dourado Cunha,Jonathan dos Santos Ramírez,1,5,4,1,5,4,5,7,2,40,38,-2
+Varonil,4038915,78,Alejandro Zendejas Saavedra,Isaías Violante Romero,1,5,4,1,5,4,5,7,2,40,38,-2
+Varonil,4038915,78,Kevin Nahin Álvarez Campos,Aaron Mejía Montoya,1,5,4,1,5,4,5,7,2,40,38,-2
+Varonil,4038915,78,Raphael Cavalcante Veiga,Alexis Hazael Gutiérrez Torres,1,5,4,1,5,4,5,7,2,40,38,-2
+Varonil,4038920,45,Rodrigo Dourado Cunha,Erick Daniel Sánchez Ocegueda,0,1,1,11,24,13,1,4,3,19,75,56
+Varonil,4038920,56,Cristian Alexis Borja González,Isaías Violante Romero,1,2,1,26,18,-8,5,1,-4,65,82,17
+Varonil,4038920,56,Vinícius Moreira de Lima,Kevin Nahin Álvarez Campos,1,2,1,26,18,-8,5,1,-4,65,82,17
+Varonil,4038920,67,Alejandro Zendejas Saavedra,Raphael Cavalcante Veiga,2,3,1,18,10,-8,2,3,1,94,58,-36
+Varonil,4038920,83,Patricio Salas,José Raúl Zúñiga Murillo,2,1,-1,7,9,2,3,4,1,54,46,-8
+Varonil,4038931,56,Isaías Violante Romero,Kevin Nahin Álvarez Campos,5,2,-3,21,28,7,2,5,3,52,31,-21
+Varonil,4038931,56,Miguel Ángel Vázquez García,Ramón Juárez Del Castillo,5,2,-3,21,28,7,2,5,3,52,31,-21
+Varonil,4038931,79,Raphael Cavalcante Veiga,Alan Jhosué Cervantes Martín del Campo,1,1,0,23,19,-4,2,3,1,37,21,-16
+Varonil,4038931,85,Paul Brian Rodríguez Bravo,José Raúl Zúñiga Murillo,0,1,1,31,16,-15,4,1,-3,20,16,-4
+Varonil,4038931,86,Cristian Alexis Borja González,Thiago Nahuel Espinosa Dovat,0,1,1,30,15,-15,3,1,-2,16,17,1
+Varonil,4038936,45,Isaías Violante Romero,Kevin Nahin Álvarez Campos,2,1,-1,7,29,22,0,6,6,35,74,39
+Varonil,4038936,64,Raphael Cavalcante Veiga,Vinícius Moreira de Lima,2,1,-1,17,11,-6,3,3,0,38,26,-12
+Varonil,4038936,64,Paul Brian Rodríguez Bravo,Patricio Salas,2,1,-1,17,11,-6,3,3,0,38,26,-12
+Varonil,4038936,71,Jonathan dos Santos Ramírez,Rodrigo Dourado Cunha,2,1,-1,19,7,-12,3,2,-1,37,12,-25
+Varonil,4038936,86,Alejandro Zendejas Saavedra,Alan Jhosué Cervantes Martín del Campo,1,0,-1,18,21,3,7,6,-1,24,23,-1
+Varonil,4038946,45,Cristian Alexis Borja González,Patricio Salas,1,2,1,7,15,8,3,11,8,51,121,70
+Varonil,4038946,59,Raphael Cavalcante Veiga,Vinícius Moreira de Lima,2,1,-1,7,6,-1,4,6,2,96,72,-24
+Varonil,4038946,71,Erick Daniel Sánchez Ocegueda,Isaías Violante Romero,1,1,0,6,5,-1,7,2,-5,87,79,-8
+Varonil,4038946,71,Alejandro Zendejas Saavedra,Henry Josué Martín Mex,1,1,0,6,5,-1,7,2,-5,87,79,-8
+Varonil,4038946,86,Paul Brian Rodríguez Bravo,José Raúl Zúñiga Murillo,2,1,-1,5,6,1,7,1,-6,94,40,-54
+Varonil,4057778,48,Cristian Alexis Borja González,Ramón Juárez Del Castillo,3,6,3,15,15,0,4,11,7,73,46,-27
+Varonil,4057778,60,Alexis Hazael Gutiérrez Torres,Raphael Cavalcante Veiga,2,1,-1,15,5,-10,6,3,-3,26,45,19
+Varonil,4057778,61,Patricio Salas,Henry Josué Martín Mex,2,1,-1,7,5,-2,6,4,-2,25,49,24
+Varonil,4057778,61,Sebastián Enzo Cáceres Ramos,Thiago Nahuel Espinosa Dovat,2,1,-1,7,5,-2,6,4,-2,25,49,24
+Varonil,4057778,78,Rodrigo Dourado Cunha,Jonathan dos Santos Ramírez,2,2,0,3,11,8,3,4,1,31,23,-8
+Varonil,4057778,78,Erick Daniel Sánchez Ocegueda,Vinícius Moreira de Lima,2,2,0,3,11,8,3,4,1,31,23,-8
+Varonil,4057783,45,Patricio Salas,Henry Josué Martín Mex,2,5,3,3,20,17,0,11,11,18,126,108
+Varonil,4057783,74,Jonathan dos Santos Ramírez,Rodrigo Dourado Cunha,4,2,-2,15,9,-6,7,5,-2,79,46,-33
+Varonil,4057783,74,Erick Daniel Sánchez Ocegueda,Vinícius Moreira de Lima,4,2,-2,15,9,-6,7,5,-2,79,46,-33
+Varonil,4057783,74,Dagoberto Espinoza Acosta,Raphael Cavalcante Veiga,4,2,-2,15,9,-6,7,5,-2,79,46,-33
+Varonil,4057783,89,Kevin Nahin Álvarez Campos,Néstor Alejandro Araújo Razo,2,0,-2,4,2,-2,2,2,0,30,25,-5
+Varonil,4063531,78,Kevin Nahin Álvarez Campos,Alexis Hazael Gutiérrez Torres,1,3,2,8,9,1,2,3,1,24,54,30
+Varonil,4063531,89,Raphael Cavalcante Veiga,Ícaro Geovane da Conceição Nascimento,3,0,-3,9,12,3,3,4,1,51,27,-24
+Varonil,4063531,97,Henry Josué Martín Mex,Alejandro Cárdenas Alonso,0,0,0,9,6,-3,5,0,-5,25,7,-18
+Varonil,4063534,74,Kevin Nahin Álvarez Campos,Patricio Salas,2,3,1,11,4,-7,8,4,-4,54,53,-1
+Varonil,4063534,74,Raphael Cavalcante Veiga,Alexis Hazael Gutiérrez Torres,2,3,1,11,4,-7,8,4,-4,54,53,-1
+Varonil,4063534,79,Henry Josué Martín Mex,Alejandro Cárdenas Alonso,2,2,0,6,5,-1,6,2,-4,54,57,3
+Varonil,4063534,85,Cristian Alexis Borja González,Franco Rossano Erchuk,3,1,-2,6,7,1,4,1,-3,58,53,-5
+Varonil,4063549,45,Dagoberto Espinoza Acosta,Kevin Nahin Álvarez Campos,1,4,3,13,32,19,5,8,3,53,81,28
+Varonil,4063549,45,Raphael Cavalcante Veiga,Israel Reyes Romero,1,4,3,13,32,19,5,8,3,53,81,28
+Varonil,4063549,70,Alexis Hazael Gutiérrez Torres,Paul Brian Rodríguez Bravo,2,2,0,17,9,-8,8,4,-4,48,44,-4
+Varonil,4063549,77,Henry Josué Martín Mex,Alejandro Cárdenas Alonso,2,2,0,13,11,-2,6,7,1,44,77,33
+Varonil,4063549,77,Isaías Violante Romero,Diego Osvaldo Arriaga García,2,2,0,13,11,-2,6,7,1,44,77,33
+Varonil,4063555,60,Ícaro Geovane da Conceição Nascimento,Erick Daniel Sánchez Ocegueda,3,1,-2,13,27,14,4,5,1,22,42,20
+Varonil,4063555,60,Óscar Andrés Perea Abonce,Paul Brian Rodríguez Bravo,3,1,-2,13,27,14,4,5,1,22,42,20
+Varonil,4063555,71,Henry Josué Martín Mex,Patricio Salas,1,2,1,27,14,-13,5,4,-1,36,51,15
+Varonil,4063555,71,Raphael Cavalcante Veiga,Alexis Hazael Gutiérrez Torres,1,2,1,27,14,-13,5,4,-1,36,51,15
+Varonil,4063555,75,Diego Osvaldo Arriaga García,Isaías Violante Romero,2,3,1,27,14,-13,4,3,-1,19,71,52
+Varonil,4063560,70,Paul Brian Rodríguez Bravo,Diego Osvaldo Arriaga García,2,1,-1,28,17,-11,7,4,-3,83,18,-65
+Varonil,4063560,70,Isaías Violante Romero,Óscar Andrés Perea Abonce,2,1,-1,28,17,-11,7,4,-3,83,18,-65
+Varonil,4063560,82,Dagoberto Espinoza Acosta,Cristian Alexis Borja González,1,1,0,19,16,-3,6,3,-3,18,24,6
+Varonil,4063560,82,Erick Daniel Sánchez Ocegueda,Edwin Cerrillo,1,1,0,19,16,-3,6,3,-3,18,24,6
+Varonil,4063560,82,Israel Reyes Romero,Ramón Juárez Del Castillo,1,1,0,19,16,-3,6,3,-3,18,24,6
+Varonil,4063574,61,Alexis Hazael Gutiérrez Torres,Paul Brian Rodríguez Bravo,1,2,1,23,20,-3,8,7,-1,24,43,19
+Varonil,4063574,61,Diego Osvaldo Arriaga García,Raphael Cavalcante Veiga,1,2,1,23,20,-3,8,7,-1,24,43,19
+Varonil,4063574,61,Óscar Andrés Perea Abonce,Isaías Violante Romero,1,2,1,23,20,-3,8,7,-1,24,43,19
+Varonil,4063574,66,Edwin Cerrillo,Erick Daniel Sánchez Ocegueda,2,2,0,19,22,3,11,3,-8,40,41,1
+Varonil,4063574,66,Ícaro Geovane da Conceição Nascimento,Israel Reyes Romero,2,2,0,19,22,3,11,3,-8,40,41,1
+Varonil,4063590,28,Dagoberto Espinoza Acosta,Cristian Alexis Borja González,2,2,0,7,7,0,4,2,-2,58,59,1
+Varonil,4063590,45,Isaías Violante Romero,Alejandro Zendejas Saavedra,2,4,2,6,4,-2,4,8,4,30,98,68
+Varonil,4063590,45,Erick Daniel Sánchez Ocegueda,Ícaro Geovane da Conceição Nascimento,2,4,2,6,4,-2,4,8,4,30,98,68
+Varonil,4063590,68,Raphael Cavalcante Veiga,Óscar Andrés Perea Abonce,2,3,1,13,2,-11,2,3,1,27,43,16
+Varonil,4063590,77,Henry Josué Martín Mex,Miguel Ángel Borja Hernández,4,4,0,4,10,6,3,6,3,45,50,5
+Varonil,4063597,51,Alejandro Zendejas Saavedra,Erick Daniel Sánchez Ocegueda,0,1,1,21,2,-19,5,5,0,84,85,1
+Varonil,4063597,51,Alan Jhosué Cervantes Martín del Campo,Óscar Andrés Perea Abonce,0,1,1,21,2,-19,5,5,0,84,85,1
+Varonil,4063597,65,Raphael Cavalcante Veiga,Miguel Ángel Borja Hernández,1,2,1,4,6,2,2,5,3,80,33,-47
+Varonil,4063597,85,Henry Josué Martín Mex,Carlos Álvarez Rivera,5,3,-2,7,7,0,6,1,-5,18,35,17
+Varonil,4063597,85,Dagoberto Espinoza Acosta,Edwin Cerrillo,5,3,-2,7,7,0,6,1,-5,18,35,17
+Varonil,4063611,75,Miguel Ángel Borja Hernández,Alejandro Cárdenas Alonso,2,0,-2,8,26,18,7,5,-2,30,47,17
+Varonil,4063611,75,Carlos Álvarez Rivera,Alexis Hazael Gutiérrez Torres,2,0,-2,8,26,18,7,5,-2,30,47,17
+Varonil,4063611,75,Edwin Cerrillo,Ícaro Geovane da Conceição Nascimento,2,0,-2,8,26,18,7,5,-2,30,47,17
+Varonil,4063611,81,Alejandro Zendejas Saavedra,Derek Ramsés Jiménez García,1,3,2,19,25,6,6,3,-3,36,38,2
+Varonil,4063611,81,Dagoberto Espinoza Acosta,Kevin Nahin Álvarez Campos,1,3,2,19,25,6,6,3,-3,36,38,2
+Femenil,3942569,71,Betzy Casandra Cuevas Araujo,Jana Alexandra Gutiérrez Campos,2,1,-1,12,13,1,6,6,0,71,52,-19
+Femenil,3942569,78,Angelique Montserrat Saldivar Pavón,María Natalia Mauleon Piñón,2,0,-2,14,10,-4,8,7,-1,55,36,-19
+Femenil,3942569,85,Miah Alexia Zuazua Martínez,Alexa Soto Ramírez,1,4,3,13,12,-1,5,9,4,42,48,6
+Femenil,3942587,45,Nancy Guadalupe Antonio López,Aylín Ariana Aviléz Peña,1,1,0,18,20,2,7,10,3,48,120,72
+Femenil,3942587,45,Betzy Casandra Cuevas Araujo,Scarlett Nefer Camberos Becerra,1,1,0,18,20,2,7,10,3,48,120,72
+Femenil,3942587,45,Alexa Soto Ramírez,Kiana Angélica Palacios Hernández,1,1,0,18,20,2,7,10,3,48,120,72
+Femenil,3942587,75,Itzel Alejandra Velasco Loza,Sandra Paños García-Villamil,3,3,0,8,13,5,5,7,2,47,49,2
+Femenil,3942587,75,Miah Alexia Zuazua Martínez,María Natalia Mauleon Piñón,3,3,0,8,13,5,5,7,2,47,49,2
+Femenil,3942596,45,Aylín Ariana Aviléz Peña,Betzy Casandra Cuevas Araujo,2,7,5,7,19,12,6,10,4,48,67,19
+Femenil,3942596,45,Kiana Angélica Palacios Hernández,Sarah Luebbert,2,7,5,7,19,12,6,10,4,48,67,19
+Femenil,3942596,76,María Natalia Mauleon Piñón,Irene Guerrero Sanmartín,0,3,3,17,13,-4,6,3,-3,46,42,-4
+Femenil,3942596,76,Sabrina Marie Enciso,Carol Alicia Acuña Vázquez,0,3,3,17,13,-4,6,3,-3,46,42,-4
+Femenil,3942603,45,Sabrina Marie Enciso,Aylín Ariana Aviléz Peña,2,4,2,5,26,21,6,16,10,68,128,60
+Femenil,3942603,66,Betzy Casandra Cuevas Araujo,María Natalia Mauleon Piñón,2,2,0,7,9,2,3,6,3,69,78,9
+Femenil,3942603,80,Irene Guerrero Sanmartín,Nancy Guadalupe Antonio López,5,2,-3,5,18,13,9,5,-4,88,68,-20
+Femenil,3942603,80,Kiana Angélica Palacios Hernández,Alexa Soto Ramírez,5,2,-3,5,18,13,9,5,-4,88,68,-20
+Femenil,3942612,68,Kiana Angélica Palacios Hernández,Aylín Ariana Aviléz Peña,5,5,0,17,19,2,11,6,-5,50,50,0
+Femenil,3942612,68,Nicolette Andrea Hernández Sippel,Miah Alexia Zuazua Martínez,5,5,0,17,19,2,11,6,-5,50,50,0
+Femenil,3942612,83,Sabrina Marie Enciso,Betzy Casandra Cuevas Araujo,4,5,1,11,9,-2,7,12,5,53,37,-16
+Femenil,3942626,74,Betzy Casandra Cuevas Araujo,Nancy Guadalupe Antonio López,0,4,4,10,8,-2,5,6,1,53,33,-20
+Femenil,3942626,75,Mariana Cadena Calvillo,Miah Alexia Zuazua Martínez,0,4,4,10,11,1,6,5,-1,58,29,-29
+Femenil,3942626,85,Sarah Luebbert,María Natalia Mauleon Piñón,4,1,-3,11,29,18,5,5,0,29,48,19
+Femenil,3942629,59,Nancy Guadalupe Antonio López,Jocelyn Marie Orejel Tavares,3,1,-2,22,27,5,6,6,0,54,46,-8
+Femenil,3942629,59,Sabrina Marie Enciso,Karen Irasema Luna de Los Santos,3,1,-2,22,27,5,6,6,0,54,46,-8
+Femenil,3942629,82,Mariana Cadena Calvillo,María Natalia Mauleon Piñón,4,4,0,13,10,-3,9,5,-4,70,69,-1
+Femenil,3942629,82,Scarlett Nefer Camberos Becerra,Aylín Ariana Aviléz Peña,4,4,0,13,10,-3,9,5,-4,70,69,-1
+Femenil,3942633,58,Miah Alexia Zuazua Martínez,Scarlett Nefer Camberos Becerra,0,1,1,22,20,-2,7,4,-3,71,32,-39
+Femenil,3942633,58,Irene Guerrero Sanmartín,Kiana Angélica Palacios Hernández,0,1,1,22,20,-2,7,4,-3,71,32,-39
+Femenil,3942633,58,María Natalia Mauleon Piñón,Sarah Luebbert,0,1,1,22,20,-2,7,4,-3,71,32,-39
+Femenil,3942633,72,Noemi Granados Flores,Betzy Casandra Cuevas Araujo,1,3,2,16,7,-9,3,5,2,26,18,-8
+Femenil,3942648,45,Aylín Ariana Aviléz Peña,Kiana Angélica Palacios Hernández,2,5,3,10,18,8,9,13,4,51,90,39
+Femenil,3942648,45,Mariana Cadena Calvillo,María Natalia Mauleon Piñón,2,5,3,10,18,8,9,13,4,51,90,39
+Femenil,3942648,68,Irene Guerrero Sanmartín,Alexa Soto Ramírez,2,4,2,10,7,-3,8,7,-1,83,50,-33
+Femenil,3942648,79,Sarah Luebbert,Rebekah Valdez,5,4,-1,6,6,0,6,7,1,49,68,19
+Femenil,3942648,79,Nancy Guadalupe Antonio López,Betzy Casandra Cuevas Araujo,5,4,-1,6,6,0,6,7,1,49,68,19
+Femenil,3942652,68,Chidinma Nkeruka Okeke,María Natalia Mauleon Piñón,5,2,-3,11,3,-8,12,8,-4,49,53,4
+Femenil,3942652,69,Irene Guerrero Sanmartín,Aylín Ariana Aviléz Peña,5,2,-3,9,4,-5,11,7,-4,37,55,18
+Femenil,3942652,80,Nancy Guadalupe Antonio López,Noemi Granados Flores,2,2,0,5,12,7,8,5,-3,60,39,-21
+Femenil,3942652,80,Nicolette Andrea Hernández Sippel,Jana Alexandra Gutiérrez Campos,2,2,0,5,12,7,8,5,-3,60,39,-21
+Femenil,3942652,81,Karen Irasema Luna de Los Santos,Sabrina Marie Enciso,2,2,0,5,15,10,6,6,0,50,49,-1
+Femenil,3942665,64,Aylín Ariana Aviléz Peña,María Natalia Mauleon Piñón,1,0,-1,26,10,-16,4,2,-2,58,54,-4
+Femenil,3942665,68,Sarah Luebbert,Miah Alexia Zuazua Martínez,0,1,1,20,17,-3,4,4,0,82,18,-64
+Femenil,3942665,76,Jana Alexandra Gutiérrez Campos,Sabrina Marie Enciso,1,1,0,12,15,3,4,5,1,35,37,2
+Femenil,3942665,76,Kiana Angélica Palacios Hernández,Noemi Granados Flores,1,1,0,12,15,3,4,5,1,35,37,2
+Femenil,3942672,45,Sarah Luebbert,Angelique Montserrat Saldivar Pavón,5,6,1,12,9,-3,12,12,0,84,95,11
+Femenil,3942672,59,Karen Irasema Luna de Los Santos,Sabrina Marie Enciso,5,3,-2,7,6,-1,7,9,2,74,70,-4
+Femenil,3942672,59,Jana Alexandra Gutiérrez Campos,Nicolette Andrea Hernández Sippel,5,3,-2,7,6,-1,7,9,2,74,70,-4
+Femenil,3942672,60,Kiana Angélica Palacios Hernández,Priscila Flor da Silva,5,3,-2,6,7,1,7,9,2,74,85,11
+Femenil,3942672,68,María Natalia Mauleon Piñón,Betzy Casandra Cuevas Araujo,4,1,-3,7,5,-2,9,5,-4,73,60,-13
+Femenil,3942677,60,Priscila Flor da Silva,Angelique Montserrat Saldivar Pavón,2,0,-2,13,29,16,4,7,3,36,37,1
+Femenil,3942677,67,Jana Alexandra Gutiérrez Campos,Nicolette Andrea Hernández Sippel,1,0,-1,23,28,5,6,9,3,37,50,13
+Femenil,3942677,68,Irene Guerrero Sanmartín,Aylín Ariana Aviléz Peña,1,0,-1,27,30,3,6,8,2,36,57,21
+Femenil,3942677,83,Karen Irasema Luna de Los Santos,Sabrina Marie Enciso,1,2,1,32,23,-9,8,5,-3,39,45,6
+Femenil,3942677,84,Sarah Luebbert,María Natalia Mauleon Piñón,1,2,1,31,23,-8,7,5,-2,34,49,15
+Femenil,3942689,59,Jana Alexandra Gutiérrez Campos,Nicolette Andrea Hernández Sippel,0,3,3,22,13,-9,11,5,-6,83,46,-37
+Femenil,3942689,59,Priscila Flor da Silva,Angelique Montserrat Saldivar Pavón,0,3,3,22,13,-9,11,5,-6,83,46,-37
+Femenil,3942689,74,Nancy Guadalupe Antonio López,Aylín Ariana Aviléz Peña,4,2,-2,11,12,1,5,8,3,46,31,-15
+Femenil,3942689,74,Jocelyn Marie Orejel Tavares,Kimberly Vanessa Rodríguez Cubero,4,2,-2,11,12,1,5,8,3,46,31,-15
+Femenil,3942689,88,Irene Guerrero Sanmartín,María Natalia Mauleon Piñón,2,3,1,10,20,10,7,7,0,23,19,-4
+Femenil,3942697,45,Angelique Montserrat Saldivar Pavón,Priscila Flor da Silva,1,4,3,23,32,9,5,13,8,40,69,29
+Femenil,3942697,67,Karen Irasema Luna de Los Santos,Sabrina Marie Enciso,1,1,0,17,23,6,3,9,6,32,58,26
+Femenil,3942697,67,Karina Anais Rodríguez,Kimberly Vanessa Rodríguez Cubero,1,1,0,17,23,6,3,9,6,32,58,26
+Femenil,3942697,76,Sarah Luebbert,Aylín Ariana Aviléz Peña,1,0,-1,22,16,-6,8,10,2,51,60,9
+Femenil,3942697,76,Jocelyn Marie Orejel Tavares,María Natalia Mauleon Piñón,1,0,-1,22,16,-6,8,10,2,51,60,9
+Femenil,3942705,56,Aylín Ariana Aviléz Peña,María Natalia Mauleon Piñón,4,8,4,21,6,-15,9,11,2,92,61,-31
+Femenil,3942705,56,Nancy Guadalupe Antonio López,Noemi Granados Flores,4,8,4,21,6,-15,9,11,2,92,61,-31
+Femenil,3942705,67,Angelique Montserrat Saldivar Pavón,Jocelyn Marie Orejel Tavares,7,2,-5,7,14,7,11,8,-3,55,55,0
+Femenil,3942705,67,Irene Guerrero Sanmartín,Alondra Cabanillas Soto,7,2,-5,7,14,7,11,8,-3,55,55,0
+Femenil,3942705,67,Nicolette Andrea Hernández Sippel,Miah Alexia Zuazua Martínez,7,2,-5,7,14,7,11,8,-3,55,55,0
+Femenil,3942713,59,Scarlett Nefer Camberos Becerra,Priscila Flor da Silva,4,0,-4,13,14,1,7,4,-3,64,69,5
+Femenil,3942713,60,Sarah Luebbert,Angelique Montserrat Saldivar Pavón,3,0,-3,7,18,11,6,5,-1,60,76,16
+Femenil,3942713,60,Kiana Angélica Palacios Hernández,Aylín Ariana Aviléz Peña,3,0,-3,7,18,11,6,5,-1,60,76,16
+Femenil,3942713,67,Nancy Guadalupe Antonio López,Jocelyn Marie Orejel Tavares,1,2,1,11,18,7,6,7,1,78,50,-28
+Femenil,3942713,67,Irene Guerrero Sanmartín,María Natalia Mauleon Piñón,1,2,1,11,18,7,6,7,1,78,50,-28
+Femenil,3967976,68,Karen Irasema Luna de Los Santos,Jana Alexandra Gutiérrez Campos,4,1,-3,15,10,-5,10,8,-2,50,51,1
+Femenil,3967976,68,Nancy Guadalupe Antonio López,Jocelyn Marie Orejel Tavares,4,1,-3,15,10,-5,10,8,-2,50,51,1
+Femenil,3967976,75,Scarlett Nefer Camberos Becerra,Priscila Flor da Silva,1,1,0,14,13,-1,12,4,-8,63,42,-21
+Femenil,3967976,75,Sarah Luebbert,Angelique Montserrat Saldivar Pavón,1,1,0,14,13,-1,12,4,-8,63,42,-21
+Femenil,3967976,83,Kiana Angélica Palacios Hernández,Aylín Ariana Aviléz Peña,2,0,-2,12,15,3,7,3,-4,56,48,-8
+Femenil,3967980,58,Nicolette Andrea Hernández Sippel,Karen Irasema Luna de Los Santos,0,1,1,46,14,-32,11,5,-6,67,52,-15
+Femenil,3967980,59,Irene Guerrero Sanmartín,Kiana Angélica Palacios Hernández,1,0,-1,42,17,-25,11,4,-7,63,51,-12
+Femenil,3967980,59,Priscila Flor da Silva,Nancy Guadalupe Antonio López,1,0,-1,42,17,-25,11,4,-7,63,51,-12
+Femenil,3967980,59,Angelique Montserrat Saldivar Pavón,Scarlett Nefer Camberos Becerra,1,0,-1,42,17,-25,11,4,-7,63,51,-12
+Femenil,3967980,66,Aylín Ariana Aviléz Peña,María Natalia Mauleon Piñón,1,0,-1,14,31,17,7,5,-2,52,56,4
+Femenil,3968442,66,Karina Anais Rodríguez,Priscila Flor da Silva,4,0,-4,11,20,9,3,7,4,25,45,20
+Femenil,3968442,86,Nancy Guadalupe Antonio López,Jocelyn Marie Orejel Tavares,3,2,-1,5,12,7,7,7,0,39,36,-3
+Femenil,3968442,86,Karen Irasema Luna de Los Santos,Jana Alexandra Gutiérrez Campos,3,2,-1,5,12,7,7,7,0,39,36,-3
+Femenil,3968442,92,Scarlett Nefer Camberos Becerra,Angelique Montserrat Saldivar Pavón,3,2,-1,9,5,-4,8,6,-2,30,24,-6
+Femenil,3968445,64,Priscila Flor da Silva,Angelique Montserrat Saldivar Pavón,0,1,1,7,13,6,10,7,-3,42,46,4
+Femenil,3968445,64,Karen Irasema Luna de Los Santos,Jana Alexandra Gutiérrez Campos,0,1,1,7,13,6,10,7,-3,42,46,4
+Femenil,3968445,70,Chidinma Nkeruka Okeke,Karina Anais Rodríguez,0,1,1,13,18,5,4,10,6,30,53,23
+Femenil,3972911,45,Priscila Flor da Silva,Sarah Luebbert,4,5,1,18,26,8,10,11,1,38,71,33
+Femenil,3972911,45,Aylín Ariana Aviléz Peña,María Natalia Mauleon Piñón,4,5,1,18,26,8,10,11,1,38,71,33
+Femenil,3972911,68,Nancy Guadalupe Antonio López,Jocelyn Marie Orejel Tavares,4,2,-2,11,22,11,8,10,2,44,60,16
+Femenil,3972917,53,Irene Guerrero Sanmartín,María Natalia Mauleon Piñón,6,4,-2,17,14,-3,11,6,-5,74,43,-31
+Femenil,3972917,54,Sarah Luebbert,Scarlett Nefer Camberos Becerra,6,5,-1,18,15,-3,11,7,-4,66,55,-11
+Femenil,3972917,54,Jana Alexandra Gutiérrez Campos,Noemi Granados Flores,6,5,-1,18,15,-3,11,7,-4,66,55,-11
+Femenil,3972917,67,Nancy Guadalupe Antonio López,Alexa Soto Ramírez,6,2,-4,14,23,9,5,3,-2,47,68,21
+Femenil,3972917,67,Priscila Flor da Silva,Daniela Espinosa Arce,6,2,-4,14,23,9,5,3,-2,47,68,21
+Femenil,3972930,56,Sarah Luebbert,Irene Guerrero Sanmartín,2,5,3,28,14,-14,15,10,-5,91,88,-3
+Femenil,3972930,57,Priscila Flor da Silva,Daniela Espinosa Arce,1,5,4,26,14,-12,13,10,-3,87,80,-7
+Femenil,3972930,57,Jocelyn Marie Orejel Tavares,Nancy Guadalupe Antonio López,1,5,4,26,14,-12,13,10,-3,87,80,-7
+Femenil,3972930,66,Aylín Ariana Aviléz Peña,María Natalia Mauleon Piñón,5,1,-4,14,15,1,10,4,-6,88,53,-35
+Femenil,3972930,66,Alexa Soto Ramírez,Alondra Cabanillas Soto,5,1,-4,14,15,1,10,4,-6,88,53,-35
+Femenil,3972939,59,María Natalia Mauleon Piñón,Nancy Guadalupe Antonio López,3,3,0,16,19,3,8,9,1,30,63,33
+Femenil,3972939,59,Priscila Flor da Silva,Sarah Luebbert,3,3,0,16,19,3,8,9,1,30,63,33
+Femenil,3972939,66,Angelique Montserrat Saldivar Pavón,Daniela Espinosa Arce,4,0,-4,21,16,-5,8,7,-1,56,54,-2
+Femenil,3972939,74,Irene Guerrero Sanmartín,Aylín Ariana Aviléz Peña,2,3,1,13,19,6,7,6,-1,67,42,-25
+Femenil,3972939,74,Karen Irasema Luna de Los Santos,Sabrina Marie Enciso,2,3,1,13,19,6,7,6,-1,67,42,-25
+Femenil,3972949,45,Nicolette Andrea Hernández Sippel,Sabrina Marie Enciso,3,1,-2,21,24,3,5,5,0,67,96,29
+Femenil,3972949,55,Daniela Espinosa Arce,Priscila Flor da Silva,1,3,2,24,19,-5,5,4,-1,96,52,-44
+Femenil,3972949,55,Angelique Montserrat Saldivar Pavón,Scarlett Nefer Camberos Becerra,1,3,2,24,19,-5,5,4,-1,96,52,-44
+Femenil,3972949,74,Aylín Ariana Aviléz Peña,Kiana Angélica Palacios Hernández,1,1,0,16,19,3,1,4,3,75,66,-9
+Femenil,3972949,75,Irene Guerrero Sanmartín,Alexa Soto Ramírez,1,1,0,15,19,4,1,5,4,74,64,-10
+Femenil,3972956,59,Nancy Guadalupe Antonio López,María Natalia Mauleon Piñón,3,3,0,10,10,0,6,6,0,49,42,-7
+Femenil,3972956,76,Angelique Montserrat Saldivar Pavón,Karina Anais Rodríguez,2,2,0,16,13,-3,7,12,5,41,46,5
+Femenil,3972956,76,Jana Alexandra Gutiérrez Campos,Chidinma Nkeruka Okeke,2,2,0,16,13,-3,7,12,5,41,46,5
+Femenil,3972956,76,Sarah Luebbert,Daniela Espinosa Arce,2,2,0,16,13,-3,7,12,5,41,46,5
+Femenil,3972961,45,Irene Guerrero Sanmartín,Aylín Ariana Aviléz Peña,3,6,3,13,22,9,5,11,6,49,61,12
+Femenil,3972961,65,Alexa Soto Ramírez,María Natalia Mauleon Piñón,5,2,-3,19,17,-2,9,8,-1,52,60,8
+Femenil,3972961,65,Chidinma Nkeruka Okeke,Noemi Granados Flores,5,2,-3,19,17,-2,9,8,-1,52,60,8
+Femenil,3972961,74,Angelique Montserrat Saldivar Pavón,Alondra Cabanillas Soto,2,6,4,20,9,-11,7,11,4,71,46,-25
+Femenil,3972974,57,Sarah Luebbert,Priscila Flor da Silva,4,4,0,21,16,-5,14,8,-6,60,25,-35
+Femenil,3972974,57,Angelique Montserrat Saldivar Pavón,Daniela Espinosa Arce,4,4,0,21,16,-5,14,8,-6,60,25,-35
+Femenil,3972974,65,Aylín Ariana Aviléz Peña,Nancy Guadalupe Antonio López,3,2,-1,19,10,-9,9,2,-7,29,45,16
+Femenil,3972980,45,Jana Alexandra Gutiérrez Campos,Nicolette Andrea Hernández Sippel,1,2,1,28,14,-14,6,7,1,50,85,35
+Femenil,3972980,45,Aylín Ariana Aviléz Peña,Nancy Guadalupe Antonio López,1,2,1,28,14,-14,6,7,1,50,85,35
+Femenil,3972980,72,Priscila Flor da Silva,Daniela Espinosa Arce,3,2,-1,12,18,6,10,6,-4,60,55,-5
+Femenil,3972986,59,Noemi Granados Flores,Karen Irasema Luna de Los Santos,3,3,0,16,20,4,9,5,-4,75,56,-19
+Femenil,3972986,59,María Natalia Mauleon Piñón,Angelique Montserrat Saldivar Pavón,3,3,0,16,20,4,9,5,-4,75,56,-19
+Femenil,3972986,72,Karina Anais Rodríguez,Aylín Ariana Aviléz Peña,4,3,-1,24,13,-11,6,10,4,54,75,21
+Femenil,3972986,72,Jocelyn Marie Orejel Tavares,Sarah Luebbert,4,3,-1,24,13,-11,6,10,4,54,75,21
+Femenil,3972986,72,Daniela Espinosa Arce,Scarlett Nefer Camberos Becerra,4,3,-1,24,13,-11,6,10,4,54,75,21
+Femenil,3972998,8,Aylín Ariana Aviléz Peña,Angelique Montserrat Saldivar Pavón,1,2,1,11,13,2,5,10,5,41,61,20
+Femenil,3972998,55,Priscila Flor da Silva,Scarlett Nefer Camberos Becerra,5,1,-4,36,8,-28,13,5,-8,81,52,-29
+Femenil,3972998,69,Sarah Luebbert,Daniela Espinosa Arce,2,2,0,6,14,8,7,9,2,75,42,-33
+Femenil,3972998,70,Jana Alexandra Gutiérrez Campos,Kiana Angélica Palacios Hernández,4,0,-4,6,15,9,8,10,2,76,43,-33
+Femenil,3973004,12,Sarah Luebbert,Angelique Montserrat Saldivar Pavón,3,1,-2,12,17,5,3,5,2,51,57,6
+Femenil,3973004,59,Karina Anais Rodríguez,Chidinma Nkeruka Okeke,2,2,0,18,11,-7,11,8,-3,61,50,-11
+Femenil,3973004,59,Nicolette Andrea Hernández Sippel,Karen Irasema Luna de Los Santos,2,2,0,18,11,-7,11,8,-3,61,50,-11
+Femenil,3973004,59,Irene Guerrero Sanmartín,María Natalia Mauleon Piñón,2,2,0,18,11,-7,11,8,-3,61,50,-11
+Femenil,3973004,59,Daniela Espinosa Arce,Priscila Flor da Silva,2,2,0,18,11,-7,11,8,-3,61,50,-11
+Femenil,3973014,44,Sandra Paños García-Villamil,Fedra Renatta Cota Muñoz,0,2,2,13,35,22,5,16,11,37,95,58
+Femenil,3973014,76,Priscila Flor da Silva,María Natalia Mauleon Piñón,1,1,0,20,8,-12,8,9,1,33,36,3
+Femenil,3973014,76,Karina Anais Rodríguez,Chidinma Nkeruka Okeke,1,1,0,20,8,-12,8,9,1,33,36,3
+Femenil,3973025,74,Daniela Espinosa Arce,María Natalia Mauleon Piñón,1,0,-1,15,16,1,3,5,2,49,39,-10
+Femenil,3973025,78,Karen Irasema Luna de Los Santos,Sabrina Marie Enciso,0,0,0,22,14,-8,4,3,-1,29,31,2
+Femenil,3973025,87,Angelique Montserrat Saldivar Pavón,Alexa Soto Ramírez,0,1,1,13,32,19,4,7,3,33,32,-1
+Femenil,3973033,45,Sabrina Marie Enciso,Nicolette Andrea Hernández Sippel,1,4,3,18,18,0,5,8,3,76,103,27
+Femenil,3973033,45,Daniela Espinosa Arce,María Natalia Mauleon Piñón,1,4,3,18,18,0,5,8,3,76,103,27
+Femenil,3973033,78,Alexa Soto Ramírez,Alondra Cabanillas Soto,2,0,-2,12,23,11,3,4,1,51,46,-5
+Femenil,3973033,78,Nancy Guadalupe Antonio López,Noemi Granados Flores,2,0,-2,12,23,11,3,4,1,51,46,-5
+Femenil,3973046,59,María Natalia Mauleon Piñón,Sarah Luebbert,2,4,2,19,29,10,4,12,8,46,57,11
+Femenil,3973046,77,Nicolette Andrea Hernández Sippel,Sabrina Marie Enciso,7,4,-3,13,17,4,7,2,-5,23,36,13
+Femenil,3973046,78,Sarah Luebbert,Alexa Soto Ramírez,6,4,-2,12,20,8,6,2,-4,22,44,22
+Femenil,3973057,59,Angelique Montserrat Saldivar Pavón,María Natalia Mauleon Piñón,3,4,1,16,12,-4,6,10,4,59,65,6
+Femenil,3973057,60,Nicolette Andrea Hernández Sippel,Sabrina Marie Enciso,3,4,1,13,20,7,7,10,3,45,65,20
+Femenil,3973057,60,Noemi Granados Flores,Irene Guerrero Sanmartín,3,4,1,13,20,7,7,10,3,45,65,20
+Femenil,3973057,60,Karina Anais Rodríguez,Chidinma Nkeruka Okeke,3,4,1,13,20,7,7,10,3,45,65,20
+Femenil,3992667,34,Sarah Luebbert,Angelique Montserrat Saldivar Pavón,3,1,-2,14,14,0,3,3,0,55,62,7
+Femenil,3992667,45,Chidinma Nkeruka Okeke,Jocelyn Marie Orejel Tavares,1,2,1,18,29,11,4,9,5,66,73,7
+Femenil,3992667,45,Kimberly Vanessa Rodríguez Cubero,Noemi Granados Flores,1,2,1,18,29,11,4,9,5,66,73,7
+Femenil,3992667,45,Nicolette Andrea Hernández Sippel,Sabrina Marie Enciso,1,2,1,18,29,11,4,9,5,66,73,7
+Femenil,3992667,72,Scarlett Nefer Camberos Becerra,Kiana Angélica Palacios Hernández,2,2,0,15,27,12,4,6,2,60,59,-1
+Femenil,3992669,45,Kiana Angélica Palacios Hernández,Sabrina Marie Enciso,6,2,-4,25,29,4,10,11,1,47,78,31
+Femenil,3992669,96,Angelique Montserrat Saldivar Pavón,Noemi Granados Flores,0,1,1,11,0,-11,5,3,-2,23,16,-7
+Femenil,3993554,45,María Natalia Mauleon Piñón,Kimberly Vanessa Rodríguez Cubero,1,0,-1,17,18,1,6,1,-5,38,65,27
+Femenil,3993554,45,Alexa Soto Ramírez,Jocelyn Marie Orejel Tavares,1,0,-1,17,18,1,6,1,-5,38,65,27
+Femenil,3993554,63,Angelique Montserrat Saldivar Pavón,Irene Guerrero Sanmartín,1,0,-1,13,11,-2,4,2,-2,42,34,-8
+Femenil,3993554,98,Sabrina Marie Enciso,Jana Alexandra Gutiérrez Campos,1,0,-1,4,0,-4,0,0,0,3,2,-1
+Femenil,3993556,19,Chidinma Nkeruka Okeke,Sabrina Marie Enciso,2,1,-1,13,32,19,9,4,-5,61,69,8
+Femenil,3993556,45,Karen Irasema Luna de Los Santos,Jocelyn Marie Orejel Tavares,2,4,2,15,34,19,9,9,0,67,76,9
+Femenil,3993556,79,Scarlett Nefer Camberos Becerra,María Natalia Mauleon Piñón,0,1,1,15,15,0,2,5,3,41,45,4
+Femenil,3993556,79,Irene Guerrero Sanmartín,Alexa Soto Ramírez,0,1,1,15,15,0,2,5,3,41,45,4
+Femenil,3993952,57,Kimberly Vanessa Rodríguez Cubero,Alexa Soto Ramírez,1,1,0,18,24,6,6,8,2,51,53,2
+Femenil,3993952,57,Angelique Montserrat Saldivar Pavón,María Natalia Mauleon Piñón,1,1,0,18,24,6,6,8,2,51,53,2
+Femenil,3993952,57,Sabrina Marie Enciso,Nicolette Andrea Hernández Sippel,1,1,0,18,24,6,6,8,2,51,53,2
+Femenil,3993953,15,Chidinma Nkeruka Okeke,Jocelyn Marie Orejel Tavares,2,6,4,11,20,9,7,5,-2,51,60,9
+Femenil,3993953,77,Jocelyn Marie Orejel Tavares,Priscila Flor da Silva,1,0,-1,8,10,2,6,6,0,43,55,12
+Femenil,3993953,77,Angelique Montserrat Saldivar Pavón,Sarah Luebbert,1,0,-1,8,10,2,6,6,0,43,55,12
+Femenil,4004888,63,Angelique Montserrat Saldivar Pavón,Ana Paula Pedrero Cordero,2,1,-1,19,13,-6,8,5,-3,62,49,-13
+Femenil,4004888,90,Alexa Soto Ramírez,Mariela Sofia Ramos Alva,1,0,-1,11,8,-3,3,2,-1,24,34,10
+Femenil,4004888,95,Nicolette Andrea Hernández Sippel,Zaira Alejandra Caballero Juárez,0,0,0,8,4,-4,2,1,-1,41,15,-26
+Femenil,4004895,45,Scarlett Nefer Camberos Becerra,Ana Paula Pedrero Cordero,2,3,1,12,28,16,6,11,5,44,85,41
+Femenil,4004895,88,Alexa Soto Ramírez,Allison Itzel García López,0,0,0,12,5,-7,6,6,0,62,39,-23
+Femenil,4004895,88,Angelique Montserrat Saldivar Pavón,Mariela Sofia Ramos Alva,0,0,0,12,5,-7,6,6,0,62,39,-23
+Femenil,4004901,60,Nicolette Andrea Hernández Sippel,Bruna Vilamala Costa,1,0,-1,15,11,-4,6,5,-1,76,53,-23
+Femenil,4004901,76,Angelique Montserrat Saldivar Pavón,Ana Paula Pedrero Cordero,0,3,3,14,18,4,5,8,3,58,47,-11
+Femenil,4004901,88,Alexa Soto Ramírez,Claudia Itzell Hernández López,3,1,-2,15,3,-12,10,2,-8,56,38,-18
+Femenil,4004911,58,Alexa Soto Ramírez,Jordan Brewster,7,3,-4,13,29,16,9,5,-4,52,33,-19
+Femenil,4004911,58,Jana Alexandra Gutiérrez Campos,Scarlett Nefer Camberos Becerra,7,3,-4,13,29,16,9,5,-4,52,33,-19
+Femenil,4004911,74,Karina Anais Rodríguez,Mariela Sofia Ramos Alva,4,4,0,20,21,1,9,10,1,62,40,-22
+Femenil,4004911,74,Bruna Vilamala Costa,Ana Paula Pedrero Cordero,4,4,0,20,21,1,9,10,1,62,40,-22
+Femenil,4004911,83,Kimberly Vanessa Rodríguez Cubero,Arantza Segura Alvarado,4,6,2,21,8,-13,8,8,0,54,33,-21
+Femenil,4004922,64,Kiana Angélica Palacios Hernández,Alexa Soto Ramírez,3,0,-3,5,2,-3,4,6,2,48,48,0
+Femenil,4004922,64,Jana Alexandra Gutiérrez Campos,Mariela Sofia Ramos Alva,3,0,-3,5,2,-3,4,6,2,48,48,0
+Femenil,4004922,65,Annie Karich,Nancy Guadalupe Antonio López,3,0,-3,4,3,-1,4,8,4,46,54,8
+Femenil,4004922,65,Kimberly Vanessa Rodríguez Cubero,Jordan Brewster,3,0,-3,4,3,-1,4,8,4,46,54,8
+Femenil,4004922,82,Irene Guerrero Sanmartín,Allison Itzel García López,2,4,2,13,11,-2,7,8,1,49,49,0
+Femenil,4004931,46,Karina Anais Rodríguez,Mariela Sofia Ramos Alva,1,3,2,18,29,11,10,5,-5,49,90,41
+Femenil,4004931,56,Scarlett Nefer Camberos Becerra,Nancy Guadalupe Antonio López,3,3,0,29,18,-11,5,7,2,90,54,-36
+Femenil,4004931,77,Bruna Vilamala Costa,Allison Itzel García López,3,1,-2,13,15,2,7,6,-1,70,80,10
+Femenil,4004931,77,Kiana Angélica Palacios Hernández,Ana Paula Pedrero Cordero,3,1,-2,13,15,2,7,6,-1,70,80,10
+Femenil,4004935,74,Scarlett Nefer Camberos Becerra,Nancy Guadalupe Antonio López,2,1,-1,5,23,18,6,6,0,33,59,26
+Femenil,4004935,79,Angelique Montserrat Saldivar Pavón,Alexa Soto Ramírez,0,1,1,13,25,12,3,7,4,22,75,53
+Femenil,4004935,87,Bruna Vilamala Costa,Jordan Brewster,1,0,-1,19,23,4,4,5,1,60,52,-8
+Femenil,4004950,72,Mariela Sofia Ramos Alva,Carol Alicia Acuña Vázquez,2,4,2,8,8,0,4,5,1,70,58,-12
+Femenil,4004950,72,Nancy Guadalupe Antonio López,Alondra Cabanillas Soto,2,4,2,8,8,0,4,5,1,70,58,-12
+Femenil,4004950,82,Angelique Montserrat Saldivar Pavón,Ana Paula Pedrero Cordero,4,2,-2,8,8,0,5,8,3,58,84,26
+Femenil,4004950,82,Bruna Vilamala Costa,Allison Itzel García López,4,2,-2,8,8,0,5,8,3,58,84,26
+Femenil,4004956,45,Carol Alicia Acuña Vázquez,Nancy Guadalupe Antonio López,0,3,3,34,23,-11,6,9,3,44,87,43
+Femenil,4004966,57,Alondra Cabanillas Soto,Nicolette Andrea Hernández Sippel,1,0,-1,32,25,-7,11,5,-6,78,38,-40
+Femenil,4004966,90,Arantza Segura Alvarado,Ana Paula Pedrero Cordero,1,1,0,16,12,-4,5,2,-3,57,39,-18
+Femenil,4004974,45,Kimberly Vanessa Rodríguez Cubero,Bruna Vilamala Costa,0,1,1,7,13,6,6,10,4,53,90,37
+Femenil,4004974,45,Arantza Segura Alvarado,Jordan Brewster,0,1,1,7,13,6,6,10,4,53,90,37
+Femenil,4004974,71,Nancy Guadalupe Antonio López,Alexa Soto Ramírez,2,1,-1,11,6,-5,4,6,2,61,57,-4
+Femenil,4004987,49,Jordan Brewster,Chidinma Nkeruka Okeke,6,1,-5,22,14,-8,12,7,-5,68,55,-13
+Femenil,4004987,45,Karina Anais Rodríguez,Nicolette Andrea Hernández Sippel,2,5,3,18,18,0,9,8,-1,55,62,7
+Femenil,4004987,57,Angelique Montserrat Saldivar Pavón,Kiana Angélica Palacios Hernández,2,1,-1,15,20,5,7,7,0,54,73,19
+Femenil,4004987,94,Irene Guerrero Sanmartín,Alexa Soto Ramírez,0,4,4,13,9,-4,8,4,-4,22,21,-1
+Femenil,4004990,66,Chidinma Nkeruka Okeke,Annia Stephany Mejía,2,3,1,7,13,6,5,3,-2,60,69,9
+Femenil,4004990,79,Alexa Soto Ramírez,Alondra Cabanillas Soto,3,1,-2,12,18,6,2,1,-1,59,46,-13
+Femenil,4004990,87,Karina Anais Rodríguez,Mariela Sofia Ramos Alva,1,1,0,18,8,-10,1,3,2,44,51,7
+Femenil,4005004,45,Alexa Soto Ramírez,Annie Karich,2,3,1,17,39,22,7,15,8,62,78,16
+Femenil,4005004,45,Annia Stephany Mejía,Mariela Sofia Ramos Alva,2,3,1,17,39,22,7,15,8,62,78,16
+Femenil,4005004,62,Nancy Guadalupe Antonio López,Bruna Vilamala Costa,1,3,2,26,16,-10,7,3,-4,76,33,-43
+Femenil,4005004,80,Angelique Montserrat Saldivar Pavón,Alondra Cabanillas Soto,8,0,-8,10,16,6,6,7,1,43,53,10
+Femenil,4005007,66,Bruna Vilamala Costa,Alexa Soto Ramírez,3,4,1,10,15,5,7,8,1,49,50,1
+Femenil,4005007,77,Scarlett Nefer Camberos Becerra,Sarah Luebbert,4,1,-3,15,22,7,8,11,3,53,47,-6
+Femenil,4005007,77,Jordan Brewster,Mariela Sofia Ramos Alva,4,1,-3,15,22,7,8,11,3,53,47,-6
+Femenil,4005007,84,Irene Guerrero Sanmartín,Alondra Cabanillas Soto,1,6,5,16,25,9,12,8,-4,43,38,-5
+Femenil,4005015,45,Jordan Brewster,Alondra Cabanillas Soto,0,1,1,11,25,14,4,11,7,53,87,34
+Femenil,4005015,70,Angelique Montserrat Saldivar Pavón,Sarah Luebbert,2,1,-1,13,5,-8,5,10,5,54,63,9
+Femenil,4005032,45,Alondra Cabanillas Soto,Angelique Montserrat Saldivar Pavón,5,2,-3,7,15,8,7,5,-2,95,85,-10
+Femenil,4005032,62,Kimberly Vanessa Rodríguez Cubero,Jordan Brewster,4,3,-1,12,10,-2,9,2,-7,67,29,-38
+Femenil,4005032,62,Jana Alexandra Gutiérrez Campos,Mariela Sofia Ramos Alva,4,3,-1,12,10,-2,9,2,-7,67,29,-38
+Femenil,4005032,69,Bruna Vilamala Costa,Irene Guerrero Sanmartín,5,1,-4,15,10,-5,5,3,-2,58,52,-6
+Femenil,4005032,69,Nancy Guadalupe Antonio López,Arantza Segura Alvarado,5,1,-4,15,10,-5,5,3,-2,58,52,-6
+Femenil,4034707,59,Sarah Luebbert,Scarlett Nefer Camberos Becerra,2,4,2,18,8,-10,8,7,-1,70,49,-21
+Femenil,4034707,69,Kiana Angélica Palacios Hernández,Bruna Vilamala Costa,4,0,-4,8,8,0,7,5,-2,49,55,6
+Femenil,4034707,85,Nancy Guadalupe Antonio López,Alexa Soto Ramírez,0,0,0,2,8,6,5,5,0,28,46,18
+Femenil,4034707,85,Angelique Montserrat Saldivar Pavón,Jordan Brewster,0,0,0,2,8,6,5,5,0,28,46,18
+Femenil,4034711,45,Sarah Luebbert,Angelique Montserrat Saldivar Pavón,3,5,2,10,15,5,2,8,6,36,116,80
+Femenil,4034711,62,Irene Guerrero Sanmartín,Bruna Vilamala Costa,5,5,0,14,20,6,11,7,-4,68,48,-20
+Femenil,4034711,71,Scarlett Nefer Camberos Becerra,Alondra Cabanillas Soto,5,4,-1,22,10,-12,6,4,-2,48,23,-25
+Femenil,4034711,71,Jana Alexandra Gutiérrez Campos,Mariela Sofia Ramos Alva,5,4,-1,22,10,-12,6,4,-2,48,23,-25
+Femenil,4034711,76,Nancy Guadalupe Antonio López,Chidinma Nkeruka Okeke,5,3,-2,21,8,-13,9,6,-3,39,39,0
+Femenil,4035208,75,Bruna Vilamala Costa,Sarah Luebbert,3,1,-2,11,25,14,6,4,-2,57,39,-18
+Femenil,4035208,86,Nancy Guadalupe Antonio López,Karina Anais Rodríguez,1,1,0,23,10,-13,5,1,-4,45,27,-18
+Femenil,4035208,86,Irene Guerrero Sanmartín,Chidinma Nkeruka Okeke,1,1,0,23,10,-13,5,1,-4,45,27,-18
+Femenil,4035208,86,Scarlett Nefer Camberos Becerra,Angelique Montserrat Saldivar Pavón,1,1,0,23,10,-13,5,1,-4,45,27,-18
+Femenil,4035210,45,Kimberly Vanessa Rodríguez Cubero,Chidinma Nkeruka Okeke,4,3,-1,20,24,4,7,6,-1,50,78,28
+Femenil,4035210,60,Bruna Vilamala Costa,Angelique Montserrat Saldivar Pavón,3,2,-1,9,10,1,6,3,-3,67,41,-26
+Femenil,4035210,60,Scarlett Nefer Camberos Becerra,Sarah Luebbert,3,2,-1,9,10,1,6,3,-3,67,41,-26
+Femenil,4035210,73,Nancy Guadalupe Antonio López,Jordan Brewster,3,1,-2,11,11,0,3,5,2,56,62,6
+Femenil,4035210,74,Irene Guerrero Sanmartín,Karina Anais Rodríguez,3,1,-2,11,13,2,3,5,2,56,62,6
+Femenil,4035843,69,Sarah Luebbert,Angelique Montserrat Saldivar Pavón,1,3,2,27,12,-15,3,5,2,25,54,29
+Femenil,4035843,79,Nancy Guadalupe Antonio López,Chidinma Nkeruka Okeke,3,0,-3,12,12,0,5,3,-2,54,23,-31
+Femenil,4035843,90,Scarlett Nefer Camberos Becerra,Bruna Vilamala Costa,0,0,0,11,15,4,3,4,1,20,24,4
+Femenil,4035844,74,Annia Stephany Mejía,Chidinma Nkeruka Okeke,0,1,1,17,14,-3,6,5,-1,21,23,2
+Femenil,4035844,75,Sarah Luebbert,Angelique Montserrat Saldivar Pavón,0,1,1,16,14,-2,6,5,-1,20,25,5
+Femenil,4038958,67,Mariela Sofia Ramos Alva,Isadora Haas Gehlen,1,1,0,20,17,-3,6,6,0,68,51,-17
+Femenil,4038958,67,Karina Anais Rodríguez,Kimberly Vanessa Rodríguez Cubero,1,1,0,20,17,-3,6,6,0,68,51,-17
+Femenil,4038965,14,Isadora Haas Gehlen,Karina Anais Rodríguez,2,1,-1,17,25,8,2,3,1,36,25,-11
+Femenil,4038965,45,Xcaret Pineda Torres,Kiana Angélica Palacios Hernández,7,4,-3,9,26,17,10,14,4,69,135,66
+Femenil,4038979,45,Chidinma Nkeruka Okeke,Mariela Sofia Ramos Alva,3,8,5,12,15,3,10,9,-1,51,116,65
+Femenil,4038979,60,Sarah Luebbert,Giana Riley,5,2,-3,13,16,3,6,3,-3,57,59,2
+Femenil,4038979,60,Nancy Guadalupe Antonio López,Xcaret Pineda Torres,5,2,-3,13,16,3,6,3,-3,57,59,2
+Femenil,4038979,76,Kimberly Vanessa Rodríguez Cubero,Arantza Segura Alvarado,4,2,-2,15,11,-4,7,5,-2,62,70,8
+Femenil,4038979,76,Irene Guerrero Sanmartín,Julie Lopez,4,2,-2,15,11,-4,7,5,-2,62,70,8
+Femenil,4038981,72,Nancy Guadalupe Antonio López,Xcaret Pineda Torres,4,1,-3,5,12,7,6,8,2,100,90,-10
+Femenil,4038981,72,Angelique Montserrat Saldivar Pavón,Scarlett Nefer Camberos Becerra,4,1,-3,5,12,7,6,8,2,100,90,-10
+Femenil,4038981,84,Kiana Angélica Palacios Hernández,Giana Riley,1,3,2,11,13,2,6,6,0,78,54,-24
+Femenil,4038995,45,Giana Riley,Geyse da Silva Ferreira,1,3,2,13,22,9,6,12,6,72,114,42
+Femenil,4038995,45,Kiana Angélica Palacios Hernández,Angelique Montserrat Saldivar Pavón,1,3,2,13,22,9,6,12,6,72,114,42
+Femenil,4038995,72,Chidinma Nkeruka Okeke,Mariela Sofia Ramos Alva,4,3,-1,10,8,-2,9,9,0,54,78,24
+Femenil,4038995,72,Irene Guerrero Sanmartín,Xcaret Pineda Torres,4,3,-1,10,8,-2,9,9,0,54,78,24
+Femenil,4038995,72,Sarah Luebbert,Jana Alexandra Gutiérrez Campos,4,3,-1,10,8,-2,9,9,0,54,78,24
+Femenil,4039005,65,Angelique Montserrat Saldivar Pavón,Sarah Luebbert,0,1,1,5,13,8,3,4,1,55,41,-14
+Femenil,4039005,72,Nancy Guadalupe Antonio López,Geyse da Silva Ferreira,0,4,4,6,10,4,6,7,1,56,69,13
+Femenil,4039005,83,Jana Alexandra Gutiérrez Campos,Mariela Sofia Ramos Alva,5,2,-3,6,8,2,8,7,-1,75,43,-32
+Femenil,4039012,60,Sarah Luebbert,Angelique Montserrat Saldivar Pavón,2,0,-2,14,16,2,11,7,-4,77,67,-10
+Femenil,4039012,73,Nancy Guadalupe Antonio López,Geyse da Silva Ferreira,0,1,1,15,9,-6,5,7,2,55,62,7
+Femenil,4039017,45,Kiana Angélica Palacios Hernández,Sarah Luebbert,3,4,1,6,21,15,4,8,4,41,73,32
+Femenil,4039017,67,Geyse da Silva Ferreira,Angelique Montserrat Saldivar Pavón,3,3,0,14,16,2,4,4,0,35,40,5
+Femenil,4039017,84,Nancy Guadalupe Antonio López,Xcaret Pineda Torres,2,5,3,17,7,-10,5,3,-2,30,47,17
+Femenil,4039029,45,Itzel Alejandra Velasco Loza,Sandra Paños García-Villamil,3,6,3,16,32,16,8,17,9,59,61,2
+Femenil,4039029,62,Angelique Montserrat Saldivar Pavón,Sarah Luebbert,4,1,-3,23,15,-8,8,6,-2,40,33,-7
+Femenil,4039029,78,Geyse da Silva Ferreira,Xcaret Pineda Torres,1,3,2,19,22,3,3,13,10,46,57,11
+Femenil,4039029,88,Nancy Guadalupe Antonio López,Alexa Soto Ramírez,3,2,-1,22,9,-13,13,5,-8,57,37,-20
+Femenil,4039041,45,Chidinma Nkeruka Okeke,Isadora Haas Gehlen,2,2,0,9,11,2,9,3,-6,50,58,8
+Femenil,4039041,68,Giana Riley,Annia Stephany Mejía,6,1,-5,11,8,-3,8,5,-3,24,42,18
+Femenil,4039041,83,Nancy Guadalupe Antonio López,Xcaret Pineda Torres,1,2,1,12,6,-6,5,1,-4,44,41,-3
+Femenil,4039050,45,Gabriela Antonia García Segura,Alexa Soto Ramírez,1,3,2,13,13,0,4,8,4,51,68,17
+Femenil,4039050,59,Kimberly Vanessa Rodríguez Cubero,Chidinma Nkeruka Okeke,2,2,0,10,7,-3,2,6,4,34,48,14
+Femenil,4039050,60,Irene Guerrero Sanmartín,Xcaret Pineda Torres,1,2,1,11,7,-4,3,5,2,33,45,12
+Femenil,4039050,73,Angelique Montserrat Saldivar Pavón,Sarah Luebbert,1,0,-1,8,12,4,3,7,4,39,48,9
+Femenil,4039050,73,Geyse da Silva Ferreira,Daniela Espinosa Arce,1,0,-1,8,12,4,3,7,4,39,48,9
+Femenil,4039057,71,Alexa Soto Ramírez,Xcaret Pineda Torres,1,2,1,11,12,1,12,6,-6,46,50,4
+Femenil,4039057,84,Geyse da Silva Ferreira,Daniela Espinosa Arce,1,2,1,12,12,0,6,3,-3,77,41,-36
+Femenil,4039057,85,Scarlett Nefer Camberos Becerra,Giana Riley,1,2,1,11,12,1,5,3,-2,75,42,-33
+Femenil,4039067,55,Nancy Guadalupe Antonio López,Xcaret Pineda Torres,2,1,-1,10,13,3,5,4,-1,116,81,-35
+Femenil,4039067,55,Geyse da Silva Ferreira,Daniela Espinosa Arce,2,1,-1,10,13,3,5,4,-1,116,81,-35
+Femenil,4039067,70,Jana Alexandra Gutiérrez Campos,Arantza Segura Alvarado,1,2,1,16,21,5,6,9,3,82,67,-15
+Femenil,4039067,70,Scarlett Nefer Camberos Becerra,Julie Lopez,1,2,1,16,21,5,6,9,3,82,67,-15
+Femenil,4039067,81,Gabriela Antonia García Segura,África Mayte Guerrero Valenzuela,2,0,-2,20,16,-4,8,1,-7,65,62,-3
+Femenil,4039082,62,Irene Guerrero Sanmartín,Xcaret Pineda Torres,8,0,-8,14,7,-7,14,6,-8,77,84,7
+Femenil,4039082,62,Scarlett Nefer Camberos Becerra,Giana Riley,8,0,-8,14,7,-7,14,6,-8,77,84,7
+Femenil,4039082,63,Kimberly Vanessa Rodríguez Cubero,Mariela Sofia Ramos Alva,6,0,-6,14,10,-4,11,7,-4,69,95,26
+Femenil,4039082,75,Alexa Soto Ramírez,Aylín Ariana Aviléz Peña,0,1,1,16,18,2,7,6,-1,92,74,-18
+Femenil,4039082,75,Sarah Luebbert,Daniela Espinosa Arce,0,1,1,16,18,2,7,6,-1,92,74,-18
+Femenil,4039089,45,Annia Stephany Mejía,Jana Alexandra Gutiérrez Campos,0,4,4,7,19,12,7,9,2,50,106,56
+Femenil,4039089,45,Chidinma Nkeruka Okeke,Kimberly Vanessa Rodríguez Cubero,0,4,4,7,19,12,7,9,2,50,106,56
+Femenil,4039089,45,Giana Riley,Daniela Espinosa Arce,0,4,4,7,19,12,7,9,2,50,106,56
+Femenil,4039089,74,Alexa Soto Ramírez,Xcaret Pineda Torres,4,4,0,8,9,1,10,9,-1,56,48,-8
+Femenil,4039089,78,Nancy Guadalupe Antonio López,Aylín Ariana Aviléz Peña,2,4,2,12,7,-5,9,5,-4,51,53,2
+Femenil,4039102,56,Alexa Soto Ramírez,Chidinma Nkeruka Okeke,2,1,-1,12,15,3,3,10,7,60,54,-6
+Femenil,4039102,56,Karina Anais Rodríguez,Angelique Montserrat Saldivar Pavón,2,1,-1,12,15,3,3,10,7,60,54,-6
+Femenil,4039102,75,Sarah Luebbert,Aylín Ariana Aviléz Peña,0,1,1,16,11,-5,4,7,3,74,67,-7
+Femenil,4039102,85,Nancy Guadalupe Antonio López,Xcaret Pineda Torres,1,0,-1,11,19,8,7,5,-2,67,64,-3
+Femenil,4039102,85,Mariela Sofia Ramos Alva,Karen Irasema Luna de Los Santos,1,0,-1,11,19,8,7,5,-2,67,64,-3
+Femenil,4057829,57,Angelique Montserrat Saldivar Pavón,Sarah Luebbert,0,2,2,19,10,-9,5,6,1,59,40,-19
+Femenil,4057829,66,Mariela Sofia Ramos Alva,Karina Anais Rodríguez,1,2,1,12,11,-1,7,8,1,43,74,31
+Femenil,4057829,66,Nancy Guadalupe Antonio López,Aylín Ariana Aviléz Peña,1,2,1,12,11,-1,7,8,1,43,74,31
+Femenil,4057829,79,Karen Irasema Luna de Los Santos,Chidinma Nkeruka Okeke,2,3,1,10,9,-1,10,4,-6,77,57,-20
+Femenil,4057829,79,Geyse da Silva Ferreira,Daniela Espinosa Arce,2,3,1,10,9,-1,10,4,-6,77,57,-20
+Femenil,4057831,66,Alexa Soto Ramírez,Geyse da Silva Ferreira,1,0,-1,23,13,-10,8,4,-4,42,29,-13
+Femenil,4057831,66,Sarah Luebbert,Angelique Montserrat Saldivar Pavón,1,0,-1,23,13,-10,8,4,-4,42,29,-13
+Femenil,4057831,66,Karina Anais Rodríguez,Karen Irasema Luna de Los Santos,1,0,-1,23,13,-10,8,4,-4,42,29,-13
+Femenil,4057831,81,Nancy Guadalupe Antonio López,Aylín Ariana Aviléz Peña,1,1,0,8,16,8,3,5,2,23,69,46
+Femenil,4058472,56,Geyse da Silva Ferreira,Daniela Espinosa Arce,2,2,0,13,7,-6,9,5,-4,71,43,-28
+Femenil,4058472,65,Karina Anais Rodríguez,Karen Irasema Luna de Los Santos,2,0,-2,7,11,4,6,5,-1,47,64,17
+Femenil,4058472,65,Sarah Luebbert,Angelique Montserrat Saldivar Pavón,2,0,-2,7,11,4,6,5,-1,47,64,17
+Femenil,4058472,65,Isadora Haas Gehlen,Chidinma Nkeruka Okeke,2,0,-2,7,11,4,6,5,-1,47,64,17
+Femenil,4058472,75,Scarlett Nefer Camberos Becerra,Aylín Ariana Aviléz Peña,0,2,2,11,8,-3,5,5,0,64,61,-3
+Femenil,4058473,45,Nancy Guadalupe Antonio López,Aylín Ariana Aviléz Peña,0,2,2,11,23,12,7,6,-1,57,86,29
+Femenil,4058473,45,Irene Guerrero Sanmartín,Xcaret Pineda Torres,0,2,2,11,23,12,7,6,-1,57,86,29
+Femenil,4058473,70,Geyse da Silva Ferreira,Alexa Soto Ramírez,2,2,0,10,4,-6,7,5,-2,59,73,14
+Femenil,4058473,70,Sarah Luebbert,Giana Riley,2,2,0,10,4,-6,7,5,-2,59,73,14
+Femenil,4058473,80,Karen Irasema Luna de Los Santos,Karina Anais Rodríguez,2,2,0,4,12,8,5,4,-1,73,84,11
+Femenil,4058778,57,Sarah Luebbert,Angelique Montserrat Saldivar Pavón,0,2,2,30,24,-6,8,3,-5,35,40,5
+Femenil,4058778,76,Nancy Guadalupe Antonio López,Aylín Ariana Aviléz Peña,0,0,0,18,17,-1,8,12,4,28,63,35
+Femenil,4058778,76,Karina Anais Rodríguez,Chidinma Nkeruka Okeke,0,0,0,18,17,-1,8,12,4,28,63,35
+Femenil,4058779,60,Irene Guerrero Sanmartín,Aylín Ariana Aviléz Peña,2,1,-1,29,17,-12,8,9,1,49,54,5
+Femenil,4058779,72,Karina Anais Rodríguez,Karen Irasema Luna de Los Santos,1,1,0,16,13,-3,9,7,-2,53,20,-33
+Femenil,4058779,82,Geyse da Silva Ferreira,Alexa Soto Ramírez,1,0,-1,13,35,22,7,11,4,20,35,15
+Femenil,4058779,82,Mariela Sofia Ramos Alva,Chidinma Nkeruka Okeke,1,0,-1,13,35,22,7,11,4,20,35,15
+Femenil,4058779,82,Angelique Montserrat Saldivar Pavón,Sarah Luebbert,1,0,-1,13,35,22,7,11,4,20,35,15
+Femenil,4074006,73,Angelique Montserrat Saldivar Pavón,Priscila Flor da Silva,4,0,-4,6,10,4,7,5,-2,33,47,14
+Femenil,4074006,73,Jana Alexandra Gutiérrez Campos,Mariela Sofia Ramos Alva,4,0,-4,6,10,4,7,5,-2,33,47,14
+Femenil,4088516,64,Nancy Guadalupe Antonio López,Alexa Soto Ramírez,1,1,0,12,22,10,7,5,-2,30,63,33
+Femenil,4088516,65,Geyse da Silva Ferreira,Priscila Flor da Silva,1,4,3,7,22,15,6,7,1,31,66,35
+Femenil,4088516,65,Jana Alexandra Gutiérrez Campos,Mariela Sofia Ramos Alva,1,4,3,7,22,15,6,7,1,31,66,35
+Femenil,4088516,79,Irene Guerrero Sanmartín,Aylín Ariana Aviléz Peña,6,2,-4,12,15,3,5,4,-1,62,49,-13
+Femenil,4088516,79,Scarlett Nefer Camberos Becerra,Sarah Luebbert,6,2,-4,12,15,3,5,4,-1,62,49,-13
+Femenil,4088529,61,Priscila Flor da Silva,Sarah Luebbert,5,1,-4,12,9,-3,6,7,1,35,74,39
+Femenil,4088529,61,Gabriela Antonia García Segura,Xcaret Pineda Torres,5,1,-4,12,9,-3,6,7,1,35,74,39
+Femenil,4088529,62,Geyse da Silva Ferreira,Giana Riley,5,1,-4,12,10,-2,5,9,4,32,82,50
+Femenil,4088529,75,Scarlett Nefer Camberos Becerra,Alondra Cabanillas Soto,2,3,1,9,8,-1,9,5,-4,90,60,-30
+Femenil,4088529,75,Irene Guerrero Sanmartín,Genesis Ayon,2,3,1,9,8,-1,9,5,-4,90,60,-30
+Femenil,4088543,66,Karina Anais Rodríguez,Karen Irasema Luna de Los Santos,0,3,3,15,11,-4,3,2,-1,32,38,6
+Femenil,4088543,66,Xcaret Pineda Torres,Nancy Guadalupe Antonio López,0,3,3,15,11,-4,3,2,-1,32,38,6
+Femenil,4088543,66,Priscila Flor da Silva,Sarah Luebbert,0,3,3,15,11,-4,3,2,-1,32,38,6
+Femenil,4088543,90,Jana Alexandra Gutiérrez Campos,Mariela Sofia Ramos Alva,2,0,-2,5,4,-1,6,2,-4,64,19,-45
+Femenil,4088543,90,Irene Guerrero Sanmartín,Aylín Ariana Aviléz Peña,2,0,-2,5,4,-1,6,2,-4,64,19,-45
+Femenil,4088545,64,Xcaret Pineda Torres,Aylín Ariana Aviléz Peña,1,1,0,14,12,-2,6,4,-2,50,72,22
+Femenil,4088545,64,Sarah Luebbert,Priscila Flor da Silva,1,1,0,14,12,-2,6,4,-2,50,72,22
+Femenil,4088545,84,Scarlett Nefer Camberos Becerra,Nancy Guadalupe Antonio López,4,4,0,12,5,-7,10,7,-3,52,81,29
+Femenil,4088545,84,Karen Irasema Luna de Los Santos,Karina Anais Rodríguez,4,4,0,12,5,-7,10,7,-3,52,81,29
+Femenil,4088564,45,Sarah Luebbert,Priscila Flor da Silva,1,2,1,10,14,4,6,10,4,48,78,30
+Femenil,4088564,73,Scarlett Nefer Camberos Becerra,Angelique Montserrat Saldivar Pavón,5,3,-2,5,9,4,5,6,1,80,57,-23
+Femenil,4088564,89,Nancy Guadalupe Antonio López,Xcaret Pineda Torres,4,1,-3,16,1,-15,9,2,-7,36,46,10
+Femenil,4088564,90,Karen Irasema Luna de Los Santos,Mariela Sofia Ramos Alva,4,1,-3,14,1,-13,8,2,-6,30,46,16
+Femenil,4088575,68,Scarlett Nefer Camberos Becerra,Priscila Flor da Silva,1,4,3,21,9,-12,5,8,3,67,58,-9
+Femenil,4088575,69,Alexa Soto Ramírez,Nancy Guadalupe Antonio López,1,4,3,19,9,-10,7,8,1,74,52,-22
+Femenil,4088575,69,Mariela Sofia Ramos Alva,Jana Alexandra Gutiérrez Campos,1,4,3,19,9,-10,7,8,1,74,52,-22
+Femenil,4088575,77,Kimberly Vanessa Rodríguez Cubero,Isadora Haas Gehlen,4,1,-3,9,8,-1,8,7,-1,65,72,7
+Femenil,4088575,77,Geyse da Silva Ferreira,Giana Riley,4,1,-3,9,8,-1,8,7,-1,65,72,7
+Femenil,4088579,55,Angelique Montserrat Saldivar Pavón,Scarlett Nefer Camberos Becerra,3,4,1,19,8,-11,10,3,-7,82,90,8
+Femenil,4088579,55,Nancy Guadalupe Antonio López,Irene Guerrero Sanmartín,3,4,1,19,8,-11,10,3,-7,82,90,8
+Femenil,4088579,55,Arantza Segura Alvarado,Karen Irasema Luna de Los Santos,3,4,1,19,8,-11,10,3,-7,82,90,8
+Femenil,4088579,65,Alexa Soto Ramírez,Aylín Ariana Aviléz Peña,4,1,-3,8,9,1,3,7,4,90,67,-23
+Femenil,4088579,65,Priscila Flor da Silva,Sarah Luebbert,4,1,-3,8,9,1,3,7,4,90,67,-23
+Femenil,4088587,12,Irene Guerrero Sanmartín,Aylín Ariana Aviléz Peña,0,2,2,10,12,2,5,2,-3,53,51,-2
+Femenil,4088587,45,Xcaret Pineda Torres,Nancy Guadalupe Antonio López,6,3,-3,15,9,-6,5,3,-2,63,64,1
+Femenil,4088587,72,Scarlett Nefer Camberos Becerra,Sarah Luebbert,2,2,0,8,9,1,8,8,0,62,58,-4
+Femenil,4088587,72,Karina Anais Rodríguez,Mariela Sofia Ramos Alva,2,2,0,8,9,1,8,8,0,62,58,-4
+Femenil,4088609,70,Irene Guerrero Sanmartín,Angelique Montserrat Saldivar Pavón,2,0,-2,20,15,-5,5,8,3,66,55,-11
+Femenil,4088609,70,Geyse da Silva Ferreira,Alexa Soto Ramírez,2,0,-2,20,15,-5,5,8,3,66,55,-11
+Femenil,4088609,70,Gabriela Antonia García Segura,Xcaret Pineda Torres,2,0,-2,20,15,-5,5,8,3,66,55,-11
+Femenil,4088609,80,Mariela Sofia Ramos Alva,Karen Irasema Luna de Los Santos,0,3,3,15,11,-4,8,6,-2,55,68,13
+Femenil,4088609,80,Nancy Guadalupe Antonio López,Aylín Ariana Aviléz Peña,0,3,3,15,11,-4,8,6,-2,55,68,13
+Femenil,4088610,52,Irene Guerrero Sanmartín,Xcaret Pineda Torres,4,0,-4,26,15,-11,6,7,1,64,42,-22
+Femenil,4088610,58,Karina Anais Rodríguez,Karen Irasema Luna de Los Santos,2,1,-1,20,15,-5,8,6,-2,58,24,-34
+Femenil,4088610,58,Priscila Flor da Silva,Angelique Montserrat Saldivar Pavón,2,1,-1,20,15,-5,8,6,-2,58,24,-34
+Femenil,4088610,67,Alexa Soto Ramírez,Aylín Ariana Aviléz Peña,1,1,0,14,13,-1,7,7,0,33,46,13

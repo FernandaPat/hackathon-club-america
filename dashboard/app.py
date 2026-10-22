@@ -39,6 +39,24 @@ CSS_PATH = (
     / "styles"
     / "america.css"
 )
+# ============================================================
+# ANÁLISIS COMPLEMENTARIO
+# ============================================================
+
+COMPLEMENTARY_SUBSTITUTIONS_PATH = (
+    DATA_DIR
+    / "complementary_substitutions.csv"
+)
+
+COMPLEMENTARY_SET_PIECES_PATH = (
+    DATA_DIR
+    / "complementary_set_pieces.csv"
+)
+
+COMPLEMENTARY_SET_PIECE_SUMMARY_PATH = (
+    DATA_DIR
+    / "complementary_set_piece_summary.csv"
+)
 
 
 # VARONIL
@@ -1927,7 +1945,21 @@ female_features_table = load_csv(
 female_selection = load_csv(
     FEMALE_SELECTION_PATH
 )
+# ============================================================
+# DATOS COMPLEMENTARIOS
+# ============================================================
 
+complementary_substitutions = load_csv(
+    COMPLEMENTARY_SUBSTITUTIONS_PATH
+)
+
+complementary_set_pieces = load_csv(
+    COMPLEMENTARY_SET_PIECES_PATH
+)
+
+complementary_set_piece_summary = load_csv(
+    COMPLEMENTARY_SET_PIECE_SUMMARY_PATH
+)
 
 # ============================================================
 # MODELS
@@ -2336,6 +2368,7 @@ nav_options = [
     "Varonil",
     "Femenil",
     "Revisión histórica",
+    "Análisis complementario",
     "Modelo",
 ]
 
@@ -2949,7 +2982,1193 @@ if st.session_state[
                 f"No se pudo generar el análisis: {error}"
             )
 
+# ============================================================
+# ANÁLISIS COMPLEMENTARIO
+# ============================================================
 
+elif st.session_state[
+    "section"
+] == "Análisis complementario":
+
+    st.html(
+        """
+        <div class="page-kicker">
+            COMPONENTES COMPLEMENTARIOS
+        </div>
+
+        <div class="page-title">
+            Jugadores y balón parado
+        </div>
+
+        <div class="page-description">
+            Analiza sustituciones y jugadas a balón parado
+            a partir de eventos reales de StatsBomb para
+            complementar la lectura táctica de CoachLens.
+        </div>
+        """
+    )
+
+
+    # ========================================================
+    # SELECTOR EQUIPO
+    # ========================================================
+
+    complementary_team = st.radio(
+        "Equipo",
+        [
+            "Varonil",
+            "Femenil",
+        ],
+        horizontal=True,
+        key="complementary_team",
+    )
+
+
+    st.write("")
+
+
+    # ========================================================
+    # SUBSECCIONES
+    # ========================================================
+
+    complementary_section = st.radio(
+        "Análisis",
+        [
+            "Jugadores y sustituciones",
+            "Balón parado ofensivo",
+            "Balón parado defensivo",
+        ],
+        horizontal=True,
+        key="complementary_section",
+    )
+
+
+    # ========================================================
+    # JUGADORES Y SUSTITUCIONES
+    # ========================================================
+
+    if complementary_section == "Jugadores y sustituciones":
+
+        st.markdown(
+            "### Uso de jugadores y sustituciones"
+        )
+
+        st.caption(
+            "Se compara el comportamiento colectivo de los "
+            "10 minutos anteriores y posteriores a cada "
+            "sustitución registrada."
+        )
+
+
+        if complementary_substitutions.empty:
+
+            st.warning(
+                "No se encontraron datos de sustituciones."
+            )
+
+        else:
+
+            subs = (
+                complementary_substitutions[
+                    complementary_substitutions[
+                        "squad"
+                    ]
+                    ==
+                    complementary_team
+                ]
+                .copy()
+            )
+
+
+            if subs.empty:
+
+                st.warning(
+                    "No existen sustituciones para el equipo seleccionado."
+                )
+
+            else:
+
+                subs[
+                    "minute"
+                ] = pd.to_numeric(
+                    subs[
+                        "minute"
+                    ],
+                    errors="coerce",
+                )
+
+
+                subs = (
+                    subs
+                    .dropna(
+                        subset=[
+                            "minute",
+                        ]
+                    )
+                    .sort_values(
+                        [
+                            "match_id",
+                            "minute",
+                        ],
+                        ascending=[
+                            False,
+                            True,
+                        ],
+                    )
+                )
+
+
+                subs[
+                    "selector"
+                ] = (
+                    "Partido "
+                    +
+                    subs[
+                        "match_id"
+                    ]
+                    .astype(str)
+                    +
+                    " · Min "
+                    +
+                    subs[
+                        "minute"
+                    ]
+                    .astype(int)
+                    .astype(str)
+                    +
+                    " · "
+                    +
+                    subs[
+                        "player_out"
+                    ]
+                    .fillna(
+                        "N/D"
+                    )
+                    .astype(str)
+                    +
+                    " → "
+                    +
+                    subs[
+                        "player_in"
+                    ]
+                    .fillna(
+                        "N/D"
+                    )
+                    .astype(str)
+                )
+
+
+                selected_substitution = st.selectbox(
+                    "Sustitución",
+                    subs[
+                        "selector"
+                    ]
+                    .tolist(),
+                    key="selected_substitution",
+                )
+
+
+                selected_row = (
+                    subs[
+                        subs[
+                            "selector"
+                        ]
+                        ==
+                        selected_substitution
+                    ]
+                    .iloc[0]
+                )
+
+
+                substitution_minute = int(
+                    selected_row[
+                        "minute"
+                    ]
+                )
+
+
+                player_out = str(
+                    selected_row[
+                        "player_out"
+                    ]
+                )
+
+
+                player_in = str(
+                    selected_row[
+                        "player_in"
+                    ]
+                )
+
+
+                # =================================================
+                # CAMBIO
+                # =================================================
+
+                st.html(
+                    f"""
+                    <div class="substitution-hero">
+
+                        <div class="substitution-minute">
+                            MIN {substitution_minute}
+                        </div>
+
+                        <div class="substitution-player-grid">
+
+                            <div class="substitution-player">
+
+                                <div class="substitution-label">
+                                    SALE
+                                </div>
+
+                                <div class="substitution-name">
+                                    {player_out}
+                                </div>
+
+                            </div>
+
+
+                            <div class="substitution-arrow">
+                                →
+                            </div>
+
+
+                            <div class="substitution-player">
+
+                                <div class="substitution-label">
+                                    ENTRA
+                                </div>
+
+                                <div class="substitution-name">
+                                    {player_in}
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    """
+                )
+
+
+                st.write("")
+
+
+                # =================================================
+                # MÉTRICAS ANTES / DESPUÉS
+                # =================================================
+
+                metric_definitions = [
+                    (
+                        "Tiros",
+                        "shots_before",
+                        "shots_after",
+                        "shots_change",
+                    ),
+                    (
+                        "Presiones",
+                        "pressures_before",
+                        "pressures_after",
+                        "pressures_change",
+                    ),
+                    (
+                        "Recuperaciones",
+                        "recoveries_before",
+                        "recoveries_after",
+                        "recoveries_change",
+                    ),
+                    (
+                        "Pases",
+                        "passes_before",
+                        "passes_after",
+                        "passes_change",
+                    ),
+                ]
+
+
+                metric_columns = st.columns(
+                    4,
+                    gap="medium",
+                )
+
+
+                changes_for_reading = {}
+
+
+                for (
+                    column,
+                    (
+                        label,
+                        before_column,
+                        after_column,
+                        change_column,
+                    ),
+                ) in zip(
+                    metric_columns,
+                    metric_definitions,
+                ):
+
+                    before = int(
+                        pd.to_numeric(
+                            selected_row[
+                                before_column
+                            ],
+                            errors="coerce",
+                        )
+                        if pd.notna(
+                            selected_row[
+                                before_column
+                            ]
+                        )
+                        else 0
+                    )
+
+
+                    after = int(
+                        pd.to_numeric(
+                            selected_row[
+                                after_column
+                            ],
+                            errors="coerce",
+                        )
+                        if pd.notna(
+                            selected_row[
+                                after_column
+                            ]
+                        )
+                        else 0
+                    )
+
+
+                    change = after - before
+
+
+                    changes_for_reading[
+                        label
+                    ] = change
+
+
+                    if change > 0:
+
+                        change_text = (
+                            f"+{change}"
+                        )
+
+                        change_class = (
+                            "positive"
+                        )
+
+                    elif change < 0:
+
+                        change_text = str(
+                            change
+                        )
+
+                        change_class = (
+                            "negative"
+                        )
+
+                    else:
+
+                        change_text = "0"
+
+                        change_class = (
+                            "neutral"
+                        )
+
+
+                    with column:
+
+                        st.html(
+                            f"""
+                            <div class="before-after-card">
+
+                                <div class="before-after-title">
+                                    {label}
+                                </div>
+
+                                <div class="before-after-values">
+
+                                    <div>
+
+                                        <span>
+                                            ANTES
+                                        </span>
+
+                                        <strong>
+                                            {before}
+                                        </strong>
+
+                                    </div>
+
+                                    <div class="before-after-arrow">
+                                        →
+                                    </div>
+
+                                    <div>
+
+                                        <span>
+                                            DESPUÉS
+                                        </span>
+
+                                        <strong>
+                                            {after}
+                                        </strong>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="before-after-change {change_class}">
+                                    Cambio: {change_text}
+                                </div>
+
+                            </div>
+                            """
+                        )
+
+
+                # =================================================
+                # LECTURA AUTOMÁTICA
+                # =================================================
+
+                ordered_changes = sorted(
+                    changes_for_reading.items(),
+                    key=lambda item:
+                        abs(
+                            item[1]
+                        ),
+                    reverse=True,
+                )
+
+
+                main_metric = (
+                    ordered_changes[
+                        0
+                    ][0]
+                )
+
+                main_change = (
+                    ordered_changes[
+                        0
+                    ][1]
+                )
+
+
+                if main_change > 0:
+
+                    direction_text = (
+                        "aumentó"
+                    )
+
+                elif main_change < 0:
+
+                    direction_text = (
+                        "disminuyó"
+                    )
+
+                else:
+
+                    direction_text = (
+                        "se mantuvo estable"
+                    )
+
+
+                st.html(
+                    f"""
+                    <div class="complementary-reading">
+
+                        <div class="complementary-reading-title">
+                            Lectura del cambio
+                        </div>
+
+                        <div class="complementary-reading-text">
+
+                            El mayor cambio observado alrededor
+                            de esta sustitución aparece en
+
+                            <strong>
+                                {main_metric.lower()}
+                            </strong>,
+
+                            donde la actividad
+
+                            <strong>
+                                {direction_text}
+                            </strong>
+
+                            durante los diez minutos posteriores.
+
+                        </div>
+
+                        <div class="complementary-reading-note">
+                            La comparación es descriptiva.
+                            No demuestra que la sustitución
+                            haya causado el cambio observado.
+                        </div>
+
+                    </div>
+                    """
+                )
+
+
+                # =================================================
+                # GRÁFICA
+                # =================================================
+
+                comparison_data = pd.DataFrame(
+                    {
+                        "Métrica": [
+                            "Tiros",
+                            "Presiones",
+                            "Recuperaciones",
+                            "Pases",
+                        ],
+
+                        "Antes": [
+                            selected_row[
+                                "shots_before"
+                            ],
+                            selected_row[
+                                "pressures_before"
+                            ],
+                            selected_row[
+                                "recoveries_before"
+                            ],
+                            selected_row[
+                                "passes_before"
+                            ],
+                        ],
+
+                        "Después": [
+                            selected_row[
+                                "shots_after"
+                            ],
+                            selected_row[
+                                "pressures_after"
+                            ],
+                            selected_row[
+                                "recoveries_after"
+                            ],
+                            selected_row[
+                                "passes_after"
+                            ],
+                        ],
+                    }
+                )
+
+
+                comparison_long = (
+                    comparison_data
+                    .melt(
+                        id_vars="Métrica",
+                        var_name="Ventana",
+                        value_name="Eventos",
+                    )
+                )
+
+
+                comparison_long[
+                    "Eventos"
+                ] = pd.to_numeric(
+                    comparison_long[
+                        "Eventos"
+                    ],
+                    errors="coerce",
+                ).fillna(
+                    0
+                )
+
+
+                substitution_figure = px.bar(
+                    comparison_long,
+                    x="Métrica",
+                    y="Eventos",
+                    color="Ventana",
+                    barmode="group",
+                    text_auto=True,
+                )
+
+
+                substitution_figure.update_layout(
+                    height=350,
+
+                    paper_bgcolor=
+                        "rgba(0,0,0,0)",
+
+                    plot_bgcolor=
+                        "rgba(0,0,0,0)",
+
+                    margin=dict(
+                        l=20,
+                        r=20,
+                        t=20,
+                        b=30,
+                    ),
+
+                    legend_title_text="",
+
+                    xaxis_title="",
+
+                    yaxis_title=
+                        "Número de eventos",
+
+                    font=dict(
+                        color="#061E39",
+                    ),
+                )
+
+
+                st.plotly_chart(
+                    substitution_figure,
+                    use_container_width=True,
+                    config={
+                        "displayModeBar":
+                            False
+                    },
+                )
+
+
+    # ========================================================
+    # BALÓN PARADO
+    # ========================================================
+
+    else:
+
+        selected_phase = (
+            "OFENSIVO"
+            if complementary_section
+            ==
+            "Balón parado ofensivo"
+            else
+            "DEFENSIVO"
+        )
+
+
+        if selected_phase == "OFENSIVO":
+
+            st.markdown(
+                "### Balón parado ofensivo"
+            )
+
+            st.caption(
+                "Analiza qué ocurre después de córners "
+                "y tiros libres ejecutados por América."
+            )
+
+        else:
+
+            st.markdown(
+                "### Balón parado defensivo"
+            )
+
+            st.caption(
+                "Analiza los córners y tiros libres del rival "
+                "y las oportunidades concedidas por América."
+            )
+
+
+        if complementary_set_piece_summary.empty:
+
+            st.warning(
+                "No existen datos de balón parado."
+            )
+
+        else:
+
+            summary = (
+                complementary_set_piece_summary[
+                    (
+                        complementary_set_piece_summary[
+                            "squad"
+                        ]
+                        ==
+                        complementary_team
+                    )
+                    &
+                    (
+                        complementary_set_piece_summary[
+                            "phase"
+                        ]
+                        ==
+                        selected_phase
+                    )
+                ]
+                .copy()
+            )
+
+
+            if summary.empty:
+
+                st.warning(
+                    "No existen registros para esta selección."
+                )
+
+            else:
+
+                for numeric_column in [
+                    "executions",
+                    "shots",
+                    "goals",
+                    "shot_rate",
+                    "goal_rate",
+                ]:
+
+                    if (
+                        numeric_column
+                        in
+                        summary.columns
+                    ):
+
+                        summary[
+                            numeric_column
+                        ] = pd.to_numeric(
+                            summary[
+                                numeric_column
+                            ],
+                            errors="coerce",
+                        ).fillna(
+                            0
+                        )
+
+
+                total_executions = int(
+                    summary[
+                        "executions"
+                    ].sum()
+                )
+
+
+                total_shots = int(
+                    summary[
+                        "shots"
+                    ].sum()
+                )
+
+
+                total_goals = int(
+                    summary[
+                        "goals"
+                    ].sum()
+                )
+
+
+                overall_shot_rate = (
+                    total_shots
+                    /
+                    total_executions
+                    if
+                    total_executions > 0
+                    else
+                    0
+                )
+
+
+                overall_goal_rate = (
+                    total_goals
+                    /
+                    total_executions
+                    if
+                    total_executions > 0
+                    else
+                    0
+                )
+
+
+                # =================================================
+                # KPI CARDS
+                # =================================================
+
+                sp1, sp2, sp3, sp4 = (
+                    st.columns(
+                        4,
+                        gap="medium",
+                    )
+                )
+
+
+                set_piece_cards = [
+                    (
+                        sp1,
+                        "Ejecuciones",
+                        f"{total_executions:,}",
+                    ),
+                    (
+                        sp2,
+                        (
+                            "Tiros generados"
+                            if
+                            selected_phase
+                            ==
+                            "OFENSIVO"
+                            else
+                            "Tiros concedidos"
+                        ),
+                        f"{total_shots:,}",
+                    ),
+                    (
+                        sp3,
+                        (
+                            "Goles generados"
+                            if
+                            selected_phase
+                            ==
+                            "OFENSIVO"
+                            else
+                            "Goles concedidos"
+                        ),
+                        f"{total_goals:,}",
+                    ),
+                    (
+                        sp4,
+                        (
+                            "% termina en tiro"
+                        ),
+                        safe_percent(
+                            overall_shot_rate
+                        ),
+                    ),
+                ]
+
+
+                for (
+                    column,
+                    label,
+                    value,
+                ) in set_piece_cards:
+
+                    with column:
+
+                        st.html(
+                            f"""
+                            <div class="metric-card complementary-metric-card">
+
+                                <div class="metric-label">
+                                    {label}
+                                </div>
+
+                                <div class="metric-value">
+                                    {value}
+                                </div>
+
+                            </div>
+                            """
+                        )
+
+
+                st.write("")
+
+
+                # =================================================
+                # DESGLOSE CORNER / TIRO LIBRE
+                # =================================================
+
+                st.markdown(
+                    "#### Desglose por tipo de jugada"
+                )
+
+
+                plot_data = summary.copy()
+
+
+                plot_data[
+                    "Tipo"
+                ] = (
+                    plot_data[
+                        "set_piece"
+                    ]
+                    .replace(
+                        {
+                            "CÓRNER":
+                                "Córner",
+
+                            "TIRO LIBRE":
+                                "Tiro libre",
+                        }
+                    )
+                )
+
+
+                plot_data[
+                    "Tasa de tiro"
+                ] = (
+                    plot_data[
+                        "shot_rate"
+                    ]
+                    *
+                    100
+                )
+
+
+                plot_data[
+                    "Tasa de gol"
+                ] = (
+                    plot_data[
+                        "goal_rate"
+                    ]
+                    *
+                    100
+                )
+
+
+                # =================================================
+                # TABLA VISUAL
+                # =================================================
+
+                breakdown_columns = st.columns(
+                    len(
+                        plot_data
+                    ),
+                    gap="medium",
+                )
+
+
+                for (
+                    column,
+                    (_, row),
+                ) in zip(
+                    breakdown_columns,
+                    plot_data.iterrows(),
+                ):
+
+                    with column:
+
+                        st.html(
+                            f"""
+                            <div class="set-piece-type-card">
+
+                                <div class="set-piece-type">
+                                    {row["Tipo"]}
+                                </div>
+
+                                <div class="set-piece-stat-grid">
+
+                                    <div>
+                                        <span>EJECUCIONES</span>
+                                        <strong>
+                                            {int(row["executions"])}
+                                        </strong>
+                                    </div>
+
+                                    <div>
+                                        <span>
+                                            {
+                                                "TIROS"
+                                                if selected_phase == "OFENSIVO"
+                                                else "TIROS RIVAL"
+                                            }
+                                        </span>
+
+                                        <strong>
+                                            {int(row["shots"])}
+                                        </strong>
+                                    </div>
+
+                                    <div>
+                                        <span>
+                                            {
+                                                "GOLES"
+                                                if selected_phase == "OFENSIVO"
+                                                else "GOLES RIVAL"
+                                            }
+                                        </span>
+
+                                        <strong>
+                                            {int(row["goals"])}
+                                        </strong>
+                                    </div>
+
+                                    <div>
+                                        <span>% A TIRO</span>
+
+                                        <strong>
+                                            {safe_percent(row["shot_rate"])}
+                                        </strong>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            """
+                        )
+
+
+                st.write("")
+
+
+                # =================================================
+                # GRÁFICA
+                # =================================================
+
+                rate_figure = px.bar(
+                    plot_data,
+                    x="Tipo",
+                    y="Tasa de tiro",
+                    text="Tasa de tiro",
+                )
+
+
+                rate_figure.update_traces(
+                    marker_color=
+                        AMERICA_YELLOW,
+
+                    texttemplate=
+                        "%{text:.1f}%",
+
+                    textposition=
+                        "outside",
+
+                    cliponaxis=False,
+
+                    textfont=dict(
+                        color="#061E39",
+                        size=14,
+                    ),
+                )
+
+
+                max_rate = float(
+                    plot_data[
+                        "Tasa de tiro"
+                    ].max()
+                )
+
+
+                rate_figure.update_layout(
+                    height=330,
+
+                    paper_bgcolor=
+                        "rgba(0,0,0,0)",
+
+                    plot_bgcolor=
+                        "rgba(0,0,0,0)",
+
+                    margin=dict(
+                        l=20,
+                        r=20,
+                        t=20,
+                        b=30,
+                    ),
+
+                    xaxis_title="",
+
+                    yaxis_title=
+                        "Jugadas que terminan en tiro",
+
+                    yaxis=dict(
+                        ticksuffix="%",
+
+                        range=[
+                            0,
+                            max(
+                                100,
+                                max_rate + 10,
+                            ),
+                        ],
+
+                        gridcolor=
+                            "rgba(6,30,57,0.10)",
+
+                        tickfont=dict(
+                            color="#40536C",
+                        ),
+                    ),
+
+                    xaxis=dict(
+                        tickfont=dict(
+                            color="#061E39",
+                            size=14,
+                        ),
+                    ),
+
+                    font=dict(
+                        color="#061E39",
+                    ),
+                )
+
+
+                st.plotly_chart(
+                    rate_figure,
+                    use_container_width=True,
+                    config={
+                        "displayModeBar":
+                            False
+                    },
+                )
+
+
+                # =================================================
+                # INTERPRETACIÓN
+                # =================================================
+
+                best_row = (
+                    plot_data
+                    .sort_values(
+                        "shot_rate",
+                        ascending=False,
+                    )
+                    .iloc[0]
+                )
+
+
+                best_type = (
+                    best_row[
+                        "Tipo"
+                    ]
+                )
+
+
+                best_rate = (
+                    best_row[
+                        "shot_rate"
+                    ]
+                )
+
+
+                if selected_phase == "OFENSIVO":
+
+                    interpretation = (
+                        f"{best_type} presenta la mayor tasa "
+                        f"de generación de tiro: "
+                        f"{safe_percent(best_rate)} de las "
+                        f"ejecuciones identificadas terminaron "
+                        f"en un tiro de América."
+                    )
+
+                else:
+
+                    interpretation = (
+                        f"{best_type} representa la situación "
+                        f"de mayor vulnerabilidad relativa: "
+                        f"{safe_percent(best_rate)} de las "
+                        f"ejecuciones rivales identificadas "
+                        f"terminaron en tiro."
+                    )
+
+
+                st.html(
+                    f"""
+                    <div class="complementary-reading">
+
+                        <div class="complementary-reading-title">
+                            Lectura táctica
+                        </div>
+
+                        <div class="complementary-reading-text">
+                            {interpretation}
+                        </div>
+
+                        <div class="complementary-reading-note">
+                            Las tasas describen lo ocurrido
+                            en la muestra histórica analizada.
+                            No representan una probabilidad
+                            causal futura.
+                        </div>
+
+                    </div>
+                    """
+                )
 # ============================================================
 # FEMENIL
 # ============================================================
@@ -4903,97 +6122,52 @@ elif st.session_state[
 
 
     st.html(
-        """
-        <div class="framework-section-box">
+    """
+    <div class="framework-card">
 
-            <div class="framework-section-title">
-                3. Componentes analizados
-            </div>
-
-            <div class="framework-grid">
-
-                <div class="framework-card">
-
-                    <div class="framework-title">
-                        Fase ofensiva
-                    </div>
-
-                    <div class="framework-text">
-                        Progresión, entradas al área,
-                        apoyos y dominio territorial.
-                    </div>
-
-                </div>
-
-                <div class="framework-card">
-
-                    <div class="framework-title">
-                        Fase defensiva
-                    </div>
-
-                    <div class="framework-text">
-                        Presión, recuperación, distancia
-                        al rival y protección.
-                    </div>
-
-                </div>
-
-                <div class="framework-card">
-
-                    <div class="framework-title">
-                        Transiciones
-                    </div>
-
-                    <div class="framework-text">
-                        Cambios entre los cinco
-                        estados tácticos.
-                    </div>
-
-                </div>
-
-                <div class="framework-card">
-
-                    <div class="framework-title">
-                        Consistencia y variabilidad
-                    </div>
-
-                    <div class="framework-text">
-                        Compara escenarios similares.
-                    </div>
-
-                </div>
-
-                <div class="framework-card">
-
-                    <div class="framework-title">
-                        Evidencia cuantitativa
-                    </div>
-
-                    <div class="framework-text">
-                        StatsBomb Events + 360,
-                        XGBoost y validación temporal.
-                    </div>
-
-                </div>
-
-                <div class="framework-card">
-
-                    <div class="framework-title">
-                        Simulación
-                    </div>
-
-                    <div class="framework-text">
-                        1,000 repeticiones del mismo
-                        contexto táctico.
-                    </div>
-
-                </div>
-
-            </div>
-
+        <div class="framework-title">
+            Uso de jugadores
         </div>
-        """
-    )
+
+        <div class="framework-text">
+            Identifica jugadores sustituidos y compara
+            el comportamiento colectivo en ventanas
+            de diez minutos antes y después del cambio.
+        </div>
+
+    </div>
+
+
+    <div class="framework-card">
+
+        <div class="framework-title">
+            Balón parado ofensivo
+        </div>
+
+        <div class="framework-text">
+            Analiza córners y tiros libres,
+            tiros generados, goles y tasa
+            de llegada a remate.
+        </div>
+
+    </div>
+
+
+    <div class="framework-card">
+
+        <div class="framework-title">
+            Balón parado defensivo
+        </div>
+
+        <div class="framework-text">
+            Mide tiros y goles concedidos
+            después de córners y tiros libres
+            ejecutados por los rivales.
+        </div>
+
+    </div>
+    """
+)
 
 
     st.html(
@@ -5083,9 +6257,9 @@ elif st.session_state[
                     <ul>
                         <li>Marcador final.</li>
                         <li>Apuestas.</li>
-                        <li>Roles individuales.</li>
-                        <li>Alineaciones causales.</li>
-                        <li>Balón parado específico.</li>
+                        <<li>Evaluación causal del impacto individual.</li>
+                        <li>Efecto causal de alineaciones o sustituciones.</li>
+                        <li>Modelado específico de marcaje individual.</li>
                         <li>Simulación de 90 minutos.</li>
                     </ul>
 
