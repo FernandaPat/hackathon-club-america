@@ -925,6 +925,44 @@ def get_played_match_ids(
 # MARCADOR + / -
 # ============================================================
 
+# ============================================================
+# MARCADOR + / -
+# ============================================================
+
+def increase_score(
+    key,
+    max_value=10,
+):
+    current_value = int(
+        st.session_state.get(
+            key,
+            0,
+        )
+    )
+
+    st.session_state[key] = min(
+        max_value,
+        current_value + 1,
+    )
+
+
+def decrease_score(
+    key,
+    min_value=0,
+):
+    current_value = int(
+        st.session_state.get(
+            key,
+            0,
+        )
+    )
+
+    st.session_state[key] = max(
+        min_value,
+        current_value - 1,
+    )
+
+
 def score_stepper(
     label,
     key,
@@ -933,17 +971,14 @@ def score_stepper(
     max_value=10,
 ):
 
-    if (
-        key
-        not in
-        st.session_state
-    ):
-
-        st.session_state[
-            key
-        ] = default
+    # Inicializar marcador una sola vez
+    if key not in st.session_state:
+        st.session_state[key] = int(
+            default
+        )
 
 
+    # Nombre del equipo
     st.html(
         f"""
         <div class="score-team-label">
@@ -953,11 +988,7 @@ def score_stepper(
     )
 
 
-    (
-        minus_col,
-        score_col,
-        plus_col,
-    ) = st.columns(
+    minus_col, score_col, plus_col = st.columns(
         [
             1,
             1.45,
@@ -967,27 +998,27 @@ def score_stepper(
     )
 
 
+    # --------------------------------------------------------
+    # RESTAR
+    # --------------------------------------------------------
+
     with minus_col:
 
-        if st.button(
+        st.button(
             "−",
             key=f"{key}_minus",
             use_container_width=True,
-        ):
-
-            st.session_state[
-                key
-            ] = max(
+            on_click=decrease_score,
+            args=(
+                key,
                 min_value,
-                int(
-                    st.session_state[
-                        key
-                    ]
-                )
-                -
-                1,
-            )
+            ),
+        )
 
+
+    # --------------------------------------------------------
+    # VALOR ACTUAL
+    # --------------------------------------------------------
 
     with score_col:
 
@@ -1000,34 +1031,27 @@ def score_stepper(
         )
 
 
+    # --------------------------------------------------------
+    # SUMAR
+    # --------------------------------------------------------
+
     with plus_col:
 
-        if st.button(
+        st.button(
             "+",
             key=f"{key}_plus",
             use_container_width=True,
-        ):
-
-            st.session_state[
-                key
-            ] = min(
+            on_click=increase_score,
+            args=(
+                key,
                 max_value,
-                int(
-                    st.session_state[
-                        key
-                    ]
-                )
-                +
-                1,
-            )
+            ),
+        )
 
 
     return int(
-        st.session_state[
-            key
-        ]
+        st.session_state[key]
     )
-
 
 # ============================================================
 # FEATURES AMIGABLES
