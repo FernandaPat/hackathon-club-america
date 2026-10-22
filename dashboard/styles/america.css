@@ -2029,3 +2029,95 @@ div[data-testid="stSlider"]
 
     margin-top: 4px;
 }
+
+/* =========================================================
+   FIX SELECTBOX SIDEBAR - NAVEGADORES / STREAMLIT CLOUD
+   ========================================================= */
+
+/* Caja completa del selectbox */
+[data-testid="stSidebar"] div[data-testid="stSelectbox"] > div > div {
+    background-color: rgba(255, 255, 255, 0.10) !important;
+    border-color: rgba(255, 255, 255, 0.22) !important;
+    color: #FFFFFF !important;
+}
+
+
+/* Texto seleccionado */
+[data-testid="stSidebar"] div[data-baseweb="select"] > div {
+    background-color: rgba(255, 255, 255, 0.10) !important;
+    color: #FFFFFF !important;
+}
+
+
+[data-testid="stSidebar"] div[data-baseweb="select"] span {
+    color: #FFFFFF !important;
+}
+
+
+[data-testid="stSidebar"] div[data-baseweb="select"] input {
+    color: #FFFFFF !important;
+    -webkit-text-fill-color: #FFFFFF !important;
+}
+
+
+/* Flecha del selectbox */
+[data-testid="stSidebar"] div[data-baseweb="select"] svg {
+    fill: #FFFFFF !important;
+    color: #FFFFFF !important;
+}
+
+
+/* Placeholder */
+[data-testid="stSidebar"] div[data-baseweb="select"] [data-baseweb="select"] {
+    color: #FFFFFF !important;
+}
+
+
+/* Labels: Condición, Rival, Estado táctico actual */
+[data-testid="stSidebar"] div[data-testid="stSelectbox"] label,
+[data-testid="stSidebar"] div[data-testid="stSelectbox"] label p {
+    color: #FFFFFF !important;
+    font-weight: 700 !important;
+}
+
+
+/* =========================================================
+   MENÚ DESPLEGABLE
+   ========================================================= */
+
+div[data-baseweb="popover"] {
+    z-index: 999999 !important;
+}
+
+
+div[data-baseweb="popover"] ul {
+    background-color: #FFFFFF !important;
+}
+
+
+div[data-baseweb="popover"] li {
+    background-color: #FFFFFF !important;
+    color: #061E39 !important;
+}
+
+
+div[data-baseweb="popover"] li:hover {
+    background-color: #FFF3B5 !important;
+    color: #061E39 !important;
+}
+
+
+/* Texto de las opciones */
+div[data-baseweb="popover"] li span {
+    color: #061E39 !important;
+}
+
+
+/* =========================================================
+   ESTADO FOCUS / ACTIVO
+   ========================================================= */
+
+[data-testid="stSidebar"] div[data-baseweb="select"] > div:focus-within {
+    border-color: #FFDA38 !important;
+    box-shadow: 0 0 0 1px #FFDA38 !important;
+}
