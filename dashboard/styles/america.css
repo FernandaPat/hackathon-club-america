@@ -17,7 +17,7 @@
 
 
 /* =========================================================
-   RESET / GENERAL
+   GENERAL
    ========================================================= */
 
 html,
@@ -43,7 +43,7 @@ body,
     margin-left: auto !important;
     margin-right: auto !important;
 
-    padding-top: 0.35rem !important;
+    padding-top: 0 !important;
     padding-left: 2rem !important;
     padding-right: 2rem !important;
     padding-bottom: 2rem !important;
@@ -53,42 +53,28 @@ body,
 
 
 /* =========================================================
-   BARRA SUPERIOR DE STREAMLIT
-   ========================================================= */
-
-
-/* =========================================================
-   OCULTAR BARRA SUPERIOR DE STREAMLIT
+   HEADER NATIVO STREAMLIT
    ========================================================= */
 
 header[data-testid="stHeader"] {
     display: none !important;
 }
 
+
 [data-testid="stToolbar"] {
     display: none !important;
 }
+
 
 [data-testid="stDecoration"] {
     display: none !important;
 }
 
+
 [data-testid="stStatusWidget"] {
     display: none !important;
 }
 
-
-/* El contenido comienza desde arriba */
-[data-testid="stAppViewBlockContainer"],
-.block-container {
-    padding-top: 0 !important;
-}
-
-
-/* Sidebar también comienza arriba */
-[data-testid="stSidebar"] > div:first-child {
-    padding-top: 1rem !important;
-}
 
 /* =========================================================
    SIDEBAR
@@ -103,16 +89,18 @@ header[data-testid="stHeader"] {
 }
 
 
+[data-testid="stSidebar"] > div:first-child {
+    padding-top: 1rem !important;
+}
+
+
 [data-testid="stSidebar"] * {
     color: white;
 }
 
 
 .sidebar-brand {
-    padding:
-        6px
-        0
-        4px;
+    padding: 6px 0 4px;
 }
 
 
@@ -126,7 +114,6 @@ header[data-testid="stHeader"] {
 .sidebar-circle {
     width: 44px;
     height: 44px;
-
     min-width: 44px;
 
     display: flex;
@@ -135,8 +122,7 @@ header[data-testid="stHeader"] {
 
     border-radius: 50%;
 
-    background:
-        var(--yellow);
+    background: var(--yellow);
 
     color:
         var(--navy)
@@ -148,11 +134,12 @@ header[data-testid="stHeader"] {
 
 
 .sidebar-brand-name {
-    color: white !important;
+    color:
+        white
+        !important;
 
     font-size: 21px;
     font-weight: 950;
-
     line-height: 1.1;
 }
 
@@ -164,7 +151,6 @@ header[data-testid="stHeader"] {
 
     font-size: 10px;
     font-weight: 900;
-
     letter-spacing: 0.1em;
 
     margin-top: 4px;
@@ -178,7 +164,6 @@ header[data-testid="stHeader"] {
 
     font-size: 12px;
     font-weight: 950;
-
     letter-spacing: 0.1em;
 
     margin-bottom: 8px;
@@ -186,32 +171,85 @@ header[data-testid="stHeader"] {
 
 
 /* =========================================================
-   SCORE STEPPER
+   MARCADOR + / -
+   ========================================================= */
+
+/* =========================================================
+   MARCADOR COACHLENS
    ========================================================= */
 
 .score-team-label {
-    color: white !important;
+    color: rgba(255, 255, 255, 0.78) !important;
 
-    font-size: 13px;
-    font-weight: 750;
+    font-size: 11px;
+    font-weight: 850;
+
+    text-align: center;
 
     margin-bottom: 6px;
 
-    min-height: 32px;
+    min-height: 20px;
 
     display: flex;
-    align-items: flex-end;
+    align-items: center;
+    justify-content: center;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 
 .score-value-box {
+    height: 40px;
     min-height: 40px;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    background: #0d1119;
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            0.10
+        );
+
+    border: none;
+
+    border-radius: 10px;
+
+    color: #ffffff;
+
+    font-size: 19px;
+    font-weight: 950;
+
+    line-height: 1;
+}
+
+
+[data-testid="stSidebar"] .stButton button {
+    width: 100%;
+
+    height: 40px;
+    min-height: 40px;
+
+    margin: 0;
+
+    padding: 0 !important;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            0.06
+        );
 
     border:
         1px solid
@@ -219,55 +257,70 @@ header[data-testid="stHeader"] {
             255,
             255,
             255,
-            0.12
+            0.16
         );
 
-    border-radius: 9px;
+    border-radius: 10px;
 
-    color: white;
+    color: #ffffff !important;
 
-    font-size: 17px;
+    font-size: 18px;
     font-weight: 900;
-}
 
+    box-shadow: none !important;
 
-[data-testid="stSidebar"] .stButton button {
-    min-height: 40px;
-
-    background: #0d1119;
-
-    border:
-        1px solid
-        var(--yellow);
-
-    border-radius: 9px;
-
-    color:
-        var(--yellow)
-        !important;
-
-    font-size: 21px;
-    font-weight: 950;
-
-    padding: 0 !important;
+    transition:
+        background 0.15s ease,
+        color 0.15s ease,
+        border-color 0.15s ease;
 }
 
 
 [data-testid="stSidebar"] .stButton button:hover {
-    background:
-        var(--yellow);
+    background: var(--yellow);
 
-    color:
-        var(--navy)
-        !important;
+    border-color: var(--yellow);
 
-    border-color:
-        var(--yellow);
+    color: var(--navy) !important;
 }
 
 
+[data-testid="stSidebar"] .stButton button:focus,
+[data-testid="stSidebar"] .stButton button:active {
+    box-shadow: none !important;
+}
+
+
+/* Texto extra de la recomendación Femenil */
+
+.action-context {
+    margin-top: 12px;
+
+    padding-top: 10px;
+
+    border-top:
+        1px solid
+        rgba(
+            255,
+            255,
+            255,
+            0.16
+        );
+
+    color:
+        rgba(
+            255,
+            255,
+            255,
+            0.70
+        );
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
 /* =========================================================
-   HERO / HEADER
+   HERO
    ========================================================= */
 
 .coachlens-hero {
@@ -278,24 +331,17 @@ header[data-testid="stHeader"] {
 
     overflow: hidden !important;
 
-    background: #002744;
+    background: var(--navy);
 
     border-radius:
-        0
-        0
-        24px
-        24px;
+        0 0 24px 24px;
 
     padding:
-        24px
-        42px
-        28px;
+        24px 42px 28px;
 
     margin:
-        0
-        0
-        18px
-        0 !important;
+        0 0 18px 0
+        !important;
 
     box-shadow:
         0 12px 28px
@@ -307,12 +353,10 @@ header[data-testid="stHeader"] {
     position: relative;
     z-index: 3;
 
-    color:
-        var(--yellow);
+    color: var(--yellow);
 
     font-size: 11px;
     font-weight: 900;
-
     letter-spacing: 0.13em;
 
     margin-bottom: 8px;
@@ -333,7 +377,6 @@ header[data-testid="stHeader"] {
         );
 
     font-weight: 950;
-
     line-height: 1;
 
     margin: 0;
@@ -367,8 +410,7 @@ header[data-testid="stHeader"] {
     width: 34px;
     height: 145%;
 
-    background:
-        var(--yellow);
+    background: var(--yellow);
 
     transform:
         rotate(17deg);
@@ -378,7 +420,7 @@ header[data-testid="stHeader"] {
 
 
 /* =========================================================
-   RADIO / NAVEGACIÓN
+   RADIO / NAV
    ========================================================= */
 
 div[data-testid="stRadio"] {
@@ -394,8 +436,7 @@ div[data-testid="stRadio"] > div {
 
 div[data-testid="stRadio"] label {
     padding:
-        7px
-        13px;
+        7px 13px;
 
     border-radius: 12px;
 
@@ -418,16 +459,14 @@ div[data-testid="stRadio"] label p {
 
 
 /* =========================================================
-   TÍTULOS
+   TITULOS
    ========================================================= */
 
 .page-kicker {
-    color:
-        var(--red);
+    color: var(--red);
 
     font-size: 13px;
     font-weight: 900;
-
     letter-spacing: 0.13em;
 
     margin-top: 10px !important;
@@ -435,8 +474,7 @@ div[data-testid="stRadio"] label p {
 
 
 .page-title {
-    color:
-        var(--navy);
+    color: var(--navy);
 
     font-size:
         clamp(
@@ -446,7 +484,6 @@ div[data-testid="stRadio"] label p {
         );
 
     font-weight: 950;
-
     line-height: 1.1;
 
     margin-top: 8px !important;
@@ -454,13 +491,11 @@ div[data-testid="stRadio"] label p {
 
 
 .page-description {
-    max-width: 920px;
+    max-width: 1000px;
 
-    color:
-        var(--secondary);
+    color: var(--secondary);
 
     font-size: 18px;
-
     line-height: 1.55;
 
     margin-top: 10px !important;
@@ -469,27 +504,23 @@ div[data-testid="stRadio"] label p {
 
 
 /* =========================================================
-   CARDS PRINCIPALES
+   RESULTADOS
    ========================================================= */
 
 .result-card,
 .confidence-card,
 .simulation-summary-card {
-    background:
-        var(--navy);
+    background: var(--navy);
 
     color: white;
 
     border-radius: 22px;
 
-    box-shadow:
-        var(--shadow);
+    box-shadow: var(--shadow);
 
-    padding:
-        27px;
+    padding: 27px;
 
     width: 100%;
-    max-width: 100%;
 
     overflow: hidden;
 }
@@ -521,8 +552,7 @@ div[data-testid="stRadio"] label p {
 
 
 .result-card-value {
-    color:
-        var(--yellow);
+    color: var(--yellow);
 
     font-size:
         clamp(
@@ -543,7 +573,6 @@ div[data-testid="stRadio"] label p {
 
 .result-card-text {
     font-size: 15px;
-
     line-height: 1.5;
 
     margin-top: 14px;
@@ -551,8 +580,7 @@ div[data-testid="stRadio"] label p {
 
 
 .action-title {
-    color:
-        var(--yellow);
+    color: var(--yellow);
 
     font-size: 25px;
     font-weight: 950;
@@ -560,19 +588,14 @@ div[data-testid="stRadio"] label p {
     line-height: 1.2;
 
     margin-top: 16px;
-
-    overflow-wrap: break-word;
 }
 
 
 .action-text {
     font-size: 14px;
-
     line-height: 1.55;
 
     margin-top: 10px;
-
-    overflow-wrap: break-word;
 }
 
 
@@ -596,7 +619,6 @@ div[data-testid="stRadio"] label p {
         );
 
     font-weight: 950;
-
     line-height: 1;
 
     margin-top: 15px;
@@ -604,8 +626,7 @@ div[data-testid="stRadio"] label p {
 
 
 .signal-number {
-    color:
-        var(--yellow);
+    color: var(--yellow);
 
     font-size:
         clamp(
@@ -622,7 +643,6 @@ div[data-testid="stRadio"] label p {
     margin-top: 17px;
 
     font-size: 15px;
-
     line-height: 1.6;
 }
 
@@ -634,8 +654,7 @@ div[data-testid="stRadio"] label p {
 .similarity-card {
     min-height: 235px;
 
-    background:
-        var(--cream-soft);
+    background: var(--cream-soft);
 
     border:
         1px solid
@@ -643,19 +662,14 @@ div[data-testid="stRadio"] label p {
 
     border-radius: 22px;
 
-    padding:
-        27px;
+    padding: 27px;
 
-    box-shadow:
-        var(--shadow);
-
-    overflow: hidden;
+    box-shadow: var(--shadow);
 }
 
 
 .similarity-label {
-    color:
-        var(--secondary);
+    color: var(--secondary);
 
     font-size: 13px;
     font-weight: 900;
@@ -665,14 +679,10 @@ div[data-testid="stRadio"] label p {
 
 
 .similarity-number {
-    color:
-        var(--navy);
+    color: var(--navy);
 
     font-size: 48px;
-
     font-weight: 950;
-
-    line-height: 1;
 
     margin-top: 14px;
 }
@@ -682,8 +692,7 @@ div[data-testid="stRadio"] label p {
     width: 100%;
     height: 10px;
 
-    background:
-        #d9dad2;
+    background: #d9dad2;
 
     border-radius: 99px;
 
@@ -696,14 +705,12 @@ div[data-testid="stRadio"] label p {
 .similarity-fill {
     height: 100%;
 
-    background:
-        var(--yellow);
+    background: var(--yellow);
 }
 
 
 .similarity-status {
-    color:
-        var(--navy);
+    color: var(--navy);
 
     font-weight: 900;
 
@@ -713,11 +720,9 @@ div[data-testid="stRadio"] label p {
 
 .similarity-description,
 .similarity-history {
-    color:
-        var(--secondary);
+    color: var(--secondary);
 
     font-size: 13px;
-
     line-height: 1.5;
 
     margin-top: 8px;
@@ -725,12 +730,10 @@ div[data-testid="stRadio"] label p {
 
 
 /* =========================================================
-   SIMULACIÓN
+   SIMULACION
    ========================================================= */
 
 .simulation-intro-box {
-    width: 100%;
-
     background: white;
 
     border:
@@ -744,19 +747,15 @@ div[data-testid="stRadio"] label p {
     border-radius: 18px;
 
     padding:
-        20px
-        23px;
+        20px 23px;
 
     margin:
-        14px
-        0
-        18px;
+        14px 0 18px;
 }
 
 
 .simulation-intro-title {
-    color:
-        var(--navy);
+    color: var(--navy);
 
     font-size: 19px;
     font-weight: 950;
@@ -764,11 +763,9 @@ div[data-testid="stRadio"] label p {
 
 
 .simulation-intro-text {
-    color:
-        var(--secondary);
+    color: var(--secondary);
 
     font-size: 15px;
-
     line-height: 1.6;
 
     margin-top: 9px;
@@ -776,8 +773,7 @@ div[data-testid="stRadio"] label p {
 
 
 .simulation-intro-text strong {
-    color:
-        var(--navy);
+    color: var(--navy);
 }
 
 
@@ -789,11 +785,9 @@ div[data-testid="stRadio"] label p {
 
 
 .simulation-intro-note {
-    color:
-        #6c7885;
+    color: #6c7885;
 
     font-size: 13px;
-
     line-height: 1.5;
 
     margin-top: 9px;
@@ -801,27 +795,21 @@ div[data-testid="stRadio"] label p {
 
 
 .simulation-summary-card {
-    min-height: 270px;
+    min-height: 250px;
 
     display: flex;
     flex-direction: column;
-
     justify-content: center;
 }
 
 
 .simulation-summary-value {
-    color:
-        var(--yellow);
+    color: var(--yellow);
 
     font-size: 40px;
     font-weight: 950;
 
-    line-height: 1.05;
-
     margin-top: 18px;
-
-    overflow-wrap: break-word;
 }
 
 
@@ -835,7 +823,6 @@ div[data-testid="stRadio"] label p {
 
 .simulation-summary-text {
     font-size: 14px;
-
     line-height: 1.55;
 
     margin-top: 13px;
@@ -843,21 +830,18 @@ div[data-testid="stRadio"] label p {
 
 
 /* =========================================================
-   MÉTRICAS
+   METRIC CARDS
    ========================================================= */
 
 .metric-card {
-    background:
-        var(--navy);
+    background: var(--navy);
 
     border-radius: 22px;
 
-    box-shadow:
-        var(--shadow);
+    box-shadow: var(--shadow);
 
     padding:
-        22px
-        24px;
+        22px 24px;
 
     overflow: hidden;
 }
@@ -873,6 +857,11 @@ div[data-testid="stRadio"] label p {
 }
 
 
+.complementary-metric-card {
+    height: 130px;
+}
+
+
 .metric-label {
     color:
         rgba(
@@ -883,32 +872,26 @@ div[data-testid="stRadio"] label p {
         );
 
     font-size: 13px;
-
     font-weight: 800;
-
     line-height: 1.3;
 }
 
 
 .metric-value,
 .history-state-value {
-    color:
-        var(--yellow);
+    color: var(--yellow);
 
     font-size: 29px;
-
     font-weight: 950;
 
     line-height: 1.08;
 
     margin-top: 14px;
-
-    overflow-wrap: break-word;
 }
 
 
 /* =========================================================
-   HISTÓRICO
+   HISTORICO / INTERPRETACION
    ========================================================= */
 
 .history-explanation,
@@ -923,8 +906,7 @@ div[data-testid="stRadio"] label p {
     border-radius: 20px;
 
     padding:
-        24px
-        26px;
+        24px 26px;
 
     margin-top: 18px;
 }
@@ -933,8 +915,7 @@ div[data-testid="stRadio"] label p {
 .history-explanation-title,
 .interpretation-title,
 .framework-section-title {
-    color:
-        var(--navy);
+    color: var(--navy);
 
     font-size: 22px;
     font-weight: 950;
@@ -960,8 +941,7 @@ div[data-testid="stRadio"] label p {
 
 
 .history-explanation-item {
-    background:
-        var(--cream-soft);
+    background: var(--cream-soft);
 
     border:
         1px solid
@@ -969,8 +949,7 @@ div[data-testid="stRadio"] label p {
 
     border-radius: 15px;
 
-    padding:
-        17px;
+    padding: 17px;
 }
 
 
@@ -978,8 +957,7 @@ div[data-testid="stRadio"] label p {
     display: inline-block;
 
     padding:
-        7px
-        10px;
+        7px 10px;
 
     border-radius: 7px;
 
@@ -989,48 +967,36 @@ div[data-testid="stRadio"] label p {
 
 
 .history-explanation-badge.exact {
-    background:
-        #d9f2e5;
+    background: #d9f2e5;
 
-    color:
-        #08763f;
+    color: #08763f;
 }
 
 
 .history-explanation-badge.top2 {
-    background:
-        #fff0a8;
+    background: #fff0a8;
 
-    color:
-        var(--navy);
+    color: var(--navy);
 }
 
 
 .history-explanation-badge.miss {
-    background:
-        #fbdede;
+    background: #fbdede;
 
-    color:
-        #a31515;
+    color: #a31515;
 }
 
 
 .history-explanation-text,
 .history-test-summary {
-    color:
-        var(--secondary);
+    color: var(--secondary);
 
     font-size: 13px;
-
     line-height: 1.55;
 
     margin-top: 12px;
 }
 
-
-/* =========================================================
-   INTERPRETACIÓN
-   ========================================================= */
 
 .interpretation-columns {
     display: grid;
@@ -1049,26 +1015,22 @@ div[data-testid="stRadio"] label p {
 
 
 .interpretation-columns div {
-    color:
-        var(--secondary);
+    color: var(--secondary);
 
     font-size: 13px;
-
     line-height: 1.5;
 }
 
 
 .interpretation-columns strong {
-    color:
-        var(--navy);
+    color: var(--navy);
 }
 
 
 /* =========================================================
-   FRAMEWORK - OBJETOS
+   FRAMEWORK
    ========================================================= */
 
-.object-grid,
 .framework-grid {
     display: grid;
 
@@ -1085,120 +1047,21 @@ div[data-testid="stRadio"] label p {
 }
 
 
-.object-item,
-.scope-column {
-    background:
-        var(--cream-soft);
-
-    border:
-        1px solid
-        var(--border);
-
-    border-radius: 14px;
-
-    padding:
-        16px;
-}
-
-
-.object-item strong {
-    display: block;
-
-    color:
-        var(--navy);
-
-    margin-bottom: 7px;
-}
-
-
-.object-item span {
-    color:
-        var(--secondary);
-
-    font-size: 13px;
-
-    line-height: 1.5;
-}
-
-
-/* =========================================================
-   FRAMEWORK - SUPUESTOS
-   ========================================================= */
-
-.assumption-list {
-    display: grid;
-
-    grid-template-columns:
-        repeat(
-            2,
-            minmax(
-                0,
-                1fr
-            )
-        );
-
-    gap: 13px;
-}
-
-
-.assumption-list > div {
-    background:
-        var(--cream-soft);
-
-    border:
-        1px solid
-        var(--border);
-
-    border-radius: 14px;
-
-    padding:
-        15px;
-
-    display: flex;
-
-    gap: 12px;
-}
-
-
-.assumption-list strong {
-    color:
-        var(--red);
-}
-
-
-.assumption-list span {
-    color:
-        var(--secondary);
-
-    font-size: 13px;
-
-    line-height: 1.5;
-}
-
-
-/* =========================================================
-   FRAMEWORK - COMPONENTES
-   ========================================================= */
-
 .framework-card {
     min-height: 135px;
 
-    background:
-        var(--navy);
+    background: var(--navy);
 
     border-radius: 17px;
 
-    padding:
-        20px;
+    padding: 20px;
 }
 
 
 .framework-title {
-    color:
-        var(--yellow);
+    color: var(--yellow);
 
     font-size: 17px;
-
     font-weight: 950;
 }
 
@@ -1213,78 +1076,11 @@ div[data-testid="stRadio"] label p {
         );
 
     font-size: 13px;
-
     line-height: 1.55;
 
     margin-top: 10px;
 }
 
-
-/* =========================================================
-   FRAMEWORK - COHERENCIA
-   ========================================================= */
-
-.coherence-flow {
-    display: flex;
-
-    align-items: center;
-
-    gap: 9px;
-}
-
-
-.coherence-step {
-    flex: 1;
-
-    background:
-        var(--navy);
-
-    border-radius: 13px;
-
-    padding:
-        15px;
-
-    text-align: center;
-}
-
-
-.coherence-step strong {
-    display: block;
-
-    color:
-        var(--yellow);
-}
-
-
-.coherence-step span {
-    display: block;
-
-    color:
-        rgba(
-            255,
-            255,
-            255,
-            0.75
-        );
-
-    font-size: 11px;
-
-    margin-top: 5px;
-}
-
-
-.coherence-arrow {
-    color:
-        var(--red);
-
-    font-size: 22px;
-    font-weight: 900;
-}
-
-
-/* =========================================================
-   FRAMEWORK - ALCANCE
-   ========================================================= */
 
 .scope-box {
     display: grid;
@@ -1302,173 +1098,190 @@ div[data-testid="stRadio"] label p {
 }
 
 
+.scope-column {
+    background: var(--cream-soft);
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius: 14px;
+
+    padding: 18px;
+}
+
+
 .scope-heading {
-    color:
-        var(--navy);
+    color: var(--navy);
 
     font-size: 18px;
-
     font-weight: 950;
 }
 
 
 .scope-column li {
-    color:
-        var(--secondary);
+    color: var(--secondary);
 
     font-size: 13px;
+    line-height: 1.6;
+}
 
+
+/* =========================================================
+   GLOBAL COMPACTO
+   ========================================================= */
+
+.global-context-card {
+    width: fit-content;
+
+    min-width: 280px;
+    max-width: 360px;
+
+    background: var(--navy);
+
+    border-radius: 18px;
+
+    padding:
+        18px 22px;
+
+    margin:
+        12px 0 18px;
+
+    box-shadow: var(--shadow);
+}
+
+
+.global-context-label {
+    color:
+        rgba(
+            255,
+            255,
+            255,
+            0.75
+        );
+
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 0.07em;
+}
+
+
+.global-context-value {
+    color: var(--yellow);
+
+    font-size: 34px;
+    font-weight: 950;
+    line-height: 1;
+
+    margin-top: 10px;
+}
+
+
+.global-context-text {
+    color:
+        rgba(
+            255,
+            255,
+            255,
+            0.78
+        );
+
+    font-size: 12px;
+    line-height: 1.4;
+
+    margin-top: 10px;
+}
+
+
+/* =========================================================
+   HELP BOX
+   ========================================================= */
+
+.chart-help-box {
+    background: white;
+
+    border:
+        1px solid
+        var(--border);
+
+    border-left:
+        5px solid
+        var(--yellow);
+
+    border-radius: 18px;
+
+    padding:
+        20px 24px;
+
+    margin:
+        16px 0 22px;
+
+    box-shadow:
+        0 10px 24px
+        rgba(0, 31, 58, 0.05);
+}
+
+
+.chart-help-title {
+    color: var(--navy);
+
+    font-size: 19px;
+    font-weight: 950;
+
+    margin-bottom: 8px;
+}
+
+
+.chart-help-text {
+    color: var(--secondary);
+
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+.chart-help-text strong,
+.chart-help-note strong {
+    color: var(--navy);
+
+    font-weight: 900;
+}
+
+
+.chart-help-note {
+    color: #6c7885;
+
+    font-size: 13px;
     line-height: 1.55;
+
+    margin-top: 8px;
 }
 
 
 /* =========================================================
-   PLOTLY
-   ========================================================= */
-
-[data-testid="stPlotlyChart"] {
-    margin-top: 0 !important;
-    margin-bottom: 7px !important;
-}
-
-
-/* =========================================================
-   RESPONSIVE
-   ========================================================= */
-
-@media screen and (max-width: 1100px) {
-
-    [data-testid="stAppViewBlockContainer"],
-    .block-container {
-        padding-left:
-            1rem
-            !important;
-
-        padding-right:
-            1rem
-            !important;
-    }
-
-
-    .coachlens-hero {
-        padding:
-            20px
-            28px
-            24px;
-    }
-
-
-    .coachlens-hero-accent {
-        right: 90px;
-    }
-
-
-    .object-grid,
-    .framework-grid,
-    .interpretation-columns {
-        grid-template-columns:
-            repeat(
-                2,
-                1fr
-            );
-    }
-
-}
-
-
-@media screen and (max-width: 700px) {
-
-    .coachlens-hero {
-        padding:
-            20px
-            22px
-            22px;
-    }
-
-
-    .coachlens-hero-title {
-        font-size: 42px;
-    }
-
-
-    .coachlens-hero-subtitle {
-        font-size: 13px;
-    }
-
-
-    .coachlens-hero-accent {
-        right: 45px;
-
-        width: 24px;
-    }
-
-
-    .history-explanation-grid,
-    .object-grid,
-    .framework-grid,
-    .assumption-list,
-    .scope-box,
-    .interpretation-columns {
-        grid-template-columns:
-            1fr;
-    }
-
-
-    .coherence-flow {
-        flex-direction: column;
-    }
-
-
-    .coherence-arrow {
-        display: none;
-    }
-
-
-    .history-metric-card,
-    .model-metric-card {
-        height: auto;
-
-        min-height: 115px;
-    }
-
-
-    .result-card,
-    .confidence-card,
-    .similarity-card,
-    .simulation-summary-card {
-        min-height: auto;
-    }
-
-}
-/* =========================================================
-   ANALISIS COMPLEMENTARIO
+   SUSTITUCIONES
    ========================================================= */
 
 .substitution-hero {
-    width: 100%;
-
-    background: #002744;
+    background: var(--navy);
 
     border-radius: 22px;
 
     padding:
-        24px
-        28px;
+        24px 28px;
 
-    box-shadow:
-        0 16px 34px
-        rgba(0, 31, 58, 0.09);
+    margin:
+        16px 0;
 
-    overflow: hidden;
+    box-shadow: var(--shadow);
 }
 
 
 .substitution-minute {
-    color: #ffda38;
+    color: var(--yellow);
 
     font-size: 13px;
     font-weight: 950;
-
     letter-spacing: 0.08em;
 
     margin-bottom: 18px;
@@ -1479,18 +1292,19 @@ div[data-testid="stRadio"] label p {
     display: grid;
 
     grid-template-columns:
-        minmax(0, 1fr)
+        minmax(
+            0,
+            1fr
+        )
         auto
-        minmax(0, 1fr);
+        minmax(
+            0,
+            1fr
+        );
 
     align-items: center;
 
     gap: 25px;
-}
-
-
-.substitution-player {
-    min-width: 0;
 }
 
 
@@ -1506,8 +1320,6 @@ div[data-testid="stRadio"] label p {
     font-size: 11px;
     font-weight: 900;
 
-    letter-spacing: 0.08em;
-
     margin-bottom: 8px;
 }
 
@@ -1517,21 +1329,20 @@ div[data-testid="stRadio"] label p {
 
     font-size:
         clamp(
-            22px,
+            21px,
             2vw,
-            30px
+            29px
         );
 
     font-weight: 950;
-
-    line-height: 1.15;
+    line-height: 1.2;
 
     overflow-wrap: break-word;
 }
 
 
 .substitution-arrow {
-    color: #ffda38;
+    color: var(--yellow);
 
     font-size: 36px;
     font-weight: 950;
@@ -1543,30 +1354,26 @@ div[data-testid="stRadio"] label p {
    ========================================================= */
 
 .before-after-card {
-    min-height: 175px;
-
-    height: 100%;
+    min-height: 165px;
 
     background: white;
 
     border:
-        1px solid #d8d7cd;
+        1px solid
+        var(--border);
 
     border-radius: 18px;
 
-    padding:
-        18px;
+    padding: 18px;
 
     box-shadow:
         0 10px 25px
         rgba(0, 31, 58, 0.05);
-
-    overflow: hidden;
 }
 
 
 .before-after-title {
-    color: #002744;
+    color: var(--navy);
 
     font-size: 16px;
     font-weight: 950;
@@ -1589,9 +1396,8 @@ div[data-testid="stRadio"] label p {
 }
 
 
-.before-after-values > div:not(
-    .before-after-arrow
-) {
+.before-after-values >
+div:not(.before-after-arrow) {
     text-align: center;
 }
 
@@ -1599,21 +1405,19 @@ div[data-testid="stRadio"] label p {
 .before-after-values span {
     display: block;
 
-    color: #6c7885;
+    color: var(--secondary);
 
     font-size: 10px;
-    font-weight: 800;
-
-    letter-spacing: 0.04em;
+    font-weight: 900;
 }
 
 
 .before-after-values strong {
     display: block;
 
-    color: #002744;
+    color: var(--navy);
 
-    font-size: 28px;
+    font-size: 27px;
     font-weight: 950;
 
     margin-top: 5px;
@@ -1621,7 +1425,7 @@ div[data-testid="stRadio"] label p {
 
 
 .before-after-arrow {
-    color: #d82030;
+    color: var(--red);
 
     font-size: 20px;
     font-weight: 900;
@@ -1632,8 +1436,7 @@ div[data-testid="stRadio"] label p {
     margin-top: 15px;
 
     padding:
-        7px
-        9px;
+        7px 9px;
 
     border-radius: 8px;
 
@@ -1661,34 +1464,32 @@ div[data-testid="stRadio"] label p {
 .before-after-change.neutral {
     background: #eceff2;
 
-    color: #40536c;
+    color: var(--secondary);
 }
 
 
 /* =========================================================
-   LECTURA COMPLEMENTARIA
+   LECTURA
    ========================================================= */
 
 .complementary-reading {
-    width: 100%;
-
-    background: #fffcf3;
+    background: var(--cream-soft);
 
     border:
-        1px solid #d8d7cd;
+        1px solid
+        var(--border);
 
     border-left:
-        5px solid #ffda38;
+        5px solid
+        var(--yellow);
 
     border-radius: 18px;
 
     padding:
-        20px
-        23px;
+        20px 23px;
 
     margin:
-        20px
-        0;
+        20px 0;
 
     box-shadow:
         0 10px 25px
@@ -1697,7 +1498,7 @@ div[data-testid="stRadio"] label p {
 
 
 .complementary-reading-title {
-    color: #002744;
+    color: var(--navy);
 
     font-size: 19px;
     font-weight: 950;
@@ -1705,18 +1506,12 @@ div[data-testid="stRadio"] label p {
 
 
 .complementary-reading-text {
-    color: #40536c;
+    color: var(--secondary);
 
     font-size: 14px;
-
     line-height: 1.6;
 
     margin-top: 9px;
-}
-
-
-.complementary-reading-text strong {
-    color: #002744;
 }
 
 
@@ -1724,7 +1519,6 @@ div[data-testid="stRadio"] label p {
     color: #6c7885;
 
     font-size: 12px;
-
     line-height: 1.5;
 
     margin-top: 10px;
@@ -1735,38 +1529,24 @@ div[data-testid="stRadio"] label p {
    BALON PARADO
    ========================================================= */
 
-.complementary-metric-card {
-    height: 135px;
-}
-
-
 .set-piece-type-card {
-    min-height: 190px;
+    min-height: 175px;
 
-    height: 100%;
-
-    background: #002744;
+    background: var(--navy);
 
     border-radius: 20px;
 
-    padding:
-        22px;
+    padding: 22px;
 
-    box-shadow:
-        0 14px 30px
-        rgba(0, 31, 58, 0.08);
-
-    overflow: hidden;
+    box-shadow: var(--shadow);
 }
 
 
 .set-piece-type {
-    color: #ffda38;
+    color: var(--yellow);
 
     font-size: 23px;
     font-weight: 950;
-
-    line-height: 1.1;
 
     margin-bottom: 17px;
 }
@@ -1788,11 +1568,6 @@ div[data-testid="stRadio"] label p {
 }
 
 
-.set-piece-stat-grid > div {
-    min-width: 0;
-}
-
-
 .set-piece-stat-grid span {
     display: block;
 
@@ -1801,13 +1576,11 @@ div[data-testid="stRadio"] label p {
             255,
             255,
             255,
-            0.62
+            0.70
         );
 
     font-size: 9px;
-    font-weight: 850;
-
-    line-height: 1.25;
+    font-weight: 900;
 
     min-height: 24px;
 }
@@ -1826,20 +1599,68 @@ div[data-testid="stRadio"] label p {
 
 
 /* =========================================================
-   RESPONSIVE COMPLEMENTARIO
+   PLOTLY
    ========================================================= */
+
+[data-testid="stPlotlyChart"] {
+    margin-top: 2px !important;
+    margin-bottom: 8px !important;
+
+    background:
+        transparent
+        !important;
+}
+
+
+.js-plotly-plot,
+.plotly,
+.plot-container {
+    background:
+        transparent
+        !important;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media screen and (max-width: 1100px) {
+
+    [data-testid="stAppViewBlockContainer"],
+    .block-container {
+        padding-left:
+            1rem !important;
+
+        padding-right:
+            1rem !important;
+    }
+
+
+    .framework-grid {
+        grid-template-columns:
+            repeat(
+                2,
+                1fr
+            );
+    }
+
+}
+
 
 @media screen and (max-width: 900px) {
 
     .substitution-player-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns:
+            1fr;
 
         gap: 12px;
     }
 
 
     .substitution-arrow {
-        transform: rotate(90deg);
+        transform:
+            rotate(90deg);
 
         text-align: center;
     }
@@ -1852,17 +1673,311 @@ div[data-testid="stRadio"] label p {
                 1fr
             );
     }
+
+}
+
+
+@media screen and (max-width: 700px) {
+
+    .coachlens-hero {
+        padding:
+            20px 22px 22px;
+    }
+
+
+    .coachlens-hero-title {
+        font-size: 42px;
+    }
+
+
+    .framework-grid,
+    .scope-box,
+    .history-explanation-grid,
+    .interpretation-columns {
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .history-metric-card,
+    .model-metric-card,
+    .complementary-metric-card {
+        height: auto;
+
+        min-height: 110px;
+    }
+
+
+    .result-card,
+    .confidence-card,
+    .similarity-card,
+    .simulation-summary-card {
+        min-height: auto;
+    }
+
 }
 
 
 @media screen and (max-width: 600px) {
 
     .set-piece-stat-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns:
+            1fr;
     }
 
 
     .before-after-card {
         min-height: auto;
     }
+
+
+    .global-context-card {
+        width: 100%;
+        max-width: 100%;
+    }
+
+}
+
+/* =========================================================
+   MINUTO · REVISIÓN HISTÓRICA
+   ========================================================= */
+
+.history-minute-row {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+
+    align-items: center;
+
+    gap: 16px;
+
+    margin:
+        20px 0 26px;
+}
+
+
+.history-minute-label {
+    color: var(--secondary);
+
+    font-size: 11px;
+    font-weight: 900;
+
+    letter-spacing: 0.08em;
+}
+
+
+.history-minute-line {
+    position: relative;
+
+    width: 100%;
+    height: 5px;
+
+    background:
+        rgba(
+            6,
+            30,
+            57,
+            0.12
+        );
+
+    border-radius: 999px;
+}
+
+
+.history-minute-progress {
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background:
+        rgba(
+            216,
+            32,
+            48,
+            0.18
+        );
+
+    border-radius: 999px;
+}
+
+
+.history-minute-dot {
+    position: absolute;
+
+    top: 50%;
+
+    width: 15px;
+    height: 15px;
+
+    background: #ff5151;
+
+    border:
+        3px solid
+        var(--cream);
+
+    border-radius: 50%;
+
+    transform:
+        translate(
+            -50%,
+            -50%
+        );
+
+    box-shadow:
+        0 0 0 2px
+        rgba(
+            255,
+            81,
+            81,
+            0.18
+        );
+}
+
+
+.history-minute-value {
+    min-width: 42px;
+
+    padding:
+        6px 10px;
+
+    background: var(--navy);
+
+    border-radius: 9px;
+
+    color: var(--yellow);
+
+    font-size: 14px;
+    font-weight: 950;
+
+    text-align: center;
+}
+
+/* =========================================================
+   LABELS DE FILTROS EN CONTENIDO PRINCIPAL
+   ========================================================= */
+
+[data-testid="stMainBlockContainer"]
+div[data-testid="stSelectbox"] label,
+[data-testid="stMainBlockContainer"]
+div[data-testid="stSelectbox"] label p,
+[data-testid="stMainBlockContainer"]
+div[data-testid="stSlider"] label,
+[data-testid="stMainBlockContainer"]
+div[data-testid="stSlider"] label p {
+    color: var(--navy) !important;
+    font-weight: 800 !important;
+}
+
+
+/* =========================================================
+   SLIDER HISTÓRICO
+   ========================================================= */
+
+[data-testid="stMainBlockContainer"]
+div[data-testid="stSlider"] {
+    margin-top: 12px;
+    margin-bottom: 22px;
+}
+
+
+/* Número sobre el slider */
+
+[data-testid="stMainBlockContainer"]
+div[data-testid="stSlider"]
+[data-testid="stThumbValue"] {
+    color: var(--red) !important;
+    font-weight: 900 !important;
+}
+
+
+/* Texto mínimo / máximo */
+
+[data-testid="stMainBlockContainer"]
+div[data-testid="stSlider"]
+[data-testid="stTickBarMin"],
+[data-testid="stMainBlockContainer"]
+div[data-testid="stSlider"]
+[data-testid="stTickBarMax"] {
+    color: var(--secondary) !important;
+}
+/* =========================================================
+   LABELS DE FILTROS EN EL CONTENIDO PRINCIPAL
+   ========================================================= */
+
+[data-testid="stMainBlockContainer"]
+div[data-testid="stSelectbox"] label,
+
+[data-testid="stMainBlockContainer"]
+div[data-testid="stSelectbox"] label p,
+
+[data-testid="stMainBlockContainer"]
+div[data-testid="stSlider"] label,
+
+[data-testid="stMainBlockContainer"]
+div[data-testid="stSlider"] label p {
+
+    color: var(--navy) !important;
+
+    font-weight: 800 !important;
+}
+
+
+/* =========================================================
+   SLIDER DE REVISIÓN HISTÓRICA
+   ========================================================= */
+
+[data-testid="stMainBlockContainer"]
+div[data-testid="stSlider"] {
+
+    margin-top: 10px;
+
+    margin-bottom: 24px;
+}
+
+
+[data-testid="stMainBlockContainer"]
+div[data-testid="stSlider"]
+[data-testid="stThumbValue"] {
+
+    color: var(--red) !important;
+
+    font-weight: 900 !important;
+}
+
+
+/* =========================================================
+   TEXTO EXTRA DE ACCIÓN FEMENIL
+   ========================================================= */
+
+.action-context {
+
+    margin-top: 12px;
+
+    padding-top: 10px;
+
+    border-top:
+        1px solid
+        rgba(
+            255,
+            255,
+            255,
+            0.16
+        );
+
+    color:
+        rgba(
+            255,
+            255,
+            255,
+            0.70
+        );
+
+    font-size: 12px;
+
+    line-height: 1.5;
 }
