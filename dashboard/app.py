@@ -6515,42 +6515,61 @@ elif (
         "Identidad de juego"
     ):
 
-
         st.markdown(
             "### Identidad de juego"
         )
-
 
         st.caption(
             "Resume construcción, progresión, generación "
             "de ocasiones y comportamiento defensivo."
         )
 
+        identity_descriptions = {
+            "Construcción": (
+                "Capacidad para iniciar y sostener la "
+                "circulación del balón."
+            ),
+            "Progresión": (
+                "Capacidad para avanzar el balón hacia "
+                "zonas más adelantadas."
+            ),
+            "Generación de ocasiones": (
+                "Capacidad para acercarse y producir "
+                "acciones en zonas de peligro."
+            ),
+            "Presión": (
+                "Actividad de presión que ejerce el equipo "
+                "sobre el rival."
+            ),
+            "Recuperaciones": (
+                "Comportamiento del equipo al recuperar "
+                "la posesión del balón."
+            ),
+            "Dominio territorial": (
+                "Nivel de presencia y control territorial "
+                "en campo rival."
+            ),
+        }
 
         if (
             complementary_team
             ==
             "Varonil"
         ):
-
             identity_data = (
                 male_simulator
                 .copy()
             )
-
         else:
-
             identity_data = (
                 female_simulator
                 .copy()
             )
 
-
         if (
             "match_id"
             in identity_data.columns
         ):
-
             identity_data = (
                 attach_match_metadata(
                     identity_data,
@@ -6558,26 +6577,20 @@ elif (
                 )
             )
 
-
         filtered_identity = (
             identity_data
             .copy()
         )
-
 
         if (
             complementary_view
             ==
             "Por partido"
         ):
-
-
             if (
                 "opponent"
                 in filtered_identity.columns
             ):
-
-
                 rivals = sorted(
                     filtered_identity[
                         "opponent"
@@ -6587,7 +6600,6 @@ elif (
                     .unique()
                     .tolist()
                 )
-
 
                 (
                     rival_col,
@@ -6600,10 +6612,7 @@ elif (
                     gap="medium",
                 )
 
-
                 with rival_col:
-
-
                     identity_rival = (
                         st.selectbox(
                             "Rival",
@@ -6612,7 +6621,6 @@ elif (
                                 "identity_rival",
                         )
                     )
-
 
                 filtered_identity = (
                     filtered_identity[
@@ -6626,14 +6634,10 @@ elif (
                     .copy()
                 )
 
-
                 if (
                     "_match_id"
-                    in
-                    filtered_identity.columns
+                    in filtered_identity.columns
                 ):
-
-
                     matches = (
                         filtered_identity[
                             [
@@ -6645,7 +6649,6 @@ elif (
                         .drop_duplicates()
                         .copy()
                     )
-
 
                     matches[
                         "label"
@@ -6665,10 +6668,7 @@ elif (
                         )
                     )
 
-
                     with match_col:
-
-
                         identity_match = (
                             st.selectbox(
                                 "Partido",
@@ -6679,7 +6679,6 @@ elif (
                                     "identity_match",
                             )
                         )
-
 
                     identity_match_id = (
                         matches.loc[
@@ -6693,7 +6692,6 @@ elif (
                         .iloc[0]
                     )
 
-
                     filtered_identity = (
                         filtered_identity[
                             filtered_identity[
@@ -6705,20 +6703,17 @@ elif (
                         .copy()
                     )
 
-
         selected_metrics = (
             build_play_identity_metrics(
                 filtered_identity
             )
         )
 
-
         global_metrics = (
             build_play_identity_metrics(
                 identity_data
             )
         )
-
 
         global_lookup = {
             metric[
@@ -6727,90 +6722,90 @@ elif (
                 metric[
                     "value"
                 ]
-
             for metric
             in global_metrics
         }
 
-
-        st.html(
-            """
-            <div class="chart-help-box">
-
-                <div class="chart-help-title">
-                    ¿Cómo leer la identidad de juego?
+        if (
+            complementary_view
+            ==
+            "Global"
+        ):
+            st.html(
+                """
+                <div class="chart-help-box">
+                    <div class="chart-help-title">
+                        ¿Cómo leer la identidad de juego?
+                    </div>
+                    <div class="chart-help-text">
+                        Los valores muestran el promedio histórico
+                        observado en los datos disponibles del equipo.
+                    </div>
+                    <div class="chart-help-note">
+                        Cada tarjeta explica qué dimensión del juego
+                        representa el indicador mostrado.
+                    </div>
                 </div>
-
-                <div class="chart-help-text">
-                    Los indicadores muestran el comportamiento
-                    del equipo frente a su propia referencia
-                    histórica.
+                """
+            )
+        else:
+            st.html(
+                """
+                <div class="chart-help-box">
+                    <div class="chart-help-title">
+                        ¿Cómo leer la identidad de juego?
+                    </div>
+                    <div class="chart-help-text">
+                        Los indicadores del partido se comparan con
+                        la referencia histórica del equipo.
+                    </div>
+                    <div class="chart-help-note">
+                        En esta vista, 100% representa el promedio
+                        histórico del equipo para ese indicador.
+                    </div>
                 </div>
-
-                <div class="chart-help-note">
-                    100% representa la referencia histórica
-                    del equipo. No es una probabilidad ni
-                    una calificación.
-                </div>
-
-            </div>
-            """
-        )
-
+                """
+            )
 
         if not selected_metrics:
-
-
             st.warning(
                 "No existen suficientes variables disponibles "
                 "para construir la identidad de juego."
             )
-
-
         else:
-
-
             offensive = [
                 metric
                 for metric
                 in selected_metrics
-                if
-                metric[
+                if metric[
                     "section"
                 ]
                 ==
                 "Fase ofensiva"
             ]
 
-
             defensive = [
                 metric
                 for metric
                 in selected_metrics
-                if
-                metric[
+                if metric[
                     "section"
                 ]
                 ==
                 "Fase defensiva"
             ]
 
-
             st.markdown(
                 "#### Fase ofensiva"
             )
 
-
             if offensive:
-
-
                 columns = st.columns(
                     len(
                         offensive
                     ),
                     gap="medium",
                 )
-
 
                 for (
                     column,
@@ -6819,8 +6814,6 @@ elif (
                     columns,
                     offensive,
                 ):
-
-
                     baseline = (
                         global_lookup.get(
                             metric[
@@ -6830,63 +6823,88 @@ elif (
                         )
                     )
 
-
-                    index_value = (
-                        relative_index(
+                    description = (
+                        identity_descriptions.get(
                             metric[
-                                "value"
+                                "name"
                             ],
-                            baseline,
+                            "",
                         )
                     )
 
-
-                    with column:
-
-
-                        st.html(
-                            f"""
-                            <div class="metric-card complementary-metric-card">
-
-                                <div class="metric-label">
-                                    {metric["name"]}
-                                </div>
-
-                                <div class="metric-value">
-                                    {
-                                        f"{index_value:.0f}%"
-                                        if np.isfinite(index_value)
-                                        else "N/D"
-                                    }
-                                </div>
-
-                            </div>
-                            """
+                    if (
+                        complementary_view
+                        ==
+                        "Global"
+                    ):
+                        display_value = (
+                            f"{metric['value']:.2f}"
+                            if np.isfinite(
+                                metric[
+                                    "value"
+                                ]
+                            )
+                            else
+                            "N/D"
                         )
-
-
-                        st.caption(
+                        caption_text = (
+                            "Promedio histórico observado"
+                        )
+                    else:
+                        index_value = (
+                            relative_index(
+                                metric[
+                                    "value"
+                                ],
+                                baseline,
+                            )
+                        )
+                        display_value = (
+                            f"{index_value:.0f}%"
+                            if np.isfinite(
+                                index_value
+                            )
+                            else
+                            "N/D"
+                        )
+                        caption_text = (
                             identity_reading(
                                 index_value
                             )
                         )
 
+                    with column:
+                        st.html(
+                            f"""
+                            <div class="metric-card complementary-metric-card identity-metric-card">
+                                <div class="metric-label">
+                                    {metric["name"]}
+                                </div>
+                                <div class="metric-value">
+                                    {display_value}
+                                </div>
+                                <div class="identity-card-description">
+                                    {description}
+                                </div>
+                            </div>
+                            """
+                        )
+
+                        st.caption(
+                            caption_text
+                        )
 
             st.markdown(
                 "#### Fase defensiva"
             )
 
-
             if defensive:
-
-
                 columns = st.columns(
                     len(
                         defensive
                     ),
                     gap="medium",
                 )
-
 
                 for (
                     column,
@@ -6895,8 +6913,6 @@ elif (
                     columns,
                     defensive,
                 ):
-
-
                     baseline = (
                         global_lookup.get(
                             metric[
@@ -6906,7 +6922,111 @@ elif (
                         )
                     )
 
+                    description = (
+                        identity_descriptions.get(
+                            metric[
+                                "name"
+                            ],
+                            "",
+                        )
+                    )
 
+                    if (
+                        complementary_view
+                        ==
+                        "Global"
+                    ):
+                        display_value = (
+                            f"{metric['value']:.2f}"
+                            if np.isfinite(
+                                metric[
+                                    "value"
+                                ]
+                            )
+                            else
+                            "N/D"
+                        )
+                        caption_text = (
+                            "Promedio histórico observado"
+                        )
+                    else:
+                        index_value = (
+                            relative_index(
+                                metric[
+                                    "value"
+                                ],
+                                baseline,
+                            )
+                        )
+                        display_value = (
+                            f"{index_value:.0f}%"
+                            if np.isfinite(
+                                index_value
+                            )
+                            else
+                            "N/D"
+                        )
+                        caption_text = (
+                            identity_reading(
+                                index_value
+                            )
+                        )
+
+                    with column:
+                        st.html(
+                            f"""
+                            <div class="metric-card complementary-metric-card identity-metric-card">
+                                <div class="metric-label">
+                                    {metric["name"]}
+                                </div>
+                                <div class="metric-value">
+                                    {display_value}
+                                </div>
+                                <div class="identity-card-description">
+                                    {description}
+                                </div>
+                            </div>
+                            """
+                        )
+
+                        st.caption(
+                            caption_text
+                        )
+
+            chart_rows = []
+
+            for metric in selected_metrics:
+                if (
+                    complementary_view
+                    ==
+                    "Global"
+                ):
+                    if np.isfinite(
+                        metric[
+                            "value"
+                        ]
+                    ):
+                        chart_rows.append(
+                            {
+                                "Indicador":
+                                    metric[
+                                        "name"
+                                    ],
+                                "Valor":
+                                    metric[
+                                        "value"
+                                    ],
+                            }
+                        )
+                else:
+                    baseline = (
+                        global_lookup.get(
+                            metric[
+                                "name"
+                            ],
+                            np.nan,
+                        )
+                    )
                     index_value = (
                         relative_index(
                             metric[
@@ -6915,182 +7035,136 @@ elif (
                             baseline,
                         )
                     )
-
-
-                    with column:
-
-
-                        st.html(
-                            f"""
-                            <div class="metric-card complementary-metric-card">
-
-                                <div class="metric-label">
-                                    {metric["name"]}
-                                </div>
-
-                                <div class="metric-value">
-                                    {
-                                        f"{index_value:.0f}%"
-                                        if np.isfinite(index_value)
-                                        else "N/D"
-                                    }
-                                </div>
-
-                            </div>
-                            """
+                    if np.isfinite(
+                        index_value
+                    ):
+                        chart_rows.append(
+                            {
+                                "Indicador":
+                                    metric[
+                                        "name"
+                                    ],
+                                "Valor":
+                                    index_value,
+                            }
                         )
-
-
-                        st.caption(
-                            identity_reading(
-                                index_value
-                            )
-                        )
-
-
-            chart_rows = []
-
-
-            for metric in selected_metrics:
-
-
-                baseline = (
-                    global_lookup.get(
-                        metric[
-                            "name"
-                        ],
-                        np.nan,
-                    )
-                )
-
-
-                index_value = (
-                    relative_index(
-                        metric[
-                            "value"
-                        ],
-                        baseline,
-                    )
-                )
-
-
-                if np.isfinite(
-                    index_value
-                ):
-
-                    chart_rows.append(
-                        {
-                            "Indicador":
-                                metric[
-                                    "name"
-                                ],
-
-                            "Índice":
-                                index_value,
-                        }
-                    )
-
 
             chart_data = pd.DataFrame(
                 chart_rows
             )
 
-
             if not chart_data.empty:
-
-
                 chart_data = (
                     chart_data
                     .sort_values(
-                        "Índice",
+                        "Valor",
                         ascending=True,
                     )
                 )
 
-
                 figure = px.bar(
                     chart_data,
-                    x=
-                        "Índice",
-                    y=
-                        "Indicador",
-                    orientation=
-                        "h",
-                    text=
-                        "Índice",
+                    x="Valor",
+                    y="Indicador",
+                    orientation="h",
+                    text="Valor",
                 )
 
-
-                figure.update_traces(
-                    marker_color=
-                        COACH_YELLOW,
-
-                    texttemplate=
-                        "%{text:.0f}%",
-
-                    textposition=
-                        "outside",
-
-                    cliponaxis=
-                        False,
-                )
-
-
-                maximum = float(
-                    chart_data[
-                        "Índice"
-                    ].max()
-                )
-
-
-                figure = (
-                    apply_coachlens_chart_style(
-                        figure,
-                        height=
-                            max(
-                                300,
-                                110
-                                +
-                                (
-                                    len(
-                                        chart_data
-                                    )
-                                    *
-                                    45
-                                ),
-                            ),
-                        x_title=
-                            "Índice relativo · 100% = referencia histórica",
-                        y_title=
-                            "",
+                if (
+                    complementary_view
+                    ==
+                    "Global"
+                ):
+                    figure.update_traces(
+                        marker_color=
+                            COACH_YELLOW,
+                        texttemplate=
+                            "%{text:.2f}",
+                        textposition=
+                            "outside",
+                        cliponaxis=
+                            False,
                     )
-                )
 
+                    figure = (
+                        apply_coachlens_chart_style(
+                            figure,
+                            height=
+                                max(
+                                    300,
+                                    110
+                                    +
+                                    (
+                                        len(
+                                            chart_data
+                                        )
+                                        *
+                                        45
+                                    ),
+                                ),
+                            x_title=
+                                "Promedio histórico observado",
+                            y_title="",
+                        )
+                    )
+                else:
+                    figure.update_traces(
+                        marker_color=
+                            COACH_YELLOW,
+                        texttemplate=
+                            "%{text:.0f}%",
+                        textposition=
+                            "outside",
+                        cliponaxis=
+                            False,
+                    )
 
-                figure.update_xaxes(
-                    ticksuffix=
-                        "%",
-                    range=[
-                        0,
-                        max(
-                            130,
-                            maximum
-                            +
-                            12,
-                        ),
-                    ],
-                )
+                    maximum = float(
+                        chart_data[
+                            "Valor"
+                        ].max()
+                    )
 
+                    figure = (
+                        apply_coachlens_chart_style(
+                            figure,
+                            height=
+                                max(
+                                    300,
+                                    110
+                                    +
+                                    (
+                                        len(
+                                            chart_data
+                                        )
+                                        *
+                                        45
+                                    ),
+                                ),
+                            x_title=
+                                "Índice relativo · 100% = referencia histórica",
+                            y_title="",
+                        )
+                    )
 
-                figure.add_vline(
-                    x=
-                        100,
-                    line_dash=
-                        "dash",
-                    line_width=
-                        1,
-                )
+                    figure.update_xaxes(
+                        ticksuffix="%",
+                        range=[
+                            0,
+                            max(
+                                130,
+                                maximum
+                                +
+                                12,
+                            ),
+                        ],
+                    )
 
+                    figure.add_vline(
+                        x=100,
+                        line_dash="dash",
+                        line_width=1,
+                    )
 
                 st.plotly_chart(
                     figure,

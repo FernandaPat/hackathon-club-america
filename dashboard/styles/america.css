@@ -2029,3 +2029,162 @@ div[data-testid="stSlider"]
 
     margin-top: 4px;
 }
+
+/* =========================================================
+   NO PERMITIR OCULTAR EL SIDEBAR
+   ========================================================= */
+
+[data-testid="stSidebarCollapseButton"] {
+    display: none !important;
+}
+/* =========================================================
+   FIX SELECTBOX SIDEBAR EN DISTINTOS NAVEGADORES
+   ========================================================= */
+
+/* Caja del selector */
+[data-testid="stSidebar"] div[data-baseweb="select"] > div {
+    background: #262730 !important;
+    border-color: rgba(255, 255, 255, 0.20) !important;
+    color: #FFFFFF !important;
+}
+
+
+/* Texto seleccionado */
+[data-testid="stSidebar"] div[data-baseweb="select"] span {
+    color: #FFFFFF !important;
+}
+
+
+/* Input interno */
+[data-testid="stSidebar"] div[data-baseweb="select"] input {
+    color: #FFFFFF !important;
+    -webkit-text-fill-color: #FFFFFF !important;
+}
+
+
+/* Flecha */
+[data-testid="stSidebar"] div[data-baseweb="select"] svg {
+    color: #FFFFFF !important;
+    fill: #FFFFFF !important;
+}
+
+
+/* Labels: Condición, Rival, Estado táctico actual */
+[data-testid="stSidebar"] div[data-testid="stSelectbox"] label,
+[data-testid="stSidebar"] div[data-testid="stSelectbox"] label p {
+    color: #FFFFFF !important;
+}
+
+
+/* Opciones cuando abres el selector */
+div[data-baseweb="popover"] ul {
+    background: #FFFFFF !important;
+}
+
+
+div[data-baseweb="popover"] li {
+    background: #FFFFFF !important;
+    color: #061E39 !important;
+}
+
+
+div[data-baseweb="popover"] li span {
+    color: #061E39 !important;
+}
+
+
+div[data-baseweb="popover"] li:hover {
+    background: #FFF3B5 !important;
+    color: #061E39 !important;
+}
+/* =========================================================
+   IDENTIDAD DE JUEGO · DESCRIPCIÓN DE INDICADORES
+   ========================================================= */
+
+/*
+   Estas reglas solo afectan las tarjetas de identidad.
+   No modifican las demás tarjetas del dashboard.
+*/
+
+.identity-metric-card {
+    height: 175px !important;
+    min-height: 175px !important;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-start;
+
+    padding:
+        22px 24px;
+}
+
+
+/* Nombre del indicador */
+
+.identity-metric-card .metric-label {
+    margin-bottom: 0 !important;
+}
+
+
+/* Valor real / índice */
+
+.identity-metric-card .metric-value {
+    margin-top: 15px;
+}
+
+
+/* Descripción */
+
+.identity-card-description {
+    color:
+        rgba(
+            255,
+            255,
+            255,
+            0.72
+        );
+
+    font-size: 12px;
+
+    font-weight: 500;
+
+    line-height: 1.45;
+
+    margin-top: 13px;
+
+    max-width: 95%;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (
+    max-width: 1100px
+) {
+
+    .identity-metric-card {
+        height: 190px !important;
+        min-height: 190px !important;
+    }
+
+}
+
+
+@media (
+    max-width: 800px
+) {
+
+    .identity-metric-card {
+        height: auto !important;
+        min-height: 165px !important;
+    }
+
+
+    .identity-card-description {
+        font-size: 11px;
+    }
+
+}
